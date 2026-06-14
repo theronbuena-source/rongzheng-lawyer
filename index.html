@@ -4,464 +4,320 @@
 <meta charset="UTF-8">
 <meta name="baidu-site-verification" content="codeva-MzkOFBJHIF" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="荣郑律师，湖北立丰律师事务所高级合伙人，西南政法大学法学本科，四川外国语大学英语双学位，执业10年。刑事辩护 / 民商事诉讼 / 公司股权与并购重组 / 建设工程与房地产 / 海事海商 / 数据合规 / 银行金融。">
-<meta name="keywords" content="荣郑律师,湖北立丰律师事务所,武汉刑事律师,诈骗罪,帮信罪,经济犯罪,公司股权,海事海商,数据合规,武汉律师">
-<title>荣郑 | 湖北立丰律师事务所 · 高级合伙人</title>
+<meta name="description" content="荣郑律师，湖北立丰律师事务所高级合伙人。刑事辩护 / 民商事诉讼 / 公司股权与并购重组 / 建设工程与房地产 / 海事海商 / 数据合规 / 银行金融。">
+<meta name="keywords" content="荣郑,湖北立丰律师事务所,武汉刑事律师,诈骗罪辩护,帮信罪,经济犯罪,公司股权,海事海商,数据合规,武汉律师">
+<title>荣郑 —— 湖北立丰律师事务所 高级合伙人</title>
 
 <style>
-  :root {
-    --ink: #0b1219;
-    --ink-soft: #1a2532;
-    --paper: #fcfaf7;
-    --white: #ffffff;
-    --gold: #b8943a;
-    --gold-light: #d4b96a;
-    --text: #1d1d1d;
-    --text-soft: #5c5c5c;
-    --text-muted: #979797;
-    --rule: #e5e0d8;
-    --rule-light: #f0ede7;
+  :root{
+    --bg:#fafaf8;--white:#fff;--ink:#111;--ink-soft:#333;--text:#444;--text-muted:#999;
+    --gold:#a0844c;--gold-light:#c4a86c;--rule:#e8e4dc;--rule-light:#f2efe8;
   }
-
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased}
+  .serif{font-family:"Noto Serif SC","STSong","Songti SC",serif}
+  a{color:inherit;text-decoration:none}
 
-  body{
-    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",-apple-system,sans-serif;
-    background:var(--paper);color:var(--text);line-height:1.8;font-size:15px;
-    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-  }
-
-  /* Typography */
-  .serif{font-family:"Noto Serif SC","STSong","Songti SC",Georgia,serif}
-  .sans{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",-apple-system,sans-serif}
-  .en{font-family:"Cormorant Garamond","Georgia",serif;font-style:italic}
-  .caps{letter-spacing:.15em;text-transform:uppercase;font-size:11px;font-weight:500}
-  .gold{color:var(--gold)}
+  /* Nav */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);transition:transform .35s}
+  .nav.hide{transform:translateY(-100%)}
+  .nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+  .nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);letter-spacing:.04em}
+  .nav-logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:32px;align-items:center}
+  .nav-links a{font-size:13px;color:var(--text-muted);letter-spacing:.04em;transition:color .2s;padding:4px 0}
+  .nav-links a:hover,.nav-links a.active{color:var(--ink)}
+  .nav-cta{font-size:12px;color:var(--gold)!important;border:1px solid var(--gold);padding:8px 20px!important;border-radius:2px;transition:all .25s}
+  .nav-cta:hover{background:var(--gold);color:var(--white)!important}
 
   /* Hero */
-  .hero{
-    position:relative;
-    background:var(--ink);
-    color:white;
-    min-height:100vh;
-    display:flex;align-items:center;justify-content:center;
-    text-align:center;padding:80px 20px;
-    overflow:hidden;
-  }
-  .hero-bg{
-    position:absolute;inset:0;
-    background:
-      radial-gradient(ellipse 80% 50% at 50% 0%,rgba(184,148,58,.06) 0%,transparent 60%),
-      radial-gradient(ellipse 60% 40% at 20% 80%,rgba(184,148,58,.04) 0%,transparent 50%),
-      radial-gradient(ellipse 40% 30% at 80% 20%,rgba(255,255,255,.02) 0%,transparent 50%);
-  }
-  .hero-grid{
-    position:absolute;inset:0;
-    background-image:
-      linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),
-      linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);
-    background-size:60px 60px;
-    mask-image:radial-gradient(ellipse 60% 50% at 50% 50%,black 30%,transparent 70%);
-  }
-  .hero-content{position:relative;z-index:2;max-width:700px}
-  .hero-content .eyebrow{
-    font-size:11px;letter-spacing:.35em;color:var(--gold);
-    text-transform:uppercase;margin-bottom:32px
-  }
-  .hero-content h1{
-    font-family:"Noto Serif SC","STSong","Songti SC",Georgia,serif;
-    font-size:clamp(40px,7vw,72px);font-weight:400;letter-spacing:.06em;
-    line-height:1.15;margin-bottom:20px
-  }
-  .hero-content h1 em{
-    font-family:"Cormorant Garamond","Georgia",serif;
-    font-style:italic;font-weight:300;display:block;
-    font-size:clamp(16px,2.5vw,22px);letter-spacing:.04em;
-    color:rgba(255,255,255,.5);margin-top:6px
-  }
-  .hero-content .firm{
-    font-size:15px;color:rgba(255,255,255,.55);letter-spacing:.08em;font-weight:300
-  }
-  .hero-line{width:40px;height:1px;background:var(--gold);margin:28px auto}
-  .hero-tags{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:24px}
-  .hero-tags span{
-    font-size:12px;letter-spacing:.06em;color:rgba(255,255,255,.5);
-    padding:6px 18px;border:1px solid rgba(255,255,255,.12);border-radius:100px
-  }
-  .scroll-hint{
-    position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
-    width:20px;height:36px;border:1px solid rgba(255,255,255,.15);border-radius:12px;
-    display:flex;justify-content:center;padding-top:6px
-  }
-  .scroll-hint::after{
-    content:'';width:2px;height:8px;background:rgba(255,255,255,.25);border-radius:2px;
-    animation:scroll 2s ease infinite
-  }
-  @keyframes scroll{0%,100%{opacity:0;transform:translateY(0)}50%{opacity:1;transform:translateY(6px)}}
+  .hero{padding:160px 40px 100px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 480px;gap:80px;align-items:center}
+  .hero-text .eyebrow{font-size:11px;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:24px}
+  .hero-text h1{font-family:"Noto Serif SC",serif;font-size:56px;font-weight:400;color:var(--ink);letter-spacing:.04em;line-height:1.2;margin-bottom:16px}
+  .hero-text .subtitle{font-size:18px;color:var(--text-muted);letter-spacing:.02em;font-weight:300;margin-bottom:8px}
+  .hero-text .firm{font-size:14px;color:var(--text-muted);letter-spacing:.04em}
+  .hero-line{width:36px;height:1px;background:var(--gold);margin:28px 0}
+  .hero-text .bio-preview{font-size:14px;color:var(--text);line-height:1.9;max-width:460px;margin-bottom:28px}
+  .hero-cta{display:inline-flex;gap:20px;align-items:center}
+  .hero-cta a.primary{font-size:13px;letter-spacing:.06em;color:var(--white);background:var(--ink);padding:12px 32px;border-radius:2px;transition:.25s}
+  .hero-cta a.primary:hover{background:var(--gold)}
+  .hero-cta a.secondary{font-size:13px;color:var(--text-muted);letter-spacing:.04em;border-bottom:1px solid var(--rule);transition:.25s}
+  .hero-cta a.secondary:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  .hero-visual{position:relative}
+  .hero-visual .photo-frame{width:100%;aspect-ratio:4/5;background:var(--rule-light);overflow:hidden;position:relative}
+  .hero-visual .photo-frame img{width:100%;height:100%;object-fit:cover}
+  .hero-visual .badge{position:absolute;bottom:-16px;right:-16px;background:var(--white);padding:16px 24px;box-shadow:0 8px 32px rgba(0,0,0,.06)}
+  .hero-visual .badge .b-num{font-size:28px;font-weight:700;color:var(--ink)}
+  .hero-visual .badge .b-label{font-size:11px;color:var(--text-muted);letter-spacing:.06em}
 
-  /* Fixed header */
-  .site-header{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    background:rgba(11,18,25,.92);backdrop-filter:blur(20px);
-    border-bottom:1px solid rgba(255,255,255,.06);
-    transform:translateY(-100%);transition:transform .4s ease
-  }
-  .site-header.visible{transform:translateY(0)}
-  .header-inner{
-    max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;
-    align-items:center;padding:0 32px;height:64px
-  }
-  .header-logo{font-family:"Noto Serif SC",serif;font-size:17px;color:white;letter-spacing:.06em;text-decoration:none}
-  .header-logo span{color:var(--gold)}
-  .header-nav{display:flex;gap:4px}
-  .header-nav a{
-    color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;letter-spacing:.04em;
-    padding:8px 16px;border-radius:4px;transition:all .25s
-  }
-  .header-nav a:hover{color:white;background:rgba(255,255,255,.05)}
-
-  /* Sections */
-  section{padding:100px 32px}
+  /* Section shared */
+  section{padding:100px 40px}
   section.alt{background:var(--white)}
-  .container{max-width:1080px;margin:0 auto}
+  .container{max-width:1200px;margin:0 auto}
+  .sec-label{font-size:10px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+  .sec-title{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:400;color:var(--ink);letter-spacing:.03em;margin-bottom:20px;line-height:1.25}
+  .sec-dek{font-size:15px;color:var(--text-muted);max-width:560px;line-height:1.8;margin-bottom:48px}
 
-  .section-kicker{font-size:10px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
-  .section-heading{font-family:"Noto Serif SC",serif;font-size:clamp(28px,4vw,40px);font-weight:400;color:var(--ink);letter-spacing:.03em;line-height:1.25;margin-bottom:20px}
-  .section-heading em{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:300;display:block;font-size:15px;color:var(--text-muted);letter-spacing:.04em;margin-top:4px}
-  .section-dek{font-size:16px;color:var(--text-soft);max-width:600px;line-height:1.8;margin-bottom:48px}
+  /* Stats row */
+  .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .stats-row .st{text-align:center;padding:32px 16px;border-right:1px solid var(--rule)}
+  .stats-row .st:last-child{border-right:none}
+  .st-num{font-size:42px;font-weight:700;color:var(--ink);letter-spacing:-2px}
+  .st-num em{font-style:normal;color:var(--gold)}
+  .st-label{font-size:11px;color:var(--text-muted);letter-spacing:.08em;margin-top:6px}
 
-  /* Intro split */
-  .intro-split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  .intro-split .intro-text p{margin-bottom:16px;color:var(--text-soft);font-size:15px;text-indent:2em}
-  .intro-split .intro-text p:first-of-type::first-letter{font-size:3em;float:left;line-height:1;margin-right:10px;color:var(--gold);font-family:"Noto Serif SC",serif}
-  .stats-mini{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule)}
-  .stats-mini .sm-item{background:var(--white);padding:28px 24px;text-align:center}
-  .stats-mini .sm-num{font-family:"Cormorant Garamond",serif;font-size:42px;color:var(--ink)}
-  .stats-mini .sm-num span{color:var(--gold)}
-  .stats-mini .sm-label{font-size:12px;color:var(--text-muted);margin-top:4px;letter-spacing:.06em}
+  /* Practice grid */
+  .p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule)}
+  .p-card{background:var(--white);padding:44px 36px;transition:all .3s;position:relative;overflow:hidden;cursor:pointer}
+  .p-card:hover{background:#fdfdfb;box-shadow:inset 0 2px 0 var(--gold)}
+  .p-card .p-icon{font-size:24px;margin-bottom:20px;opacity:.8}
+  .p-card h4{font-size:17px;color:var(--ink);margin-bottom:10px;letter-spacing:.02em}
+  .p-card .p-desc{font-size:13px;color:var(--text-muted);line-height:1.75}
+  .p-card .p-link{font-size:12px;color:var(--gold);margin-top:16px;letter-spacing:.04em;display:inline-block}
 
-  /* Practice Grid */
-  .practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule)}
-  .practice-card{
-    background:var(--white);padding:44px 32px;transition:all .35s;
-    position:relative;overflow:hidden;cursor:pointer
-  }
-  .practice-card::before{
-    content:'';position:absolute;top:0;left:0;right:0;height:2px;
-    background:var(--gold);transform:scaleX(0);transform-origin:left;
-    transition:transform .35s ease
-  }
-  .practice-card:hover::before{transform:scaleX(1)}
-  .practice-card:hover{background:#fdfcf9}
-  .practice-card .pc-icon{font-size:28px;margin-bottom:20px;opacity:.8}
-  .practice-card .pc-num{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--rule);position:absolute;top:20px;right:24px}
-  .practice-card h4{font-size:18px;color:var(--ink);margin-bottom:10px;letter-spacing:.03em}
-  .practice-card p{font-size:13px;color:var(--text-muted);line-height:1.7}
+  /* Clients / Projects */
+  .client-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule)}
+  .client-item{background:var(--white);padding:24px 20px;text-align:center;font-size:14px;color:var(--ink-soft);letter-spacing:.03em}
 
-  /* Quote */
-  .pull-quote{
-    text-align:center;padding:80px 32px;
-    background:var(--ink);color:white
-  }
-  .pull-quote blockquote{
-    font-family:"Noto Serif SC",serif;font-size:clamp(20px,3vw,28px);
-    font-weight:300;line-height:1.6;max-width:700px;margin:0 auto;
-    letter-spacing:.03em
-  }
-  .pull-quote blockquote::before{content:'\201C';font-size:72px;color:var(--gold);display:block;margin-bottom:-20px}
-  .pull-quote .attribution{font-size:13px;color:rgba(255,255,255,.4);margin-top:24px;letter-spacing:.06em}
-
-  /* Article highlights */
-  .insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-  .insight-card{
-    background:var(--white);border:1px solid var(--rule);padding:0;
-    transition:all .3s;text-decoration:none;color:var(--text);display:block;
-  }
-  .insight-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.06);border-color:var(--gold)}
-  .insight-card .ic-body{padding:32px}
-  .insight-card .ic-cat{font-size:10px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
-  .insight-card h4{font-size:18px;color:var(--ink);margin-bottom:8px;line-height:1.4}
-  .insight-card p{font-size:13px;color:var(--text-muted);line-height:1.7}
-  .insight-card .ic-link{font-size:12px;color:var(--gold);margin-top:16px;letter-spacing:.06em;font-weight:600}
+  /* Two column layout */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .two-col h3{font-size:20px;color:var(--ink);margin-bottom:20px;letter-spacing:.02em;font-weight:600}
+  .two-col .tc-text{font-size:14px;color:var(--text);line-height:1.9}
+  .two-col .tc-text p{margin-bottom:16px;text-indent:2em}
 
   /* Timeline */
-  .timeline{position:relative}
-  .timeline::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--rule)}
-  .tl-row{display:grid;grid-template-columns:140px 1fr;gap:32px;margin-bottom:36px;position:relative}
-  .tl-row::before{content:'';position:absolute;left:4px;top:8px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
-  .tl-year{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold);padding-top:2px}
-  .tl-title{font-size:17px;font-weight:600;color:var(--ink);margin-bottom:4px}
-  .tl-desc{font-size:14px;color:var(--text-muted)}
+  .tl-item{display:grid;grid-template-columns:120px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--rule-light)}
+  .tl-year{font-size:15px;color:var(--gold);letter-spacing:.04em;font-weight:600;padding-top:2px}
+  .tl-title{font-size:16px;color:var(--ink);font-weight:600;margin-bottom:4px}
+  .tl-desc{font-size:13px;color:var(--text-muted)}
 
-  /* Honors */
-  .honors-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule)}
-  .honor-item{
-    background:var(--white);padding:24px 28px;
-    display:flex;align-items:center;gap:16px
-  }
-  .honor-item .hi-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
-  .honor-item .hi-text{font-size:15px}
-  .honor-item .hi-org{font-size:12px;color:var(--text-muted);margin-top:2px}
+  /* Honor grid */
+  .h-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .h-row{display:flex;align-items:baseline;gap:12px;padding:18px 0;border-bottom:1px solid var(--rule-light)}
+  .h-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:8px}
+  .h-text{font-size:15px;color:var(--ink-soft)}
+  .h-org{font-size:12px;color:var(--text-muted);margin-left:4px}
+
+  /* Insights */
+  .insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .insight-card{border:1px solid var(--rule);background:var(--white);padding:36px;transition:all .3s;display:block}
+  .insight-card:hover{border-color:var(--gold);box-shadow:0 8px 32px rgba(0,0,0,.04)}
+  .insight-card .ic-tag{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+  .insight-card h4{font-size:20px;color:var(--ink);margin-bottom:10px;line-height:1.4}
+  .insight-card .ic-topics{font-size:12px;color:var(--text-muted);line-height:1.8;margin-bottom:16px}
+  .insight-card .ic-arrow{font-size:12px;color:var(--gold);letter-spacing:.06em}
 
   /* Media */
   .media-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-  .media-card{
-    background:var(--white);border:1px solid var(--rule);
-    padding:40px 32px;text-align:center;transition:all .3s
-  }
+  .media-card{border:1px solid var(--rule);background:var(--white);padding:40px 36px;text-align:center;transition:all .3s}
   .media-card:hover{border-color:var(--gold)}
-  .media-card .m-station{font-family:"Noto Serif SC",serif;font-size:24px;color:var(--ink);letter-spacing:.06em}
-  .media-card .m-program{font-size:14px;color:var(--text-muted);margin-top:8px}
-  .media-card .m-badge{display:inline-block;margin-top:16px;padding:6px 20px;border:1px solid var(--gold);color:var(--gold);font-size:11px;letter-spacing:.08em;border-radius:100px}
+  .media-card .m-station{font-family:"Noto Serif SC",serif;font-size:22px;color:var(--ink);letter-spacing:.04em}
+  .media-card .m-program{font-size:13px;color:var(--text-muted);margin-top:8px}
+  .media-card .m-badge{display:inline-block;margin-top:16px;font-size:10px;letter-spacing:.15em;color:var(--gold);border:1px solid var(--gold);padding:6px 18px;border-radius:100px}
 
   /* Contact */
-  .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-  .contact-card{text-align:center;padding:24px}
-  .contact-card .cc-icon{font-size:22px;margin-bottom:12px}
-  .contact-card .cc-label{font-size:11px;color:var(--text-muted);letter-spacing:.08em;margin-bottom:4px}
-  .contact-card .cc-value{font-size:15px;font-weight:600;color:var(--ink)}
+  .contact-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .contact-bar .cb-item .cb-icon{font-size:20px;margin-bottom:10px}
+  .contact-bar .cb-item .cb-label{font-size:10px;color:var(--text-muted);letter-spacing:.1em;margin-bottom:4px}
+  .contact-bar .cb-item .cb-value{font-size:15px;color:var(--ink);font-weight:600}
 
-  /* Footer */
-  .site-footer{
-    background:var(--ink);color:rgba(255,255,255,.4);
-    text-align:center;padding:40px 20px;font-size:12px;letter-spacing:.04em
-  }
-  .site-footer a{color:var(--gold-light);text-decoration:none}
-  .site-footer .footer-nav{display:flex;justify-content:center;gap:32px;margin-bottom:20px;flex-wrap:wrap}
-  .site-footer .footer-line{width:30px;height:1px;background:rgba(255,255,255,.1);margin:0 auto 20px}
+  footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px;letter-spacing:.04em}
+  footer a{color:var(--gold-light)}
+  footer .f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
 
-  /* Responsive */
-  @media(max-width:768px){
-    section{padding:60px 20px}
-    .intro-split{grid-template-columns:1fr;gap:32px}
-    .practice-grid{grid-template-columns:1fr}
-    .insight-grid,.honors-grid,.media-grid{grid-template-columns:1fr}
-    .contact-grid{grid-template-columns:1fr 1fr}
-    .tl-row{grid-template-columns:100px 1fr;gap:16px}
-    .header-nav a{padding:6px 10px;font-size:11px}
+  .mb-show{display:none}
+  @media(max-width:960px){
+    .hero{grid-template-columns:1fr;gap:40px;padding:120px 24px 60px}
+    .hero-text h1{font-size:36px}
+    .hero-visual .photo-frame{max-width:360px;margin:0 auto}
+    .hero-visual .badge{right:0}
+    .p-grid{grid-template-columns:1fr}
+    .two-col{grid-template-columns:1fr;gap:40px}
+    .stats-row{grid-template-columns:repeat(2,1fr)}
+    .client-grid{grid-template-columns:repeat(2,1fr)}
+    .insight-grid{grid-template-columns:1fr}
+    .h-grid{grid-template-columns:1fr}
+    .media-grid{grid-template-columns:1fr}
+    .contact-bar{grid-template-columns:repeat(2,1fr)}
+    .nav-links{gap:16px}
+    .nav-links a{font-size:11px}
+    section{padding:60px 24px}
   }
 </style>
 </head>
 <body>
 
-<!-- ====== HERO ====== -->
-<section class="hero" id="top">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-content">
-    <div class="eyebrow">Senior Partner &bull; Hubei Lifeng Law Firm</div>
-    <h1>荣 郑<em>Rong Zheng</em></h1>
-    <p class="firm">湖北立丰律师事务所 · 高级合伙人</p>
-    <div class="hero-line"></div>
-    <div class="hero-tags">
-      <span>刑事辩护</span><span>民商事诉讼</span><span>公司股权与并购</span>
-      <span>建设工程</span><span>海事海商</span><span>数据合规</span>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">荣<span>郑</span></a>
+    <div class="nav-links">
+      <a href="#about">简介</a><a href="#practice">领域</a>
+      <a href="criminal.html">刑事专题</a><a href="civil.html">民商事专题</a>
+      <a href="#contact" class="nav-cta">联系</a>
     </div>
   </div>
-  <div class="scroll-hint"></div>
-</section>
+</nav>
 
-<!-- ====== HEADER ====== -->
-<header class="site-header" id="siteHeader">
-  <div class="header-inner">
-    <a href="#top" class="header-logo">荣<span>郑</span></a>
-    <nav class="header-nav">
-      <a href="#about">About</a>
-      <a href="#practice">Practices</a>
-      <a href="criminal.html">Criminal Defense</a>
-      <a href="civil.html">Civil &amp; Commercial</a>
-      <a href="#honors">Credentials</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header class="hero">
+  <div class="hero-text">
+    <div class="eyebrow">Senior Partner &bull; Hubei Lifeng Law Firm</div>
+    <h1>荣 郑</h1>
+    <div class="subtitle">湖北立丰律师事务所 · 高级合伙人</div>
+    <div class="hero-line"></div>
+    <p class="bio-preview">西南政法大学法学本科，四川外国语大学英语双学位。执业十年，深耕刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。湖北省法学会西政法学研究会副秘书长，湖北经视及武汉电视台常年法律嘉宾。</p>
+    <div class="hero-cta">
+      <a href="#contact" class="primary">预约咨询</a>
+      <a href="criminal.html" class="secondary">浏览刑事辩护专题 &rarr;</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="photo-frame"><img src="photo.jpg" alt="荣郑律师" onerror="this.style.opacity='0'"></div>
+    <div class="badge"><div class="b-num">10<small style="font-size:14px;color:var(--gold)">+</small></div><div class="b-label">年执业经验</div></div>
   </div>
 </header>
 
-<!-- ====== ABOUT ====== -->
 <section id="about">
   <div class="container">
-    <div class="section-kicker">About</div>
-    <div class="section-heading">执业简介<em>Professional Biography</em></div>
-    <div class="intro-split">
-      <div class="intro-text">
-        <p>荣郑律师，湖北立丰律师事务所高级合伙人，民盟会员。毕业于西南政法大学法学本科，同时取得四川外国语大学英语双学位。执业十年来，深耕刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融等法律事务，系业内少有的跨学科、跨领域复合型商事律师。</p>
-        <p>秉持&ldquo;以证据为基、以法律为剑&rdquo;的执业理念，注重庭前精细阅卷与法律分析，善于从案件细节中发现突破口。凭借扎实的法学功底、敏锐的商业洞察和高效的争议解决能力，荣郑律师为众多企业客户及个人当事人提供了具有战略价值的法律服务。</p>
-        <p>荣郑律师同时积极参与公益普法和行业建设，长期担任湖北经视&ldquo;经视说法&rdquo;及武汉电视台&ldquo;长江说法&rdquo;节目嘉宾，以通俗语言解读复杂法律问题，助力法治社会建设。</p>
+    <div class="sec-label">Biography</div>
+    <div class="sec-title">执业简介</div>
+    <div class="two-col">
+      <div>
+        <h3>教育背景</h3>
+        <div class="tc-text">
+          <p>西南政法大学 法学本科<br>四川外国语大学 英语双学位</p>
+        </div>
+        <h3 style="margin-top:32px">职业经历</h3>
+        <div class="tc-text">
+          <p>2016 年加入湖北立丰律师事务所，专注刑事辩护与民商事争议解决。2019 年获评武汉市司法局"千名社区（村）满意法律顾问"。2021 年晋升为高级合伙人，业务领域拓展至公司股权与并购重组、建设工程与房地产、海事海商。2023 年担任立丰海事海商专业委员会主任。2024 年起开拓数据合规与数字资产法律服务前沿领域。</p>
+        </div>
       </div>
-      <div class="stats-mini">
-        <div class="sm-item"><div class="sm-num">10<span>+</span></div><div class="sm-label">YEARS / 执业年限</div></div>
-        <div class="sm-item"><div class="sm-num">400<span>+</span></div><div class="sm-label">CASES / 经办案件</div></div>
-        <div class="sm-item"><div class="sm-num">7</div><div class="sm-label">PRACTICE AREAS / 专业领域</div></div>
-        <div class="sm-item"><div class="sm-num">2</div><div class="sm-label">DEGREES / 双学士学位</div></div>
-      </div>
-    </div>
-
-    <div class="timeline" style="margin-top:64px">
-      <div class="tl-row"><div class="tl-year">2016</div><div><div class="tl-title">加入湖北立丰律师事务所</div><div class="tl-desc">执业起步，专注刑事辩护与民商事争议解决</div></div></div>
-      <div class="tl-row"><div class="tl-year">2019</div><div><div class="tl-title">获评武汉市"千名社区满意法律顾问"</div><div class="tl-desc">深入基层法律服务，被武汉市司法局授予荣誉称号</div></div></div>
-      <div class="tl-row"><div class="tl-year">2021</div><div><div class="tl-title">晋升高级合伙人</div><div class="tl-desc">业务领域从刑事辩护拓展至公司股权、建设工程、海事海商等商事法律服务</div></div></div>
-      <div class="tl-row"><div class="tl-year">2023</div><div><div class="tl-title">担任立丰海事海商专业委员会主任</div><div class="tl-desc">牵头组建律所海事海商业务团队，服务长江经济带涉海涉港企业客户</div></div></div>
-      <div class="tl-row"><div class="tl-year">2024</div><div><div class="tl-title">开拓数据合规与数字资产法律服务</div><div class="tl-desc">参与湖北省数据局及省级融资再担保集团数据资产入表等前沿项目</div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ====== PRACTICE AREAS ====== -->
-<section id="practice" class="alt">
-  <div class="container">
-    <div class="section-kicker">Practice Areas</div>
-    <div class="section-heading">专业领域<em>What We Do</em></div>
-    <div class="section-dek">深耕七大法律业务板块，以跨领域的专业能力为客户提供全方位解决方案</div>
-    <div class="practice-grid">
-      <div class="practice-card" onclick="location.href='criminal.html'">
-        <div class="pc-num">01</div>
-        <div class="pc-icon">&#x2696;&#xFE0F;</div>
-        <h4>刑事辩护</h4>
-        <p>诈骗罪、帮信罪、非法吸收公众存款、职务侵占、开设赌场、非法经营 &mdash; 精准辩护与程序策略</p>
-      </div>
-      <div class="practice-card" onclick="location.href='civil.html'">
-        <div class="pc-num">02</div>
-        <div class="pc-icon">&#x1F4BC;</div>
-        <h4>民商事诉讼</h4>
-        <p>合同纠纷、民间借贷、婚姻财产与继承、侵权责任 &mdash; 请求权基础与举证策略</p>
-      </div>
-      <div class="practice-card">
-        <div class="pc-num">03</div>
-        <div class="pc-icon">&#x1F3E2;</div>
-        <h4>公司股权与并购重组</h4>
-        <p>股东知情权之诉、大股东滥用权利救济、公司决议效力瑕疵诉讼、股权并购交易设计及法律尽职调查</p>
-      </div>
-      <div class="practice-card">
-        <div class="pc-num">04</div>
-        <div class="pc-icon">&#x1F3D7;&#xFE0F;</div>
-        <h4>建设工程与房地产</h4>
-        <p>工程价款优先受偿权、质量争议应对、实际施工人保护、合作开发房地产合同纠纷</p>
-      </div>
-      <div class="practice-card">
-        <div class="pc-num">05</div>
-        <div class="pc-icon">&#x1F6A2;</div>
-        <h4>海事海商</h4>
-        <p>海上货物运输合同、船舶碰撞责任、海事赔偿责任限制、国际贸易信用证及提单争议</p>
-      </div>
-      <div class="practice-card">
-        <div class="pc-num">06</div>
-        <div class="pc-icon">&#x1F4CA;</div>
-        <h4>数据合规</h4>
-        <p>数据资产入表、数据产品交易合规、个人信息保护影响评估、跨境数据传输合规方案</p>
+      <div>
+        <h3>执业理念</h3>
+        <div class="tc-text">
+          <p>以证据为基，以法律为剑。注重庭前精细阅卷与法律分析，善于从案件细节中发现突破口。在刑事辩护中，对诈骗罪的构成要件、金额认定、主从犯区分、非法占有目的认定等核心争议问题有深入研究；在民商事诉讼中，擅长从商业逻辑出发，通过精准的法律关系分析为客户争取最大利益。</p>
+          <p>荣郑律师同时积极参与公益普法和行业建设，长期担任湖北经视"经视说法"及武汉电视台"长江说法"节目嘉宾，以通俗语言解读复杂法律问题，助力法治社会建设。</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== QUOTE ====== -->
-<section class="pull-quote">
+<section class="alt">
   <div class="container">
-    <blockquote>以证据为基，以法律为剑。每一次辩护，都是对真相的还原；每一份代理，都是对权利的捍卫。</blockquote>
-    <div class="attribution">&mdash; 荣 郑</div>
+    <div class="stats-row">
+      <div class="st"><div class="st-num">10<em>+</em></div><div class="st-label">执业年限</div></div>
+      <div class="st"><div class="st-num">400<em>+</em></div><div class="st-label">经办案件</div></div>
+      <div class="st"><div class="st-num">7</div><div class="st-label">专业领域</div></div>
+      <div class="st"><div class="st-num">2</div><div class="st-label">双学士学位</div></div>
+    </div>
   </div>
 </section>
 
-<!-- ====== INSIGHTS ====== -->
-<section>
+<section id="practice">
   <div class="container">
-    <div class="section-kicker">Insights</div>
-    <div class="section-heading">专业研究<em>Legal Analysis &amp; Commentary</em></div>
-    <div class="section-dek">基于现行法律法规及多年实务经验，对高频法律问题提供深度专业分析</div>
+    <div class="sec-label">Practice Areas</div>
+    <div class="sec-title">专业领域</div>
+    <div class="sec-dek">深耕七大业务板块，以跨领域的专业能力为企业和个人客户提供全方位法律解决方案</div>
+    <div class="p-grid">
+      <div class="p-card" onclick="location.href='criminal.html'"><div class="p-icon">&#x2696;</div><h4>刑事辩护</h4><div class="p-desc">诈骗罪、帮信罪、非法吸收公众存款、职务侵占、开设赌场、非法经营等经济犯罪及网络犯罪的精准辩护与程序策略</div><div class="p-link">浏览专题 &rarr;</div></div>
+      <div class="p-card" onclick="location.href='civil.html'"><div class="p-icon">&#x270D;</div><h4>民商事诉讼</h4><div class="p-desc">合同纠纷、民间借贷、婚姻财产与继承、侵权责任等高频民商事案件的代理，注重请求权基础分析与举证策略</div><div class="p-link">浏览专题 &rarr;</div></div>
+      <div class="p-card"><div class="p-icon">&#x1F3E2;</div><h4>公司股权与并购重组</h4><div class="p-desc">股东知情权之诉、大股东滥用权利救济、公司决议效力瑕疵诉讼、股权并购交易结构设计及法律尽职调查</div></div>
+      <div class="p-card"><div class="p-icon">&#x1F3D7;</div><h4>建设工程与房地产</h4><div class="p-desc">建设工程价款优先受偿权、工程质量争议应对、实际施工人权利保护、合作开发房地产合同纠纷</div></div>
+      <div class="p-card"><div class="p-icon">&#x1F6A2;</div><h4>海事海商</h4><div class="p-desc">海上货物运输合同、船舶碰撞责任、海事赔偿责任限制、国际贸易信用证及提单争议</div></div>
+      <div class="p-card"><div class="p-icon">&#x1F4CA;</div><h4>数据合规与银行金融</h4><div class="p-desc">数据资产入表、数据产品交易合规、个人信息保护影响评估、跨境数据传输合规、银行法律事务</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="clients">
+  <div class="container">
+    <div class="sec-label">Representative Matters</div>
+    <div class="sec-title">代表客户</div>
+    <div class="sec-dek">荣郑律师曾为以下机构及企业提供法律服务</div>
+    <div class="client-grid">
+      <div class="client-item">湖北省数据局</div>
+      <div class="client-item">武汉市办公厅</div>
+      <div class="client-item">武汉地铁集团有限公司</div>
+      <div class="client-item">湖北省国有资本运营有限公司</div>
+      <div class="client-item">湖北省铁路发展基金有限责任公司</div>
+      <div class="client-item">湖北省融资再担保集团</div>
+      <div class="client-item">微众银行股份有限公司</div>
+      <div class="client-item">湖北联投集团有限公司</div>
+    </div>
+  </div>
+</section>
+
+<section id="honors">
+  <div class="container">
+    <div class="sec-label">Credentials &amp; Positions</div>
+    <div class="sec-title">社会职务与荣誉</div>
+    <div class="h-grid">
+      <div class="h-row"><div class="h-dot"></div><div class="h-text">湖北省法学会西政法学研究会<span class="h-org">副秘书长</span></div></div>
+      <div class="h-row"><div class="h-dot"></div><div class="h-text">武汉市校友经济促进会<span class="h-org">副秘书长</span></div></div>
+      <div class="h-row"><div class="h-dot"></div><div class="h-text">湖北省律师协会宣传联络委员会<span class="h-org">委员</span></div></div>
+      <div class="h-row"><div class="h-dot"></div><div class="h-text">武汉市律师协会知识产权与竞争法专业委员会<span class="h-org">委员</span></div></div>
+      <div class="h-row"><div class="h-dot"></div><div class="h-text">立丰海事海商专业委员会<span class="h-org">主任</span></div></div>
+      <div class="h-row"><div class="h-dot"></div><div class="h-text">2019年武汉市"千名社区（村）满意法律顾问"<span class="h-org">武汉市司法局</span></div></div>
+    </div>
+
+    <div style="margin-top:64px">
+      <div class="sec-label">Media &amp; Public Interest</div>
+      <div class="sec-title">媒体与公益普法</div>
+      <div class="media-grid" style="margin-top:32px">
+        <div class="media-card"><div class="m-station">湖北经视</div><div class="m-program">"经视说法"栏目</div><div class="m-badge">常 年 嘉 宾</div></div>
+        <div class="media-card"><div class="m-station">武汉电视台</div><div class="m-program">"长江说法"栏目</div><div class="m-badge">常 年 嘉 宾</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="sec-label">Insights</div>
+    <div class="sec-title">专业研究</div>
+    <div class="sec-dek">基于现行法律法规及多年实务经验，对高频法律问题提供深度分析</div>
     <div class="insight-grid">
       <a href="criminal.html" class="insight-card">
-        <div class="ic-body">
-          <div class="ic-cat">Criminal Defense</div>
-          <h4>刑事辩护专题 &mdash; 八大高频罪名辩护实务</h4>
-          <p>诈骗罪、帮信罪、非法吸收公众存款、危险驾驶、故意伤害、职务侵占、开设赌场、非法经营 &mdash; 深度解析构成要件、辩护要点与程序策略</p>
-          <div class="ic-link">浏览专题 &rarr;</div>
-        </div>
+        <div class="ic-tag">Criminal Defense</div>
+        <h4>刑事辩护专题</h4>
+        <div class="ic-topics">诈骗罪 / 帮信罪 / 非法吸收公众存款 / 危险驾驶 / 故意伤害 / 职务侵占 / 开设赌场 / 非法经营——八大高频罪名辩护要点、证据审查与程序策略</div>
+        <div class="ic-arrow">进入专题 &rarr;</div>
       </a>
       <a href="civil.html" class="insight-card">
-        <div class="ic-body">
-          <div class="ic-cat">Civil &amp; Commercial</div>
-          <h4>民商事专题 &mdash; 七大争议类型实务指南</h4>
-          <p>合同纠纷、公司治理、建设工程、民间借贷、婚姻继承、劳动争议、侵权责任 &mdash; 请求权基础、举证策略与诉讼实务</p>
-          <div class="ic-link">浏览专题 &rarr;</div>
-        </div>
+        <div class="ic-tag">Civil &amp; Commercial</div>
+        <h4>民商事诉讼专题</h4>
+        <div class="ic-topics">合同纠纷 / 公司治理与股权 / 建设工程 / 民间借贷 / 婚姻继承 / 劳动争议 / 侵权责任——七大争议类型请求权基础与实务指南</div>
+        <div class="ic-arrow">进入专题 &rarr;</div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ====== HONORS ====== -->
-<section id="honors" class="alt">
+<section id="contact">
   <div class="container">
-    <div class="section-kicker">Credentials</div>
-    <div class="section-heading">社会职务与荣誉<em>Positions &amp; Recognitions</em></div>
-    <div class="honors-grid" style="margin-top:32px">
-      <div class="honor-item"><div class="hi-dot"></div><div><div class="hi-text">湖北省法学会西政法学研究会 副秘书长</div><div class="hi-org">湖北省法学会</div></div></div>
-      <div class="honor-item"><div class="hi-dot"></div><div><div class="hi-text">武汉市校友经济促进会 副秘书长</div><div class="hi-org">武汉市校友经济促进会</div></div></div>
-      <div class="honor-item"><div class="hi-dot"></div><div><div class="hi-text">湖北省律师协会宣传联络委员会 委员</div><div class="hi-org">湖北省律师协会</div></div></div>
-      <div class="honor-item"><div class="hi-dot"></div><div><div class="hi-text">武汉市律师协会知识产权与竞争法专业委员会 委员</div><div class="hi-org">武汉市律师协会</div></div></div>
-      <div class="honor-item"><div class="hi-dot"></div><div><div class="hi-text">立丰海事海商专业委员会 主任</div><div class="hi-org">湖北立丰律师事务所</div></div></div>
-      <div class="honor-item"><div class="hi-dot"></div><div><div class="hi-text">2019年武汉市"千名社区（村）满意法律顾问"</div><div class="hi-org">武汉市司法局</div></div></div>
+    <div class="sec-label" style="text-align:center">Contact</div>
+    <div class="sec-title" style="text-align:center">联系方式</div>
+    <div class="contact-bar" style="margin-top:36px">
+      <div class="cb-item"><div class="cb-icon">&#x1F4F1;</div><div class="cb-label">MOBILE / WECHAT</div><div class="cb-value">15872427052</div></div>
+      <div class="cb-item"><div class="cb-icon">&#x1F4E7;</div><div class="cb-label">EMAIL</div><div class="cb-value">rz@lflawyers.com</div></div>
+      <div class="cb-item"><div class="cb-icon">&#x1F3E2;</div><div class="cb-label">FIRM</div><div class="cb-value">湖北立丰律师事务所</div></div>
+      <div class="cb-item"><div class="cb-icon">&#x1F4CD;</div><div class="cb-label">LOCATION</div><div class="cb-value">湖北省武汉市</div></div>
     </div>
   </div>
 </section>
 
-<!-- ====== MEDIA ====== -->
-<section>
-  <div class="container">
-    <div class="section-kicker">Media &amp; Public Interest</div>
-    <div class="section-heading">媒体与公益普法<em>Television &amp; Public Legal Education</em></div>
-    <div class="section-dek">长期参与电视及新媒体公益普法，以律师的专业视角为公众解读法律热点</div>
-    <div class="media-grid">
-      <div class="media-card">
-        <div class="m-station">湖北经视</div>
-        <div class="m-program">"经视说法"栏目</div>
-        <div class="m-badge">常 年 嘉 宾</div>
-      </div>
-      <div class="media-card">
-        <div class="m-station">武汉电视台</div>
-        <div class="m-program">"长江说法"栏目</div>
-        <div class="m-badge">常 年 嘉 宾</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ====== CONTACT ====== -->
-<section id="contact" class="alt">
-  <div class="container">
-    <div class="section-kicker" style="text-align:center">Contact</div>
-    <div class="section-heading" style="text-align:center">联系方式<em>Get in Touch</em></div>
-    <div class="contact-grid" style="margin-top:36px">
-      <div class="contact-card"><div class="cc-icon">&#x1F4F1;</div><div class="cc-label">MOBILE / WECHAT</div><div class="cc-value">15872427052</div></div>
-      <div class="contact-card"><div class="cc-icon">&#x1F4E7;</div><div class="cc-label">EMAIL</div><div class="cc-value">rz@lflawyers.com</div></div>
-      <div class="contact-card"><div class="cc-icon">&#x1F3E2;</div><div class="cc-label">FIRM</div><div class="cc-value">湖北立丰律师事务所</div></div>
-      <div class="contact-card"><div class="cc-icon">&#x1F4CD;</div><div class="cc-label">LOCATION</div><div class="cc-value">湖北省武汉市</div></div>
-    </div>
-    <p style="text-align:center;color:var(--text-muted);font-size:13px;margin-top:28px;letter-spacing:.03em">
-      咨询请提前电话或微信预约，以便安排充足的沟通时间
-    </p>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="footer-nav">
-    <a href="#top">Home</a><a href="#about">About</a><a href="criminal.html">Criminal</a><a href="civil.html">Civil</a><a href="#contact">Contact</a>
-  </div>
-  <div class="footer-line"></div>
-  <p>&copy; 2026 Rong Zheng. All rights reserved. 荣郑律师 · 湖北立丰律师事务所</p>
+<footer>
+  <div class="f-nav"><a href="#about">简介</a><a href="#practice">领域</a><a href="criminal.html">刑事专题</a><a href="civil.html">民商事专题</a><a href="#contact">联系</a></div>
+  <p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所 · 高级合伙人</p>
 </footer>
 
 <script>
-// Sticky header
-const header=document.getElementById('siteHeader');
-const hero=document.querySelector('.hero');
-const observer=new IntersectionObserver(([e])=>{header.classList.toggle('visible',!e.isIntersecting)},{threshold:0});
-observer.observe(hero);
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));t&&t.scrollIntoView({behavior:'smooth'})})});
+// Hide nav on scroll down
+let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;document.getElementById('nav').classList.toggle('hide',y>last&&y>200);last=y});
 </script>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","description":"湖北立丰律师事务所高级合伙人，西南政法大学法学本科，四川外国语大学英语双学位，执业10年。擅长刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规、银行金融。","image":"photo.jpg","telephone":"+86-15872427052","email":"rz@lflawyers.com","address":{"@type":"PostalAddress","addressLocality":"武汉市","addressRegion":"湖北省","addressCountry":"CN"},"worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"西南政法大学"},{"@type":"CollegeOrUniversity","name":"四川外国语大学"}],"knowsAbout":["刑事辩护","诈骗罪","帮信罪","经济犯罪","民商事诉讼","公司股权","建设工程","海事海商","数据合规","并购重组"],"areaServed":{"@type":"City","name":"武汉市"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"律师执业证","recognizedBy":{"@type":"Organization","name":"湖北省司法厅"}}}
+{"@context":"https://schema.org","@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","description":"湖北立丰律师事务所高级合伙人，擅长刑事辩护、民商事诉讼、公司股权与并购重组、建设工程、海事海商、数据合规。","image":"photo.jpg","telephone":"+86-15872427052","email":"rz@lflawyers.com","address":{"@type":"PostalAddress","addressLocality":"武汉市","addressRegion":"湖北省"},"worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"西南政法大学"},{"@type":"CollegeOrUniversity","name":"四川外国语大学"}],"knowsAbout":["刑事辩护","诈骗罪","帮信罪","经济犯罪","民商事诉讼","公司股权","建设工程","海事海商","数据合规"],"areaServed":{"@type":"City","name":"武汉市"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"律师执业证","recognizedBy":{"@type":"Organization","name":"湖北省司法厅"}}}
 </script>
 </body>
 </html>
