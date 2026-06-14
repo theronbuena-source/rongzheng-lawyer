@@ -3,154 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="荣郑律师，湖北立丰律师事务所高级合伙人，西南政法大学法学本科，四川外国语大学英语双学位，执业10年。擅长刑事辩护（诈骗罪、帮信罪、非法吸收公众存款罪、危险驾驶罪、故意伤害罪、职务侵占罪）及民商事诉讼（合同纠纷、公司治理、建设工程纠纷、民间借贷、婚姻继承）。武汉刑民交叉律师。">
+<meta name="description" content="荣郑律师，湖北立丰律师事务所高级合伙人，西南政法大学法学本科，四川外国语大学英语双学位，执业10年。擅长刑事辩护（诈骗罪、帮信罪、非法吸收公众存款罪、危险驾驶罪、故意伤害罪、职务侵占罪等）及民商事诉讼（合同纠纷、公司治理、建设工程纠纷、民间借贷、婚姻继承等）。武汉刑民交叉律师。">
 <meta name="keywords" content="荣郑律师,湖北立丰律师事务所,武汉刑事律师,诈骗罪辩护,帮信罪,非法吸收公众存款,危险驾驶罪,故意伤害罪,职务侵占罪,经济犯罪律师,刑事辩护,武汉律师,民商事诉讼,合同纠纷,公司治理,建设工程纠纷,民间借贷,婚姻继承,武汉民商事律师">
 <meta name="author" content="荣郑律师">
-<title>荣郑律师 | 湖北立丰律师事务所 · 高级合伙人 · 刑事辩护 &amp; 民商事诉讼</title>
-
+<title>荣郑律师 | 湖北立丰律师事务所 · 高级合伙人</title>
 <style>
-  :root {
-    --primary: #1a3a5c;
-    --gold: #b8860b;
-    --bg: #f8f6f2;
-    --white: #ffffff;
-    --text: #2d2d2d;
-    --light-gray: #e8e5df;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: "PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.8;
-    font-size: 16px;
-  }
+  :root{--primary:#1a3a5c;--gold:#b8860b;--bg:#f8f6f2;--white:#fff;--text:#2d2d2d;--light-gray:#e8e5df;--crimson:#8b1a1a;--green:#2e7d32;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px;}
+  .hero{background:linear-gradient(135deg,var(--primary) 0%,#2c5f8a 100%);color:white;padding:60px 20px 50px;text-align:center;}
+  .hero-inner{max-width:800px;margin:0 auto;}
+  .hero .photo{width:130px;height:130px;border-radius:50%;border:3px solid var(--gold);object-fit:cover;margin-bottom:20px;background:#ccc;}
+  .hero h1{font-size:32px;letter-spacing:2px;margin-bottom:6px;}
+  .hero .firm{font-size:18px;color:rgba(255,255,255,.85);margin-bottom:4px;}
+  .hero .title-tag{display:inline-block;background:var(--gold);color:#fff;padding:4px 18px;border-radius:20px;font-size:14px;margin:10px 4px 0;}
+  .nav{background:white;border-bottom:1px solid var(--light-gray);position:sticky;top:0;z-index:100;}
+  .nav-inner{max-width:900px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;}
+  .nav a{display:block;padding:14px 22px;text-decoration:none;color:var(--text);font-size:15px;border-bottom:2px solid transparent;transition:.2s;}
+  .nav a:hover{border-bottom-color:var(--gold);color:var(--primary);}
+  section{padding:50px 20px;}
+  .container{max-width:860px;margin:0 auto;}
+  h2{font-size:24px;color:var(--primary);margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:10px;}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .about-item{background:var(--white);padding:16px 20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+  .about-item .label{font-size:13px;color:#888;margin-bottom:2px;}
+  .about-item .value{font-size:16px;font-weight:600;}
 
-  .hero {
-    background: linear-gradient(135deg, var(--primary) 0%, #2c5f8a 100%);
-    color: white;
-    padding: 60px 20px 50px;
-    text-align: center;
-  }
-  .hero-inner { max-width: 800px; margin:0 auto; }
-  .hero .photo {
-    width: 130px; height: 130px;
-    border-radius: 50%;
-    border: 3px solid var(--gold);
-    object-fit: cover;
-    margin-bottom: 20px;
-    background: #ccc;
-  }
-  .hero h1 { font-size: 32px; letter-spacing: 2px; margin-bottom: 6px; }
-  .hero .firm { font-size: 18px; color: rgba(255,255,255,.85); margin-bottom: 4px; }
-  .hero .title-tag { display:inline-block; background:var(--gold); color:#fff; padding:4px 18px; border-radius:20px; font-size:14px; margin:10px 4px 0; }
+  /* Topic hub cards */
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .hub-card{background:var(--white);border-radius:12px;padding:32px 28px;box-shadow:0 4px 16px rgba(0,0,0,.06);text-decoration:none;color:var(--text);transition:transform .2s,box-shadow .2s;display:block;border-top:5px solid transparent;}
+  .hub-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.1);}
+  .hub-card.criminal{border-top-color:var(--crimson);}
+  .hub-card.civil{border-top-color:var(--green);}
+  .hub-card .hub-icon{font-size:40px;margin-bottom:16px;}
+  .hub-card h3{font-size:22px;margin-bottom:12px;color:var(--primary);}
+  .hub-card .hub-desc{font-size:15px;color:#666;margin-bottom:16px;line-height:1.7;}
+  .hub-card .hub-topics{display:flex;flex-wrap:wrap;gap:6px;}
+  .hub-card .hub-tag{font-size:13px;padding:4px 12px;border-radius:12px;background:var(--light-gray);color:#555;}
+  .hub-card .hub-link-text{font-size:15px;font-weight:700;margin-top:16px;display:inline-block;}
+  .hub-card.criminal .hub-link-text{color:var(--crimson);}
+  .hub-card.civil .hub-link-text{color:var(--green);}
 
-  .nav { background:white; border-bottom:1px solid var(--light-gray); position:sticky; top:0; z-index:100; }
-  .nav-inner { max-width:900px; margin:0 auto; display:flex; justify-content:center; gap:0; flex-wrap:wrap; }
-  .nav a { display:block; padding:14px 18px; text-decoration:none; color:var(--text); font-size:15px; border-bottom:2px solid transparent; transition:.2s; white-space:nowrap; }
-  .nav a:hover { border-bottom-color:var(--gold); color:var(--primary); }
-
-  section { padding:50px 20px; }
-  .container { max-width:860px; margin:0 auto; }
-  h2 {
-    font-size:24px; color:var(--primary); margin-bottom:24px;
-    padding-bottom:12px; border-bottom:2px solid var(--gold);
-    display:flex; align-items:center; gap:10px;
-  }
-  h2 .icon { font-size:22px; }
-  h3 {
-    font-size:20px; color:var(--primary); margin:28px 0 16px;
-    padding-left:12px; border-left:3px solid var(--gold);
-  }
-
-  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .about-item { background:var(--white); padding:16px 20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.04); }
-  .about-item .label { font-size:13px; color:#888; margin-bottom:2px; }
-  .about-item .value { font-size:16px; font-weight:600; }
-
-  /* Article cards for professional analyses */
-  .article-card {
-    background:var(--white); padding:28px 32px; margin-bottom:20px;
-    border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.04);
-    border-left:4px solid var(--gold);
-  }
-  .article-card .art-title { font-size:20px; font-weight:700; color:var(--primary); margin-bottom:6px; }
-  .article-card .art-subtitle { font-size:14px; color:var(--gold); font-weight:600; margin-bottom:16px; }
-  .article-card .art-body { font-size:15px; color:#444; }
-  .article-card .art-body h4 { font-size:16px; color:var(--primary); margin:16px 0 8px; font-weight:700; }
-  .article-card .art-body p { margin-bottom:10px; text-indent:2em; }
-  .article-card .art-body ul { margin:8px 0 12px 2em; }
-  .article-card .art-body li { margin-bottom:4px; }
-
-  .article-card.civil { border-left-color:#2e7d32; }
-
-  /* Quick nav within topic */
-  .topic-toc {
-    background:var(--white); padding:16px 24px; margin-bottom:24px;
-    border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.04);
-    font-size:14px; color:#666;
-  }
-  .topic-toc a { color:var(--primary); text-decoration:none; margin:0 8px; }
-  .topic-toc a:hover { text-decoration:underline; }
-
-  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .contact-card {
-    background:var(--white); padding:20px 24px; border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,.04); text-align:center;
-  }
-  .contact-card .c-icon { font-size:28px; margin-bottom:8px; }
-  .contact-card .c-label { font-size:13px; color:#888; }
-  .contact-card .c-value { font-size:17px; font-weight:600; color:var(--primary); margin-top:4px; }
-
-  footer {
-    background:var(--primary); color:rgba(255,255,255,.7);
-    text-align:center; padding:24px; font-size:13px;
-  }
-  footer a { color:var(--gold); text-decoration:none; }
-
-  /* Table of contents summary box */
-  .summary-box {
-    background:var(--white); padding:20px 28px; border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,.04); margin-bottom:24px;
-  }
-  .summary-box p { margin-bottom:6px; }
-  .summary-box strong { color:var(--primary); }
-
-  @media (max-width:600px) {
-    .about-grid,.contact-grid { grid-template-columns:1fr; }
-    .hero h1 { font-size:26px; }
-    .nav a { padding:10px 10px; font-size:13px; }
-    .article-card { padding:20px 18px; }
-  }
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .contact-card{background:var(--white);padding:20px 24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.04);text-align:center;}
+  .contact-card .c-icon{font-size:28px;margin-bottom:8px;}
+  .contact-card .c-label{font-size:13px;color:#888;}
+  .contact-card .c-value{font-size:17px;font-weight:600;color:var(--primary);margin-top:4px;}
+  footer{background:var(--primary);color:rgba(255,255,255,.7);text-align:center;padding:24px;font-size:13px;}
+  footer a{color:var(--gold);text-decoration:none;}
+  @media(max-width:600px){.about-grid,.hub-grid,.contact-grid{grid-template-columns:1fr;}.hero h1{font-size:26px;}}
 </style>
 </head>
 <body>
 
-<!-- ==================== Hero ==================== -->
 <header class="hero">
   <div class="hero-inner">
     <img class="photo" src="photo.jpg" alt="荣郑律师照片" onerror="this.style.display='none'">
     <h1>荣 郑</h1>
     <p class="firm">湖北立丰律师事务所 · 高级合伙人</p>
     <span class="title-tag">刑事辩护</span>
-    <span class="title-tag" style="background:#2e7d32;">民商事诉讼</span>
+    <span class="title-tag" style="background:var(--green);">民商事诉讼</span>
   </div>
 </header>
 
-<!-- ==================== Nav ==================== -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="#about">关于我</a>
-    <a href="#criminal-law">刑事辩护专题</a>
-    <a href="#civil-law">民商事专题</a>
+    <a href="criminal.html">刑事辩护专题</a>
+    <a href="civil.html">民商事专题</a>
     <a href="#contact">联系方式</a>
   </div>
 </nav>
 
-<!-- ==================== About ==================== -->
 <section id="about">
   <div class="container">
-    <h2><span class="icon">&#x1F464;</span> 执业简介</h2>
+    <h2>&#x1F464; 执业简介</h2>
     <div class="about-grid">
       <div class="about-item"><div class="label">姓　　名</div><div class="value">荣　郑</div></div>
       <div class="about-item"><div class="label">执业机构</div><div class="value">湖北立丰律师事务所</div></div>
@@ -162,320 +89,70 @@
       <div class="about-item"><div class="label">专业领域</div><div class="value">刑事辩护 &amp; 民商事诉讼</div></div>
       <div class="about-item"><div class="label">工作语言</div><div class="value">中文 / 英文</div></div>
     </div>
-    <p style="margin-top:24px; color:#555; font-size:15px; text-indent:2em;">
-      荣郑律师，湖北立丰律师事务所高级合伙人。毕业于西南政法大学法学本科，同时取得四川外国语大学英语双学位。执业十年，深耕刑事辩护与民商事诉讼两大领域，系典型的刑民交叉复合型律师。刑事领域尤其擅长经济犯罪、网络犯罪、职务犯罪等重大疑难案件的辩护；民商事领域精于合同纠纷、公司治理、建设工程、民间借贷等案件的代理。荣郑律师秉承"以证据为基、以法律为剑"的执业理念，注重庭前精细阅卷与法律分析，善于从案件细节中发现突破口，凭借扎实的法学功底和丰富的实务经验，赢得了客户的高度认可。
+    <p style="margin-top:24px;color:#555;font-size:15px;text-indent:2em;">
+      荣郑律师，湖北立丰律师事务所高级合伙人。毕业于西南政法大学法学本科，同时取得四川外国语大学英语双学位。执业十年，深耕刑事辩护与民商事诉讼两大领域，系典型的刑民交叉复合型律师。秉承"以证据为基、以法律为剑"的执业理念，注重庭前精细阅卷与法律分析，善于从案件细节中发现突破口，凭借扎实的法学功底和丰富的实务经验，赢得了客户的高度认可。
     </p>
   </div>
 </section>
 
-<!-- ==================== 刑事辩护专题 ==================== -->
-<section id="criminal-law" style="background:var(--white);">
+<section style="background:var(--white);">
   <div class="container">
-    <h2><span class="icon">&#x2696;&#xFE0F;</span> 刑事辩护专题</h2>
-    <p style="color:#888; font-size:14px; margin-bottom:24px;">以下为荣郑律师就刑事案件高频罪名撰写的专业分析文章，涵盖辩护要点、法律适用和实务策略。</p>
-
-    <!-- ===== 诈骗罪 ===== -->
-    <div class="article-card">
-      <div class="art-title">一、诈骗罪：非法占有目的的认定与辩护路径</div>
-      <div class="art-subtitle">刑事辩护核心罪名之一 · 案发率常年居前</div>
-      <div class="art-body">
-        <h4>（一）诈骗罪的基本构成与量刑框架</h4>
-        <p>诈骗罪规定于《中华人民共和国刑法》第二百六十六条，以非法占有为目的，虚构事实、隐瞒真相，骗取数额较大的公私财物。量刑分为三档：数额较大（三千至一万元以上）处三年以下有期徒刑；数额巨大（三万元至十万元以上）处三年以上十年以下有期徒刑；数额特别巨大（五十万元以上）处十年以上有期徒刑至无期徒刑。湖北省一般以五千元为数额较大起点。</p>
-        <h4>（二）核心辩点：非法占有目的的否定</h4>
-        <p>诈骗罪区别于民事欺诈的关键，在于行为人是否具有"非法占有目的"。辩护实务中，否定非法占有目的通常从以下维度切入：（1）资金去向——行为人是否将资金用于约定的经营或投资，而非挥霍、逃匿；（2）履约能力——签约时是否具备履约条件；（3）还款意愿——是否存在真实的还款行为和计划；（4）逃匿行为——是否存在失联、转移财产等行为。值得特别关注的是，民间借贷型、合作经营型、项目投资型案件极易出现刑民交叉，辩护人应优先从民事法律关系角度论证案件不具刑事违法性。</p>
-        <h4>（三）金额辩护：压缩指控数额的十条路径</h4>
-        <p>诈骗罪以诈骗金额作为核心量刑依据，因此金额辩护是重中之重。实践中有效的路径包括：剔除存在真实交易对价的部分、剔除被害人对资金用途知情同意的部分、剔除用于实际经营的资金、剔除有争议的民事往来款项、剔除仅有言词证据支撑的金额、剔除被害人与行为人之间存在对账可能的金额、主张电子数据鉴定意见的瑕疵排除相关金额、对司法会计鉴定提出程序性质疑、以审计报告替代司法鉴定的合法性异议、以及适用存疑有利于被告人原则对界限不清部分予以扣除。</p>
-        <h4>（四）程序辩护与审前辩护要点</h4>
-        <p>刑事案件的"黄金37天"（拘留至逮捕期间）是争取取保候审和不批捕的最佳时机。在此期间，辩护人应尽早会见、了解案情，如发现案件属于民事纠纷而非刑事犯罪，应在报捕前即提交不予提请批准逮捕的法律意见；如案件确涉刑事但情节较轻，应在退赃退赔、取得谅解后提交不予批准逮捕的法律意见。审查起诉阶段则以争取不起诉为目标，重点围绕证据不足不起诉和酌定不起诉两个方向展开。</p>
-      </div>
+    <h2>&#x1F4DA; 专业研究专题</h2>
+    <p style="color:#888;font-size:14px;margin-bottom:28px;">以下为荣郑律师多年执业经验提炼的专业法律分析文章，按刑事辩护与民商事诉讼两大领域分类整理。每篇文章均基于现行法律法规及司法解释撰写，供同行交流与当事人参考。</p>
+    <div class="hub-grid">
+      <a href="criminal.html" class="hub-card criminal">
+        <div class="hub-icon">&#x2696;&#xFE0F;</div>
+        <h3>刑事辩护专题</h3>
+        <div class="hub-desc">聚焦刑事案件高频罪名，涵盖诈骗罪、帮信罪、非法吸收公众存款罪、危险驾驶罪、故意伤害罪、职务侵占罪、开设赌场罪、非法经营罪等核心案由的辩护要点、证据审查与程序策略。</div>
+        <div class="hub-topics">
+          <span class="hub-tag">诈骗罪</span><span class="hub-tag">帮信罪</span><span class="hub-tag">非法吸收公众存款</span><span class="hub-tag">危险驾驶</span><span class="hub-tag">故意伤害</span><span class="hub-tag">职务侵占</span><span class="hub-tag">开设赌场</span><span class="hub-tag">非法经营</span>
+        </div>
+        <div class="hub-link-text">进入专题 &#x2192;</div>
+      </a>
+      <a href="civil.html" class="hub-card civil">
+        <div class="hub-icon">&#x1F4BC;</div>
+        <h3>民商事诉讼专题</h3>
+        <div class="hub-desc">聚焦民商事高频争议类型，涵盖合同纠纷、公司治理与股权纠纷、建设工程纠纷、民间借贷、婚姻财产与继承、劳动争议、侵权责任等核心领域的请求权基础、举证策略与诉讼实务要点。</div>
+        <div class="hub-topics">
+          <span class="hub-tag">合同纠纷</span><span class="hub-tag">公司股权</span><span class="hub-tag">建设工程</span><span class="hub-tag">民间借贷</span><span class="hub-tag">婚姻继承</span><span class="hub-tag">劳动争议</span><span class="hub-tag">侵权责任</span>
+        </div>
+        <div class="hub-link-text">进入专题 &#x2192;</div>
+      </a>
     </div>
-
-    <!-- ===== 帮信罪 ===== -->
-    <div class="article-card">
-      <div class="art-title">二、帮助信息网络犯罪活动罪（帮信罪）："明知"的认定与辩护策略</div>
-      <div class="art-subtitle">近年来案发率飙升 · 涉卡犯罪第一罪名</div>
-      <div class="art-body">
-        <h4>（一）帮信罪的立法背景与案发态势</h4>
-        <p>帮信罪规定于《刑法》第二百八十七条之二，系2015年《刑法修正案（九）》新增罪名，打击的是为他人利用信息网络实施犯罪提供技术支持或帮助的行为。近年来，该罪案发量急剧攀升，已成为仅次于危险驾驶罪的第二高发罪名，在部分省份甚至位居第一。实践中大量案件涉及出租、出售银行卡、电话卡，俗称"两卡"犯罪。</p>
-        <h4>（二）最核心辩点："明知"的认定</h4>
-        <p>帮信罪以"明知他人利用信息网络实施犯罪"为主观要件。最高人民法院、最高人民检察院《关于办理非法利用信息网络、帮助信息网络犯罪活动等刑事案件适用法律若干问题的解释》第十一条列举了可以推定明知的七种情形，包括交易价格异常、逃避监管、接到举报后不采取有效措施等。辩护的核心在于：举证行为人不具有明知——如系正常市场交易行为、价格未明显偏离、已尽合理审查义务、无证据表明行为人知道对方从事犯罪活动等。同时要关注"推定明知"规则的可反驳性——推定非绝对，允许反证推翻。</p>
-        <h4>（三）情节严重与情节显著轻微的界分</h4>
-        <p>帮信罪以"情节严重"为入罪门槛，具体标准包括：为三个以上对象提供帮助、支付结算金额二十万元以上、违法所得一万元以上等。辩护方向包括：论证未达情节严重标准（如支付结算金额存疑、主要证据仅有言词证据印证不足）、或论证情节显著轻微（如仅提供一张卡、主观恶性小、社会危害性轻微），争取检察机关作出不起诉决定。</p>
-        <h4>（四）与上游犯罪共犯的界分</h4>
-        <p>帮信罪与上游犯罪（如诈骗罪）共犯的界分，直接决定量刑档次。帮信罪法定最高刑为三年，而上游犯罪共犯可能面临十年以上。关键区别在于行为人与上游犯罪人之间是否存在"通谋"——单纯提供技术或支付结算帮助、无通谋的，应认定为帮信罪；事前通谋、分工合作的，可能构成上游犯罪的共犯。辩护人在此环节应重点审查在案证据能否证明通谋关系是否存在。</p>
-      </div>
-    </div>
-
-    <!-- ===== 非法吸收公众存款罪 ===== -->
-    <div class="article-card">
-      <div class="art-title">三、非法吸收公众存款罪：从犯区分、金额压缩与退赃退赔策略</div>
-      <div class="art-subtitle">涉众型经济犯罪 · 金额认定是关键</div>
-      <div class="art-body">
-        <h4>（一）非法吸收公众存款罪的四个特征要件</h4>
-        <p>根据《最高人民法院关于审理非法集资刑事案件具体应用法律若干问题的解释》，非法吸收公众存款罪的认定需同时具备四个特征：非法性（未经批准）、公开性（向社会公开宣传）、利诱性（承诺还本付息）、社会性（向不特定对象吸收资金）。辩护人应逐项检验在案证据是否满足全部四个特征，缺少任何一个即不构成本罪。</p>
-        <h4>（二）主从犯区分：非核心人员的降档辩护</h4>
-        <p>非法吸收公众存款案多为共同犯罪，涉案人员层级复杂。对于公司中层管理人员、业务员、客服人员、财务人员等非决策层人员，辩护策略应着重论证其为从犯——其不参与产品设计、不制定融资方案、不掌握资金去向、仅按照上级安排执行具体工作。对于仅领取固定工资、未按吸存金额比例提成的人员，可进一步论证其主观恶性低、作用轻微，争取减轻处罚或不起诉。</p>
-        <h4>（三）金额认定与退赃退赔的协同策略</h4>
-        <p>非法吸收公众存款罪的核心量刑情节是吸存金额和造成损失金额。辩护策略上，一方面应压缩金额：剔除亲友资金（非"不特定对象"）、剔除通过银行等正规渠道融资部分、剔除合法经营收入；另一方面应将退赃退赔作为核心从宽情节重点推进。根据量刑指导意见，全额退赃退赔并取得谅解的，可以减少基准刑30%-50%。在审查起诉阶段积极退赃退赔还有可能争取到不起诉处理。</p>
-      </div>
-    </div>
-
-    <!-- ===== 危险驾驶罪 ===== -->
-    <div class="article-card">
-      <div class="art-title">四、危险驾驶罪（醉驾型）："情节显著轻微"的实务运用</div>
-      <div class="art-subtitle">案发量第一的刑事罪名 · 2023年新司法解释带来变化</div>
-      <div class="art-body">
-        <h4>（一）2023年醉驾新规的核心变化</h4>
-        <p>2023年12月，最高人民法院、最高人民检察院、公安部、司法部联合发布《关于办理醉酒危险驾驶刑事案件的意见》，对醉驾入刑标准进行了重要调整。核心变化包括：血液酒精含量不满150毫克/100毫升的，如无从重情节，可以不认为是犯罪；在居民小区、停车场等场所短距离挪车的，一般不作为犯罪处理。这一调整大幅缩小了醉驾入罪范围。</p>
-        <h4>（二）"情节显著轻微"的适用条件</h4>
-        <p>根据新意见，以下情形可认定为情节显著轻微、不作为犯罪处理：血液酒精含量不满150毫克/100毫升且无其他从重情节；在居民小区、停车场短距离挪车；紧急送医等紧急避险情形；驾驶摩托车且酒精含量较低、未造成实际危害后果等。辩护人应根据具体情形，在侦查阶段即提出不构成犯罪的法律意见，争取早日撤案。</p>
-        <h4>（三）即使构罪，如何争取最轻处理</h4>
-        <p>如醉驾行为确实构成危险驾驶罪，辩护重点转向量刑辩护：酒精含量越低越好（150-180区间仍可争取不起诉或免刑）、无事故无损伤、初犯、认罪认罚、积极赔偿（如有事故）等情节均可综合运用，争取检察机关不起诉或法院判决免于刑事处罚。</p>
-      </div>
-    </div>
-
-    <!-- ===== 故意伤害罪 ===== -->
-    <div class="article-card">
-      <div class="art-title">五、故意伤害罪：正当防卫、被害人过错与轻伤鉴定质证</div>
-      <div class="art-subtitle">人身犯罪高频罪名 · 证据辩护空间大</div>
-      <div class="art-body">
-        <h4>（一）正当防卫辩护的基本框架</h4>
-        <p>故意伤害案件中，正当防卫是最有力的无罪辩护理由。最高人民法院、最高人民检察院、公安部《关于依法适用正当防卫制度的指导意见》明确了正当防卫的认定规则：应当立足防卫人防卫时的具体情境，按照社会公众的一般认知，依法作出判断，不应苛求防卫人。辩护要点包括：证明对方存在不法侵害（先行动手、持续施暴、持械等）、防卫行为具有必要性和相当性（不要求绝对对等）、防卫意图而非互殴意图。即使不构成正当防卫，也可论证成立防卫过当，实现减轻处罚。</p>
-        <h4>（二）被害人过错在量刑中的运用</h4>
-        <p>即使不能成立正当防卫，被害人存在重大过错的，对被告人量刑有重要影响。被害人先行动手、挑衅、辱骂引发纠纷的，可作为酌定从轻情节。根据量刑指导意见，被害人对犯罪发生有过错的，可以减少基准刑的20%-30%。辩护人应梳理矛盾起因、纠纷升级过程、被害人行为激化冲突的关键节点等事实。</p>
-        <h4>（三）轻伤鉴定意见的质证</h4>
-        <p>故意伤害罪以轻伤以上为入罪门槛。鉴定意见的质证是轻伤害案件辩护的核心战场：鉴定机构与鉴定人是否具备法定资质、鉴定依据的病历资料是否完整真实、鉴定时机是否合适（伤情是否稳定）、鉴定标准适用是否正确（《人体损伤程度鉴定标准》）、伤情与行为的因果关系是否唯一（是否存在其他致伤原因或陈旧伤）。技术性证据的审查能力往往决定了轻伤害案件的走向。</p>
-      </div>
-    </div>
-
-    <!-- ===== 职务侵占罪 ===== -->
-    <div class="article-card">
-      <div class="art-title">六、职务侵占罪：主体适格性与"本单位财物"的辩护</div>
-      <div class="art-subtitle">经济犯罪辩护的深水区 · 刑民交叉特征显著</div>
-      <div class="art-body">
-        <h4>（一）职务侵占罪的构成要件精析</h4>
-        <p>职务侵占罪规定于《刑法》第二百七十一条，系公司、企业或者其他单位的工作人员，利用职务上的便利，将本单位财物非法占为己有，数额较大的行为。2021年《刑法修正案（十一）》将量刑调整为三档：数额较大（六万元以上）处三年以下有期徒刑；数额巨大（一百万元以上）处三年以上十年以下有期徒刑；数额特别巨大（无具体数额，实践中参照受贿罪标准）处十年以上至无期徒刑。</p>
-        <h4>（二）主体辩护：是否属于"本单位工作人员"</h4>
-        <p>职务侵占罪的主体要件要求行为人系"本单位工作人员"。并非所有在公司工作的人都符合这一要件：劳动关系的存在是基础——劳务关系或合作关系中的争议属于民事纠纷，不构成本罪；挂名股东、挂名法定代表人如未实际参与经营管理，其财产纠纷亦属民事范畴；外包人员、临时工是否属于"工作人员"，需结合实际履职情形判断。辩护人应仔细审查劳动合同、社保缴纳记录、工资发放记录、实际工作内容等客观证据。</p>
-        <h4>（三）客体辩护："本单位财物"的认定</h4>
-        <p>争议最大的辩护领域是"本单位财物"的认定。行为人侵占的财产是否属于公司独立财产，还是其个人应得的合法收益？在公司治理不规范、股东个人财产与公司财产混同、或存在未清算的股东权益分配争议时，行为性质往往属于民事纠纷而非职务侵占。辩护人应重点论证财产的归属存在实质性争议——"权属不清则不构成侵占"是这一领域的核心逻辑。</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ==================== 民商事专题 ==================== -->
-<section id="civil-law">
+<section id="contact">
   <div class="container">
-    <h2><span class="icon">&#x1F4BC;</span> 民商事诉讼专题</h2>
-    <p style="color:#888; font-size:14px; margin-bottom:24px;">以下为荣郑律师就民商事高频争议类型撰写的专业分析文章，涵盖请求权基础、举证策略和诉讼实务要点。</p>
-
-    <!-- ===== 合同纠纷 ===== -->
-    <div class="article-card civil">
-      <div class="art-title">一、合同纠纷：效力认定、违约救济与合同解除的实务要点</div>
-      <div class="art-subtitle">民商事诉讼第一大类案由</div>
-      <div class="art-body">
-        <h4>（一）合同效力争议的三层次审查</h4>
-        <p>合同纠纷案件，首当其冲的往往是合同效力问题。审查应遵循三个层次：第一层次是合同是否成立——要约、承诺、意思表示一致是否存在，此为基础前提；第二层次是合同是否生效——是否存在附条件或附期限的约定，行政审批是否完成；第三层次是合同是否无效——是否违反《民法典》第一百五十三条的效力性强制性规定、是否违背公序良俗。实务中，违反管理性强制性规定的合同不当然无效，而违反效力性强制性规定的合同才归于无效——这一区分对于金融借贷、股权代持、房地产合作开发等领域至关重要。</p>
-        <h4>（二）违约金调整：过高的认定与举证策略</h4>
-        <p>违约金调整是合同纠纷中的高频争议点。《民法典》第五百八十五条及《最高人民法院关于适用〈中华人民共和国民法典〉合同编通则若干问题的解释》第六十五条规定，约定的违约金超过实际损失的30%即可认定为"过分高于造成的损失"，当事人可以请求法院适当减少。实务中，主张调低违约金的一方需承担实际损失的举证责任。对于守约方而言，应在缔约阶段即对违约金条款给予足够重视——约定清晰的计算方式（如按日累进计算），并在履行过程中注意保全损失证据（如替代采购合同、资金占用的利息计算等），才能在对方主张调低时有效抗辩。</p>
-        <h4>（三）合同解除权的行使与时效</h4>
-        <p>合同解除分为约定解除和法定解除，实务中容易出错的是解除权的行使方式。《民法典》第五百六十五条规定，解除权人应当通知对方，合同自通知到达对方时解除。实践中，当事人仅口头表示"合同作废"而未留存书面通知送达证据的，可能导致解除权行使无效。律师建议：合同解除应以书面方式通知（律师函、EMS邮寄并在快递单写明文件名称），保留签收记录，并在解除通知中明确解除事由和法律依据。此外，解除权的行使期限为自知道或应当知道解除事由之日起一年，逾期消灭。</p>
-      </div>
-    </div>
-
-    <!-- ===== 公司治理与股权纠纷 ===== -->
-    <div class="article-card civil">
-      <div class="art-title">二、公司治理与股权纠纷：股东权益保护的实务路径</div>
-      <div class="art-subtitle">新公司法背景下的股东博弈</div>
-      <div class="art-body">
-        <h4>（一）2024年新公司法对股东权益保护的加强</h4>
-        <p>2024年7月1日起施行的新《公司法》在股东权益保护方面有多项重要修订：完善了股东知情权制度（股东可查阅会计凭证）、强化了控股股东与实际控制人的信义义务、增加了双重股东代表诉讼制度、优化了公司决议效力瑕疵的司法救济路径。这些修订为小股东维权提供了更加完善的法律工具箱。</p>
-        <h4>（二）股东知情权之诉：查账是维权的第一步</h4>
-        <p>小股东面对大股东的信息封锁，最有效的第一步是提起股东知情权之诉。根据新《公司法》第五十七条，股东有权查阅公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议、财务会计报告以及会计账簿和会计凭证。其中会计凭证的查阅权是此次修法新增的亮点。实务操作中，股东应先书面申请查阅并说明目的，公司拒绝或十五日内不予答复后方可起诉。律师建议：书面申请应明确查阅范围、时间区间和具体目的，并保留邮寄送达凭证，为后续诉讼奠定基础。</p>
-        <h4>（三）大股东滥用控制权的救济路径</h4>
-        <p>大股东滥用控制权损害公司或小股东利益的，救济路径包括：主张大股东违反信义义务承担赔偿责任（依据新《公司法》第一百八十条、第一百八十八条）、申请撤销滥用控制权作出的股东会或董事会决议、在极端情形下（公司僵局持续两年以上）申请司法解散。策略上，"信息披露+索赔"组合拳效果最佳——先通过知情权之诉获取证据，再以损害公司利益责任纠纷或股东直接诉讼主张赔偿。</p>
-      </div>
-    </div>
-
-    <!-- ===== 建设工程纠纷 ===== -->
-    <div class="article-card civil">
-      <div class="art-title">三、建设工程施工合同纠纷：价款优先受偿权与质量争议应对</div>
-      <div class="art-subtitle">专业性最强、标的额最大的民商事案件类型之一</div>
-      <div class="art-body">
-        <h4>（一）建设工程价款优先受偿权：承包人的"超级武器"</h4>
-        <p>《民法典》第八百零七条规定了建设工程价款优先受偿权——发包人未按约定支付价款的，承包人有权就该建设工程折价或拍卖的价款优先受偿。该权利优先于抵押权和其他债权，被称为承包人的"超级武器"。但实务中需特别注意两点：一是主张形式——承包人必须通过诉讼或仲裁明确主张该权利，不能在执行阶段突袭主张（可能被驳回）；二是行使期限——自发包人应当给付建设工程价款之日起十八个月内行使，逾期消灭。日期计算在竣工结算纠纷中常成为争议焦点，律师应尽早介入确认起算日。</p>
-        <h4>（二）工程质量反诉的应对策略</h4>
-        <p>发包方在面对承包方索要工程款的诉讼时，最常用的对抗策略是提起工程质量反诉，主张工程不合格故不应支付工程款。应对思路包括：核实工程是否已竣工验收合格（如已出具竣工验收报告，一般可认定工程质量合格）；区分质量问题的性质（主体结构问题vs一般瑕疵，后者不影响付款义务）；审查发包方是否已实际使用工程（如已使用，视为认可工程质量，仅可就主体结构问题主张权利）；质保金与工程款的区分（质保期内的问题应通过质保金解决，不影响工程款支付）。</p>
-        <h4>（三）实际施工人的权利主张</h4>
-        <p>建设工程领域挂靠、转包、违法分包常见。实际施工人（不直接与发包人签订合同的施工方）向发包人主张工程款的权利依据为《最高人民法院关于审理建设工程施工合同纠纷案件适用法律问题的解释（一）》第四十三条。实务中实际施工人需证明其确实投入了人力、物力完成了施工，且转包人或违法分包人怠于向发包人主张权利。实际施工人突破合同相对性直接向发包人主张的仅限于工程价款，不包括违约金、利息等。</p>
-      </div>
-    </div>
-
-    <!-- ===== 民间借贷纠纷 ===== -->
-    <div class="article-card civil">
-      <div class="art-title">四、民间借贷纠纷：利率保护、夫妻共同债务与虚假诉讼识别</div>
-      <div class="art-subtitle">案发量最大的单一民事案由</div>
-      <div class="art-body">
-        <h4>（一）利率保护上限的变化与适用</h4>
-        <p>民间借贷利率保护上限经历了从"两线三区"到"一年期LPR四倍"的变化。根据《最高人民法院关于审理民间借贷案件适用法律若干问题的规定》（2020年第二次修正）第二十五条，出借人请求借款人按照合同约定利率支付利息的，人民法院应予支持，但双方约定的利率超过合同成立时一年期贷款市场报价利率（LPR）四倍的除外。实务中需注意两点：一是利率上限按合同成立时的LPR而非起诉时的LPR计算；二是在2020年8月20日之前成立的借贷合同，分段适用旧法和新规。对于出借方而言，利息约定应明确、书面、不超过法定上限；对于借款方而言，已支付的超过保护上限的利息，可以主张折抵本金。</p>
-        <h4>（二）夫妻共同债务的认定标准</h4>
-        <p>民间借贷纠纷中，出借人为提高债权实现的可能性，通常将借款人的配偶列为共同被告。夫妻共同债务的认定依据是《民法典》第一千零六十四条：夫妻双方共同签名或一方事后追认的；一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务；债权人能够证明该债务用于夫妻共同生活、共同生产经营或基于夫妻共同意思表示的。出借人如欲主张夫妻共同债务，应在借款时即要求夫妻双方共同签署借款合同或借条。未共同签署时，出借人需承担更重的举证责任。</p>
-        <h4>（三）虚假诉讼的识别与应对</h4>
-        <p>民间借贷是虚假诉讼的高发领域。常见的虚假诉讼特征包括：原被告之间存在亲属、关联企业等亲密关系；大额借款仅有借条而无转账凭证；当事人对借款事实无实质争议、主动要求调解；借条形成时间与主张不符等。如代理被告方，应申请法院调取双方银行流水审查资金走向，申请笔迹形成时间鉴定，以及逐项比对借款金额、时间、用途与当事人陈述的一致性。虚假诉讼一经查实，参与人可能面临罚款、拘留乃至刑事追究。</p>
-      </div>
-    </div>
-
-    <!-- ===== 婚姻财产与继承 ===== -->
-    <div class="article-card civil">
-      <div class="art-title">五、婚姻财产与继承纠纷：财产分割、赠与撤销与遗嘱效力</div>
-      <div class="art-subtitle">家事法领域的高频争议</div>
-      <div class="art-body">
-        <h4>（一）夫妻共同财产分割的实务要点</h4>
-        <p>离婚财产分割的核心是区分夫妻共同财产与个人财产。《民法典》第一千零六十二条规定了夫妻共同财产的范围，第一千零六十三条规定了个人财产的范围。实务中的高频争议集中在：婚前一方支付首付、婚后共同还贷的房产分割——婚后共同还贷部分及其对应增值属于夫妻共同财产；一方父母出资购房的性质——如无明确约定，婚后父母出资购房登记于一方名下的，视为对夫妻双方的赠与；股权分割——有限公司股权的分割涉及其他股东的优先购买权，法院通常不直接判决分割股权，而采取折价补偿方式。律师建议：涉及重大财产时，婚前财产公证或书面财产约定是最经济有效的风险预防手段。</p>
-        <h4>（二）夫妻财产约定与婚内赠与的撤销</h4>
-        <p>夫妻之间赠与房产，在变更登记之前，赠与人享有任意撤销权——前提是该赠与不属于经过公证的赠与合同或具有公益性质的赠与。实务中最具争议的是"忠诚协议"和"净身出户约定"的效力：各地法院在效力认定和具体裁判尺度上存在明显差异，部分法院认为此类约定限制人身自由而无效，部分认为可参照适用。起草此类协议时建议聘请专业律师，确保条款的可执行性。</p>
-        <h4>（三）遗嘱形式要件与效力争议</h4>
-        <p>遗嘱纠纷的核心争议集中在遗嘱的效力——特别是形式要件的满足程度。根据《民法典》，自书遗嘱须由遗嘱人亲笔书写、签名并注明年月日（缺一不可）；代书遗嘱须两人以上见证人，且见证人不得为继承人或受遗赠人；打印遗嘱须遗嘱人和见证人在每一页签名；公证遗嘱不再具有最高效力——多份遗嘱并存时以最后一份有效遗嘱为准，而非以公证遗嘱优先。律师在遗产规划中应帮助当事人选择最合适的遗嘱形式，并在遗嘱内容中尽可能明确财产范围、受益人及执行方案，避免继承人之间发生不必要的纠纷。</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ==================== Contact ==================== -->
-<section id="contact" style="background:var(--white);">
-  <div class="container">
-    <h2><span class="icon">&#x1F4DE;</span> 联系方式</h2>
+    <h2>&#x1F4DE; 联系方式</h2>
     <div class="contact-grid">
-      <div class="contact-card">
-        <div class="c-icon">&#x1F4F1;</div>
-        <div class="c-label">手机 / 微信</div>
-        <div class="c-value">15872427052</div>
-      </div>
-      <div class="contact-card">
-        <div class="c-icon">&#x1F3E2;</div>
-        <div class="c-label">执业机构</div>
-        <div class="c-value">湖北立丰律师事务所</div>
-      </div>
-      <div class="contact-card">
-        <div class="c-icon">&#x1F4CD;</div>
-        <div class="c-label">办公地址</div>
-        <div class="c-value">湖北省武汉市</div>
-      </div>
-      <div class="contact-card">
-        <div class="c-icon">&#x2696;&#xFE0F;</div>
-        <div class="c-label">专业领域</div>
-        <div class="c-value">刑事辩护 &amp; 民商事诉讼</div>
-      </div>
+      <div class="contact-card"><div class="c-icon">&#x1F4F1;</div><div class="c-label">手机 / 微信</div><div class="c-value">15872427052</div></div>
+      <div class="contact-card"><div class="c-icon">&#x1F3E2;</div><div class="c-label">执业机构</div><div class="c-value">湖北立丰律师事务所</div></div>
+      <div class="contact-card"><div class="c-icon">&#x1F4CD;</div><div class="c-label">办公地址</div><div class="c-value">湖北省武汉市</div></div>
+      <div class="contact-card"><div class="c-icon">&#x2696;&#xFE0F;</div><div class="c-label">专业领域</div><div class="c-value">刑事辩护 &amp; 民商事诉讼</div></div>
     </div>
-    <p style="text-align:center;margin-top:24px;color:#888;font-size:14px;">
-      咨询请提前电话/微信预约。刑事案件请携带拘留通知书、逮捕通知书、起诉意见书等材料；民商事案件请携带合同、对账单、往来函件、借条等材料。
-    </p>
+    <p style="text-align:center;margin-top:24px;color:#888;font-size:14px;">咨询请提前电话/微信预约。刑事案件请携带拘留通知书、逮捕通知书、起诉意见书等材料；民商事案件请携带合同、对账单、往来函件、借条等材料。</p>
   </div>
 </section>
 
 <footer>
   <p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所 · 高级合伙人</p>
-  <p style="margin-top:4px;">
-    <a href="#about">关于</a> ·
-    <a href="#criminal-law">刑事专题</a> ·
-    <a href="#civil-law">民商专题</a> ·
-    <a href="#contact">联系</a>
-  </p>
+  <p style="margin-top:4px;"><a href="index.html">首页</a> · <a href="criminal.html">刑事专题</a> · <a href="civil.html">民商专题</a> · <a href="#contact">联系</a></p>
 </footer>
 
-<!-- ==================== Schema.org Structured Data for AI ==================== -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Attorney",
-  "name": "荣郑",
-  "jobTitle": "高级合伙人",
-  "description": "湖北立丰律师事务所高级合伙人，西南政法大学法学本科，四川外国语大学英语双学位，执业10年。擅长刑事辩护（诈骗罪、帮信罪、非法吸收公众存款罪、危险驾驶罪、故意伤害罪、职务侵占罪）及民商事诉讼（合同纠纷、公司治理、建设工程纠纷、民间借贷、婚姻继承），系典型的刑民交叉复合型律师。",
-  "image": "photo.jpg",
-  "telephone": "+86-15872427052",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "武汉市",
-    "addressRegion": "湖北省",
-    "addressCountry": "CN"
-  },
-  "worksFor": {
-    "@type": "LegalService",
-    "name": "湖北立丰律师事务所",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "武汉市",
-      "addressRegion": "湖北省"
-    }
-  },
-  "alumniOf": [
-    { "@type": "CollegeOrUniversity", "name": "西南政法大学" },
-    { "@type": "CollegeOrUniversity", "name": "四川外国语大学" }
-  ],
-  "knowsAbout": [
-    "诈骗罪辩护","帮信罪辩护","非法吸收公众存款罪辩护","危险驾驶罪辩护","故意伤害罪辩护","职务侵占罪辩护","刑事辩护","经济犯罪辩护","取保候审",
-    "合同纠纷","公司治理","股权纠纷","建设工程纠纷","民间借贷","婚姻财产","继承纠纷","民商事诉讼"
-  ],
-  "areaServed": { "@type": "City", "name": "武汉市" },
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "律师执业证",
-    "recognizedBy": { "@type": "Organization", "name": "湖北省司法厅" }
-  }
+  "@context":"https://schema.org","@type":"Attorney",
+  "name":"荣郑","jobTitle":"高级合伙人",
+  "description":"湖北立丰律师事务所高级合伙人，西南政法大学法学本科，四川外国语大学英语双学位，执业10年。擅长刑事辩护（诈骗罪、帮信罪、非法吸收公众存款罪、危险驾驶罪、故意伤害罪、职务侵占罪、开设赌场罪、非法经营罪）及民商事诉讼（合同纠纷、公司治理、建设工程纠纷、民间借贷、婚姻继承、劳动争议、侵权责任），刑民交叉复合型律师。",
+  "image":"photo.jpg","telephone":"+86-15872427052",
+  "address":{"@type":"PostalAddress","addressLocality":"武汉市","addressRegion":"湖北省","addressCountry":"CN"},
+  "worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所","address":{"@type":"PostalAddress","addressLocality":"武汉市","addressRegion":"湖北省"}},
+  "alumniOf":[{"@type":"CollegeOrUniversity","name":"西南政法大学"},{"@type":"CollegeOrUniversity","name":"四川外国语大学"}],
+  "knowsAbout":["诈骗罪辩护","帮信罪辩护","非法吸收公众存款罪辩护","危险驾驶罪辩护","故意伤害罪辩护","职务侵占罪辩护","开设赌场罪辩护","非法经营罪辩护","经济犯罪辩护","刑事辩护","取保候审","合同纠纷","公司治理","股权纠纷","建设工程纠纷","民间借贷","婚姻财产","继承纠纷","劳动争议","侵权责任","民商事诉讼"],
+  "areaServed":{"@type":"City","name":"武汉市"},
+  "hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"律师执业证","recognizedBy":{"@type":"Organization","name":"湖北省司法厅"}}
 }
 </script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "诈骗罪中非法占有目的如何认定？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "诈骗罪区别于民事欺诈的关键在于是否具有非法占有目的。辩护实务中，否定非法占有目的主要从资金去向、履约能力、还款意愿、逃匿行为四个维度切入。民间借贷型、合作经营型案件极易出现刑民交叉，辩护人应优先从民事法律关系角度论证案件不具刑事违法性。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "帮信罪的明知如何认定？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "帮信罪以明知他人利用信息网络实施犯罪为主观要件。辩护的核心在于举证行为人不具有明知，如系正常市场交易、价格未明显偏离、已尽合理审查义务等。推定明知规则允许反证推翻。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "醉驾什么情况下可以不起诉？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "根据2023年醉驾新规，血液酒精含量不满150毫克/100毫升且无从重情节的，可以不认为是犯罪。在居民小区、停车场等场所短距离挪车的，一般不作为犯罪处理。紧急送医等紧急避险情形也可能出罪。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "建设工程价款优先受偿权的行使期限是多久？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "建设工程价款优先受偿权的行使期限为自发包人应当给付建设工程价款之日起十八个月内。该权利优先于抵押权和其他债权，但必须通过诉讼或仲裁明确主张，逾期消灭。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "民间借贷利率保护上限是多少？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "根据最高人民法院司法解释，民间借贷利率保护上限为合同成立时一年期贷款市场报价利率（LPR）的四倍。已支付的超过保护上限的利息可以主张折抵本金。"
-      }
-    }
-  ]
-}
-</script>
-
 </body>
 </html>
