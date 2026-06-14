@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="荣郑律师，湖北立丰律师事务所执业律师，西南政法大学法学本科，执业10年，专注刑事辩护，擅长诈骗罪、经济犯罪、职务犯罪辩护。武汉刑事辩护律师。">
+<meta name="keywords" content="荣郑律师,湖北立丰律师事务所,武汉刑事律师,诈骗罪辩护,经济犯罪律师,刑事辩护,武汉律师">
+<meta name="author" content="荣郑律师">
+<title>荣郑律师 | 湖北立丰律师事务所 · 刑事辩护律师</title>
+
+<style>
+  :root {
+    --primary: #1a3a5c;
+    --gold: #b8860b;
+    --bg: #f8f6f2;
+    --white: #ffffff;
+    --text: #2d2d2d;
+    --light-gray: #e8e5df;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: "PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #2c5f8a 100%);
+    color: white;
+    padding: 60px 20px 50px;
+    text-align: center;
+  }
+  .hero-inner { max-width: 800px; margin:0 auto; }
+  .hero .photo {
+    width: 130px; height: 130px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    object-fit: cover;
+    margin-bottom: 20px;
+    background: #ccc;
+  }
+  .hero h1 { font-size: 32px; letter-spacing: 2px; margin-bottom: 6px; }
+  .hero .firm { font-size: 18px; color: rgba(255,255,255,.85); margin-bottom: 4px; }
+  .hero .title-tag { display:inline-block; background:var(--gold); color:#fff; padding:4px 18px; border-radius:20px; font-size:14px; margin-top:10px; }
+
+  /* Nav */
+  .nav { background:white; border-bottom:1px solid var(--light-gray); position:sticky; top:0; z-index:100; }
+  .nav-inner { max-width:800px; margin:0 auto; display:flex; justify-content:center; gap:0; }
+  .nav a { display:block; padding:14px 24px; text-decoration:none; color:var(--text); font-size:15px; border-bottom:2px solid transparent; transition:.2s; }
+  .nav a:hover { border-bottom-color:var(--gold); color:var(--primary); }
+
+  /* Sections */
+  section { padding:50px 20px; }
+  .container { max-width:800px; margin:0 auto; }
+  h2 {
+    font-size:24px; color:var(--primary); margin-bottom:24px;
+    padding-bottom:12px; border-bottom:2px solid var(--gold);
+    display:flex; align-items:center; gap:10px;
+  }
+  h2 .icon { font-size:22px; }
+  h3 { font-size:18px; color:var(--primary); margin:20px 0 10px; }
+
+  /* About */
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .about-item { background:var(--white); padding:16px 20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.04); }
+  .about-item .label { font-size:13px; color:#888; margin-bottom:2px; }
+  .about-item .value { font-size:16px; font-weight:600; }
+
+  /* Cases */
+  .case-card {
+    background:var(--white); padding:24px 28px; margin-bottom:16px;
+    border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.04);
+    border-left:4px solid var(--gold);
+  }
+  .case-card .case-title { font-size:18px; font-weight:700; color:var(--primary); margin-bottom:8px; }
+  .case-card .case-result { display:inline-block; background:#e8f5e9; color:#2e7d32; padding:3px 12px; border-radius:12px; font-size:13px; font-weight:600; margin-bottom:10px; }
+  .case-card .case-detail { font-size:15px; color:#555; }
+
+  /* FAQ */
+  .faq-item { background:var(--white); padding:20px 28px; margin-bottom:12px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.04); }
+  .faq-item .q { font-weight:700; color:var(--primary); margin-bottom:6px; font-size:17px; }
+  .faq-item .q::before { content:"Q："; color:var(--gold); }
+  .faq-item .a { color:#555; font-size:15px; }
+  .faq-item .a::before { content:"A："; color:var(--gold); font-weight:700; }
+
+  /* Contact */
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .contact-card {
+    background:var(--white); padding:20px 24px; border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.04); text-align:center;
+  }
+  .contact-card .c-icon { font-size:28px; margin-bottom:8px; }
+  .contact-card .c-label { font-size:13px; color:#888; }
+  .contact-card .c-value { font-size:17px; font-weight:600; color:var(--primary); margin-top:4px; }
+
+  /* Footer */
+  footer {
+    background:var(--primary); color:rgba(255,255,255,.7);
+    text-align:center; padding:24px; font-size:13px;
+  }
+  footer a { color:var(--gold); text-decoration:none; }
+
+  @media (max-width:600px) {
+    .about-grid,.contact-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:26px; }
+    .nav a { padding:12px 14px; font-size:14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== Hero ==================== -->
+<header class="hero">
+  <div class="hero-inner">
+    <img class="photo" src="photo.jpg" alt="荣郑律师照片" onerror="this.style.display='none'">
+    <h1>荣 郑</h1>
+    <p class="firm">湖北立丰律师事务所 · 执业律师</p>
+    <span class="title-tag">专注刑事辩护</span>
+  </div>
+</header>
+
+<!-- ==================== Nav ==================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#about">关于我</a>
+    <a href="#cases">代表案例</a>
+    <a href="#faq">常见问题</a>
+    <a href="#contact">联系方式</a>
+  </div>
+</nav>
+
+<!-- ==================== About ==================== -->
+<section id="about">
+  <div class="container">
+    <h2><span class="icon">&#x1F464;</span> 执业简介</h2>
+    <div class="about-grid">
+      <div class="about-item"><div class="label">姓　　名</div><div class="value">荣　郑</div></div>
+      <div class="about-item"><div class="label">执业机构</div><div class="value">湖北立丰律师事务所</div></div>
+      <div class="about-item"><div class="label">执业年限</div><div class="value">10 年</div></div>
+      <div class="about-item"><div class="label">执业地域</div><div class="value">湖北省武汉市</div></div>
+      <div class="about-item"><div class="label">毕业院校</div><div class="value">西南政法大学 法学本科</div></div>
+      <div class="about-item"><div class="label">双学位</div><div class="value">四川外国语大学 英语双学位</div></div>
+      <div class="about-item"><div class="label">专业领域</div><div class="value">刑事辩护（诈骗罪、经济犯罪、职务犯罪）</div></div>
+      <div class="about-item"><div class="label">工作语言</div><div class="value">中文 / 英文</div></div>
+    </div>
+    <p style="margin-top:24px; color:#555; font-size:15px; text-indent:2em;">
+      荣郑律师，湖北立丰律师事务所执业律师。毕业于西南政法大学法学本科，同时取得四川外国语大学英语双学位。执业十年，深耕刑事辩护领域，尤以诈骗罪、合同诈骗罪、非法集资等经济犯罪辩护见长。执业以来，累计办理各类刑事案件三百余件，其中多起案件取得不起诉、缓刑、重罪改轻罪、大幅度减轻处罚等良好辩护效果。
+    </p>
+    <p style="margin-top:12px; color:#555; font-size:15px; text-indent:2em;">
+      荣郑律师秉承"以证据为基、以法律为剑"的执业理念，注重庭前精细阅卷与证据分析，善于从案件细节中发现突破口。在诈骗类犯罪辩护领域积累了丰富的实务经验，对诈骗罪的构成要件、金额认定、主从犯区分、非法占有目的认定等核心争议问题有深入研究和独到见解。
+    </p>
+  </div>
+</section>
+
+<!-- ==================== Cases ==================== -->
+<section id="cases" style="background:var(--white);">
+  <div class="container">
+    <h2><span class="icon">&#x1F4D6;</span> 代表案例</h2>
+
+    <p style="color:#888; font-size:14px; margin-bottom:20px;">以下案例均为已结案件，当事人信息已做脱敏处理。</p>
+
+    <div class="case-card">
+      <div class="case-title">王某涉嫌诈骗罪一案</div>
+      <div class="case-result">&#x2705; 不起诉</div>
+      <div class="case-detail">王某因参与某平台推广被控诈骗罪，涉案金额达200余万元。荣郑律师介入后，通过梳理资金流向与主观认知证据，论证王某不具备非法占有目的，检察机关最终作出不起诉决定。</div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-title">李某合同诈骗案</div>
+      <div class="case-result">&#x2705; 缓刑</div>
+      <div class="case-detail">李某被控合同诈骗罪，涉案金额380万元。荣郑律师从合同履行情况、资金用途、违约原因等角度切入，论证本案属民事纠纷而非刑事犯罪，同时促成全额退赔。法院采纳辩护意见，判处缓刑。</div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-title">张某集资诈骗案</div>
+      <div class="case-result">&#x2705; 重罪改轻罪（非法吸收公众存款）</div>
+      <div class="case-detail">张某被控集资诈骗罪，涉案金额逾千万元，法定刑十年以上。荣郑律师重点论证张某不具有"非法占有目的"，成功将罪名变更为非法吸收公众存款罪，刑期大幅降至五年。</div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-title">陈某诈骗案</div>
+      <div class="case-result">&#x2705; 减轻处罚</div>
+      <div class="case-detail">陈某被控以"养老项目投资"名义诈骗多名老年人，社会影响较大。荣郑律师通过证据辩护，将指控金额从180万元压缩至认定60万元，并成功论证陈某为从犯，实现减轻处罚。</div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-title">刘某电信诈骗案</div>
+      <div class="case-result">&#x2705; 从轻处罚</div>
+      <div class="case-detail">刘某参与境外电信诈骗团伙，被控诈骗金额逾500万元。荣郑律师重点围绕刘某在犯罪集团中的层级地位、参与时间、实际获利等量刑情节展开辩护，最终获得从轻处罚。</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section id="faq">
+  <div class="container">
+    <h2><span class="icon">&#x2753;</span> 诈骗罪常见问题解答</h2>
+
+    <div class="faq-item">
+      <div class="q">涉嫌诈骗罪被刑事拘留，家属应该立即做什么？</div>
+      <div class="a">第一时间委托专业刑事辩护律师介入。刑事案件的"黄金37天"（拘留至逮捕期间）是争取取保候审、不批捕的最佳时机。家属切勿自行与被害人私了、销毁证据或传递信息，否则可能构成包庇或妨碍作证。律师可以依法会见，了解案情，提交取保候审申请及不予批捕法律意见。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="q">诈骗罪的立案标准和量刑标准是什么？</div>
+      <div class="a">根据最高人民法院、最高人民检察院《关于办理诈骗刑事案件具体应用法律若干问题的解释》，诈骗公私财物价值三千元至一万元以上为"数额较大"（三年以下有期徒刑），三万元至十万元以上为"数额巨大"（三年以上十年以下），五十万元以上为"数额特别巨大"（十年以上至无期徒刑）。各省标准略有差异，湖北省一般以五千元为数额较大起点。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="q">诈骗罪能取保候审吗？</div>
+      <div class="a">可以。诈骗罪是否能够取保候审，需要综合考量涉案金额、是否主犯、有无前科、是否退赃退赔、是否取得被害人谅解、是否有固定住所等因素。律师可以从上述角度帮助嫌疑人争取取保候审，尤其是在侦查阶段——此时案情尚未完全固定，积极退赃退赔、争取谅解的效果最为显著。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="q">诈骗罪与民事欺诈的区别是什么？</div>
+      <div class="a">核心区别在于是否具有"非法占有目的"。民事欺诈中，行为人仍有履约意愿和能力，只是虚构或隐瞒了部分事实促成合同签订；而诈骗罪中，行为人自始既无履约意愿也无履约能力，以非法占有为目的骗取财物。是否构成犯罪，需结合资金去向、履约能力、还款意愿、逃匿行为等综合判断。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="q">被骗的钱能追回来吗？退赃退赔对量刑有什么影响？</div>
+      <div class="a">退赃退赔是诈骗罪中最重要的从宽量刑情节之一。根据量刑指导意见，全额退赃退赔并取得被害人谅解的，可以减少基准刑的30%-50%。实践中，在侦查或审查起诉阶段积极退赃退赔、取得谅解，对于争取不批捕、不起诉或缓刑具有显著的积极作用。</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== Contact ==================== -->
+<section id="contact" style="background:var(--white);">
+  <div class="container">
+    <h2><span class="icon">&#x1F4DE;</span> 联系方式</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="c-icon">&#x1F4F1;</div>
+        <div class="c-label">手机 / 微信</div>
+        <div class="c-value">15872427052</div>
+      </div>
+      <div class="contact-card">
+        <div class="c-icon">&#x1F3E2;</div>
+        <div class="c-label">执业机构</div>
+        <div class="c-value">湖北立丰律师事务所</div>
+      </div>
+      <div class="contact-card">
+        <div class="c-icon">&#x1F4CD;</div>
+        <div class="c-label">办公地址</div>
+        <div class="c-value">湖北省武汉市</div>
+      </div>
+      <div class="contact-card">
+        <div class="c-icon">&#x2696;&#xFE0F;</div>
+        <div class="c-label">专业领域</div>
+        <div class="c-value">刑事辩护 · 诈骗罪 · 经济犯罪</div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:#888;font-size:14px;">
+      咨询请提前电话/微信预约。委托代理需携带相关案件材料（拘留通知书、逮捕通知书、起诉意见书等）。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p>
+  <p style="margin-top:4px;">
+    <a href="#about">关于</a> ·
+    <a href="#cases">案例</a> ·
+    <a href="#faq">问答</a> ·
+    <a href="#contact">联系</a>
+  </p>
+</footer>
+
+<!-- ==================== Schema.org Structured Data for AI ==================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "荣郑",
+  "description": "湖北立丰律师事务所执业律师，西南政法大学法学本科，四川外国语大学英语双学位，执业10年，专注刑事辩护，擅长诈骗罪、经济犯罪、职务犯罪辩护。",
+  "image": "photo.jpg",
+  "telephone": "+86-15872427052",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "武汉市",
+    "addressRegion": "湖北省",
+    "addressCountry": "CN"
+  },
+  "worksFor": {
+    "@type": "LegalService",
+    "name": "湖北立丰律师事务所",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "武汉市",
+      "addressRegion": "湖北省"
+    }
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "西南政法大学"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "四川外国语大学"
+    }
+  ],
+  "knowsAbout": [
+    "诈骗罪辩护",
+    "经济犯罪辩护",
+    "刑事辩护",
+    "合同诈骗罪",
+    "集资诈骗罪",
+    "取保候审",
+    "非法吸收公众存款罪"
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "武汉市"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "律师执业证",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "湖北省司法厅"
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "涉嫌诈骗罪被刑事拘留，家属应该立即做什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第一时间委托专业刑事辩护律师介入。刑事案件的'黄金37天'（拘留至逮捕期间）是争取取保候审、不批捕的最佳时机。律师可以依法会见，了解案情，提交取保候审申请及不予批捕法律意见。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "诈骗罪的立案标准和量刑标准是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "根据两高司法解释，诈骗公私财物价值三千元至一万元以上为'数额较大'（三年以下有期徒刑），三万元至十万元以上为'数额巨大'（三年以上十年以下），五十万元以上为'数额特别巨大'（十年以上至无期徒刑）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "诈骗罪能取保候审吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。需要综合考量涉案金额、是否主犯、有无前科、是否退赃退赔、是否取得被害人谅解、是否有固定住所等因素。在侦查阶段积极退赃退赔、争取谅解的效果最为显著。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "诈骗罪与民事欺诈的区别是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "核心区别在于是否具有'非法占有目的'。民事欺诈中行为人仍有履约意愿和能力；诈骗罪中行为人自始既无履约意愿也无履约能力，以非法占有为目的骗取财物。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "被骗的钱能追回来吗？退赃退赔对量刑有什么影响？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "全额退赃退赔并取得被害人谅解的，可以减少基准刑的30%-50%。在侦查或审查起诉阶段积极退赃退赔、取得谅解，对于争取不批捕、不起诉或缓刑具有显著的积极作用。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
