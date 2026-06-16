@@ -4,4 +4,4 @@ Disallow: /build.mjs
 Disallow: /同步部署.bat
 Disallow: /.git/
 
-Sitemap: https://lawyer-site-d8gqnaigued69ce5a-1443278455.tcloudbaseapp.com/sitemap.xml
+Sitemap: https://www.rongzhenglawyer.com/sitemap.xml
