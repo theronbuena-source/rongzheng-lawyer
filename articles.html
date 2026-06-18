@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="荣郑律师文章总览——刑事辩护、民商事诉讼、公司股权、建设工程、海事海商、数据合规六大板块42篇专业文章，支持关键词搜索。">
+<meta name="keywords" content="荣郑律师,文章目录,法律文章搜索,武汉律师,湖北立丰律师事务所">
+<title>文章总览 | 荣郑律师 · 湖北立丰律师事务所</title>
+<style>
+:root{--bg:#fafaf8;--white:#fff;--ink:#111;--text:#444;--text-muted:#999;--gold:#a0844c;--gold-light:#c4a86c;--rule:#e8e4dc}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);letter-spacing:.04em}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:13px;color:var(--text-muted);letter-spacing:.04em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+
+.page-header{padding:140px 40px 40px;max-width:900px;margin:0 auto;text-align:center}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:40px;font-weight:500;color:var(--ink);letter-spacing:.03em}
+.page-header .sub{font-size:15px;color:var(--text-muted);margin-top:12px}
+
+/* Search */
+.search-wrap{max-width:640px;margin:0 auto 48px;padding:0 40px}
+.search-input{width:100%;padding:16px 24px;font-size:16px;border:2px solid var(--rule);border-radius:8px;background:var(--white);color:var(--ink);outline:none;transition:border-color .25s}
+.search-input:focus{border-color:var(--gold)}
+.search-input::placeholder{color:var(--text-muted)}
+.search-info{text-align:center;font-size:13px;color:var(--text-muted);margin-top:10px}
+
+/* Category sections */
+.content{max-width:900px;margin:0 auto;padding:0 40px 80px}
+.cat-section{margin-bottom:48px}
+.cat-title{font-family:"Noto Serif SC",serif;font-size:24px;font-weight:600;color:var(--ink);padding-bottom:12px;border-bottom:2px solid var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.cat-title .cat-icon{font-size:28px}
+.cat-count{font-size:13px;color:var(--text-muted);font-weight:400;margin-left:8px}
+.article-list{display:flex;flex-direction:column;gap:4px}
+.article-link{display:block;padding:10px 16px;border-radius:6px;transition:all .2s;font-size:15px;color:var(--text);border-left:3px solid transparent}
+.article-link:hover{background:var(--white);color:var(--ink);border-left-color:var(--gold)}
+.article-link .al-title{font-weight:500}
+.article-link .al-desc{font-size:12px;color:var(--text-muted);margin-left:8px}
+.no-result{text-align:center;padding:60px 20px;color:var(--text-muted);font-size:16px}
+
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px;letter-spacing:.04em}
+footer a{color:var(--gold-light)}
+@media(max-width:768px){.page-header h1{font-size:28px}.search-wrap{padding:0 20px}.content{padding:0 20px 60px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">荣<span>郑</span></a>
+    <div class="nav-links">
+      <a href="index.html">首页</a><a href="articles.html" class="active">文章</a>
+      <a href="criminal.html">刑事</a><a href="civil.html">民商事</a>
+      <a href="index.html#contact">联系</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <h1>文章总览</h1>
+  <p class="sub">42篇原创法律文章，按六大板块分类。输入关键词快速查找。</p>
+</header>
+
+<div class="search-wrap">
+  <input type="text" class="search-input" id="search" placeholder="搜索文章，如：诈骗罪、借条、财产保全、AI换脸…" oninput="filterArticles()">
+  <div class="search-info" id="searchInfo"></div>
+</div>
+
+<div class="content" id="articleList"></div>
+
+<footer>
+  <p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p>
+</footer>
+
+<script>
+// All articles data
+const articles = [
+  // 刑事辩护
+  {cat:'刑事辩护',icon:'⚖️',title:'涉嫌诈骗罪一般判几年？武汉刑事律师荣郑告诉你三大辩护方向和金额怎么算',desc:'三档量刑+非法占有目的+金额压缩+黄金37天',file:'zhapianzui-feifa-zhanyou-mudi'},
+  {cat:'刑事辩护',icon:'⚖️',title:'帮信罪判几年？武汉刑事律师荣郑告诉你明知推定怎么推翻（2026最新）',desc:'明知推定反驳+情节严重界分+与上游共犯区分',file:'bangxinzui-mingzhi-rensing'},
+  {cat:'刑事辩护',icon:'⚖️',title:'涉嫌诈骗被刑事拘留后家属怎么办？黄金37天正确做法',desc:'拘留后三步操作+时间节点表+家属四不能',file:'zhapian-beijuliu-jianshu-zenmeban'},
+  {cat:'刑事辩护',icon:'⚖️',title:'非法吸收公众存款被抓了判几年？退赃退赔能减刑多少',desc:'四特征审查+主从犯区分+退赃退赔30%-50%减刑',file:'feifaxishou-gongzhong-cunkuan'},
+  {cat:'刑事辩护',icon:'⚖️',title:'醉驾被查会判刑吗？2023新规与不起诉怎么争取',desc:'150mg以下不犯罪+情节显著轻微+最轻处理',file:'weixian-jiashi-zuijia'},
+  {cat:'刑事辩护',icon:'⚖️',title:'打架致人轻伤会判几年？正当防卫怎么认定',desc:'正当防卫认定框架+被害人过错减刑+鉴定质证',file:'guyi-shanghai-zhengdang-fangwei'},
+  {cat:'刑事辩护',icon:'⚖️',title:'职务侵占罪立案标准是多少判几年？六大辩护方向',desc:'六万立案+主体适格性+本单位财物+权属不清',file:'zhiwu-qinzhan-zhuti'},
+  {cat:'刑事辩护',icon:'⚖️',title:'开设赌场罪判几年？网络代理和普通玩家的关键区别',desc:'代理vs玩家+赌资质证+法定刑上限',file:'kaisheduchang-wangluo-daili'},
+  {cat:'刑事辩护',icon:'⚖️',title:'非法经营罪被抓了怎么办？口袋罪怎么辩护',desc:'国家规定vs部门规章+行政许可+罪刑法定',file:'feifajingying-koudaizui'},
+  {cat:'刑事辩护',icon:'⚖️',title:'取保候审要什么条件要多少钱？三个关键时间点',desc:'法定条件+保证金vs保证人+家属七件事',file:'qubaohoushen-quanliucheng'},
+  {cat:'刑事辩护',icon:'⚖️',title:'认罪认罚能减刑多少？签具结书前必知的三个问题',desc:'从宽幅度+具结书博弈+律师协商价值',file:'renzui-renfa-congkuan-shiwu'},
+  {cat:'刑事辩护',icon:'⚖️',title:'企业涉嫌犯罪怎么办？刑事合规不起诉怎么申请',desc:'合规不起诉条件+第三方机制+三类处理结果',file:'xingshi-hegui-qiye-fangfan'},
+  {cat:'刑事辩护',icon:'⚖️',title:'刑事二审怎么上诉能改判？上诉不加刑的真实含义',desc:'10天上诉期+上诉不加刑三大例外+争取开庭',file:'xingshi-ershen-shangsu'},
+  // 民商事诉讼
+  {cat:'民商事诉讼',icon:'📄',title:'合同纠纷对方不履行怎么办？违约金和合同解除正确做法',desc:'效力三层次+违约金调低+解除权一年除斥期间',file:'hetongjiufen-xiaoli-weiyue-jiechu'},
+  {cat:'民商事诉讼',icon:'📄',title:'收到法院传票成了合同纠纷被告怎么办？正确应诉步骤',desc:'四件必做的事+被告三个致命误区',file:'hetong-jiufen-beigao-zenmeban'},
+  {cat:'民商事诉讼',icon:'📄',title:'民间借贷利息最高能收多少？利率上限和夫妻共同债务',desc:'LPR四倍天花板+共债认定+虚假诉讼识别',file:'minjian-jiedai-lilv-zhaiwu'},
+  {cat:'民商事诉讼',icon:'📄',title:'离婚房子怎么分？财产分割和遗嘱怎么写才有效',desc:'婚前首付婚后还贷+忠诚协议效力+打印遗嘱',file:'hunyin-caichan-jicheng'},
+  {cat:'民商事诉讼',icon:'📄',title:'被公司违法辞退能赔多少？解除补偿金正确算法',desc:'N/N+1/2N算法+事实劳动关系+社保争议',file:'laodong-zhengyi-jiechu-buchang'},
+  {cat:'民商事诉讼',icon:'📄',title:'被人打伤撞伤能赔多少钱？损害赔偿范围和举证要点',desc:'全项目清单+三种归责体系+特殊侵权',file:'qinquan-zeren-guocuo-peichang'},
+  {cat:'民商事诉讼',icon:'📄',title:'房子被法院查封了但是我的怎么办？执行异议怎么提',desc:'案外人异议之诉+追加被执行人+参与分配',file:'zhixing-yiyi-zhi-su'},
+  {cat:'民商事诉讼',icon:'📄',title:'替人做担保帮他还了钱怎么追回来？追偿权正确方法',desc:'保证人代位权+共同担保比例+追偿时效',file:'danbao-zhui-su-quan-shiwu'},
+  {cat:'民商事诉讼',icon:'📄',title:'对方转移财产怎么办？财产保全怎么申请（2026最新）',desc:'诉前vs诉中保全+担保计算+错误保全风险',file:'caichan-baoquan-shenqing'},
+  {cat:'民商事诉讼',icon:'📄',title:'借条怎么写才有法律效力？2026年合法借条的6个关键要素',desc:'借条vs欠条+六要素+保证人写法+维权流程',file:'jietiao-zenme-xie'},
+  // 公司股权
+  {cat:'公司股权',icon:'🏢',title:'小股东怎么维权？2024新公司法下两条救济路径',desc:'知情权可查凭证+大股东滥用+司法解散',file:'gongsi-zhili-gudong-quanyi'},
+  {cat:'公司股权',icon:'🏢',title:'小股东被大股东侵害权益怎么办？两条维权路径',desc:'查账维权第一步+控制权滥用救济+极端解散',file:'gudong-bei-qinhai-zenmeban'},
+  {cat:'公司股权',icon:'🏢',title:'帮别人代持股权有什么风险？代持协议怎么签才安全',desc:'名义股东三风险+显名化路径+五条风控建议',file:'guquan-daichi-falv-fengxian'},
+  {cat:'公司股权',icon:'🏢',title:'对赌协议签了会赔很多钱怎么办？效力认定和风险防范',desc:'海富到九民纪要+与公司对赌+三类签约风险',file:'duidu-xieyi-xiaoli-fengxian'},
+  {cat:'公司股权',icon:'🏢',title:'公司注册资本5年内必须缴足？新公司法实缴新规解读',desc:'5年实缴+过渡期安排+失权赔偿+三条合规路',file:'gongsi-shijiao-xingui'},
+  // 建设工程
+  {cat:'建设工程',icon:'🏗️',title:'工程款被拖欠怎么追？优先受偿权怎么用',desc:'超级武器比抵押权强+18个月时效+实际施工人',file:'jianshe-gongcheng-youxian-shouchang'},
+  {cat:'建设工程',icon:'🏗️',title:'工程款被拖欠怎么办？优先受偿权怎么用',desc:'价款优先受偿+质量反诉应对+发包人直诉',file:'gongchengkuan-bei-tuoqian-zenmeban'},
+  {cat:'建设工程',icon:'🏗️',title:'工程签证怎么签才有法律效力？索赔的正确步骤',desc:'签证六类争议+工期延误举证+停窝工损失',file:'gongcheng-qianzheng-suopei'},
+  {cat:'建设工程',icon:'🏗️',title:'建设工程合同无效还能拿到工程款吗？结算规则',desc:'转包挂靠违法分包+质量合格即可结算',file:'jianzao-gongcheng-xuke-jiufen'},
+  {cat:'建设工程',icon:'🏗️',title:'竣工验收后发现质量问题还能追责吗？保修期怎么算',desc:'验收≠免责+不同部位不同年限+四步维权',file:'jungong-yanshou-zhiliang'},
+  // 海事海商
+  {cat:'海事海商',icon:'🚢',title:'海上货物运输发生货损谁负责？承运人责任与免责事由',desc:'十二项免责+航海过失+SDR单位责任限制',file:'haishang-huoyun-chengyunren-zeren'},
+  {cat:'海事海商',icon:'🚢',title:'海上货物运输中货物损坏短少怎么办？索赔正确做法',desc:'固定证据+承运人免责应对+武汉海事法院管辖',file:'huowu-yunshu-sunhuai-zenmeban'},
+  {cat:'海事海商',icon:'🚢',title:'船舶发生碰撞事故责任怎么划分？损害赔偿怎么算',desc:'过错比例精细划分+全损部分损失+责任限制',file:'chuanbo-pengzhuan-zeren-rending'},
+  {cat:'海事海商',icon:'🚢',title:'船舶发生重大事故赔偿不起怎么办？责任限制怎么申请',desc:'按吨位算上限+限制性vs非限制性+基金设立',file:'haishi-zeren-xianzhi-jijin'},
+  {cat:'海事海商',icon:'🚢',title:'船舶被法院扣押了怎么解除？提供担保放船流程',desc:'海事保全48h裁定+错误扣船赔偿+三种担保方式',file:'chuanbo-kouya-jiechu'},
+  // 数据合规
+  {cat:'数据合规',icon:'📊',title:'个人信息保护法对企业有什么要求？五个必须做的事',desc:'告知同意+个保影响评估+数据出境+五步清单',file:'geren-xinxi-baohu-qiye-hegui'},
+  {cat:'数据合规',icon:'📊',title:'企业发生个人信息泄露怎么办？72小时应急处理流程',desc:'72h通报义务+四步应急+三个不能犯的错',file:'geren-xinxi-xielou-zenmeban'},
+  {cat:'数据合规',icon:'📊',title:'企业数据出境怎么合规？三条合法路径怎么选',desc:'安全评估+标准合同+认证+重要数据红线',file:'kuajing-shuju-chuanshu-hegui'},
+  {cat:'数据合规',icon:'📊',title:'AI换脸被侵权了怎么办？普通人维权三步流程',desc:'三重权利主张+平台投诉+法院禁令+公安报案',file:'ai-huanlian-qinquan'}
+];
+
+// Group by category
+const categories = ['刑事辩护','民商事诉讼','公司股权','建设工程','海事海商','数据合规'];
+const catIcons = {刑事辩护:'⚖️',民商事诉讼:'📄',公司股权:'🏢',建设工程:'🏗️',海事海商:'🚢',数据合规:'📊'};
+
+function renderArticles(filter) {
+  const q = (filter || '').toLowerCase().trim();
+  let html = '';
+  let totalVisible = 0;
+
+  for (const cat of categories) {
+    const catArticles = articles.filter(a => {
+      if (a.cat !== cat) return false;
+      if (!q) return true;
+      return a.title.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q) || a.cat.includes(q);
+    });
+
+    if (catArticles.length === 0) continue;
+    totalVisible += catArticles.length;
+
+    html += `<div class="cat-section">`;
+    html += `<div class="cat-title"><span class="cat-icon">${catIcons[cat]}</span>${cat}<span class="cat-count">（${catArticles.length}篇）</span></div>`;
+    html += `<div class="article-list">`;
+    for (const a of catArticles) {
+      html += `<a href="articles/${a.file}.html" class="article-link"><span class="al-title">${a.title}</span><span class="al-desc">— ${a.desc}</span></a>`;
+    }
+    html += `</div></div>`;
+  }
+
+  document.getElementById('articleList').innerHTML = html || '<div class="no-result">没有找到匹配的文章，试试其他关键词</div>';
+  document.getElementById('searchInfo').textContent = q ? `找到 ${totalVisible} 篇相关文章` : `共 ${articles.length} 篇文章`;
+}
+
+function filterArticles() {
+  renderArticles(document.getElementById('search').value);
+}
+
+// Initial render
+renderArticles('');
+</script>
+</body>
+</html>
