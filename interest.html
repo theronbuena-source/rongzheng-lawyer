@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="利息辅助测算器，支持本金、起止日期、年利率、LPR 和 4 倍 LPR 口径的日利息试算。">
+<meta name="keywords" content="利息计算器,LPR利息,逾期利息,民间借贷利息,荣郑律师">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/interest.html">
+<title>利息辅助测算器 · 荣郑律师</title>
+<style>
+:root{--ink:#1f2522;--text:#3d433f;--muted:#72786f;--bg:#f7f5ef;--soft:#fbfaf6;--white:#fff;--gold:#a9823b;--rule:#e7e1d7;--rule-strong:#d6cbb9;--green:#2e7250;--shadow:0 16px 50px rgba(31,37,34,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}.nav-inner{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:0 24px;min-height:64px}.nav-logo{font-family:"Noto Serif SC","Songti SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}.nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.nav-links a.active,.nav-links a:hover{color:var(--ink)}.nav-cta{color:var(--gold)!important;border:1px solid var(--gold);padding:6px 16px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:104px 24px 70px}.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:18px}.breadcrumb a{color:var(--gold)}.hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:32px;align-items:end}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 8px}h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:38px;line-height:1.2;color:var(--ink);margin:0 0 12px}.sub{margin:0;color:var(--muted);max-width:760px}.note{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:18px 20px;font-size:12px;color:var(--muted)}
+.tool{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:24px;align-items:start;margin-top:28px}.panel{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow)}.form{padding:26px}.section{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--rule)}.section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}.head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:14px}h2{font-size:17px;color:var(--ink);margin:0}.hint{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:7px}label{font-size:13px;color:var(--ink);font-weight:600}input,select{width:100%;height:44px;border:1px solid var(--rule-strong);background:#fff;color:var(--ink);font-size:14px;padding:0 12px;border-radius:4px;outline:none}input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,130,59,.12)}
+.quick{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}button{height:40px;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:4px;padding:0 16px;font-size:13px;cursor:pointer}.secondary{background:#fff;color:var(--ink)}.result{position:sticky;top:88px;overflow:hidden}.result-head{background:var(--ink);color:#fff;padding:22px 24px}.result-head .label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#dcc28a;font-weight:700}.result-head h2{color:#fff;font-size:24px;margin:6px 0 2px}.result-head p{margin:0;color:rgba(255,255,255,.68);font-size:12px}.body{padding:20px 24px}.metric{display:grid;grid-template-columns:1fr auto;gap:12px;padding:16px 0;border-bottom:1px dashed var(--rule);font-size:13px}.metric span:first-child{color:var(--text)}.metric span:last-child{color:var(--gold);font-weight:700}.body p{margin:14px 0 0;color:var(--muted);font-size:12px}.copy-state{font-size:12px;color:var(--green);align-self:center;min-height:20px}
+.formula{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:22px 24px;margin-top:22px}.formula h3{font-size:15px;color:var(--ink);margin:0 0 10px}.formula p{margin:0;color:var(--muted);font-size:12px}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:34px;font-size:12px}.f-nav{display:flex;justify-content:center;gap:24px;margin-bottom:14px;flex-wrap:wrap}.f-nav a{color:rgba(255,255,255,.62)}
+@media(max-width:960px){.hero,.tool{grid-template-columns:1fr}.result{position:static}}@media(max-width:680px){.wrap{padding:94px 20px 56px}.nav-inner{padding:10px 20px;align-items:flex-start}.grid{grid-template-columns:1fr}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a class="nav-logo" href="index.html">荣<span>郑</span></a><div class="nav-links"><a href="index.html">首页</a><a href="articles/">文章</a><a href="criminal.html">刑事</a><a href="civil.html">民商事</a><a class="active" href="tools.html">工具</a><a class="nav-cta" href="index.html#contact">联系</a></div></div></nav>
+<main class="wrap">
+  <div class="breadcrumb"><a href="index.html">首页</a> &rsaquo; <a href="tools.html">律师工具台</a> &rsaquo; 利息</div>
+  <header class="hero">
+    <div><p class="eyebrow">Interest Calculator</p><h1>利息辅助测算器</h1><p class="sub">按本金、起止日期和年利率计算日利息。可一键套用 1 年期 LPR、4 倍 LPR 或自定义利率，适合民间借贷、逾期付款、调解沟通前的快速估算。</p></div>
+    <div class="note">当前快捷口径按 2026 年 6 月公布的 1 年期 LPR 3.00% 设置；民间借贷司法保护上限通常以合同成立时 1 年期 LPR 四倍判断。</div>
+  </header>
+  <section class="tool">
+    <form class="panel form" id="interestForm">
+      <div class="section">
+        <div class="head"><h2>金额与期间</h2><span class="hint">含起算日，不含截止日</span></div>
+        <div class="grid">
+          <div class="field"><label for="principal">本金</label><input id="principal" type="number" min="0" step="1000" value="100000"></div>
+          <div class="field"><label for="annualRate">年利率</label><input id="annualRate" type="number" min="0" step="0.01" value="3.00"></div>
+          <div class="field"><label for="startDate">起算日期</label><input id="startDate" type="date"></div>
+          <div class="field"><label for="endDate">截止日期</label><input id="endDate" type="date"></div>
+          <div class="field"><label for="baseDays">计息基数</label><select id="baseDays"><option value="365">按 365 日</option><option value="360">按 360 日</option></select></div>
+          <div class="field"><label for="roundMode">小数处理</label><select id="roundMode"><option value="cent">保留到分</option><option value="yuan">保留到元</option><option value="raw">显示小数</option></select></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="head"><h2>快捷利率</h2><span class="hint">可继续手动修改</span></div>
+        <div class="quick">
+          <button type="button" class="secondary" data-rate="3.00">1 年期 LPR 3.00%</button>
+          <button type="button" class="secondary" data-rate="12.00">4 倍 LPR 12.00%</button>
+          <button type="button" class="secondary" data-rate="3.50">5 年期以上 LPR 3.50%</button>
+          <button type="button" class="secondary" data-rate="6.00">年利率 6%</button>
+        </div>
+      </div>
+    </form>
+    <aside class="panel result">
+      <div class="result-head"><div class="label">Estimated Interest</div><h2 id="interestValue">0 元</h2><p id="periodLabel">0 天 · 年利率 3.00%</p></div>
+      <div class="body">
+        <div class="metric"><span>本金</span><span id="principalValue">0 元</span></div>
+        <div class="metric"><span>日利率</span><span id="dailyRate">0%</span></div>
+        <div class="metric"><span>本息合计</span><span id="totalValue">0 元</span></div>
+        <p>公式：利息 = 本金 × 年利率 × 计息天数 ÷ 计息基数。合同另有复利、罚息、分段利率或还款抵扣顺序约定的，应另行核算。</p>
+        <div class="quick"><button type="button" id="copyBtn">复制测算结果</button><button type="button" class="secondary" id="resetBtn">重置</button><span class="copy-state" id="copyState"></span></div>
+      </div>
+    </aside>
+  </section>
+  <section class="formula">
+    <h3>使用提示</h3>
+    <p>本工具只计算单段单利。民间借贷案件还需要结合合同成立时间、约定利率、资金交付凭证、已还款项、逾期责任和司法保护上限综合判断。</p>
+  </section>
+</main>
+<footer><div class="f-nav"><a href="index.html">首页</a><a href="tools.html">律师工具台</a><a href="litigation-fee.html">诉讼费</a><a href="index.html#contact">联系</a></div><div>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</div></footer>
+<script>
+const principal=document.getElementById("principal"),annualRate=document.getElementById("annualRate"),startDate=document.getElementById("startDate"),endDate=document.getElementById("endDate"),baseDays=document.getElementById("baseDays"),roundMode=document.getElementById("roundMode");
+const fmt=n=>`${Math.max(0,n).toLocaleString("zh-CN",{minimumFractionDigits:roundMode.value==="raw"?2:0,maximumFractionDigits:roundMode.value==="raw"?6:roundMode.value==="cent"?2:0})} 元`;
+function iso(d){return d.toISOString().slice(0,10)}
+function setDefaults(){const end=new Date(),start=new Date();start.setFullYear(start.getFullYear()-1);startDate.value=iso(start);endDate.value=iso(end)}
+function daysBetween(){if(!startDate.value||!endDate.value)return 0;const start=new Date(`${startDate.value}T00:00:00`),end=new Date(`${endDate.value}T00:00:00`);return Math.max(0,Math.round((end-start)/86400000))}
+function roundInterest(n){if(roundMode.value==="yuan")return Math.round(n);if(roundMode.value==="cent")return Math.round(n*100)/100;return n}
+function compute(){const p=Number(principal.value)||0,rate=(Number(annualRate.value)||0)/100,base=Number(baseDays.value)||365,days=daysBetween();const raw=p*rate*days/base,interest=roundInterest(raw),total=p+interest;document.getElementById("interestValue").textContent=fmt(interest);document.getElementById("periodLabel").textContent=`${days} 天 · 年利率 ${(rate*100).toFixed(2)}%`;document.getElementById("principalValue").textContent=fmt(p);document.getElementById("dailyRate").textContent=`${(rate/base*100).toFixed(6)}%`;document.getElementById("totalValue").textContent=fmt(total)}
+document.getElementById("interestForm").addEventListener("input",compute);document.getElementById("interestForm").addEventListener("change",compute);document.querySelectorAll("[data-rate]").forEach(btn=>btn.addEventListener("click",()=>{annualRate.value=btn.dataset.rate;compute()}));
+document.getElementById("resetBtn").addEventListener("click",()=>{principal.value=100000;annualRate.value="3.00";baseDays.value="365";roundMode.value="cent";setDefaults();compute()});
+document.getElementById("copyBtn").addEventListener("click",async()=>{const text=`利息试算：${document.getElementById("periodLabel").textContent}，本金 ${document.getElementById("principalValue").textContent}，利息 ${document.getElementById("interestValue").textContent}，本息合计 ${document.getElementById("totalValue").textContent}。`;try{await navigator.clipboard.writeText(text);document.getElementById("copyState").textContent="已复制"}catch{document.getElementById("copyState").textContent="复制失败"}});
+setDefaults();compute();
+</script>
+</body>
+</html>

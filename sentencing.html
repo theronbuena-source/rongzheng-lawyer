@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="湖北刑事量刑辅助测算器，支持常见经济犯罪、财产犯罪、职务犯罪、人身犯罪、交通犯罪、毒品犯罪的量刑情节初步测算。荣郑律师个人网站工具。">
+<meta name="keywords" content="湖北刑事量刑,诈骗罪量刑,帮信罪量刑,职务侵占罪量刑,贪污罪量刑,受贿罪量刑,危险驾驶罪量刑,武汉刑事律师,荣郑律师">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/sentencing.html">
+<title>湖北刑事量刑辅助测算器 · 荣郑律师</title>
+<style>
+:root{--ink:#1f2522;--ink-2:#2d332f;--text:#3d433f;--text-muted:#72786f;--bg:#f7f5ef;--bg-soft:#fbfaf6;--white:#fff;--gold:#a9823b;--gold-dark:#7e6029;--gold-light:#dcc28a;--rule:#e7e1d7;--rule-strong:#d6cbb9;--green:#2e7250;--red:#a9473d;--blue:#315f7c;--shadow:0 16px 50px rgba(31,37,34,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);transition:transform .35s}
+.nav.hide{transform:translateY(-100%)}
+.nav-inner{max-width:1240px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:0 40px;min-height:64px}
+.nav-logo{font-family:"Noto Serif SC","Songti SC",serif;font-size:18px;color:var(--ink);letter-spacing:.04em;white-space:nowrap}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:22px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+.nav-links a{font-size:13px;color:var(--text-muted);letter-spacing:.04em;transition:color .2s;padding:4px 0}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.nav-cta{color:var(--gold)!important;border:1px solid var(--gold);padding:6px 16px!important;border-radius:2px}
+.tool-hub{max-width:1240px;margin:0 auto;padding:104px 40px 18px}
+.hub-top{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:end}
+.hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
+.hub-card{border:1px solid var(--rule);background:var(--white);box-shadow:var(--shadow);padding:22px 24px;min-height:156px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.hub-card.active{border-color:var(--gold)}
+.hub-card.disabled{opacity:.68}
+.hub-card h2{font-size:20px;color:var(--ink);margin:0}
+.hub-card p{font-size:13px;color:var(--text-muted);margin:0;line-height:1.75}
+.hub-badge{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.hub-link{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.04em}
+.tool-header{max-width:1240px;margin:0 auto;padding:36px 40px 28px;scroll-margin-top:86px}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:18px}
+.breadcrumb a{color:var(--gold)}
+.title-row{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:end}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 8px}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:38px;line-height:1.22;color:var(--ink);margin:0 0 14px;letter-spacing:.02em}
+.sub{font-size:15px;color:var(--text-muted);max-width:780px;margin:0}
+.version-panel{background:var(--white);border:1px solid var(--rule);padding:18px 20px;box-shadow:var(--shadow)}
+.version-panel strong{display:block;color:var(--ink);font-size:14px;margin-bottom:6px}
+.version-panel span{display:block;font-size:12px;color:var(--text-muted);line-height:1.65}
+.tool-wrap{max-width:1240px;margin:0 auto;padding:0 40px 72px}
+.workbench{display:grid;grid-template-columns:minmax(0,1.05fr) 430px;gap:24px;align-items:start}
+.form-panel,.result-panel,.rule-panel{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow)}
+.form-panel{padding:28px}
+.form-section{padding:0 0 26px;margin-bottom:26px;border-bottom:1px solid var(--rule)}
+.form-section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+h2{font-size:17px;color:var(--ink);margin:0;letter-spacing:.02em}
+.hint{font-size:12px;color:var(--text-muted)}
+.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+label,.field-title{font-size:13px;color:var(--ink);font-weight:600}
+select,input[type=number]{width:100%;height:44px;border:1px solid var(--rule-strong);background:#fff;color:var(--ink);font-size:14px;padding:0 12px;border-radius:4px;outline:none}
+select:focus,input[type=number]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,130,59,.12)}
+.input-wrap{position:relative}
+.input-wrap input{padding-right:48px}
+.unit{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:13px;color:var(--text-muted)}
+.choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.check-row{min-height:46px;display:flex;align-items:center;gap:10px;border:1px solid var(--rule);background:var(--bg-soft);padding:10px 12px;border-radius:4px;cursor:pointer;font-weight:500;color:var(--text)}
+.check-row:hover{border-color:var(--gold-light)}
+.check-row input{appearance:none;width:18px;height:18px;margin:0;border:1px solid var(--rule-strong);background:#fff;border-radius:3px;display:grid;place-items:center;flex:0 0 auto}
+.check-row input:checked{border-color:var(--gold);background:var(--gold)}
+.check-row input:checked::after{content:"";width:8px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-2px}
+.check-row span{font-size:13px;line-height:1.35}
+.toggle-row{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--rule);background:#fff;padding:14px 16px;border-radius:4px;margin-top:14px}
+.toggle-row input{margin-top:4px}
+.toggle-row strong{display:block;font-size:13px;color:var(--ink);margin-bottom:2px}
+.toggle-row small{display:block;font-size:12px;color:var(--text-muted);line-height:1.6}
+.result-panel{position:sticky;top:88px;padding:0;overflow:hidden}
+.result-head{background:var(--ink);color:#fff;padding:22px 24px}
+.result-head .label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);font-weight:700}
+.result-head h2{color:#fff;font-size:22px;margin:6px 0 4px}
+.result-head p{margin:0;color:rgba(255,255,255,.68);font-size:12px}
+.metric-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--rule)}
+.metric{padding:18px 20px;border-right:1px solid var(--rule);min-height:92px}
+.metric:last-child{border-right:0}
+.metric .m-label{font-size:12px;color:var(--text-muted);margin-bottom:4px}
+.metric .m-value{font-family:"Noto Serif SC","Songti SC",serif;color:var(--ink);font-size:23px;line-height:1.25}
+.metric .m-value.small{font-size:17px}
+.result-body{padding:22px 24px}
+.pill-line{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.pill{font-size:12px;color:var(--gold-dark);background:#f5eddf;border:1px solid #ead8b8;padding:4px 10px;border-radius:999px}
+.pill.blue{color:var(--blue);background:#edf4f7;border-color:#d5e6ee}
+.pill.green{color:var(--green);background:#edf6f0;border-color:#d4e9db}
+.detail-list{display:grid;gap:10px;margin:0 0 20px}
+.detail{display:grid;grid-template-columns:1fr auto;gap:12px;border-bottom:1px dashed var(--rule);padding-bottom:9px;font-size:13px}
+.detail span:first-child{color:var(--text)}
+.detail span:last-child{color:var(--gold-dark);font-weight:700}
+.risk-box{border:1px solid var(--rule);background:var(--bg-soft);padding:16px;margin:0 0 18px}
+.risk-box strong{display:block;color:var(--ink);font-size:14px;margin-bottom:6px}
+.risk-box p{margin:0;color:var(--text-muted);font-size:12px;line-height:1.65}
+.risk-box.high strong{color:var(--green)}
+.risk-box.mid strong{color:var(--gold-dark)}
+.risk-box.low strong{color:var(--red)}
+.action-row{display:flex;gap:10px;flex-wrap:wrap}
+button{height:40px;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:4px;padding:0 16px;font-size:13px;cursor:pointer;transition:all .2s}
+button.secondary{background:#fff;color:var(--ink)}
+button:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(31,37,34,.12)}
+.copy-state{font-size:12px;color:var(--green);align-self:center;min-height:20px}
+.rule-panel{margin-top:24px;padding:26px 28px}
+.rule-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:16px}
+.rule-text{font-size:13px;color:var(--text-muted);line-height:1.85;margin:0}
+.checklist{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.checklist li{font-size:13px;color:var(--text);border-left:3px solid var(--gold-light);padding-left:10px;line-height:1.65}
+.source-list{display:grid;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.source-list a{font-size:12px;color:var(--gold-dark);text-decoration:underline;text-underline-offset:3px}
+.formula-panel{margin-top:22px;border-top:1px solid var(--rule);padding-top:18px}
+.formula-panel summary{cursor:pointer;color:var(--ink);font-weight:700;font-size:15px;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.formula-panel summary::-webkit-details-marker{display:none}
+.formula-panel summary::after{content:"展开/收起";font-size:12px;color:var(--gold);font-weight:600}
+.formula-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
+.formula-box{border:1px solid var(--rule);background:var(--bg-soft);padding:16px}
+.formula-box.wide{grid-column:1/-1}
+.formula-box h3{font-size:14px;color:var(--ink);margin:0 0 10px}
+.formula-box p{font-size:12px;color:var(--text-muted);line-height:1.75;margin:0}
+.formula-list{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.formula-list li{font-size:12px;color:var(--text-muted);line-height:1.65;border-bottom:1px dashed var(--rule);padding-bottom:8px}
+.formula-list li:last-child{border-bottom:0;padding-bottom:0}
+.formula-list strong{color:var(--ink)}
+.formula-list a{color:var(--gold-dark);text-decoration:underline;text-underline-offset:3px}
+.formula-code{font-family:Consolas,"SFMono-Regular","Liberation Mono",monospace;background:#fff;border:1px solid var(--rule);padding:10px;white-space:pre-wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px;letter-spacing:.04em}
+footer a{color:var(--gold-light)}
+.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px;flex-wrap:wrap}
+@media(max-width:1020px){
+  .hub-top,.title-row,.workbench,.rule-grid,.formula-grid{grid-template-columns:1fr}
+  .hub-grid{grid-template-columns:1fr}
+  .result-panel{position:static}
+}
+@media(max-width:760px){
+  .nav-inner{padding:10px 20px;align-items:flex-start}
+  .nav-links{gap:14px}
+  .tool-hub{padding:96px 20px 14px}
+  .tool-header{padding:28px 20px 22px}
+  .tool-wrap{padding:0 20px 56px}
+  h1{font-size:30px}
+  .form-panel{padding:22px}
+  .field-grid,.choice-grid,.metric-row{grid-template-columns:1fr}
+  .metric{border-right:0;border-bottom:1px solid var(--rule)}
+  .metric:last-child{border-bottom:0}
+}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">荣<span>郑</span></a>
+    <div class="nav-links">
+      <a href="index.html">首页</a><a href="articles/">文章</a><a href="criminal.html">刑事</a><a href="civil.html">民商事</a><a href="corporate.html">公司</a><a href="construction.html">工程</a><a href="tools.html" class="active">工具</a>
+      <a href="index.html#contact" class="nav-cta">联系</a>
+    </div>
+  </div>
+</nav>
+
+<header class="tool-header">
+  <div class="breadcrumb"><a href="index.html">首页</a> &rsaquo; <a href="tools.html">律师工具台</a> &rsaquo; 刑事量刑</div>
+  <div class="title-row">
+    <div>
+      <p class="eyebrow">Criminal Sentencing Calculator</p>
+      <h1>湖北刑事量刑辅助测算器</h1>
+      <p class="sub">按罪名、金额或核心事实指标、犯罪形态和常见量刑情节，生成基础档位、基准刑、调整明细与参考区间。结果仅供初步测算，不能替代阅卷、会见和具体裁判规则判断。</p>
+    </div>
+    <div class="version-panel">
+      <strong>规则版本：独立页面 v0.3</strong>
+      <span>从律师工具台拆分为单独子页面，覆盖常见经济、财产、职务、人身、交通和毒品类罪名。</span>
+    </div>
+  </div>
+</header>
+
+<main class="tool-wrap">
+  <section class="workbench" aria-label="湖北刑事量刑辅助测算工作台">
+    <form class="form-panel" id="calculatorForm">
+      <div class="form-section">
+        <div class="section-head">
+          <h2>案件基础</h2>
+          <span class="hint" id="crimeNote">诈骗罪：按涉案金额分档测算</span>
+        </div>
+        <div class="field-grid">
+          <div class="field">
+            <label for="crime">罪名</label>
+            <select id="crime" name="crime">
+              <optgroup label="经济与财产犯罪">
+                <option value="fraud">诈骗罪</option>
+                <option value="contractFraud">合同诈骗罪</option>
+                <option value="illegalFundraising">非法吸收公众存款罪</option>
+                <option value="fundraisingFraud">集资诈骗罪</option>
+                <option value="embezzlement">职务侵占罪</option>
+                <option value="misappropriationFunds">挪用资金罪</option>
+                <option value="theft">盗窃罪</option>
+                <option value="extortion">敲诈勒索罪</option>
+                <option value="robbery">抢劫罪</option>
+                <option value="concealment">掩饰、隐瞒犯罪所得罪</option>
+                <option value="helpInfoCyber">帮助信息网络犯罪活动罪</option>
+                <option value="casino">开设赌场罪</option>
+                <option value="illegalBusiness">非法经营罪</option>
+              </optgroup>
+              <optgroup label="职务犯罪">
+                <option value="corruption">贪污罪</option>
+                <option value="bribery">受贿罪</option>
+                <option value="offerBribe">行贿罪</option>
+                <option value="misappropriationPublic">挪用公款罪</option>
+              </optgroup>
+              <optgroup label="人身与秩序犯罪">
+                <option value="intentionalInjury">故意伤害罪</option>
+                <option value="illegalDetention">非法拘禁罪</option>
+                <option value="affray">聚众斗殴罪</option>
+                <option value="provocation">寻衅滋事罪</option>
+                <option value="obstructOfficial">妨害公务罪</option>
+                <option value="assaultPolice">袭警罪</option>
+              </optgroup>
+              <optgroup label="交通与毒品犯罪">
+                <option value="dangerousDriving">危险驾驶罪</option>
+                <option value="trafficAccident">交通肇事罪</option>
+                <option value="drugTrafficking">走私、贩卖、运输、制造毒品罪</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="field">
+            <label for="amount" id="metricLabel">涉案金额</label>
+            <div class="input-wrap">
+              <input id="amount" name="amount" type="number" min="0" step="0.1" value="50">
+              <span class="unit" id="metricUnit">万元</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="role">共同犯罪地位</label>
+            <select id="role" name="role">
+              <option value="normal">主犯/一般参与</option>
+              <option value="minor">从犯</option>
+              <option value="accessory">帮助地位较轻</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="stage">犯罪形态</label>
+            <select id="stage" name="stage">
+              <option value="completed">既遂</option>
+              <option value="attempted">未遂</option>
+            </select>
+          </div>
+        </div>
+        <label class="toggle-row">
+          <input type="checkbox" id="statutoryMitigation">
+          <span>
+            <strong>存在法定减轻情节，允许低于本档最低刑试算</strong>
+            <small>例如从犯、未遂、重大立功等情形；是否真正跨档，需要结合案卷和法律适用单独判断。</small>
+          </span>
+        </label>
+      </div>
+
+      <div class="form-section">
+        <div class="section-head">
+          <h2>从轻 / 从宽情节</h2>
+          <span class="hint">多项并存时自动设置总体扣减上限</span>
+        </div>
+        <div class="choice-grid" id="lenientChoices"></div>
+      </div>
+
+      <div class="form-section">
+        <div class="section-head">
+          <h2>从重情节</h2>
+          <span class="hint">用于识别升档或不宜缓刑风险</span>
+        </div>
+        <div class="choice-grid" id="aggravatingChoices"></div>
+      </div>
+    </form>
+
+    <aside class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <div class="label">Estimated Range</div>
+        <h2 id="rangeTitle">3年至5年3个月</h2>
+        <p id="rangeSub">诈骗罪 · 数额巨大 · 参考区间</p>
+      </div>
+      <div class="metric-row">
+        <div class="metric">
+          <div class="m-label">基础档位</div>
+          <div class="m-value small" id="tierText">数额巨大</div>
+        </div>
+        <div class="metric">
+          <div class="m-label">基准刑</div>
+          <div class="m-value" id="baseText">4年6个月</div>
+        </div>
+      </div>
+      <div class="result-body">
+        <div class="pill-line" id="pills"></div>
+        <div class="detail-list" id="details"></div>
+        <div class="risk-box" id="bailBox">
+          <strong>取保候审初筛：有空间</strong>
+          <p>结合刑期预估、社会危险性、退赔谅解、认罪认罚和到案经过，判断是否优先准备取保材料。</p>
+        </div>
+        <div class="risk-box" id="probationBox">
+          <strong>缓刑初筛：低</strong>
+          <p>参考区间超过三年，缓刑空间通常较小，应优先核查金额、主从犯、退赔和法定减轻情节。</p>
+        </div>
+        <div class="risk-box" id="auditBox">
+          <strong>人工核查重点</strong>
+          <p id="auditText">核对金额认定、退赔凭证、被害人谅解、到案经过和湖北细则中的具体增加刑规则。</p>
+        </div>
+        <div class="action-row">
+          <button type="button" id="copyBtn">复制测算摘要</button>
+          <button type="button" class="secondary" id="resetBtn">恢复默认</button>
+          <span class="copy-state" id="copyState"></span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="rule-panel" aria-label="规则口径和材料清单">
+    <h2>规则口径与办案清单</h2>
+    <div class="rule-grid">
+      <div>
+        <p class="rule-text" id="ruleText">当前罪名以金额为主要起点，再叠加自首、坦白、认罪认罚、退赃退赔、谅解、累犯、多次作案等常见情节。页面输出的是量刑辅助区间，不直接等同于检察院量刑建议或法院裁判结果。</p>
+        <ul class="source-list">
+          <li><a href="https://www.spp.gov.cn/xwfbh/wsfbt/202604/t20260410_725586.shtml" target="_blank" rel="noopener">两高《关于办理贪污贿赂刑事案件适用法律若干问题的解释（二）》</a></li>
+          <li><a href="https://www.spp.gov.cn/zdgz/201604/t20160419_116381.shtml" target="_blank" rel="noopener">两高《关于办理贪污贿赂刑事案件适用法律若干问题的解释》</a></li>
+          <li><a href="https://liangxing.swupl.edu.cn/zcfg/591cb5b6b1df44c68e3a389d3fb42822.htm" target="_blank" rel="noopener">湖北省高级人民法院常见犯罪量刑指导意见实施细则公开文本</a></li>
+        </ul>
+      </div>
+      <ul class="checklist" id="checklist"></ul>
+    </div>
+    <details class="formula-panel" open>
+      <summary>计算口径</summary>
+      <div class="formula-grid">
+        <div class="formula-box">
+          <h3>当前罪名档位</h3>
+          <ul class="formula-list" id="tierFormulaList"></ul>
+        </div>
+        <div class="formula-box">
+          <h3>情节调整比例</h3>
+          <ul class="formula-list" id="factorFormulaList"></ul>
+        </div>
+        <div class="formula-box">
+          <h3>计算公式</h3>
+          <p class="formula-code" id="formulaText"></p>
+        </div>
+        <div class="formula-box">
+          <h3>本次代入</h3>
+          <ul class="formula-list" id="currentFormulaList"></ul>
+        </div>
+        <div class="formula-box wide">
+          <h3>法律依据</h3>
+          <ul class="formula-list" id="legalBasisList"></ul>
+        </div>
+      </div>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="f-nav"><a href="index.html">首页</a><a href="articles/">文章总览</a><a href="criminal.html">刑事专题</a><a href="tools.html">律师工具</a><a href="index.html#contact">联系</a></div>
+  <div>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</div>
+</footer>
+
+<script>
+const rules = {
+  fraud: moneyRule("诈骗罪", .5, 5, 50, "以湖北常见犯罪量刑细则中诈骗罪金额档位为基础，结合退赔、谅解、认罪认罚等财产犯罪高频情节调整。", "核对被害人损失金额、非法占有目的、资金流向、退赔比例、谅解材料、到案经过和共同犯罪分工。", ["被害人陈述与转账流水是否对应", "合同、聊天记录、交付记录是否支持民事纠纷抗辩", "退赃退赔凭证和谅解书是否完整", "主从犯分工、获利金额和实际控制资金是否区分"]),
+  contractFraud: moneyRule("合同诈骗罪", 2, 20, 100, "以合同诈骗金额和合同履行事实为主要起点，重点区分民事违约、经营失败和非法占有目的。", "核对合同签订履行过程、资金用途、履约能力、担保材料、虚构事实和逃匿转移财产事实。", ["合同订立时是否具备履约能力", "收款后的资金流向和履行行为是否可解释", "是否存在虚构单位、冒用名义或伪造担保", "被害人损失和案发前后还款行为是否清楚"]),
+  illegalFundraising: moneyRule("非法吸收公众存款罪", 100, 500, 5000, "以吸收资金数额、集资参与人数和造成损失为核心，第一版按金额档试算并提示人数、损失另行核查。", "核对公开性、利诱性、社会性、非法性四要件，集资人数、未兑付损失、退赔比例和主从犯层级。", ["是否面向社会公开宣传", "承诺收益、保本付息材料是否存在", "集资参与人数和未兑付损失是否准确", "业务员层级、提成和实际控制资金是否区分"]),
+  fundraisingFraud: customMoneyRule("集资诈骗罪", 80, [
+    {min: 10, max: 100, softMax: 100, label: "数额较大", range: "三年以上七年以下有期徒刑，并处罚金", floor: 36, start: 36, ceiling: 84},
+    {min: 100, max: Infinity, softMax: 1000, label: "数额巨大或其他严重情节", range: "七年以上有期徒刑或者无期徒刑，并处罚金或没收财产", floor: 84, start: 84, ceiling: 180}
+  ], "以非法占有目的和集资诈骗金额为基础，金额之外要重点核查资金挥霍、逃匿、转移和虚假项目。", "核对非法占有目的、资金用途、项目真实性、退赔比例、实际控制人和共同犯罪分工。", ["项目真实性和资金用途是否可查", "是否存在携款逃匿、肆意挥霍或转移资产", "个人获利与公司经营支出是否分清", "退赔、追赃和谅解材料是否完整"]),
+  embezzlement: moneyRule("职务侵占罪", 6, 100, 1500, "以现行刑法三档法定刑和湖北实务常用金额节点做第一版试算，主体身份和财物权属需要单独审查。", "核对公司、企业或其他单位人员身份，本单位财物边界，款项权属，审批授权，退赔去向和实际获利。", ["行为人是否属于公司、企业或者其他单位人员", "涉案财物是否属于本单位财物", "是否存在真实债权债务、垫付款或股东往来", "退赔、审计报告和单位谅解材料是否齐备"]),
+  misappropriationFunds: customMoneyRule("挪用资金罪", 80, [
+    {min: 10, max: 200, softMax: 200, label: "数额较大", range: "三年以下有期徒刑或拘役", floor: 0, start: 8, ceiling: 36},
+    {min: 200, max: 1000, softMax: 1000, label: "数额巨大或数额较大不退还", range: "三年以上七年以下有期徒刑", floor: 36, start: 36, ceiling: 84},
+    {min: 1000, max: Infinity, softMax: 5000, label: "数额特别巨大", range: "七年以上有期徒刑", floor: 84, start: 84, ceiling: 180}
+  ], "以挪用金额、用途、时间和是否归还为核心，先按金额档试算，营利活动和非法活动需另行加重核查。", "核对资金用途、挪用时间、是否归还、公司授权流程、个人使用还是单位往来。", ["资金用途是个人使用、营利活动还是非法活动", "挪用持续时间和归还节点是否明确", "是否经过公司授权或形成真实债权债务", "审计报告、银行流水和财务凭证是否对应"]),
+  theft: moneyRule("盗窃罪", .2, 3, 30, "以盗窃金额为基础，同时考虑多次盗窃、入户盗窃、携带凶器、扒窃等非金额入罪情节。", "核对财物价值鉴定、次数、入户或扒窃情节、退赔谅解、被害人过错和共同犯罪分工。", ["价格认定结论是否可质证", "是否存在入户、扒窃、携带凶器或多次盗窃", "赃物去向、退赔和谅解是否完整", "同案人员分工和实际获利是否区分"]),
+  extortion: moneyRule("敲诈勒索罪", .3, 3, 30, "以敲诈勒索金额为基础，威胁内容、被害人过错和民事维权边界会影响定性与量刑。", "核对威胁胁迫内容、索要依据、被害人处分财产原因、退赔谅解和是否多次实施。", ["是否存在合法债务或维权基础", "威胁内容是否足以产生恐惧心理", "财物交付与威胁之间是否有因果关系", "退赔、谅解和被害人过错是否可证明"]),
+  robbery: levelRule("抢劫罪", "情节等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般抢劫", range: "三年以上十年以下有期徒刑，并处罚金", floor: 36, start: 36, ceiling: 120},
+    {min: 2, max: 3, softMax: 3, label: "入户、公共交通、持枪等加重", range: "十年以上有期徒刑、无期徒刑或者死刑，并处罚金或没收财产", floor: 120, start: 120, ceiling: 180},
+    {min: 3, max: Infinity, softMax: 5, label: "致重伤死亡或多项加重", range: "十年以上有期徒刑、无期徒刑或者死刑，并处罚金或没收财产", floor: 120, start: 120, ceiling: 240}
+  ], "抢劫罪先看是否存在八种加重情形，页面用情节等级做简化试算。", "核对暴力胁迫强度、当场性、财物取得、伤情后果、入户或持械等加重事实。", ["暴力、胁迫与取财是否具有当场性", "是否存在入户、公共交通、持枪或冒充军警等加重情形", "伤情鉴定、财物价值和被害人陈述是否对应", "是否能转化为抢夺、敲诈勒索或寻衅滋事等争议定性"]),
+  concealment: customMoneyRule("掩饰、隐瞒犯罪所得罪", 20, [
+    {min: .5, max: 10, softMax: 10, label: "一般情节", range: "三年以下有期徒刑、拘役或管制，并处或单处罚金", floor: 0, start: 6, ceiling: 36},
+    {min: 10, max: Infinity, softMax: 100, label: "情节严重", range: "三年以上七年以下有期徒刑，并处罚金", floor: 36, start: 36, ceiling: 84}
+  ], "以犯罪所得价值、次数、上游犯罪性质和主观明知为核心，第一版按涉案价值试算。", "核对上游犯罪事实、主观明知推定、资金流水、获利金额、退赃退赔和是否职业化收赃。", ["上游犯罪是否已经查明", "主观明知证据和反驳材料是否完整", "流水金额、获利金额和实际控制金额是否分清", "是否有退赃、协助追赃或坦白情节"]),
+  helpInfoCyber: customMoneyRule("帮助信息网络犯罪活动罪", 20, [
+    {min: 1, max: 20, softMax: 20, label: "情节严重", range: "三年以下有期徒刑或者拘役，并处或单处罚金", floor: 0, start: 6, ceiling: 24},
+    {min: 20, max: 100, softMax: 100, label: "情节严重且金额较高", range: "三年以下有期徒刑或者拘役，并处或单处罚金", floor: 0, start: 12, ceiling: 32},
+    {min: 100, max: Infinity, softMax: 800, label: "情节严重且金额高", range: "三年以下有期徒刑或者拘役，并处或单处罚金", floor: 0, start: 18, ceiling: 36}
+  ], "以支付结算金额、违法所得、帮助对象数量和主观明知为核心，页面用结算金额折算试算。", "核对银行卡、电话卡、账号提供过程，明知推定反驳，流水金额、获利金额、上线联系和退赃情况。", ["支付结算流水是否包含正常交易", "明知推定事实是否可反驳", "获利金额、提供卡数和帮助对象数量是否清楚", "是否存在被诱骗、胁迫或实际控制不足"]),
+  casino: customMoneyRule("开设赌场罪", 60, [
+    {min: 2, max: 30, softMax: 30, label: "一般开设赌场", range: "五年以下有期徒刑、拘役或者管制，并处罚金", floor: 0, start: 8, ceiling: 60},
+    {min: 30, max: Infinity, softMax: 500, label: "情节严重", range: "五年以上十年以下有期徒刑，并处罚金", floor: 60, start: 60, ceiling: 120}
+  ], "以抽头渔利、赌资数额、参赌人数和代理层级为核心，页面用违法所得或抽头渔利金额试算。", "核对平台层级、代理身份、赌资流水、抽头渔利、参赌人数、普通玩家与代理边界。", ["是普通玩家、代理还是平台组织者", "赌资流水是否存在重复计算", "抽头渔利和个人获利是否分清", "电子数据提取、聊天记录和后台数据是否可质证"]),
+  illegalBusiness: customMoneyRule("非法经营罪", 80, [
+    {min: 5, max: 50, softMax: 50, label: "情节严重", range: "五年以下有期徒刑或者拘役，并处或单处罚金", floor: 0, start: 8, ceiling: 60},
+    {min: 50, max: Infinity, softMax: 500, label: "情节特别严重", range: "五年以上有期徒刑，并处罚金或没收财产", floor: 60, start: 60, ceiling: 144}
+  ], "以非法经营数额、违法所得和违反国家规定的明确性为核心，页面用违法所得或经营金额折算试算。", "核对是否违反国家规定、经营许可边界、经营数额和违法所得，避免行政违法刑事化。", ["所依据的国家规定是否明确", "经营行为是否属于许可范围外经营", "经营数额、违法所得和成本是否分清", "是否存在情节显著轻微或行政处罚优先空间"]),
+  corruption: dutyCrimeRule("贪污罪", "以两高贪污贿赂司法解释的三万元、二十万元、三百万元金额档为基础，叠加自首、退赃、认罪认罚等情节。", "核对国家工作人员身份、公共财物属性、职务便利、共同贪污分工、主动交代、退赃节点和监察调查到案经过。", ["主体身份和职务便利是否成立", "公共财物范围、损失金额和个人获利是否分清", "是否主动交代办案机关未掌握事实", "退赃退赔是否及时、足额、可证明"]),
+  bribery: dutyCrimeRule("受贿罪", "以两高贪污贿赂司法解释金额档为基础，索贿、为他人谋取重大利益、退赃和认罪认罚会显著影响区间。", "核对职务便利、请托事项、谋利结果、索贿情节、财物价值认定、退赃节点和主动交代情况。", ["请托事项与职务便利是否存在对应关系", "财物价值、收受时间和代收代持事实是否清楚", "是否存在索贿或为他人谋取重大利益", "主动交代、退赃退赔和认罪认罚材料是否完整"]),
+  offerBribe: moneyRule("行贿罪", 3, 100, 500, "以行贿金额、谋取不正当利益、主动交代和被追诉前交代为重点，第一版按金额档试算。", "核对谋取利益性质、财物给付过程、请托事项、主动交代节点、是否被勒索且未获不正当利益。", ["谋取利益是否属于不正当利益", "财物交付和请托事项是否对应", "是否存在被勒索且未获不正当利益", "主动交代、配合调查和退缴违法所得情况"]),
+  misappropriationPublic: customMoneyRule("挪用公款罪", 80, [
+    {min: 5, max: 50, softMax: 50, label: "数额较大", range: "五年以下有期徒刑或者拘役", floor: 0, start: 8, ceiling: 60},
+    {min: 50, max: 300, softMax: 300, label: "情节严重", range: "五年以上有期徒刑", floor: 60, start: 60, ceiling: 120},
+    {min: 300, max: Infinity, softMax: 1200, label: "数额巨大不退还等严重情形", range: "十年以上有期徒刑或者无期徒刑", floor: 120, start: 120, ceiling: 180}
+  ], "以挪用金额、用途、时间、是否归还为核心，非法活动和营利活动会明显影响档位。", "核对国家工作人员身份、公款属性、用途、持续时间、归还节点和是否谋取个人利益。", ["公款属性和职务便利是否成立", "用途是个人使用、营利活动还是非法活动", "三个月期限和归还节点是否清楚", "是否存在单位往来或授权使用空间"]),
+  intentionalInjury: levelRule("故意伤害罪", "伤情等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "轻伤", range: "三年以下有期徒刑、拘役或管制", floor: 0, start: 8, ceiling: 36},
+    {min: 2, max: 3, softMax: 3, label: "重伤", range: "三年以上十年以下有期徒刑", floor: 36, start: 36, ceiling: 120},
+    {min: 3, max: Infinity, softMax: 5, label: "致人死亡或特别残忍致重伤严重残疾", range: "十年以上有期徒刑、无期徒刑或者死刑", floor: 120, start: 120, ceiling: 240}
+  ], "故意伤害以伤情等级为起点。1=轻伤，2=重伤，3=死亡或特别严重后果。", "核对伤情鉴定、因果关系、防卫情节、被害人过错、赔偿谅解和案发起因。", ["伤情鉴定程序和结论是否可质证", "是否存在正当防卫、防卫过当或被害人过错", "医疗记录与伤害行为因果关系是否清楚", "赔偿、谅解和调解材料是否完整"]),
+  illegalDetention: levelRule("非法拘禁罪", "拘禁情节等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般拘禁", range: "三年以下有期徒刑、拘役、管制或剥夺政治权利", floor: 0, start: 6, ceiling: 36},
+    {min: 2, max: 3, softMax: 3, label: "殴打侮辱或时间较长", range: "三年以下为主，从重处罚", floor: 0, start: 14, ceiling: 48},
+    {min: 3, max: Infinity, softMax: 5, label: "致人重伤死亡", range: "三年以上十年以下或十年以上有期徒刑", floor: 36, start: 36, ceiling: 180}
+  ], "非法拘禁以拘禁时间、殴打侮辱和伤亡后果为核心，页面用情节等级简化。", "核对限制人身自由时间、地点、原因、债务纠纷背景、殴打侮辱和伤情后果。", ["拘禁起止时间和自由受限程度是否明确", "是否因索债引发以及债务是否真实", "殴打侮辱、伤情和因果关系是否清楚", "被害人谅解和赔偿情况"]),
+  affray: levelRule("聚众斗殴罪", "情节等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般聚众斗殴", range: "三年以下有期徒刑、拘役或管制", floor: 0, start: 10, ceiling: 36},
+    {min: 2, max: 3, softMax: 3, label: "多次、人数多、规模大或持械", range: "三年以上十年以下有期徒刑", floor: 36, start: 36, ceiling: 120},
+    {min: 3, max: Infinity, softMax: 5, label: "严重伤亡需转化评价", range: "可能转化故意伤害或故意杀人", floor: 36, start: 36, ceiling: 180}
+  ], "聚众斗殴重点看首要分子、积极参加者、持械和伤亡后果。", "核对聚众邀约、斗殴目的、持械、人员规模、伤情后果和行为人具体作用。", ["是否属于首要分子或积极参加者", "是否持械、多次或在公共场所造成严重秩序混乱", "伤亡后果是否需要转化定罪", "到案经过、赔偿谅解和参与程度"]),
+  provocation: levelRule("寻衅滋事罪", "情节等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般情节恶劣", range: "五年以下有期徒刑、拘役或管制", floor: 0, start: 8, ceiling: 60},
+    {min: 2, max: 3, softMax: 3, label: "多次纠集或严重破坏秩序", range: "五年以上十年以下有期徒刑，可以并处罚金", floor: 60, start: 60, ceiling: 120},
+    {min: 3, max: Infinity, softMax: 5, label: "多项严重情节", range: "五年以上十年以下有期徒刑，可以并处罚金", floor: 60, start: 60, ceiling: 120}
+  ], "寻衅滋事以行为类型和情节恶劣程度为起点，页面用情节等级简化。", "核对随意殴打、追逐辱骂恐吓、强拿硬要、公共场所起哄闹事的具体事实。", ["行为是否超出民事纠纷或一般治安违法", "公共秩序破坏程度和被害人损失是否明确", "是否多次实施或纠集他人", "赔偿、谅解和矛盾起因是否清楚"]),
+  obstructOfficial: levelRule("妨害公务罪", "情节等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般妨害公务", range: "三年以下有期徒刑、拘役、管制或罚金", floor: 0, start: 6, ceiling: 36},
+    {min: 2, max: 3, softMax: 3, label: "暴力抗法或造成伤害", range: "三年以下为主，从重评价", floor: 0, start: 12, ceiling: 48},
+    {min: 3, max: Infinity, softMax: 5, label: "严重后果", range: "三年以下为主，特殊情形另行评价", floor: 0, start: 20, ceiling: 60}
+  ], "妨害公务先看执法合法性、暴力威胁程度和后果。", "核对执法主体、执法程序、告知情况、暴力威胁程度、伤情和现场视频。", ["公务行为是否合法、正在依法执行", "是否明知对方身份和公务内容", "暴力威胁程度与伤情后果", "执法记录仪、现场视频和证人证言"]),
+  assaultPolice: levelRule("袭警罪", "情节等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般袭警", range: "三年以下有期徒刑、拘役或管制", floor: 0, start: 8, ceiling: 36},
+    {min: 2, max: 3, softMax: 3, label: "使用凶器、驾驶撞击等严重危及安全", range: "三年以上七年以下有期徒刑", floor: 36, start: 36, ceiling: 84},
+    {min: 3, max: Infinity, softMax: 5, label: "严重后果", range: "三年以上七年以下为主，重伤死亡另行评价", floor: 36, start: 36, ceiling: 120}
+  ], "袭警罪重点看警察依法执行职务、暴力袭击方式和安全风险。", "核对执法合法性、警察身份告知、暴力方式、工具车辆使用、伤情和视频证据。", ["警察是否依法执行职务", "是否明确知道对方警察身份", "是否使用凶器、驾驶撞击或造成伤害", "执法记录仪和现场视频是否完整"]),
+  dangerousDriving: levelRule("危险驾驶罪", "血醇浓度", "mg/100ml", 120, [
+    {min: 80, max: 150, softMax: 150, label: "醉驾一般情形", range: "拘役，并处罚金", floor: 0, start: 1, ceiling: 3},
+    {min: 150, max: 200, softMax: 200, label: "醉驾从重区间", range: "拘役，并处罚金", floor: 1, start: 2, ceiling: 5},
+    {min: 200, max: Infinity, softMax: 300, label: "高血醇或明显危险", range: "拘役，并处罚金", floor: 2, start: 3, ceiling: 6}
+  ], "危险驾驶以血醇浓度、道路类型、事故后果、逃逸和前科为核心。", "核对血样提取送检程序、检测数值、驾驶距离、道路类型、事故后果和是否有从重情节。", ["血样提取、封存、送检程序是否规范", "驾驶距离、道路性质和危险程度", "是否发生事故、逃逸或抗拒检查", "是否具备不起诉、缓刑或相对不起诉空间"]),
+  trafficAccident: levelRule("交通肇事罪", "后果等级", "级", 1, [
+    {min: 1, max: 2, softMax: 2, label: "一般交通肇事", range: "三年以下有期徒刑或拘役", floor: 0, start: 10, ceiling: 36},
+    {min: 2, max: 3, softMax: 3, label: "逃逸或特别恶劣情节", range: "三年以上七年以下有期徒刑", floor: 36, start: 36, ceiling: 84},
+    {min: 3, max: Infinity, softMax: 5, label: "因逃逸致人死亡", range: "七年以上有期徒刑", floor: 84, start: 84, ceiling: 180}
+  ], "交通肇事以责任认定、伤亡后果和逃逸情节为起点。", "核对事故责任比例、死亡或重伤人数、逃逸认定、赔偿谅解和保险赔付。", ["事故责任认定书是否可复核", "伤亡后果和因果关系是否明确", "逃逸是否成立以及主观明知情况", "赔偿、谅解和保险赔付进度"]),
+  drugTrafficking: levelRule("走私、贩卖、运输、制造毒品罪", "毒品折算克数", "克", 1, [
+    {min: 0, max: 10, softMax: 10, label: "少量毒品", range: "三年以下有期徒刑、拘役或管制，并处罚金", floor: 0, start: 10, ceiling: 36},
+    {min: 10, max: 50, softMax: 50, label: "数量较大", range: "三年以上七年以下有期徒刑，并处罚金", floor: 36, start: 36, ceiling: 84},
+    {min: 50, max: Infinity, softMax: 500, label: "数量大", range: "十五年有期徒刑、无期徒刑或者死刑，并处没收财产", floor: 180, start: 180, ceiling: 240}
+  ], "毒品犯罪量刑高度依赖毒品种类、含量、数量、行为类型和特情介入，页面仅用折算克数做粗测。", "核对毒品种类和含量鉴定、数量扣除、交易次数、特情引诱、主从犯和吸毒人员身份。", ["毒品种类、含量和称量程序是否可质证", "是否存在特情引诱、数量引诱或控制下交付", "贩卖、运输、代购或持有的定性边界", "同案分工、获利金额和吸毒史证据"])
+};
+
+function moneyRule(name, low, mid, high, basis, audit, checklist) {
+  return {
+    name,
+    metricLabel: "涉案金额",
+    metricUnit: "万元",
+    defaultValue: mid * 2,
+    note: `${name}：按涉案金额分档测算`,
+    basis,
+    audit,
+    checklist,
+    tiers: [
+      {min: low, max: mid, softMax: mid, label: "数额较大", range: "三年以下有期徒刑、拘役或管制，并处或单处罚金", floor: 0, start: 6, ceiling: 36},
+      {min: mid, max: high, softMax: high, label: "数额巨大", range: "三年以上十年以下有期徒刑，并处罚金", floor: 36, start: 36, ceiling: 120},
+      {min: high, max: Infinity, softMax: high * 8, label: "数额特别巨大", range: "十年以上有期徒刑或无期徒刑，并处罚金或没收财产", floor: 120, start: 120, ceiling: 180}
+    ]
+  };
+}
+function customMoneyRule(name, defaultValue, tiers, basis, audit, checklist) {
+  return {
+    name,
+    metricLabel: "涉案金额",
+    metricUnit: "万元",
+    defaultValue,
+    note: `${name}：按涉案金额或违法所得初步测算`,
+    basis,
+    audit,
+    checklist,
+    tiers
+  };
+}
+function dutyCrimeRule(name, basis, audit, checklist) {
+  return {
+    name,
+    metricLabel: "涉案金额",
+    metricUnit: "万元",
+    defaultValue: 50,
+    note: `${name}：金额、特殊情节和退赃退赔并重`,
+    basis,
+    audit,
+    checklist,
+    tiers: [
+      {min: 3, max: 20, softMax: 20, label: "数额较大", range: "三年以下有期徒刑或拘役，并处罚金", floor: 0, start: 8, ceiling: 36},
+      {min: 20, max: 300, softMax: 300, label: "数额巨大", range: "三年以上十年以下有期徒刑，并处罚金或没收财产", floor: 36, start: 36, ceiling: 120},
+      {min: 300, max: Infinity, softMax: 1200, label: "数额特别巨大", range: "十年以上有期徒刑或无期徒刑，并处罚金或没收财产", floor: 120, start: 120, ceiling: 180}
+    ]
+  };
+}
+function levelRule(name, metricLabel, metricUnit, defaultValue, tiers, basis, audit, checklist) {
+  return {
+    name,
+    metricLabel,
+    metricUnit,
+    defaultValue,
+    note: `${name}：按${metricLabel}初步测算`,
+    basis,
+    audit,
+    checklist,
+    tiers
+  };
+}
+
+const lenient = [
+  {id: "surrender", label: "自首", rate: -0.30, text: "自首", note: "按 -30% 试算"},
+  {id: "confess", label: "坦白", rate: -0.15, text: "坦白", note: "按 -15% 试算"},
+  {id: "plea", label: "认罪认罚", rate: -0.15, text: "认罪认罚", note: "按 -15% 试算"},
+  {id: "fullReturn", label: "全部退赃退赔", rate: -0.25, text: "全部退赃退赔", note: "按 -25% 试算"},
+  {id: "partialReturn", label: "部分退赃退赔", rate: -0.12, text: "部分退赃退赔", note: "按 -12% 试算"},
+  {id: "forgive", label: "取得谅解", rate: -0.10, text: "取得谅解", note: "按 -10% 试算"},
+  {id: "firstOffender", label: "初犯 / 偶犯", rate: -0.08, text: "初犯偶犯", note: "按 -8% 试算"},
+  {id: "merit", label: "立功", rate: -0.20, text: "立功", note: "按 -20% 试算"}
+];
+
+const aggravating = [
+  {id: "recidivist", label: "累犯 / 前科", rate: 0.20, text: "累犯或前科", note: "按 +20% 试算"},
+  {id: "multiple", label: "多次作案", rate: 0.15, text: "多次作案", note: "按 +15% 试算"},
+  {id: "severe", label: "造成严重后果", rate: 0.22, text: "严重后果", note: "按 +22% 试算"},
+  {id: "noReturn", label: "拒不退赃", rate: 0.12, text: "拒不退赃", note: "按 +12% 试算"},
+  {id: "leader", label: "组织 / 策划 / 主导", rate: 0.15, text: "组织策划或主导", note: "按 +15% 试算"},
+  {id: "specialImpact", label: "社会影响较大", rate: 0.10, text: "社会影响较大", note: "按 +10% 试算"}
+];
+
+const commonLegalBasis = [
+  {title: "《中华人民共和国刑法》第六十一条", note: "量刑的一般原则，根据犯罪事实、性质、情节和社会危害程度决定刑罚。"},
+  {title: "《中华人民共和国刑法》第六十二条、第六十三条", note: "从重、从轻、减轻处罚的基本规则。"},
+  {title: "《中华人民共和国刑法》第六十七条、第六十八条", note: "自首、坦白、立功的处理。"},
+  {title: "《中华人民共和国刑事诉讼法》第六十七条至第七十三条", note: "取保候审适用条件、保证方式、执行和义务。"},
+  {title: "两高《关于常见犯罪的量刑指导意见》及湖北省实施细则", note: "常见犯罪量刑起点、基准刑和情节调节的一般口径。", url: "https://liangxing.swupl.edu.cn/zcfg/591cb5b6b1df44c68e3a389d3fb42822.htm"}
+];
+
+const legalBasis = {
+  fraud: [
+    {title: "《中华人民共和国刑法》第二百六十六条", note: "诈骗罪。"},
+    {title: "两高《关于办理诈骗刑事案件具体应用法律若干问题的解释》", note: "诈骗罪数额标准、从宽从严情节和财物处理。"}
+  ],
+  contractFraud: [
+    {title: "《中华人民共和国刑法》第二百二十四条", note: "合同诈骗罪。"},
+    {title: "最高检、公安部《公安机关管辖的刑事案件立案追诉标准（二）》", note: "合同诈骗等经济犯罪立案追诉标准。"}
+  ],
+  illegalFundraising: [
+    {title: "《中华人民共和国刑法》第一百七十六条", note: "非法吸收公众存款罪。"},
+    {title: "最高法《关于审理非法集资刑事案件具体应用法律若干问题的解释》", note: "非法集资行为认定、数额和情节。"}
+  ],
+  fundraisingFraud: [
+    {title: "《中华人民共和国刑法》第一百九十二条", note: "集资诈骗罪。"},
+    {title: "最高法《关于审理非法集资刑事案件具体应用法律若干问题的解释》", note: "非法占有目的、数额和情节认定。"}
+  ],
+  embezzlement: [
+    {title: "《中华人民共和国刑法》第二百七十一条", note: "职务侵占罪。"},
+    {title: "最高检、公安部《公安机关管辖的刑事案件立案追诉标准（二）》", note: "职务侵占立案追诉标准。"}
+  ],
+  misappropriationFunds: [
+    {title: "《中华人民共和国刑法》第二百七十二条", note: "挪用资金罪。"},
+    {title: "最高检、公安部《公安机关管辖的刑事案件立案追诉标准（二）》", note: "挪用资金立案追诉标准。"}
+  ],
+  theft: [
+    {title: "《中华人民共和国刑法》第二百六十四条", note: "盗窃罪。"},
+    {title: "两高《关于办理盗窃刑事案件适用法律若干问题的解释》", note: "数额标准、多次盗窃、入户盗窃、扒窃等认定。"}
+  ],
+  extortion: [
+    {title: "《中华人民共和国刑法》第二百七十四条", note: "敲诈勒索罪。"},
+    {title: "两高《关于办理敲诈勒索刑事案件适用法律若干问题的解释》", note: "数额标准、从宽从严和多次敲诈勒索。"}
+  ],
+  robbery: [
+    {title: "《中华人民共和国刑法》第二百六十三条", note: "抢劫罪及八种加重情形。"},
+    {title: "最高法相关抢劫刑事案件司法解释和指导意见", note: "入户抢劫、转化型抢劫、抢劫数额和加重情节。"}
+  ],
+  concealment: [
+    {title: "《中华人民共和国刑法》第三百一十二条", note: "掩饰、隐瞒犯罪所得、犯罪所得收益罪。"},
+    {title: "最高法《关于审理掩饰、隐瞒犯罪所得、犯罪所得收益刑事案件适用法律若干问题的解释》", note: "明知、数额、情节严重和从宽情节。"}
+  ],
+  helpInfoCyber: [
+    {title: "《中华人民共和国刑法》第二百八十七条之二", note: "帮助信息网络犯罪活动罪。"},
+    {title: "两高《关于办理非法利用信息网络、帮助信息网络犯罪活动等刑事案件适用法律若干问题的解释》", note: "明知推定、情节严重和出罪规则。"}
+  ],
+  casino: [
+    {title: "《中华人民共和国刑法》第三百零三条第二款、第三款", note: "开设赌场罪和组织参与国境外赌博。"},
+    {title: "两高、公安部相关办理赌博犯罪案件适用法律意见", note: "赌资、抽头渔利、代理层级和网络赌博认定。"}
+  ],
+  illegalBusiness: [
+    {title: "《中华人民共和国刑法》第二百二十五条", note: "非法经营罪。"},
+    {title: "相关行业司法解释、行政许可规范和立案追诉标准", note: "不同经营类型适用依据差异很大，需按业务类型核查。"}
+  ],
+  corruption: [
+    {title: "《中华人民共和国刑法》第三百八十二条、第三百八十三条", note: "贪污罪及处罚。"},
+    {title: "两高《关于办理贪污贿赂刑事案件适用法律若干问题的解释》", note: "数额较大、巨大、特别巨大及较重情节。", url: "https://www.spp.gov.cn/zdgz/201604/t20160419_116381.shtml"},
+    {title: "两高《关于办理贪污贿赂刑事案件适用法律若干问题的解释（二）》", note: "2026 年新增或细化的贪污贿赂案件适用规则。", url: "https://www.spp.gov.cn/xwfbh/wsfbt/202604/t20260410_725586.shtml"}
+  ],
+  bribery: [
+    {title: "《中华人民共和国刑法》第三百八十五条、第三百八十六条", note: "受贿罪及处罚。"},
+    {title: "两高《关于办理贪污贿赂刑事案件适用法律若干问题的解释》", note: "受贿数额、索贿、为他人谋取利益和从宽从严。", url: "https://www.spp.gov.cn/zdgz/201604/t20160419_116381.shtml"},
+    {title: "两高《关于办理贪污贿赂刑事案件适用法律若干问题的解释（二）》", note: "2026 年相关适用规则。", url: "https://www.spp.gov.cn/xwfbh/wsfbt/202604/t20260410_725586.shtml"}
+  ],
+  offerBribe: [
+    {title: "《中华人民共和国刑法》第三百八十九条、第三百九十条", note: "行贿罪及处罚。"},
+    {title: "两高贪污贿赂司法解释", note: "行贿数额、不正当利益、主动交代和从宽从严。", url: "https://www.spp.gov.cn/zdgz/201604/t20160419_116381.shtml"}
+  ],
+  misappropriationPublic: [
+    {title: "《中华人民共和国刑法》第三百八十四条", note: "挪用公款罪。"},
+    {title: "两高贪污贿赂司法解释", note: "挪用公款数额、用途和情节严重。", url: "https://www.spp.gov.cn/zdgz/201604/t20160419_116381.shtml"}
+  ],
+  intentionalInjury: [
+    {title: "《中华人民共和国刑法》第二百三十四条", note: "故意伤害罪。"},
+    {title: "《人体损伤程度鉴定标准》", note: "轻伤、重伤等伤情等级认定。"}
+  ],
+  illegalDetention: [
+    {title: "《中华人民共和国刑法》第二百三十八条", note: "非法拘禁罪。"},
+    {title: "相关人身自由犯罪司法解释和量刑指导意见", note: "拘禁时间、殴打侮辱、伤亡后果和索债情节。"}
+  ],
+  affray: [
+    {title: "《中华人民共和国刑法》第二百九十二条", note: "聚众斗殴罪。"},
+    {title: "两高相关办理聚众斗殴案件规范和量刑指导意见", note: "首要分子、积极参加者、持械、多次和转化定罪。"}
+  ],
+  provocation: [
+    {title: "《中华人民共和国刑法》第二百九十三条", note: "寻衅滋事罪。"},
+    {title: "两高《关于办理寻衅滋事刑事案件适用法律若干问题的解释》", note: "四类行为、情节恶劣和公共秩序严重混乱。"}
+  ],
+  obstructOfficial: [
+    {title: "《中华人民共和国刑法》第二百七十七条第一款至第四款", note: "妨害公务罪。"},
+    {title: "刑事诉讼和公安执法相关规范", note: "依法执行职务、暴力威胁、执法记录和程序合法性。"}
+  ],
+  assaultPolice: [
+    {title: "《中华人民共和国刑法》第二百七十七条第五款", note: "袭警罪。"},
+    {title: "两高一部《关于依法惩治袭警违法犯罪行为的指导意见》", note: "暴力袭击正在依法执行职务的人民警察及从重情形。"}
+  ],
+  dangerousDriving: [
+    {title: "《中华人民共和国刑法》第一百三十三条之一", note: "危险驾驶罪。"},
+    {title: "两高两部《关于办理醉酒危险驾驶刑事案件的意见》", note: "醉驾入罪、从宽从严、不起诉和缓刑参考。"}
+  ],
+  trafficAccident: [
+    {title: "《中华人民共和国刑法》第一百三十三条", note: "交通肇事罪。"},
+    {title: "最高法《关于审理交通肇事刑事案件具体应用法律若干问题的解释》", note: "死亡、重伤、财产损失、逃逸和责任认定。"}
+  ],
+  drugTrafficking: [
+    {title: "《中华人民共和国刑法》第三百四十七条", note: "走私、贩卖、运输、制造毒品罪。"},
+    {title: "最高法《关于审理毒品犯罪案件适用法律若干问题的解释》", note: "毒品数量、含量、特情介入、共同犯罪和从宽从严。"}
+  ]
+};
+
+const roleRates = {
+  normal: {label: "主犯/一般参与", rate: 0, statutory: false},
+  minor: {label: "从犯", rate: -0.35, statutory: true},
+  accessory: {label: "帮助地位较轻", rate: -0.45, statutory: true}
+};
+const stageRates = {
+  completed: {label: "既遂", rate: 0, statutory: false},
+  attempted: {label: "未遂", rate: -0.35, statutory: true}
+};
+
+const form = document.getElementById("calculatorForm");
+const crimeEl = document.getElementById("crime");
+const amountEl = document.getElementById("amount");
+const metricLabelEl = document.getElementById("metricLabel");
+const metricUnitEl = document.getElementById("metricUnit");
+const roleEl = document.getElementById("role");
+const stageEl = document.getElementById("stage");
+const statutoryEl = document.getElementById("statutoryMitigation");
+const lenientWrap = document.getElementById("lenientChoices");
+const aggravatingWrap = document.getElementById("aggravatingChoices");
+const copyState = document.getElementById("copyState");
+let lastSummary = "";
+
+function renderChoices() {
+  lenientWrap.innerHTML = lenient.map(item => choiceMarkup(item)).join("");
+  aggravatingWrap.innerHTML = aggravating.map(item => choiceMarkup(item)).join("");
+}
+function choiceMarkup(item) {
+  return `<label class="check-row"><input type="checkbox" name="factor" value="${item.id}"><span>${item.label}</span></label>`;
+}
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+function findTier(rule, amount) {
+  return rule.tiers.find(tier => amount >= tier.min && amount < tier.max) || null;
+}
+function interpolateBase(tier, amount) {
+  if (!tier) return 0;
+  const max = tier.softMax || tier.max;
+  const ratio = tier.min > 0
+    ? clamp((Math.log(Math.max(amount, tier.min)) - Math.log(tier.min)) / (Math.log(max) - Math.log(tier.min)), 0, 1)
+    : clamp((amount - tier.min) / (max - tier.min), 0, 1);
+  return tier.start + ratio * (tier.ceiling - tier.start) * 0.78;
+}
+function formatMonths(value) {
+  const rounded = Math.max(0, Math.round(value));
+  if (rounded <= 0) return "免刑/管制需人工判断";
+  const years = Math.floor(rounded / 12);
+  const months = rounded % 12;
+  if (!years) return `${months}个月`;
+  if (!months) return `${years}年`;
+  return `${years}年${months}个月`;
+}
+function formatPercent(value) {
+  return `${value > 0 ? "+" : ""}${Math.round(value * 100)}%`;
+}
+function formatRange(low, high) {
+  return Math.round(low) === Math.round(high) ? formatMonths(low) : `${formatMonths(low)}至${formatMonths(high)}`;
+}
+function selectedFactors() {
+  const ids = [...form.querySelectorAll("input[name=factor]:checked")].map(el => el.value);
+  return [...lenient, ...aggravating].filter(item => ids.includes(item.id));
+}
+function factorClass(id) {
+  if (lenient.some(item => item.id === id)) return "green";
+  return "blue";
+}
+function compute() {
+  copyState.textContent = "";
+  const rule = rules[crimeEl.value];
+  metricLabelEl.textContent = rule.metricLabel || "核心指标";
+  metricUnitEl.textContent = rule.metricUnit || "";
+  amountEl.step = rule.metricUnit === "mg/100ml" || rule.metricUnit === "克" || rule.metricUnit === "级" ? "1" : "0.1";
+  const metric = Math.max(0, Number(amountEl.value) || 0);
+  const tier = findTier(rule, metric);
+  document.getElementById("crimeNote").textContent = rule.note;
+  document.getElementById("ruleText").textContent = rule.basis + " 页面输出的是量刑辅助区间，不直接等同于检察院量刑建议或法院裁判结果。";
+  document.getElementById("checklist").innerHTML = rule.checklist.map(item => `<li>${item}</li>`).join("");
+
+  if (!tier) {
+    renderBelowThreshold(rule, metric);
+    return;
+  }
+
+  const base = interpolateBase(tier, metric);
+  const role = roleRates[roleEl.value];
+  const stage = stageRates[stageEl.value];
+  const factors = selectedFactors();
+  let lenientRate = 0;
+  let aggravatingRate = 0;
+  const details = [
+    {name: `${rule.name} · ${metric}${rule.metricUnit || ""}`, value: tier.label},
+    {name: "法定刑档", value: tier.range}
+  ];
+  if (role.rate) {
+    lenientRate += role.rate;
+    details.push({name: role.label, value: `${Math.round(role.rate * 100)}%`});
+  }
+  if (stage.rate) {
+    lenientRate += stage.rate;
+    details.push({name: stage.label, value: `${Math.round(stage.rate * 100)}%`});
+  }
+  factors.forEach(item => {
+    if (item.rate < 0) lenientRate += item.rate;
+    if (item.rate > 0) aggravatingRate += item.rate;
+    details.push({name: item.text, value: item.note.replace("按 ", "")});
+  });
+  lenientRate = Math.max(lenientRate, -0.68);
+  aggravatingRate = Math.min(aggravatingRate, 0.85);
+  const totalRate = lenientRate + aggravatingRate;
+  const allowBelow = statutoryEl.checked || role.statutory || stage.statutory;
+  const guardedFloor = allowBelow ? 0 : tier.floor;
+  let adjusted = base * (1 + totalRate);
+  adjusted = clamp(adjusted, guardedFloor, tier.ceiling);
+  let low = clamp(adjusted * 0.88, guardedFloor, tier.ceiling);
+  let high = clamp(adjusted * 1.16, guardedFloor, tier.ceiling);
+  if (!allowBelow && adjusted <= tier.floor + 0.5) {
+    low = tier.floor;
+    high = tier.floor;
+  }
+  const rangeTitle = formatRange(low, high);
+  const risk = probationRisk(high, factors, role, stage);
+  const bail = bailRisk(adjusted, high, factors, role, stage, crimeEl.value);
+  const pills = [
+    {text: rule.name, cls: ""},
+    {text: tier.label, cls: ""},
+    {text: role.label, cls: role.rate ? "green" : "blue"},
+    {text: stage.label, cls: stage.rate ? "green" : "blue"}
+  ].concat(factors.map(item => ({text: item.text, cls: factorClass(item.id)})));
+
+  document.getElementById("rangeTitle").textContent = rangeTitle;
+  document.getElementById("rangeSub").textContent = `${rule.name} · ${tier.label} · 参考区间`;
+  document.getElementById("tierText").textContent = tier.label;
+  document.getElementById("baseText").textContent = formatMonths(base);
+  document.getElementById("pills").innerHTML = pills.map(p => `<span class="pill ${p.cls}">${p.text}</span>`).join("");
+  document.getElementById("details").innerHTML = details.map(item => `<div class="detail"><span>${item.name}</span><span>${item.value}</span></div>`).join("");
+  const bailBox = document.getElementById("bailBox");
+  bailBox.className = `risk-box ${bail.level}`;
+  bailBox.innerHTML = `<strong>取保候审初筛：${bail.label}</strong><p>${bail.text}</p>`;
+  const probationBox = document.getElementById("probationBox");
+  probationBox.className = `risk-box ${risk.level}`;
+  probationBox.innerHTML = `<strong>缓刑初筛：${risk.label}</strong><p>${risk.text}</p>`;
+  document.getElementById("auditText").textContent = `${rule.audit}${allowBelow ? " 已勾选或存在法定减轻情节，跨档幅度需人工复核。" : ""}`;
+  renderFormula(rule, tier, metric, base, lenientRate, aggravatingRate, totalRate, adjusted, low, high, allowBelow, factors, role, stage);
+  lastSummary = [
+    `【${rule.name}量刑辅助测算】`,
+    `${rule.metricLabel || "核心指标"}：${metric}${rule.metricUnit || ""}`,
+    `基础档位：${tier.label}（${tier.range}）`,
+    `基准刑：${formatMonths(base)}`,
+    `共同犯罪地位：${role.label}`,
+    `犯罪形态：${stage.label}`,
+    `已选情节：${factors.length ? factors.map(item => item.text).join("、") : "无"}`,
+    `参考区间：${rangeTitle}`,
+    `取保候审初筛：${bail.label}`,
+    `缓刑初筛：${risk.label}`,
+    "提示：仅供初步测算，需结合卷宗、证据和湖北量刑细则人工判断。"
+  ].join("\n");
+}
+function renderBelowThreshold(rule, metric) {
+  const first = rule.tiers[0];
+  document.getElementById("rangeTitle").textContent = "低于当前测算起点";
+  document.getElementById("rangeSub").textContent = `${rule.name} · ${metric}${rule.metricUnit || ""} · 需人工判断`;
+  document.getElementById("tierText").textContent = "未进入测算档";
+  document.getElementById("baseText").textContent = "需核查";
+  document.getElementById("pills").innerHTML = `<span class="pill blue">${rule.name}</span><span class="pill">起点 ${first.min}${rule.metricUnit || ""}</span>`;
+  document.getElementById("details").innerHTML = `<div class="detail"><span>${rule.metricLabel || "核心指标"}</span><span>${metric}${rule.metricUnit || ""}</span></div><div class="detail"><span>当前测算起点</span><span>${first.min}${rule.metricUnit || ""}</span></div>`;
+  const probationBox = document.getElementById("probationBox");
+  probationBox.className = "risk-box mid";
+  probationBox.innerHTML = "<strong>缓刑初筛：需人工判断</strong><p>当前指标低于工具的第一档起点，可能涉及不构罪、行政处理、情节显著轻微或特殊情节入罪问题。</p>";
+  const bailBox = document.getElementById("bailBox");
+  bailBox.className = "risk-box mid";
+  bailBox.innerHTML = "<strong>取保候审初筛：需人工判断</strong><p>当前指标低于工具起点，但家属仍可优先准备身份关系、固定住址、工作证明、退赔谅解和保证人材料。</p>";
+  document.getElementById("auditText").textContent = rule.audit;
+  renderFormula(rule, first, metric, 0, 0, 0, 0, 0, 0, 0, false, [], roleRates[roleEl.value], stageRates[stageEl.value]);
+  lastSummary = `【${rule.name}量刑辅助测算】\n${rule.metricLabel || "核心指标"}：${metric}${rule.metricUnit || ""}\n当前指标低于工具起点：${first.min}${rule.metricUnit || ""}\n提示：需人工核查是否入罪、是否存在特殊情节。`;
+}
+function renderFormula(rule, tier, metric, base, lenientRate, aggravatingRate, totalRate, adjusted, low, high, allowBelow, factors, role, stage) {
+  document.getElementById("tierFormulaList").innerHTML = rule.tiers.map(item => {
+    const max = item.max === Infinity ? "以上" : `至${item.max}${rule.metricUnit || ""}`;
+    return `<li><strong>${item.label}</strong>：${item.min}${rule.metricUnit || ""}${max}，${item.range}；测算下限 ${formatMonths(item.floor)}，上限 ${formatMonths(item.ceiling)}。</li>`;
+  }).join("");
+  const factorLines = [
+    ...lenient.map(item => `<li><strong>${item.label}</strong>：${formatPercent(item.rate)}</li>`),
+    ...aggravating.map(item => `<li><strong>${item.label}</strong>：${formatPercent(item.rate)}</li>`),
+    `<li><strong>${role.label}</strong>：${formatPercent(role.rate)}</li>`,
+    `<li><strong>${stage.label}</strong>：${formatPercent(stage.rate)}</li>`,
+    "<li><strong>从宽累计上限</strong>：最多扣减 68%；<strong>从重累计上限</strong>：最多增加 85%。</li>"
+  ];
+  document.getElementById("factorFormulaList").innerHTML = factorLines.join("");
+  document.getElementById("formulaText").textContent = [
+    "1. 基准刑 = 按核心指标在当前档位内插值。",
+    "2. 总调整比例 = 从宽比例合计 + 从重比例合计。",
+    "3. 调整后刑期 = 基准刑 × (1 + 总调整比例)。",
+    "4. 参考区间 = 调整后刑期 × 0.88 至 × 1.16。",
+    "5. 如无法定减轻情节，结果不低于当前法定刑档下限；如存在法定减轻情节，允许低于本档下限试算。"
+  ].join("\n");
+  const picked = factors.length ? factors.map(item => `${item.text}（${formatPercent(item.rate)}）`).join("、") : "无";
+  document.getElementById("currentFormulaList").innerHTML = [
+    `<li><strong>${rule.metricLabel || "核心指标"}</strong>：${metric}${rule.metricUnit || ""}</li>`,
+    `<li><strong>当前档位</strong>：${tier.label}，${tier.range}</li>`,
+    `<li><strong>基准刑</strong>：${base ? formatMonths(base) : "未进入测算档"}</li>`,
+    `<li><strong>已选情节</strong>：${picked}</li>`,
+    `<li><strong>从宽合计</strong>：${formatPercent(lenientRate)}；<strong>从重合计</strong>：${formatPercent(aggravatingRate)}；<strong>总调整</strong>：${formatPercent(totalRate)}</li>`,
+    `<li><strong>调整后刑期</strong>：${formatMonths(adjusted)}；<strong>参考区间</strong>：${formatRange(low, high)}</li>`,
+    `<li><strong>是否允许低于本档下限</strong>：${allowBelow ? "是，存在或勾选法定减轻基础" : "否，按本档下限保护"}</li>`
+  ].join("");
+  renderLegalBasis(crimeEl.value);
+}
+function renderLegalBasis(crimeKey) {
+  const items = [...commonLegalBasis, ...(legalBasis[crimeKey] || [])];
+  document.getElementById("legalBasisList").innerHTML = items.map(item => {
+    const title = item.url ? `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>` : item.title;
+    return `<li><strong>${title}</strong>：${item.note}</li>`;
+  }).join("");
+}
+function probationRisk(high, factors, role, stage) {
+  const ids = factors.map(item => item.id);
+  const hardBad = ids.some(id => ["recidivist", "severe", "noReturn"].includes(id));
+  const positive = ids.some(id => ["surrender", "plea", "fullReturn", "forgive"].includes(id));
+  if (high <= 24 && !hardBad && positive) {
+    return {level: "high", label: "较高", text: "参考区间在二年以内，并存在自首、认罪认罚、退赔或谅解等从宽情节，可以重点评估缓刑适用条件。"};
+  }
+  if (high <= 36 && !hardBad) {
+    return {level: "mid", label: "有讨论空间", text: "参考区间未明显超过三年，但仍需结合再犯危险、社区影响、退赔谅解和监管条件判断。"};
+  }
+  if ((role.statutory || stage.statutory) && high <= 48 && !ids.includes("recidivist")) {
+    return {level: "mid", label: "需争取", text: "存在从犯或未遂等法定减轻基础，但当前区间仍偏高，应优先争取金额压缩和退赔谅解。"};
+  }
+  return {level: "low", label: "低", text: "参考区间通常超过三年或存在不利情节，缓刑空间较小，应优先核查金额、证据和法定减轻理由。"};
+}
+function bailRisk(adjusted, high, factors, role, stage, crimeKey) {
+  const ids = factors.map(item => item.id);
+  const seriousCrime = ["robbery", "drugTrafficking", "intentionalInjury", "trafficAccident", "assaultPolice"].includes(crimeKey);
+  const hardBad = ids.some(id => ["recidivist", "severe", "noReturn"].includes(id));
+  const positive = ids.some(id => ["surrender", "confess", "plea", "fullReturn", "partialReturn", "forgive"].includes(id));
+  if (high <= 36 && positive && !hardBad && !seriousCrime) {
+    return {level: "high", label: "较高", text: "预估刑期较低，且存在自首、坦白、认罪认罚、退赔或谅解等降低社会危险性的材料，可优先准备取保候审申请。"};
+  }
+  if (high <= 60 && !hardBad) {
+    return {level: "mid", label: "有空间", text: "仍有取保申请空间，重点补强固定住址、工作家庭关系、退赔谅解、保证人或保证金、无串供毁证风险等材料。"};
+  }
+  if ((role.statutory || stage.statutory || positive) && !ids.includes("recidivist")) {
+    return {level: "mid", label: "需争取", text: "案件本身偏重，但存在从犯、未遂、认罪认罚或退赔等有利因素，可以围绕羁押必要性审查争取。"};
+  }
+  return {level: "low", label: "偏低", text: "预估刑期较高或存在累犯、严重后果、拒不退赃等不利因素，取保难度较大，应优先处理退赔谅解、证据固定和羁押必要性理由。"};
+}
+
+renderChoices();
+compute();
+form.addEventListener("input", compute);
+form.addEventListener("change", compute);
+crimeEl.addEventListener("change", () => {
+  const rule = rules[crimeEl.value];
+  amountEl.value = rule.defaultValue || rule.tiers[0].min;
+  compute();
+});
+document.getElementById("copyBtn").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(lastSummary);
+    copyState.textContent = "已复制";
+  } catch (error) {
+    copyState.textContent = "复制失败，可手动选中结果";
+  }
+});
+document.getElementById("resetBtn").addEventListener("click", () => {
+  form.reset();
+  crimeEl.value = "fraud";
+  amountEl.value = rules.fraud.defaultValue || 50;
+  compute();
+});
+let last = 0;
+window.addEventListener("scroll", () => {
+  const nav = document.getElementById("nav");
+  const y = window.scrollY;
+  nav.classList.toggle("hide", y > last && y > 200);
+  last = y;
+});
+</script>
+</body>
+</html>

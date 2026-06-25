@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="律师工具台，分层展示诉讼费、仲裁费、利息、刑事量刑等常用工具。">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/tools.html">
+<title>律师工具台 · 荣郑律师</title>
+<style>
+:root{--ink:#1f2522;--text:#3d433f;--muted:#72786f;--bg:#f7f5ef;--white:#fff;--gold:#a9823b;--rule:#e7e1d7;--shadow:0 16px 50px rgba(31,37,34,.08)}
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 24px;min-height:64px}
+.nav-logo{font-size:18px;color:var(--ink);font-family:"Noto Serif SC","Songti SC",serif}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.nav-links a.active{color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:96px 24px 64px}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:36px;margin:0 0 12px;color:var(--ink)}
+.sub{max-width:820px;color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:24px}
+.card{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:24px;min-height:170px;display:flex;flex-direction:column;justify-content:space-between}
+.card.active{border-color:var(--gold)}
+.tag{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.card h2{font-size:20px;margin:8px 0 10px;color:var(--ink)}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.link{font-size:12px;color:var(--gold);font-weight:700}
+.section{margin-top:22px;background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:24px}
+.section h3{margin:0 0 10px;color:var(--ink);font-size:16px}
+.section p{margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+@media(max-width:1100px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">荣<span>郑</span></a>
+    <div class="nav-links">
+      <a href="index.html">首页</a><a href="articles/">文章</a><a href="criminal.html">刑事</a><a href="civil.html">民商事</a><a href="tools.html" class="active">工具</a>
+    </div>
+  </div>
+</nav>
+<main class="wrap">
+  <h1>律师工具台</h1>
+  <p class="sub">先按业务层级拆分，再进入具体工具。下面把常用入口挂起来，后续可以继续加保全费、执行费、工伤、婚姻等子工具。</p>
+  <div class="cards">
+    <a class="card active" href="litigation-fee.html"><div><div class="tag">Fee Tools</div><h2>诉讼费</h2><p>财产案件受理费、保全费、执行申请费常用分段测算。</p></div><div class="link">进入工具</div></a>
+    <a class="card active" href="arbitration-fee.html"><div><div class="tag">Arbitration</div><h2>仲裁费</h2><p>按争议金额分段估算仲裁受理费区间和中位参考。</p></div><div class="link">进入工具</div></a>
+    <a class="card active" href="interest.html"><div><div class="tag">Interest</div><h2>利息</h2><p>按本金、期间、年利率、LPR 和 4 倍 LPR 口径试算单利。</p></div><div class="link">进入工具</div></a>
+    <a class="card active" href="sentencing.html"><div><div class="tag">Criminal</div><h2>刑事量刑</h2><p>湖北刑事量刑辅助测算器，支持常见罪名、核心事实指标和量刑情节初步测算。</p></div><div class="link">进入工具</div></a>
+  </div>
+  <div class="section">
+    <h3>后续扩展</h3>
+    <p>工具台只负责分发，具体测算都放在独立子页。后续可以继续补保全担保、执行成本、劳动赔偿、婚姻家事、工伤赔偿等工具。</p>
+  </div>
+</main>
+</body>
+</html>

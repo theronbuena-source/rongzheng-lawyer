@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="诉讼费辅助测算器，按财产案件受理费、保全费、执行申请费常用分段规则进行初步试算。">
+<meta name="keywords" content="诉讼费计算器,案件受理费,财产案件诉讼费,保全费,执行费,荣郑律师">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/litigation-fee.html">
+<title>诉讼费辅助测算器 · 荣郑律师</title>
+<style>
+:root{--ink:#1f2522;--text:#3d433f;--muted:#72786f;--bg:#f7f5ef;--soft:#fbfaf6;--white:#fff;--gold:#a9823b;--rule:#e7e1d7;--rule-strong:#d6cbb9;--green:#2e7250;--shadow:0 16px 50px rgba(31,37,34,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:0 24px;min-height:64px}.nav-logo{font-family:"Noto Serif SC","Songti SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.nav-links a.active,.nav-links a:hover{color:var(--ink)}.nav-cta{color:var(--gold)!important;border:1px solid var(--gold);padding:6px 16px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:104px 24px 70px}.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:18px}.breadcrumb a{color:var(--gold)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:32px;align-items:end}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 8px}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:38px;line-height:1.2;color:var(--ink);margin:0 0 12px}.sub{margin:0;color:var(--muted);max-width:760px}.note{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:18px 20px;font-size:12px;color:var(--muted)}
+.tool{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:24px;align-items:start;margin-top:28px}.panel{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow)}.form{padding:26px}.section{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--rule)}.section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:14px}h2{font-size:17px;color:var(--ink);margin:0}.hint{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:7px}label,.field-title{font-size:13px;color:var(--ink);font-weight:600}
+input,select{width:100%;height:44px;border:1px solid var(--rule-strong);background:#fff;color:var(--ink);font-size:14px;padding:0 12px;border-radius:4px;outline:none}input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,130,59,.12)}
+.check{display:flex;align-items:flex-start;gap:10px;margin-top:14px;border:1px solid var(--rule);background:var(--soft);padding:12px;border-radius:4px}.check input{width:18px;height:18px;margin-top:4px}.check span{font-size:13px}.result{position:sticky;top:88px;overflow:hidden}.result-head{background:var(--ink);color:#fff;padding:22px 24px}.result-head .label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#dcc28a;font-weight:700}.result-head h2{color:#fff;font-size:24px;margin:6px 0 2px}.result-head p{margin:0;color:rgba(255,255,255,.68);font-size:12px}
+.metric{display:grid;grid-template-columns:1fr auto;gap:12px;padding:16px 20px;border-bottom:1px dashed var(--rule);font-size:13px}.metric span:first-child{color:var(--text)}.metric span:last-child{color:var(--gold);font-weight:700}.body{padding:20px 24px}.body p{margin:0 0 14px;color:var(--muted);font-size:12px}.formula{background:var(--soft);border:1px solid var(--rule);padding:16px;margin-top:20px}.formula h3{font-size:14px;color:var(--ink);margin:0 0 8px}.formula ul{margin:0;padding-left:18px;color:var(--muted);font-size:12px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}button{height:40px;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:4px;padding:0 16px;font-size:13px;cursor:pointer}.secondary{background:#fff;color:var(--ink)}.copy-state{font-size:12px;color:var(--green);align-self:center;min-height:20px}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:34px;font-size:12px}.f-nav{display:flex;justify-content:center;gap:24px;margin-bottom:14px;flex-wrap:wrap}.f-nav a{color:rgba(255,255,255,.62)}
+@media(max-width:960px){.hero,.tool{grid-template-columns:1fr}.result{position:static}}@media(max-width:680px){.wrap{padding:94px 20px 56px}.nav-inner{padding:10px 20px;align-items:flex-start}.grid{grid-template-columns:1fr}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a class="nav-logo" href="index.html">荣<span>郑</span></a><div class="nav-links"><a href="index.html">首页</a><a href="articles/">文章</a><a href="criminal.html">刑事</a><a href="civil.html">民商事</a><a class="active" href="tools.html">工具</a><a class="nav-cta" href="index.html#contact">联系</a></div></div></nav>
+<main class="wrap">
+  <div class="breadcrumb"><a href="index.html">首页</a> &rsaquo; <a href="tools.html">律师工具台</a> &rsaquo; 诉讼费</div>
+  <header class="hero">
+    <div><p class="eyebrow">Litigation Fee Calculator</p><h1>诉讼费辅助测算器</h1><p class="sub">按财产案件受理费、保全费、执行申请费的常见分段标准试算。结果用于办案前估算，法院最终收费以立案、保全、执行窗口核定为准。</p></div>
+    <div class="note">财产案件受理费可勾选“减半”用于简易程序、调解结案、撤诉等常见场景的粗略估算。</div>
+  </header>
+  <section class="tool">
+    <form class="panel form" id="feeForm">
+      <div class="section">
+        <div class="head"><h2>基础信息</h2><span class="hint">金额单位：元</span></div>
+        <div class="grid">
+          <div class="field"><label for="claimAmount">诉讼请求金额</label><input id="claimAmount" type="number" min="0" step="1000" value="100000"></div>
+          <div class="field"><label for="caseType">测算项目</label><select id="caseType"><option value="acceptance">财产案件受理费</option><option value="preservation">财产保全申请费</option><option value="enforcement">执行申请费</option><option value="all">三项合计参考</option></select></div>
+        </div>
+        <label class="check"><input id="halfFee" type="checkbox"><span>财产案件受理费按 50% 估算</span></label>
+      </div>
+      <div class="section">
+        <div class="head"><h2>快速金额</h2><span class="hint">便于现场沟通</span></div>
+        <div class="actions">
+          <button type="button" class="secondary" data-amount="50000">5 万</button>
+          <button type="button" class="secondary" data-amount="100000">10 万</button>
+          <button type="button" class="secondary" data-amount="500000">50 万</button>
+          <button type="button" class="secondary" data-amount="1000000">100 万</button>
+          <button type="button" class="secondary" data-amount="5000000">500 万</button>
+        </div>
+      </div>
+    </form>
+    <aside class="panel result">
+      <div class="result-head"><div class="label">Estimated Fee</div><h2 id="mainFee">0 元</h2><p id="mainLabel">财产案件受理费</p></div>
+      <div class="body">
+        <div class="metric"><span>财产案件受理费</span><span id="acceptanceFee">0 元</span></div>
+        <div class="metric"><span>财产保全申请费</span><span id="preservationFee">0 元</span></div>
+        <div class="metric"><span>执行申请费</span><span id="enforcementFee">0 元</span></div>
+        <p id="feeNote">财产案件按分段累进方式计算；保全费最高不超过 5000 元。</p>
+        <div class="actions"><button type="button" id="copyBtn">复制测算结果</button><button type="button" class="secondary" id="resetBtn">重置</button><span class="copy-state" id="copyState"></span></div>
+      </div>
+    </aside>
+  </section>
+  <section class="formula">
+    <h3>计算口径</h3>
+    <ul>
+      <li>财产案件受理费：1 万元以下 50 元，超过部分按 2.5%、2%、1.5%、1%、0.9%、0.8%、0.7%、0.6%、0.5% 分段累进。</li>
+      <li>财产保全申请费：1000 元以下 30 元，超过 1000 元至 10 万元部分按 1%，超过 10 万元部分按 0.5%，最高 5000 元。</li>
+      <li>执行申请费：1 万元以下 50 元，超过部分按 1.5%、1%、0.5%、0.1% 分段累进。</li>
+    </ul>
+  </section>
+</main>
+<footer><div class="f-nav"><a href="index.html">首页</a><a href="tools.html">律师工具台</a><a href="sentencing.html">刑事量刑</a><a href="index.html#contact">联系</a></div><div>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</div></footer>
+<script>
+const form=document.getElementById("feeForm"),claimAmount=document.getElementById("claimAmount"),caseType=document.getElementById("caseType"),halfFee=document.getElementById("halfFee");
+const fmt=n=>`${Math.max(0,n).toLocaleString("zh-CN",{maximumFractionDigits:2})} 元`;
+function tier(amount,segments,base=0){let fee=base,prev=0;for(const [limit,rate] of segments){const top=Math.min(amount,limit);if(top>prev)fee+=(top-prev)*rate;prev=limit;if(amount<=limit)break}return fee}
+function acceptance(amount){if(amount<=0)return 0;if(amount<=10000)return 50;return 50+tier(amount,[[100000,.025],[200000,.02],[500000,.015],[1000000,.01],[2000000,.009],[5000000,.008],[10000000,.007],[20000000,.006],[Infinity,.005]],0)-10000*.025}
+function acceptanceClean(amount){if(amount<=0)return 0;if(amount<=10000)return 50;let fee=50,prev=10000;for(const [limit,rate] of [[100000,.025],[200000,.02],[500000,.015],[1000000,.01],[2000000,.009],[5000000,.008],[10000000,.007],[20000000,.006],[Infinity,.005]]){const top=Math.min(amount,limit);if(top>prev)fee+=(top-prev)*rate;prev=limit;if(amount<=limit)break}return fee}
+function preservation(amount){if(amount<=0)return 0;if(amount<=1000)return 30;let fee=30;fee+=(Math.min(amount,100000)-1000)*.01;if(amount>100000)fee+=(amount-100000)*.005;return Math.min(fee,5000)}
+function enforcement(amount){if(amount<=0)return 0;if(amount<=10000)return 50;let fee=50,prev=10000;for(const [limit,rate] of [[500000,.015],[5000000,.01],[10000000,.005],[Infinity,.001]]){const top=Math.min(amount,limit);if(top>prev)fee+=(top-prev)*rate;prev=limit;if(amount<=limit)break}return fee}
+function compute(){const amount=Number(claimAmount.value)||0;let acc=acceptanceClean(amount);if(halfFee.checked)acc*=.5;const pre=preservation(amount),enf=enforcement(amount),type=caseType.value;const total=acc+pre+enf;const selected={acceptance:acc,preservation:pre,enforcement:enf,all:total}[type];const label={acceptance:"财产案件受理费",preservation:"财产保全申请费",enforcement:"执行申请费",all:"三项合计参考"}[type];document.getElementById("mainFee").textContent=fmt(selected);document.getElementById("mainLabel").textContent=label;document.getElementById("acceptanceFee").textContent=fmt(acc);document.getElementById("preservationFee").textContent=fmt(pre);document.getElementById("enforcementFee").textContent=fmt(enf)}
+form.addEventListener("input",compute);form.addEventListener("change",compute);document.querySelectorAll("[data-amount]").forEach(btn=>btn.addEventListener("click",()=>{claimAmount.value=btn.dataset.amount;compute()}));
+document.getElementById("resetBtn").addEventListener("click",()=>{claimAmount.value=100000;caseType.value="acceptance";halfFee.checked=false;compute()});
+document.getElementById("copyBtn").addEventListener("click",async()=>{const text=`诉讼费试算：${document.getElementById("mainLabel").textContent} ${document.getElementById("mainFee").textContent}。受理费 ${document.getElementById("acceptanceFee").textContent}，保全费 ${document.getElementById("preservationFee").textContent}，执行费 ${document.getElementById("enforcementFee").textContent}。`;try{await navigator.clipboard.writeText(text);document.getElementById("copyState").textContent="已复制"}catch{document.getElementById("copyState").textContent="复制失败"}});
+compute();
+</script>
+</body>
+</html>

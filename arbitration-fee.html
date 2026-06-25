@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="仲裁费辅助测算器，按仲裁案件受理费常见分段区间估算低值、高值和中位参考。">
+<meta name="keywords" content="仲裁费计算器,仲裁案件受理费,仲裁费用,武汉仲裁,荣郑律师">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/arbitration-fee.html">
+<title>仲裁费辅助测算器 · 荣郑律师</title>
+<style>
+:root{--ink:#1f2522;--text:#3d433f;--muted:#72786f;--bg:#f7f5ef;--soft:#fbfaf6;--white:#fff;--gold:#a9823b;--rule:#e7e1d7;--rule-strong:#d6cbb9;--green:#2e7250;--shadow:0 16px 50px rgba(31,37,34,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}.nav-inner{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:0 24px;min-height:64px}.nav-logo{font-family:"Noto Serif SC","Songti SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}.nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.nav-links a.active,.nav-links a:hover{color:var(--ink)}.nav-cta{color:var(--gold)!important;border:1px solid var(--gold);padding:6px 16px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:104px 24px 70px}.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:18px}.breadcrumb a{color:var(--gold)}.hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:32px;align-items:end}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 8px}h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:38px;line-height:1.2;color:var(--ink);margin:0 0 12px}.sub{margin:0;color:var(--muted);max-width:760px}.note{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:18px 20px;font-size:12px;color:var(--muted)}
+.tool{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:24px;align-items:start;margin-top:28px}.panel{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow)}.form{padding:26px}.head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:14px}h2{font-size:17px;color:var(--ink);margin:0}.hint{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:7px}label{font-size:13px;color:var(--ink);font-weight:600}input,select{width:100%;height:44px;border:1px solid var(--rule-strong);background:#fff;color:var(--ink);font-size:14px;padding:0 12px;border-radius:4px;outline:none}input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,130,59,.12)}
+.quick{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}button{height:40px;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:4px;padding:0 16px;font-size:13px;cursor:pointer}.secondary{background:#fff;color:var(--ink)}.result{position:sticky;top:88px;overflow:hidden}.result-head{background:var(--ink);color:#fff;padding:22px 24px}.result-head .label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#dcc28a;font-weight:700}.result-head h2{color:#fff;font-size:24px;margin:6px 0 2px}.result-head p{margin:0;color:rgba(255,255,255,.68);font-size:12px}.body{padding:20px 24px}.metric{display:grid;grid-template-columns:1fr auto;gap:12px;padding:16px 0;border-bottom:1px dashed var(--rule);font-size:13px}.metric span:first-child{color:var(--text)}.metric span:last-child{color:var(--gold);font-weight:700}.body p{margin:14px 0 0;color:var(--muted);font-size:12px}.copy-state{font-size:12px;color:var(--green);align-self:center;min-height:20px}
+.formula{background:var(--white);border:1px solid var(--rule);box-shadow:var(--shadow);padding:22px 24px;margin-top:22px}.formula h3{font-size:15px;color:var(--ink);margin:0 0 10px}.tiers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tier{border:1px solid var(--rule);background:var(--soft);padding:12px;font-size:12px;color:var(--muted)}.tier strong{display:block;color:var(--ink);font-size:13px;margin-bottom:2px}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:34px;font-size:12px}.f-nav{display:flex;justify-content:center;gap:24px;margin-bottom:14px;flex-wrap:wrap}.f-nav a{color:rgba(255,255,255,.62)}
+@media(max-width:960px){.hero,.tool{grid-template-columns:1fr}.result{position:static}.tiers{grid-template-columns:1fr}}@media(max-width:680px){.wrap{padding:94px 20px 56px}.nav-inner{padding:10px 20px;align-items:flex-start}.grid{grid-template-columns:1fr}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a class="nav-logo" href="index.html">荣<span>郑</span></a><div class="nav-links"><a href="index.html">首页</a><a href="articles/">文章</a><a href="criminal.html">刑事</a><a href="civil.html">民商事</a><a class="active" href="tools.html">工具</a><a class="nav-cta" href="index.html#contact">联系</a></div></div></nav>
+<main class="wrap">
+  <div class="breadcrumb"><a href="index.html">首页</a> &rsaquo; <a href="tools.html">律师工具台</a> &rsaquo; 仲裁费</div>
+  <header class="hero">
+    <div><p class="eyebrow">Arbitration Fee Calculator</p><h1>仲裁费辅助测算器</h1><p class="sub">按仲裁案件受理费的通用分段区间，给出低值、高值和中位参考。不同仲裁机构可能另有收费办法或案件处理费，提交案件前应以机构收费通知为准。</p></div>
+    <div class="note">本页不替代具体仲裁机构的收费确认。武汉、北京、上海、贸仲等机构的最终收费表可能不同，尤其是涉外、加急、反请求和多方当事人案件。</div>
+  </header>
+  <section class="tool">
+    <form class="panel form" id="arbForm">
+      <div class="head"><h2>争议金额</h2><span class="hint">金额单位：元</span></div>
+      <div class="grid">
+        <div class="field"><label for="amount">标的额</label><input id="amount" type="number" min="0" step="1000" value="1000000"></div>
+        <div class="field"><label for="viewMode">展示口径</label><select id="viewMode"><option value="mid">中位参考</option><option value="low">区间低值</option><option value="high">区间高值</option></select></div>
+      </div>
+      <div class="quick">
+        <button type="button" class="secondary" data-amount="100000">10 万</button>
+        <button type="button" class="secondary" data-amount="500000">50 万</button>
+        <button type="button" class="secondary" data-amount="1000000">100 万</button>
+        <button type="button" class="secondary" data-amount="5000000">500 万</button>
+        <button type="button" class="secondary" data-amount="10000000">1000 万</button>
+      </div>
+    </form>
+    <aside class="panel result">
+      <div class="result-head"><div class="label">Estimated Acceptance Fee</div><h2 id="mainFee">0 元</h2><p id="mainLabel">仲裁受理费中位参考</p></div>
+      <div class="body">
+        <div class="metric"><span>区间低值</span><span id="lowFee">0 元</span></div>
+        <div class="metric"><span>中位参考</span><span id="midFee">0 元</span></div>
+        <div class="metric"><span>区间高值</span><span id="highFee">0 元</span></div>
+        <p>案件处理费、实际支出、反请求、涉外案件或机构专项规则未纳入本页计算。</p>
+        <div class="quick"><button type="button" id="copyBtn">复制测算结果</button><button type="button" class="secondary" id="resetBtn">重置</button><span class="copy-state" id="copyState"></span></div>
+      </div>
+    </aside>
+  </section>
+  <section class="formula">
+    <h3>分段区间</h3>
+    <div class="tiers">
+      <div class="tier"><strong>1000 元以下</strong>40 元至 100 元</div>
+      <div class="tier"><strong>1001 元至 5 万元</strong>超过部分按 4% 至 5%</div>
+      <div class="tier"><strong>5 万元至 10 万元</strong>超过部分按 3% 至 4%</div>
+      <div class="tier"><strong>10 万元至 20 万元</strong>超过部分按 2% 至 3%</div>
+      <div class="tier"><strong>20 万元至 50 万元</strong>超过部分按 1% 至 2%</div>
+      <div class="tier"><strong>50 万元至 100 万元</strong>超过部分按 0.5% 至 1%</div>
+      <div class="tier"><strong>100 万元以上</strong>超过部分按 0.25% 至 0.5%</div>
+    </div>
+  </section>
+</main>
+<footer><div class="f-nav"><a href="index.html">首页</a><a href="tools.html">律师工具台</a><a href="litigation-fee.html">诉讼费</a><a href="index.html#contact">联系</a></div><div>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</div></footer>
+<script>
+const amountEl=document.getElementById("amount"),viewMode=document.getElementById("viewMode"),fmt=n=>`${Math.max(0,n).toLocaleString("zh-CN",{maximumFractionDigits:2})} 元`;
+const tiers=[{limit:1000,lowBase:40,highBase:100,lowRate:0,highRate:0},{limit:50000,lowRate:.04,highRate:.05},{limit:100000,lowRate:.03,highRate:.04},{limit:200000,lowRate:.02,highRate:.03},{limit:500000,lowRate:.01,highRate:.02},{limit:1000000,lowRate:.005,highRate:.01},{limit:Infinity,lowRate:.0025,highRate:.005}];
+function calc(amount,side){if(amount<=0)return 0;if(amount<=1000)return side==="low"?40:100;let fee=side==="low"?40:100,prev=1000;for(let i=1;i<tiers.length;i++){const t=tiers[i],top=Math.min(amount,t.limit);if(top>prev)fee+=(top-prev)*(side==="low"?t.lowRate:t.highRate);prev=t.limit;if(amount<=t.limit)break}return fee}
+function compute(){const amount=Number(amountEl.value)||0;const low=calc(amount,"low"),high=calc(amount,"high"),mid=(low+high)/2;const chosen={low,mid,high}[viewMode.value];const label={low:"仲裁受理费区间低值",mid:"仲裁受理费中位参考",high:"仲裁受理费区间高值"}[viewMode.value];document.getElementById("mainFee").textContent=fmt(chosen);document.getElementById("mainLabel").textContent=label;document.getElementById("lowFee").textContent=fmt(low);document.getElementById("midFee").textContent=fmt(mid);document.getElementById("highFee").textContent=fmt(high)}
+document.getElementById("arbForm").addEventListener("input",compute);document.getElementById("arbForm").addEventListener("change",compute);document.querySelectorAll("[data-amount]").forEach(btn=>btn.addEventListener("click",()=>{amountEl.value=btn.dataset.amount;compute()}));
+document.getElementById("resetBtn").addEventListener("click",()=>{amountEl.value=1000000;viewMode.value="mid";compute()});
+document.getElementById("copyBtn").addEventListener("click",async()=>{const text=`仲裁费试算：区间低值 ${document.getElementById("lowFee").textContent}，中位参考 ${document.getElementById("midFee").textContent}，区间高值 ${document.getElementById("highFee").textContent}。案件处理费和机构专项规则另行核定。`;try{await navigator.clipboard.writeText(text);document.getElementById("copyState").textContent="已复制"}catch{document.getElementById("copyState").textContent="复制失败"}});
+compute();
+</script>
+</body>
+</html>
