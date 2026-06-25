@@ -53,6 +53,7 @@ h2{font-size:17px;color:var(--ink);margin:0;letter-spacing:.02em}
 .hint{font-size:12px;color:var(--text-muted)}
 .field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .field{display:flex;flex-direction:column;gap:7px}
+.hidden{display:none!important}
 label,.field-title{font-size:13px;color:var(--ink);font-weight:600}
 select,input[type=number]{width:100%;height:44px;border:1px solid var(--rule-strong);background:#fff;color:var(--ink);font-size:14px;padding:0 12px;border-radius:4px;outline:none}
 select:focus,input[type=number]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,130,59,.12)}
@@ -225,6 +226,21 @@ footer a{color:var(--gold-light)}
               <input id="amount" name="amount" type="number" min="0" step="0.1" value="50">
               <span class="unit" id="metricUnit">万元</span>
             </div>
+          </div>
+          <div class="field hidden" id="injuryTypeField">
+            <label for="injuryType">伤害结果</label>
+            <select id="injuryType" name="injuryType">
+              <option value="minor">轻伤</option>
+              <option value="serious">重伤</option>
+              <option value="death">死亡或特别严重后果</option>
+            </select>
+          </div>
+          <div class="field hidden" id="injuryLevelField">
+            <label for="injuryLevel">伤情分级</label>
+            <select id="injuryLevel" name="injuryLevel">
+              <option value="2">二级</option>
+              <option value="1">一级</option>
+            </select>
           </div>
           <div class="field">
             <label for="role">共同犯罪地位</label>
@@ -401,11 +417,13 @@ const rules = {
     {min: 50, max: 300, softMax: 300, label: "情节严重", range: "五年以上有期徒刑", floor: 60, start: 60, ceiling: 120},
     {min: 300, max: Infinity, softMax: 1200, label: "数额巨大不退还等严重情形", range: "十年以上有期徒刑或者无期徒刑", floor: 120, start: 120, ceiling: 180}
   ], "以挪用金额、用途、时间、是否归还为核心，非法活动和营利活动会明显影响档位。", "核对国家工作人员身份、公款属性、用途、持续时间、归还节点和是否谋取个人利益。", ["公款属性和职务便利是否成立", "用途是个人使用、营利活动还是非法活动", "三个月期限和归还节点是否清楚", "是否存在单位往来或授权使用空间"]),
-  intentionalInjury: levelRule("故意伤害罪", "伤情等级", "级", 1, [
-    {min: 1, max: 2, softMax: 2, label: "轻伤", range: "三年以下有期徒刑、拘役或管制", floor: 0, start: 8, ceiling: 36},
-    {min: 2, max: 3, softMax: 3, label: "重伤", range: "三年以上十年以下有期徒刑", floor: 36, start: 36, ceiling: 120},
-    {min: 3, max: Infinity, softMax: 5, label: "致人死亡或特别残忍致重伤严重残疾", range: "十年以上有期徒刑、无期徒刑或者死刑", floor: 120, start: 120, ceiling: 240}
-  ], "故意伤害以伤情等级为起点。1=轻伤，2=重伤，3=死亡或特别严重后果。", "核对伤情鉴定、因果关系、防卫情节、被害人过错、赔偿谅解和案发起因。", ["伤情鉴定程序和结论是否可质证", "是否存在正当防卫、防卫过当或被害人过错", "医疗记录与伤害行为因果关系是否清楚", "赔偿、谅解和调解材料是否完整"]),
+  intentionalInjury: injuryRule("故意伤害罪", [
+    {min: 1, max: 1.5, softMax: 1.5, label: "轻伤二级", group: "轻伤", range: "三年以下有期徒刑、拘役或管制", floor: 0, start: 6, ceiling: 24},
+    {min: 1.5, max: 2, softMax: 2, label: "轻伤一级", group: "轻伤", range: "三年以下有期徒刑、拘役或管制", floor: 0, start: 10, ceiling: 36},
+    {min: 2, max: 2.5, softMax: 2.5, label: "重伤二级", group: "重伤", range: "三年以上十年以下有期徒刑", floor: 36, start: 36, ceiling: 84},
+    {min: 2.5, max: 3, softMax: 3, label: "重伤一级", group: "重伤", range: "三年以上十年以下有期徒刑", floor: 36, start: 48, ceiling: 120},
+    {min: 3, max: Infinity, softMax: 5, label: "致人死亡或特别残忍致重伤严重残疾", group: "特别严重后果", range: "十年以上有期徒刑、无期徒刑或者死刑", floor: 120, start: 120, ceiling: 240}
+  ], "故意伤害应先看鉴定意见中的轻伤、重伤或死亡后果，再区分一级、二级。本页按轻伤二级、轻伤一级、重伤二级、重伤一级和特别严重后果分档试算。", "核对伤情鉴定、损伤与行为的因果关系、防卫情节、被害人过错、赔偿谅解和案发起因；轻伤、重伤的一二级必须以鉴定意见为准。", ["伤情鉴定是否写明轻伤一级、轻伤二级、重伤一级或重伤二级", "鉴定程序、检材、病历和结论是否可质证", "是否存在正当防卫、防卫过当或被害人过错", "医疗记录与伤害行为因果关系是否清楚", "赔偿、谅解和调解材料是否完整"]),
   illegalDetention: levelRule("非法拘禁罪", "拘禁情节等级", "级", 1, [
     {min: 1, max: 2, softMax: 2, label: "一般拘禁", range: "三年以下有期徒刑、拘役、管制或剥夺政治权利", floor: 0, start: 6, ceiling: 36},
     {min: 2, max: 3, softMax: 3, label: "殴打侮辱或时间较长", range: "三年以下为主，从重处罚", floor: 0, start: 14, ceiling: 48},
@@ -493,6 +511,20 @@ function dutyCrimeRule(name, basis, audit, checklist) {
       {min: 20, max: 300, softMax: 300, label: "数额巨大", range: "三年以上十年以下有期徒刑，并处罚金或没收财产", floor: 36, start: 36, ceiling: 120},
       {min: 300, max: Infinity, softMax: 1200, label: "数额特别巨大", range: "十年以上有期徒刑或无期徒刑，并处罚金或没收财产", floor: 120, start: 120, ceiling: 180}
     ]
+  };
+}
+function injuryRule(name, tiers, basis, audit, checklist) {
+  return {
+    name,
+    metricLabel: "伤情",
+    metricUnit: "",
+    defaultValue: 1,
+    note: `${name}：先选轻伤/重伤，再选一级/二级`,
+    basis,
+    audit,
+    checklist,
+    specialInput: "injury",
+    tiers
   };
 }
 function levelRule(name, metricLabel, metricUnit, defaultValue, tiers, basis, audit, checklist) {
@@ -661,6 +693,11 @@ const crimeEl = document.getElementById("crime");
 const amountEl = document.getElementById("amount");
 const metricLabelEl = document.getElementById("metricLabel");
 const metricUnitEl = document.getElementById("metricUnit");
+const amountField = amountEl.closest(".field");
+const injuryTypeEl = document.getElementById("injuryType");
+const injuryLevelEl = document.getElementById("injuryLevel");
+const injuryTypeField = document.getElementById("injuryTypeField");
+const injuryLevelField = document.getElementById("injuryLevelField");
 const roleEl = document.getElementById("role");
 const stageEl = document.getElementById("stage");
 const statutoryEl = document.getElementById("statutoryMitigation");
@@ -713,13 +750,34 @@ function factorClass(id) {
   if (lenient.some(item => item.id === id)) return "green";
   return "blue";
 }
+function injuryMetricValue() {
+  const type = injuryTypeEl.value;
+  const level = injuryLevelEl.value;
+  if (type === "minor") return level === "1" ? 1.5 : 1;
+  if (type === "serious") return level === "1" ? 2.5 : 2;
+  return 3;
+}
+function injuryLabel() {
+  const type = injuryTypeEl.value;
+  const level = injuryLevelEl.value;
+  if (type === "minor") return level === "1" ? "轻伤一级" : "轻伤二级";
+  if (type === "serious") return level === "1" ? "重伤一级" : "重伤二级";
+  return "致人死亡或特别严重后果";
+}
+function updateSpecialControls(rule) {
+  const isInjury = rule.specialInput === "injury";
+  if (amountField) amountField.classList.toggle("hidden", isInjury);
+  injuryTypeField.classList.toggle("hidden", !isInjury);
+  injuryLevelField.classList.toggle("hidden", !isInjury);
+}
 function compute() {
   copyState.textContent = "";
   const rule = rules[crimeEl.value];
+  updateSpecialControls(rule);
   metricLabelEl.textContent = rule.metricLabel || "核心指标";
   metricUnitEl.textContent = rule.metricUnit || "";
-  amountEl.step = rule.metricUnit === "mg/100ml" || rule.metricUnit === "克" || rule.metricUnit === "级" ? "1" : "0.1";
-  const metric = Math.max(0, Number(amountEl.value) || 0);
+  amountEl.step = rule.metricUnit === "mg/100ml" || rule.metricUnit === "克" ? "1" : "0.1";
+  const metric = rule.specialInput === "injury" ? injuryMetricValue() : Math.max(0, Number(amountEl.value) || 0);
   const tier = findTier(rule, metric);
   document.getElementById("crimeNote").textContent = rule.note;
   document.getElementById("ruleText").textContent = rule.basis + " 页面输出的是量刑辅助区间，不直接等同于检察院量刑建议或法院裁判结果。";
@@ -736,8 +794,9 @@ function compute() {
   const factors = selectedFactors();
   let lenientRate = 0;
   let aggravatingRate = 0;
+  const injuryDisplay = rule.specialInput === "injury" ? injuryLabel() : `${metric}${rule.metricUnit || ""}`;
   const details = [
-    {name: `${rule.name} · ${metric}${rule.metricUnit || ""}`, value: tier.label},
+    {name: rule.specialInput === "injury" ? "伤情结果" : `${rule.metricLabel || "核心指标"}`, value: injuryDisplay},
     {name: "法定刑档", value: tier.range}
   ];
   if (role.rate) {
@@ -792,7 +851,7 @@ function compute() {
   renderFormula(rule, tier, metric, base, lenientRate, aggravatingRate, totalRate, adjusted, low, high, allowBelow, factors, role, stage);
   lastSummary = [
     `【${rule.name}量刑辅助测算】`,
-    `${rule.metricLabel || "核心指标"}：${metric}${rule.metricUnit || ""}`,
+    `${rule.metricLabel || "核心指标"}：${rule.specialInput === "injury" ? injuryLabel() : `${metric}${rule.metricUnit || ""}`}`,
     `基础档位：${tier.label}（${tier.range}）`,
     `基准刑：${formatMonths(base)}`,
     `共同犯罪地位：${role.label}`,
@@ -811,7 +870,7 @@ function renderBelowThreshold(rule, metric) {
   document.getElementById("tierText").textContent = "未进入测算档";
   document.getElementById("baseText").textContent = "需核查";
   document.getElementById("pills").innerHTML = `<span class="pill blue">${rule.name}</span><span class="pill">起点 ${first.min}${rule.metricUnit || ""}</span>`;
-  document.getElementById("details").innerHTML = `<div class="detail"><span>${rule.metricLabel || "核心指标"}</span><span>${metric}${rule.metricUnit || ""}</span></div><div class="detail"><span>当前测算起点</span><span>${first.min}${rule.metricUnit || ""}</span></div>`;
+  document.getElementById("details").innerHTML = `<div class="detail"><span>${rule.specialInput === "injury" ? "伤情结果" : (rule.metricLabel || "核心指标")}</span><span>${rule.specialInput === "injury" ? injuryLabel() : `${metric}${rule.metricUnit || ""}`}</span></div><div class="detail"><span>当前测算起点</span><span>${first.min}${rule.metricUnit || ""}</span></div>`;
   const probationBox = document.getElementById("probationBox");
   probationBox.className = "risk-box mid";
   probationBox.innerHTML = "<strong>缓刑初筛：需人工判断</strong><p>当前指标低于工具的第一档起点，可能涉及不构罪、行政处理、情节显著轻微或特殊情节入罪问题。</p>";
@@ -820,7 +879,7 @@ function renderBelowThreshold(rule, metric) {
   bailBox.innerHTML = "<strong>取保候审初筛：需人工判断</strong><p>当前指标低于工具起点，但家属仍可优先准备身份关系、固定住址、工作证明、退赔谅解和保证人材料。</p>";
   document.getElementById("auditText").textContent = rule.audit;
   renderFormula(rule, first, metric, 0, 0, 0, 0, 0, 0, 0, false, [], roleRates[roleEl.value], stageRates[stageEl.value]);
-  lastSummary = `【${rule.name}量刑辅助测算】\n${rule.metricLabel || "核心指标"}：${metric}${rule.metricUnit || ""}\n当前指标低于工具起点：${first.min}${rule.metricUnit || ""}\n提示：需人工核查是否入罪、是否存在特殊情节。`;
+  lastSummary = `【${rule.name}量刑辅助测算】\n${rule.metricLabel || "核心指标"}：${rule.specialInput === "injury" ? injuryLabel() : `${metric}${rule.metricUnit || ""}`}\n当前指标低于工具起点：${first.min}${rule.metricUnit || ""}\n提示：需人工核查是否入罪、是否存在特殊情节。`;
 }
 function renderFormula(rule, tier, metric, base, lenientRate, aggravatingRate, totalRate, adjusted, low, high, allowBelow, factors, role, stage) {
   document.getElementById("tierFormulaList").innerHTML = rule.tiers.map(item => {
@@ -844,7 +903,7 @@ function renderFormula(rule, tier, metric, base, lenientRate, aggravatingRate, t
   ].join("\n");
   const picked = factors.length ? factors.map(item => `${item.text}（${formatPercent(item.rate)}）`).join("、") : "无";
   document.getElementById("currentFormulaList").innerHTML = [
-    `<li><strong>${rule.metricLabel || "核心指标"}</strong>：${metric}${rule.metricUnit || ""}</li>`,
+    `<li><strong>${rule.metricLabel || "核心指标"}</strong>：${rule.specialInput === "injury" ? injuryLabel() : `${metric}${rule.metricUnit || ""}`}</li>`,
     `<li><strong>当前档位</strong>：${tier.label}，${tier.range}</li>`,
     `<li><strong>基准刑</strong>：${base ? formatMonths(base) : "未进入测算档"}</li>`,
     `<li><strong>已选情节</strong>：${picked}</li>`,
@@ -914,8 +973,12 @@ document.getElementById("resetBtn").addEventListener("click", () => {
   form.reset();
   crimeEl.value = "fraud";
   amountEl.value = rules.fraud.defaultValue || 50;
+  injuryTypeEl.value = "minor";
+  injuryLevelEl.value = "2";
   compute();
 });
+injuryTypeEl.addEventListener("change", compute);
+injuryLevelEl.addEventListener("change", compute);
 let last = 0;
 window.addEventListener("scroll", () => {
   const nav = document.getElementById("nav");
