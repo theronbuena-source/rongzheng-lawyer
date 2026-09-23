@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="保理合同以应收账款转让为核心，有追索权保理与无追索权保理在行权路径、清算返还与风险承担上截然不同。本文梳理两类保理的行权规则、虚构应收账款的抗辩边界、基础交易协商变更对保理人的效力，以及多重保理的清偿顺序。">
+<meta name="keywords" content="保理合同 应收账款 有追索权保理 无追索权保理 虚构应收账款 多重保理 民法典第766条 银行与金融">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/baoli-hetong-leixing-zhengyi.html" />
+<title>保理合同的三种争议：虚构应收账款、有追索权与无追索权的区分及行权路径</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../corporate.html">公司股权</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">公司股权与并购重组专题</a> &rsaquo; 保理合同的三种争议</div><div class="cat">Banking & Finance</div><h1>保理合同的三种争议：虚构应收账款、有追索权与无追索权的区分及行权路径</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年9月</div></header>
+<article class="article-body">
+<h2>一、保理合同的法律构造：三个主体、两个合同</h2>
+<p>保理合同，是指应收账款债权人将现有的或者将有的应收账款转让给保理人，保理人提供资金融通、应收账款管理或者催收、应收账款债务人付款担保等服务的合同。其法律构造可以概括为「三个主体、两个合同」：三个主体是应收账款债权人（通常为供货方、承包人等服务或商品提供方）、保理人（通常是商业银行或商业保理公司）、应收账款债务人（付款方）；两个合同是基础交易合同与保理合同。</p>
+<p>《民法典》第七百六十一条至第七百六十九条专章规定保理合同，其中是最重要的分类，是按有无追索权划分为<strong>有追索权保理</strong>与<strong>无追索权保理</strong>。这一区分直接决定保理人的行权路径、清算义务与风险承担，也决定了纠纷中被告的选择与诉讼请求的写法。</p>
+<p>核心结论先给出：<strong>有追索权保理中，保理人既可向债权人主张，也可向债务人主张，且回收款项超过融资款本息和费用的部分应当返还债权人；无追索权保理中，保理人应当向债务人主张，回收款项无需返还债权人，但同时承担债务人不能付款的坏账风险。</strong></p>
+
+<h2>二、有追索权保理与无追索权保理的行权规则对比</h2>
+<table>
+<thead><tr><th>比较项</th><th>有追索权保理（回购型）</th><th>无追索权保理（买断型）</th></tr></thead>
+<tbody>
+<tr><td>向谁主张</td><td>可向应收账款债权人主张返还保理融资款本息或者回购应收账款债权，也可向应收账款债务人主张应收账款债权</td><td>应当向应收账款债务人主张应收账款债权</td></tr>
+<tr><td>超额部分归属</td><td>向债务人主张并扣除融资款本息和相关费用后，剩余部分应当返还给应收账款债权人</td><td>取得超过融资款本息和相关费用的部分，无需向应收账款债权人返还</td></tr>
+<tr><td>坏账风险</td><td>由应收账款债权人最终承担（保理人可追索）</td><td>由保理人承担（不能向债权人追索）</td></tr>
+<tr><td>能否同时主张</td><td>可以，实践中常同时起诉债权人与债务人，但受「不得重复受偿」限制</td><td>原则上只能向债务人主张</td></tr>
+<tr><td>主要依据</td><td>《民法典》第七百六十六条</td><td>《民法典》第七百六十七条</td></tr>
+</tbody>
+</table>
+<p>需要特别注意的是，有追索权保理中「可以同时向债权人和债务人主张」并不意味着可以双重受偿。保理人的受偿总额以其融资款本息和费用为上限，超出部分应当返还。实务中常见做法是先向债务人主张，若债务人未获清偿，再就未获清偿部分向债权人追索回购责任；也有直接合并起诉的处理方式，具体取决于合同约定的追索顺序与法院的审理习惯。</p>
+<div class="tip"><strong>实务提示：</strong>签订保理合同时，应当明确约定保理的<strong>类型</strong>（有追索权还是无追索权）、<strong>追索顺序</strong>（先债务人后债权人，还是可以任意选择）、<strong>回购价款的计算方式</strong>、<strong>费用范围</strong>。类型约定不明时，法院将结合合同名称、追索条款、风险承担安排等综合认定，结果可能偏离当事人本意。</div>
+
+<h2>三、虚构应收账款：抗辩能否成立</h2>
+<p>保理纠纷中最高发的争议是「应收账款并不真实」。其典型形态包括：债权人与债务人通谋虚构交易、只有合同没有实际履行、货物未交付或服务未提供、金额被虚增、同一笔应收账款重复转让等。</p>
+<p>《民法典》第七百六十三条规定：「应收账款债权人与债务人虚构应收账款作为转让标的，与保理人订立保理合同的，应收账款债务人不得以应收账款不存在为由对抗保理人，但是保理人明知虚构的除外。」据此，抗辩的成立条件可以拆解为两项：</p>
+<ol>
+<li><strong>虚构事实的存在</strong>：由主张免责的债务人举证证明应收账款系虚构；</li>
+<li><strong>保理人是否「明知」</strong>：只有在保理人明知虚构的情形下，债务人才可以「应收账款不存在」为由对抗保理人。</li>
+</ol>
+<p>这里的「明知」不包括「应知」或者「未尽审查义务」。也就是说，保理人审查不严、风控存在瑕疵，并不等同于明知虚构；债务人不能仅以保理人「应当发现而未发现」为由免除责任。<strong>实务中存在争议</strong>的是：保理人存在重大过失（例如对明显异常的交易单证未作任何核实）时能否类推适用「明知」的除外条款，各地裁判尺度不完全统一。</p>
+<p>另一种常见情形是债务人单方虚构，即债权人单方伪造债务人的公章、合同或者收货确认。此时债务人可以主张自己对虚构不知情，其抗辩重点转为：债务人是否向保理人出具过应收账款确认函、是否在转让通知书上盖章回执。债务人一旦向保理人书面确认应收账款真实存在，通常构成对保理人的信赖基础，事后反悔的抗辩难以成立。</p>
+
+<h2>四、基础交易协商变更或终止对保理人的效力</h2>
+<p>保理实务中的另一个高频争点是：应收账款转让并通知债务人后，原债权人与债务人又协商变更或者终止基础交易合同，该变更对保理人是否发生效力。</p>
+<p>《民法典》第七百六十五条的规定是：应收账款债务人接到应收账款转让通知后，应收账款债权人与债务人无正当理由协商变更或者终止基础交易合同，对保理人产生不利影响的，对保理人不发生效力。</p>
+<p>适用该条需要同时满足三个条件：</p>
+<ul>
+<li><strong>时间条件</strong>：变更或终止发生在债务人接到应收账款转让通知之后；</li>
+<li><strong>理由条件</strong>：缺乏正当理由；</li>
+<li><strong>结果条件</strong>：对保理人产生不利影响。</li>
+</ul>
+<p>反面解释是：有正当理由的协商变更（如因不可抗力、情势变更、标的物质量争议等而调整价款或解除合同）或者因一方违约而依法单方解除的，可以对抗保理人；同时，变更虽发生但未对保理人造成不利影响的，也不受该条限制。至于何种情形构成「正当理由」，需要结合具体交易背景判断，属于<strong>实务中存在争议</strong>的问题。</p>
+
+<h2>五、多重保理的清偿顺序</h2>
+<p>同一应收账款被重复转让给多个保理人时，清偿顺序由《民法典》第七百六十八条确定，可以概括为四级顺位：</p>
+<table>
+<thead><tr><th>顺位</th><th>情形</th><th>取得应收账款的主体</th></tr></thead>
+<tbody>
+<tr><td>第一顺位</td><td>已登记与未登记并存</td><td>已经登记的保理人先于未登记的取得应收账款</td></tr>
+<tr><td>第二顺位</td><td>均已登记</td><td>按照登记时间的先后顺序取得应收账款</td></tr>
+<tr><td>第三顺位</td><td>均未登记</td><td>由最先到达应收账款债务人的转让通知中载明的保理人取得</td></tr>
+<tr><td>第四顺位</td><td>既未登记也未通知</td><td>按照保理融资款或者服务报酬的比例取得应收账款</td></tr>
+</tbody>
+</table>
+<p>从表格可以得出两个实务结论：第一，<strong>登记具有决定性意义</strong>。在中国人民银行征信中心动产融资统一登记公示系统办理应收账款转让登记，是保理人取得优先顺位最可靠的方式。第二，通知也具有独立价值。在均未登记的情况下，谁的通知先到达债务人，谁就取得应收账款。</p>
+<p>因此，保理人在受让应收账款后，应当同时完成「登记」与「通知」两项动作，而不是只做其中一项。通知应当表明保理人身份并附有必要凭证，这是《民法典》第七百六十四条的要求；通知未附必要凭证的，债务人有权要求补正，此时不宜视为已有效通知。</p>
+
+<h2>六、诉讼与保理的路径选择</h2>
+<p>保理纠纷中，保理人应当先确定自己的类型，再决定诉讼请求与被告。以下为常见情形的对应处理：</p>
+<ul>
+<li><strong>有追索权保理 + 债务人拒付：</strong>可同时起诉债务人（主张应收账款）与债权人（主张回购或返还融资款），并在诉讼请求中说明二者系「择一受偿」或者「补充受偿」关系，避免被认定为重复主张。</li>
+<li><strong>无追索权保理 + 债务人拒付：</strong>只能向债务人主张，不能向债权人追索；若败诉或执行不能，坏账风险由保理人自行承担。</li>
+<li><strong>虚构应收账款：</strong>保理人可主张适用《民法典》第七百六十三条，要求债务人承担付款责任；同时可视情形向债权人主张违约责任或者侵权责任。</li>
+<li><strong>基础交易被变更：</strong>保理人可依第七百六十五条主张变更对己不发生效力，仍按原应收账款主张。</li>
+<li><strong>多重保理：</strong>依第七百六十八条确定顺位，顺位在后的保理人可向前手债权人主张违约责任。</li>
+</ul>
+<p>在管辖上，保理合同纠纷通常按合同约定确定管辖法院；无约定或约定不明的，按被告住所地或者合同履行地确定。若保理合同与基础交易合同约定的管辖不一致，需注意二者并非当然合并审理，具体处理依个案而定。</p>
+
+<h2>七、常见问题（FAQ）</h2>
+<h3>1. 合同没写「有追索权」还是「无追索权」，如何认定？</h3>
+<p>法院将结合合同名称、是否约定回购义务、是否约定坏账担保责任、风险承担安排等综合认定。仅约定保理人可以向债权人「追偿」或者约定「回购」，通常认定为有追索权保理。约定保理人在债务人拒付时不得向债权人追索，则可能被认定为无追索权保理。</p>
+<h3>2. 有追索权保理中，保理人能否先起诉债务人，胜诉后再起诉债权人？</h3>
+<p>一般可以。但为避免双重受偿，保理人应当在其主张中说明已获清偿的金额并相应扣减，否则可能因重复主张被驳回。建议在同一诉讼中一并处理，或者在前诉生效后再对未受偿部分另行追索。</p>
+<h3>3. 债务人已盖章确认应收账款，事后发现是债权人伪造，能否免责？</h3>
+<p>较难免责。债务人向保理人出具应收账款确认函，构成对保理人的信赖基础。除非债务人能证明保理人明知空白或者伪造事实，否则难以以「应收账款不存在」对抗保理人。债务人可另向债权人主张侵权或者违约责任，但这是另一法律关系。</p>
+<h3>4. 有追索权保理中，保理人向债务人主张后收到的钱超过融资款，要不要退？</h3>
+<p>要退。根据《民法典》第七百六十六条，向债务人主张并扣除融资款本息和相关费用后的剩余部分，应当返还给应收账款债权人。这与无追索权保理的规则相反。</p>
+
+<h2>八、法条与依据核验</h2>
+<ul>
+<li>《中华人民共和国民法典》第七百六十一条（保理合同定义）、第七百六十三条（虚构应收账款的抗辩规则）、第七百六十四条（转让通知的形式要求）、第七百六十五条（基础交易协商变更或终止对保理人的效力）、第七百六十六条（有追索权保理）、第七百六十七条（无追索权保理）、第七百六十八条（多重保理的清偿顺序）、第七百六十九条（本章未规定事项适用债权转让规则）——条文号与内容按现行有效《民法典》文本逐条核对。</li>
+<li>《民法典》第五百四十五条以下（债权转让的一般规则）、第五百六十三条（法定解除）——用于说明基础交易解除的一般规则。</li>
+<li>《民法典》第三百八十六条以下及各担保物权章节——用于说明保理中担保安排的一般规则。</li>
+<li>中国人民银行征信中心动产融资统一登记公示系统的应收账款转让登记，依据为《应收账款质押登记办法》及动产和权利担保统一登记的相关规定——具体登记规则以现行有效规定为准，本文未逐条引用。</li>
+<li><strong>待核实事项：</strong>（1）保理人存在重大过失时能否类推适用《民法典》第七百六十三条「明知」除外条款，各地裁判尺度不统一，已标注「实务中存在争议」；（2）「无正当理由」的具体判断标准缺乏统一细化规则，已标注「实务中存在争议」；（3）商业保理公司的地方监管规则各辖区存在差异，涉及具体机构准入与经营范围时，应以当地现行监管规定为准。</li>
+</ul>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>保理合同争议？先定类型再定路径</h3><p>有追索权与无追索权的行权路径完全不同，定性错误将直接导致主张落空。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 &middot; 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="baoli-hetong-zhuisuquan.html" class="related-card"><div class="rc-tag">Banking & Finance</div><h4>保理合同的追索权行使：有追索权与无追索权的区分及行权路径</h4></a><a href="duli-baohan-qizha-zhifu.html" class="related-card"><div class="rc-tag">Banking & Finance</div><h4>独立保函欺诈的认定与止付裁定：三项止付条件与欺诈例外的边界</h4></a><a href="jinrong-jiekuan-jiasu-daoqi.html" class="related-card"><div class="rc-tag">Banking & Finance</div><h4>金融借款合同加速到期的适用条件与逾期利息、违约金上限</h4></a><a href="guoji-maoyi-xinyongzheng.html" class="related-card"><div class="rc-tag">Banking & Finance</div><h4>信用证拒付的应对：UCP600严格相符原则与信用证欺诈例外</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "保理合同的三种争议：虚构应收账款、有追索权与无追索权的区分及行权路径", "description": "保理合同以应收账款转让为核心，有追索权保理与无追索权保理在行权路径、清算返还与风险承担上截然不同。本文梳理两类保理的行权规则、虚构应收账款的抗辩边界、基础交易协商变更对保理人的效力，以及多重保理的清偿顺序。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-09-22", "dateModified": "2026-09-22"}</script>
+</body></html>
