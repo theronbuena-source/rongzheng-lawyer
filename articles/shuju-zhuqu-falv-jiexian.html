@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="使用自动化工具访问、收集网络数据的，应当评估对网络服务带来的影响，不得非法侵入他人网络，不得干扰网络服务正常运行（《网络数据安全管理条例》第十八条）；任何组织、个人收集数据应当采取合法、正当的方式，不得窃取或者以其他非法方式获取数据（《数据安全法》第三十二条）。经营者不得以欺诈、胁迫、避开或者破坏技术管理措施等不正当方式，获取、使用其他经营者合法持有的数据（《反不正当竞争法》2025年修订第十三条第三款）。">
+<meta name="keywords" content="数据抓取,爬虫合规,自动化工具,技术措施规避,反不正当竞争法第十三条,数据合规">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/shuju-zhuqu-falv-jiexian.html" />
+<title>第三方数据抓取的法律边界：授权范围、技术措施规避与民事、行政、刑事责任的界分</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 数据抓取的法律边界</div><div class="cat">Data Compliance &bull; Web Scraping</div><h1>第三方数据抓取的法律边界：授权范围、技术措施规避与民事、行政、刑事责任的界分</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年9月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：合法性判断落在三个支点上</h2>
+<p>第三方数据抓取是否合法，不能笼统回答，需要落到三个支点上逐一判断。三个支点全部通过，抓取行为的法律风险才比较可控：</p>
+<ol>
+<li><strong>授权支点：是否取得有效授权。</strong>使用自动化工具访问、收集网络数据的，应当评估对网络服务带来的影响，不得非法侵入他人网络，不得干扰网络服务正常运行（《网络数据安全管理条例》第十八条）。任何组织、个人收集数据，应当采取合法、正当的方式，不得窃取或者以其他非法方式获取数据（《数据安全法》第三十二条）。授权来源于用户协议、开放平台接口协议、书面许可，或者数据本身属于依法公开且未明确拒绝处理的个人信息。</li>
+<li><strong>技术措施支点：是否避开或者破坏技术管理措施。</strong>经营者不得以欺诈、胁迫、<strong>避开或者破坏技术管理措施</strong>等不正当方式，获取、使用其他经营者合法持有的数据，损害其他经营者的合法权益，扰乱市场竞争秩序（《反不正当竞争法》2025年修订第十三条第三款）。绕过验证码、破解登录鉴权、伪造请求签名等行为，直接落入该项。</li>
+<li><strong>影响支点：是否损害他人合法权益或者扰乱竞争秩序。</strong>即使取得了形式上的访问权限，抓取行为造成服务器负载异常、服务不可用，或者形成对原数据服务的实质性替代，仍可能构成违法或者不正当竞争。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>判断抓取项目合规风险时，先把需求拆成三问——<strong>抓什么（数据种类）、怎么抓（是否触及技术措施）、抓来做什么（是否形成替代或者转售）</strong>。第一问决定个人信息保护法与数据安全法的适用，第二问决定行政与刑事风险，第三问决定竞争法风险。三问的答案不同，合规方案完全不同。</div>
+
+<h2>二、授权范围：从何而来，边界在哪</h2>
+<h3>（一）三类授权来源</h3>
+<ol>
+<li><strong>开放平台接口协议。</strong>通过官方开放接口获取数据，授权范围以接口文档与开发者协议确定。超出约定用途、约定频次或者约定字段使用数据的，属于超授权使用。</li>
+<li><strong>用户协议与服务条款。</strong>被访问网站的用户协议中通常包含禁止自动化抓取、限制访问频次的条款。该类条款的约束力需结合是否以合理方式提请注意、是否属于格式条款的效力判断等因素综合认定。</li>
+<li><strong>书面许可与商业合作安排。</strong>通过数据合作合同取得授权，应当明确数据范围、使用目的、存储期限、二次提供限制与安全义务。</li>
+</ol>
+<h3>（二）robots协议的定位</h3>
+<p>robots协议是网站与爬虫之间的行业惯例与自律规范，<strong>本身不属于法律或者行政法规</strong>，违反它不直接产生法定责任。但在争议中，robots协议有双重作用：一方面，它是判断抓取方是否具有「未经授权」主观状态的重要辅助证据；另一方面，被访问网站通过robots协议作出的禁止性声明，可以用来说明抓取方未尽合理注意义务。因此，robots协议的合规价值在于证据，而不在于它的强制力。</p>
+<h3>（三）已公开个人信息的处理边界</h3>
+<p>个人信息处理者可以在合理的范围内处理个人自行公开或者其他已经合法公开的个人信息；个人明确拒绝的，不得处理；处理已公开的个人信息对个人权益有重大影响的，应当依照法律规定取得个人同意（《个人信息保护法》第二十七条）。据此，抓取已公开的个人信息并非当然合法：合理的范围、个人的明确拒绝、对权益的重大影响这三项要素，都需要逐项评估。</p>
+
+<h2>三、行政法规层面的具体要求</h2>
+<p>《网络数据安全管理条例》（国务院令第790号，自2025年1月1日起施行）对自动化工具访问、收集网络数据作了专门规定，构成判断抓取行为合规性的直接依据：</p>
+<ol>
+<li><strong>禁止非法获取与工具提供（第八条）。</strong>任何个人、组织不得利用网络数据从事非法活动，不得从事窃取或者以其他非法方式获取网络数据、非法出售或者非法向他人提供网络数据等非法网络数据处理活动；不得提供专门用于从事前述非法活动的程序、工具；明知他人从事前述非法活动的，不得为其提供互联网接入、服务器托管、网络存储、通讯传输等技术支持，或者提供广告推广、支付结算等帮助。</li>
+<li><strong>自动化工具访问的合规要求（第十八条）。</strong>网络数据处理者使用自动化工具访问、收集网络数据，应当<strong>评估对网络服务带来的影响</strong>，不得非法侵入他人网络，不得干扰网络服务正常运行。</li>
+<li><strong>自动化采集后的删除与匿名化义务（第二十四条）。</strong>因使用自动化采集技术等无法避免采集到非必要个人信息或者未依法取得个人同意的个人信息，以及个人注销账号的，网络数据处理者应当<strong>删除个人信息或者进行匿名化处理</strong>；法律、行政法规规定的保存期限未届满，或者删除、匿名化处理从技术上难以实现的，应当停止除存储和采取必要的安全保护措施之外的处理。</li>
+</ol>
+<p>配合《数据安全法》第二十七条的全流程数据安全管理制度义务与第三十二条的合法正当收集义务，可以形成一条清晰的行政义务链条：抓取前评估影响，抓取中不得侵入与干扰，抓取后对非必要、未同意的个人信息及时删除或者匿名化。</p>
+
+<h2>四、民事、行政与刑事责任的界分</h2>
+<table>
+<tr><th>责任类型</th><th>典型行为</th><th>主要依据</th><th>责任形式</th></tr>
+<tr><td>民事责任</td><td>违反平台协议抓取并转售数据；造成服务器负担、服务中断；侵害个人信息权益</td><td>《民法典》合同编与侵权责任编、《个人信息保护法》第六十九条</td><td>停止侵害、删除、赔偿损失；个人信息侵权适用过错推定</td></tr>
+<tr><td>不正当竞争责任</td><td>避开或者破坏技术管理措施获取、使用他人合法持有的数据；形成实质性替代</td><td>《反不正当竞争法》（2025年修订）第十三条第三款、第二十二条</td><td>停止违法行为、赔偿损失、合理开支，法定赔偿五百万元以下</td></tr>
+<tr><td>行政责任</td><td>非法获取网络数据；自动化工具非法侵入或者干扰网络服务；未删除、未匿名化非必要个人信息</td><td>《网络数据安全管理条例》第八条、第十八条、第二十四条及其法律责任章；《数据安全法》第四十五条、第五十一条</td><td>责令改正、警告、罚款、暂停相关业务、停业整顿、吊销许可证或营业执照</td></tr>
+<tr><td>刑事责任</td><td>侵入计算机信息系统或者采用其他技术手段获取该系统中存储、处理、传输的数据；破坏计算机信息系统</td><td>《刑法》第二百八十五条第二款、第二百八十六条；侵犯公民个人信息另涉第二百五十三条之一</td><td>有期徒刑、拘役，并处或者单处罚金</td></tr>
+</table>
+<p>该表的使用方法是从下往上核对：一旦行为触及「非法侵入」或者「避开技术措施」，风险等级会显著上升，因为同一行为可能同时触发竞争法责任、行政责任与刑事责任。相反，仅在授权范围内按频次抓取公开数据、且不做实质性替代的，主要风险集中在合同责任层面。</p>
+
+<h2>五、竞争法路径：数据权益保护的新规则</h2>
+<h3>（一）2025年修订确立的专门条款</h3>
+<p>《反不正当竞争法》于2025年6月27日第二次修订，自2025年10月15日起施行。修订后的第十三条第三款规定：经营者不得以欺诈、胁迫、避开或者破坏技术管理措施等不正当方式，获取、使用其他经营者合法持有的数据，损害其他经营者的合法权益，扰乱市场竞争秩序。相应的处罚由第二十九条规定：由监督检查部门责令停止违法行为，处十万元以上一百万元以下罚款；情节严重的，处一百万元以上五百万元以下罚款。</p>
+<h3>（二）条号变更对照</h3>
+<p>引用该条时需要注意条号变更。2025年修订前，网络不正当竞争行为的专门规定位于<strong>第十二条</strong>（俗称互联网专条），修订后网络不正当竞争行为的集中规定调整为<strong>第十三条</strong>；其中「避开或者破坏技术管理措施获取、使用数据」属于2025年修订新增的内容。因此，旧文献、旧裁判文书中的「第十二条」应当对照现行第十三条理解，条号不得直接照抄。</p>
+<h3>（三）与商业秘密保护路径的关系</h3>
+<p>如果被抓取的数据构成商业秘密，还可以适用侵犯商业秘密的规则：经营者不得以盗窃、贿赂、欺诈、胁迫、<strong>电子侵入</strong>或者其他不正当手段获取权利人的商业秘密（《反不正当竞争法》2025年修订第十条）。商业秘密的路径要求权利人证明保密性、价值性与保密措施，举证门槛高于数据条款，但在赔偿计算上（含惩罚性赔偿）可能更有优势。</p>
+
+<h2>六、合规要点</h2>
+<h3>（一）抓取方一侧</h3>
+<ul>
+<li>优先使用官方开放接口，并在协议约定范围内使用数据；确需网页抓取的，事前评估频次、并发与时段对目标服务的影响。</li>
+<li>不绕过、不破解验证码、登录鉴权、签名校验等任何技术管理措施。</li>
+<li>对抓取过程中不可避免取得的非必要个人信息，建立删除或者匿名化处理机制，并保留处理记录。</li>
+<li>不转售、不二次提供原始数据，避免形成对原数据服务的实质性替代。</li>
+<li>留存合规评估记录、访问日志与授权文件，形成完整的合规证据链。</li>
+</ul>
+<h3>（二）被访问方一侧</h3>
+<ul>
+<li>通过用户协议、robots协议、访问频次限制、监控告警等方式明确授权边界，并保留已提示的证据。</li>
+<li>发现异常访问的，及时固定证据：访问日志、IP记录、请求特征、服务器负载数据、用户投诉记录。</li>
+<li>维权路径的选择上，应当区分合同违约、不正当竞争、个人信息侵权与刑事报案，按举证难度与赔偿预期确定组合方案。</li>
+</ul>
+
+<h2>七、常见问答</h2>
+<p><strong>问：抓取公开可见的网页数据，需要取得授权吗？</strong></p>
+<p>答：需要区分数据的性质与使用方式。公开可见不等于可以任意抓取和任意使用。使用自动化工具访问、收集网络数据，应当评估对网络服务的影响，不得非法侵入他人网络，不得干扰网络服务正常运行（《网络数据安全管理条例》第十八条）；涉及个人信息的，还受合理的处理范围、个人明确拒绝等规则约束（《个人信息保护法》第二十七条）。</p>
+<p><strong>问：违反robots协议会承担法律责任吗？</strong></p>
+<p>答：robots协议本身不属于法律或者行政法规，违反它不直接产生法定责任。但robots协议是判断抓取方是否具有「未经授权」主观状态的重要证据，也可能被用于说明抓取方未尽合理注意义务。在竞争法争议中，它通常作为辅助证据而非独立请求权基础。</p>
+<p><strong>问：抓取行为被认定为「避开或者破坏技术管理措施」后，会有什么后果？</strong></p>
+<p>答：可能同时触发三类责任：依据《反不正当竞争法》第十三条第三款与第二十九条承担民事赔偿与行政处罚；依据《网络数据安全管理条例》第八条、第十八条承担行政责任；情节严重的，还可能涉及《刑法》第二百八十五条第二款、第二百八十六条的刑事责任。</p>
+<p><strong>问：抓取到的个人信息中含有不必要的字段，应当怎么处理？</strong></p>
+<p>答：因使用自动化采集技术等无法避免采集到非必要个人信息或者未依法取得个人同意的个人信息的，应当删除个人信息或者进行匿名化处理；从技术上难以实现的，应当停止除存储和采取必要的安全保护措施之外的处理（《网络数据安全管理条例》第二十四条）。</p>
+<p><strong>问：提供抓取工具或者爬虫软件，本身违法吗？</strong></p>
+<p>答：需要区分工具的性质与提供者的主观状态。《网络数据安全管理条例》第八条明确，不得提供专门用于从事非法活动的程序、工具；明知他人从事非法网络数据处理活动而提供技术支持、服务器托管、广告推广、支付结算等帮助的，同样被禁止。通用型工具与专门用于非法获取数据的工具，在认定上不同，但提供者均需评估使用场景的合法性。</p>
+<p><strong>问：数据抓取纠纷中，赔偿数额如何确定？</strong></p>
+<p>答：不正当竞争纠纷中，赔偿数额按照权利人因被侵权所受到的实际损失或者侵权人因侵权所获得的利益确定，并包括为制止侵权行为所支付的合理开支；难以确定的，由人民法院根据侵权行为的情节判决给予权利人五百万元以下的赔偿（《反不正当竞争法》2025年修订第二十二条）。涉及个人信息的侵权另适用个人信息保护法的赔偿规则。</p>
+
+<h2>八、法条与依据核验</h2>
+<p>本文引用的规范与条文如下：</p>
+<ol>
+<li>《网络数据安全管理条例》（国务院令第790号，2024年8月30日国务院第40次常务会议通过，2024年9月24日公布，自2025年1月1日起施行）第八条、第十八条、第二十四条。</li>
+<li>《中华人民共和国数据安全法》（自2021年9月1日起施行）第二十七条（全流程数据安全管理制度）、第三十二条（合法正当方式收集数据）、第四十五条（不履行数据安全保护义务的法律责任）、第五十一条（窃取或者以其他非法方式获取数据等的处罚衔接）。</li>
+<li>《中华人民共和国个人信息保护法》第十三条（处理个人信息的合法性基础）、第二十七条（已公开个人信息的处理规则）、第六十九条（侵权损害赔偿的过错推定）。</li>
+<li>《中华人民共和国反不正当竞争法》（2025年6月27日第二次修订，主席令第五十号，自2025年10月15日起施行）第十条（侵犯商业秘密，含电子侵入）、第十三条第三款（不得以欺诈、胁迫、避开或者破坏技术管理措施等不正当方式获取、使用其他经营者合法持有的数据）、第二十二条（民事赔偿）、第二十九条（行政处罚）。<strong>条号对照：2025年修订前网络不正当竞争行为的专门规定为第十二条，修订后为第十三条，「避开或者破坏技术管理措施获取、使用数据」系本次修订新增。</strong></li>
+<li>《中华人民共和国刑法》第二百八十五条第二款（非法获取计算机信息系统数据、非法控制计算机信息系统罪）、第二百八十六条（破坏计算机信息系统罪）、第二百五十三条之一（侵犯公民个人信息罪）。</li>
+<li>《中华人民共和国民法典》第一千零三十五条（处理个人信息的原则与条件）、第一千一百六十五条（过错侵权责任）。</li>
+</ol>
+<p>说明与提示：robots协议的性质表述为行业惯例与自律规范，其法律地位在理论与实务中仍有讨论，本文未将其表述为法律依据。数据抓取的竞争法认定标准（尤其是「实质性替代」与「正当性」的判断）<strong>实务中存在争议</strong>，各地裁判尺度并不完全统一。上述规范可能修订，具体适用请以全国人民代表大会及其常务委员会、国务院、最高人民法院官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>抓取数据前，先确定授权范围与是否触及技术措施</h3><p>是否取得授权、是否避开技术措施、是否干扰服务运行，是判断抓取行为合法性的三个支点。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="wangluo-shuju-anquan-tiaoli-yiwu.html" class="related-card"><div class="rc-tag">Regulation</div><h4>网络数据安全管理条例的核心义务：个人信息处理规则、重要数据与平台责任</h4></a><a href="ai-huanlian-qinquan.html" class="related-card"><div class="rc-tag">AI</div><h4>AI换脸侵权的认定与维权路径：深度合成技术的监管要求</h4></a><a href="shuju-jiaoyi-guapai.html" class="related-card"><div class="rc-tag">Data</div><h4>数据交易与数据产品挂牌的合规要求：确权、脱敏与标准化</h4></a><a href="geren-xinxi-xielou-zenmeban.html" class="related-card"><div class="rc-tag">Privacy</div><h4>个人信息泄露事件的通知义务与应急处置流程</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"第三方数据抓取的法律边界：授权范围、技术措施规避与民事、行政、刑事责任的界分","description":"使用自动化工具访问、收集网络数据的，应当评估对网络服务带来的影响，不得非法侵入他人网络，不得干扰网络服务正常运行（《网络数据安全管理条例》第十八条）；任何组织、个人收集数据应当采取合法、正当的方式，不得窃取或者以其他非法方式获取数据（《数据安全法》第三十二条）。经营者不得以欺诈、胁迫、避开或者破坏技术管理措施等不正当方式，获取、使用其他经营者合法持有的数据（《反不正当竞争法》2025年修订第十三条第三款）。","author":{"@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"}},"datePublished":"2026-09-29","dateModified":"2026-09-29"}</script>
+</body></html>

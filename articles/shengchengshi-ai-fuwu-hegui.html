@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="《生成式人工智能服务管理暂行办法》自2023年8月15日起施行，向中华人民共和国境内公众提供生成式人工智能服务的提供者，应当使用具有合法来源的数据和基础模型、不得侵害他人知识产权（第七条），对图片、视频等生成内容进行标识（第十二条），发现违法内容时及时采取停止生成、停止传输、消除等处置措施并向有关主管部门报告（第十四条）；提供具有舆论属性或者社会动员能力的服务的，应当开展安全评估，并按照《互联网信息服务算法推荐管理规定》履行算法备案和变更、注销备案手续（第十七条）。行业组织、企业、教育和科研机构等研发、应用生成式人工智能技术但未向境内公众提供服务的，不适用该办法（第二条）。">
+<meta name="keywords" content="生成式人工智能服务管理暂行办法,生成式AI服务提供者,训练数据合法来源,数据标注规则,生成内容标识,安全评估,算法备案,深度合成,人工智能生成合成内容标识办法,第二条适用范围,第十七条,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/shengchengshi-ai-fuwu-hegui.html" />
+<title>生成式人工智能服务提供者的合规义务：训练数据、内容标识、安全评估与算法备案</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 生成式人工智能服务提供者的合规义务</div><div class="cat">Data Compliance &bull; Generative AI</div><h1>生成式人工智能服务提供者的合规义务：训练数据、内容标识、安全评估与算法备案</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年9月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：五组并列的合规义务</h2>
+<p>大模型应用落地时最容易出现的误判，是把合规理解为"上线前找一个备案入口"。备案只是其中一环。《生成式人工智能服务管理暂行办法》（国家互联网信息办公室等七部门令第15号，2023年7月10日公布，2023年8月15日施行）设定的是一套<strong>从数据到内容、从服务到监管的并列义务群</strong>。</p>
+<ol>
+<li><strong>数据来源合法。</strong>依法开展预训练、优化训练等训练数据处理活动，使用具有合法来源的数据和基础模型；涉及知识产权的不得侵害他人依法享有的知识产权；涉及个人信息的应当取得个人同意或者符合法律、行政法规规定的其他情形；采取有效措施提高训练数据质量（第七条）。</li>
+<li><strong>数据标注规范。</strong>在研发过程中进行数据标注的，应当制定清晰、具体、可操作的标注规则，开展标注质量评估、抽样核验标注内容的准确性，对标注人员进行必要培训（第八条）。</li>
+<li><strong>内容安全与处置。</strong>坚持社会主义核心价值观，不得生成法律、行政法规禁止的内容，并防止产生民族、信仰、国别、地域、性别、年龄、职业、健康等歧视（第四条）；发现违法内容的，应当及时采取停止生成、停止传输、消除等处置措施，采取模型优化训练等措施进行整改，并向有关主管部门报告（第十四条）。</li>
+<li><strong>生成内容标识。</strong>提供者应当按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识（第十二条）。</li>
+<li><strong>安全评估与算法备案。</strong>提供具有舆论属性或者社会动员能力的生成式人工智能服务的，应当按照国家有关规定开展安全评估，并按照《互联网信息服务算法推荐管理规定》履行算法备案和变更、注销备案手续（第十七条）。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>第五条义务是"并列"而不是"择一"，也没有"先上线后补办"的空间。备案手续的办理通常需要提交训练数据来源说明、语料规模与类型、标注规则、算法机制机理说明等材料，这些材料本身就是义务履行的证据。反过来讲，如果训练数据来源不清、标注规则无法说明，备案环节就会直接暴露问题。</div>
+
+<h2>二、适用范围与除外：先判断自己是否受规制</h2>
+<p>《暂行办法》第二条划定了适用边界，这是所有合规工作的起点。</p>
+<table>
+<tr><th>情形</th><th>是否适用《暂行办法》</th><th>说明</th></tr>
+<tr><td>利用生成式人工智能技术向境内公众提供生成文本、图片、音频、视频等内容的服务</td><td><strong>适用</strong></td><td>包括通过提供可编程接口（API）等方式向公众提供服务</td></tr>
+<tr><td>从事新闻出版、影视制作、文艺创作等活动，国家另有规定的</td><td>从其规定</td><td>行业特别规定优先适用</td></tr>
+<tr><td>行业组织、企业、教育和科研机构、公共文化机构、有关专业机构等研发、应用生成式人工智能技术，<strong>未向境内公众提供服务</strong></td><td><strong>不适用</strong></td><td>内部研发、内部使用、内部效率工具属于这一情形</td></tr>
+<tr><td>法律、行政法规规定提供生成式人工智能服务应当取得相关行政许可的</td><td>应当依法取得许可</td><td>第二十三条；外商投资还应符合外商投资相关法律、行政法规的规定</td></tr>
+</table>
+<p>"未向境内公众提供服务"是内部应用场景的核心判断标准。判断时应当考察：服务对象是否限定于特定员工或者特定客户；是否需要账号白名单或者邀请制；生成内容是否对外发布或者用于对外交付。企业内部知识库问答、代码助手、内部文案草稿工具，通常落在"不适用"一侧；而面向不特定用户的 C 端产品、面向公开客户开放的 API，则明确落在"适用"一侧。</p>
+
+<h2>三、训练数据与数据标注：四类证据必须留存</h2>
+<table>
+<tr><th>证据类别</th><th>对应条文要求</th><th>落地留存方式</th></tr>
+<tr><td>数据来源合法证明</td><td>第七条第一项：使用具有合法来源的数据和基础模型</td><td>数据采购合同、授权书、公开数据集许可协议、开源模型许可证、网页抓取合规评估记录</td></tr>
+<tr><td>知识产权合规证明</td><td>第七条第二项：不得侵害他人依法享有的知识产权</td><td>作品授权文件、著作权声明、权利人异议处理记录、投诉处理台账</td></tr>
+<tr><td>个人信息处理依据</td><td>第七条第三项：取得个人同意或者符合法律、行政法规规定的其他情形</td><td>同意记录、单独同意记录、个人信息保护影响评估报告；去标识化处理说明</td></tr>
+<tr><td>数据质量与标注规则</td><td>第七条第四项、第八条：提高训练数据质量；标注规则清晰、具体、可操作；抽样核验；人员培训</td><td>数据质量评估报告、标注规则文本、抽样核验记录、标注人员培训与考核记录</td></tr>
+</table>
+<p>需要与个人信息保护制度衔接的一点是：训练数据中涉及个人信息的，处理依据不限于"同意"。《个人信息保护法》第十三条规定了七类处理个人信息的合法性基础，此外还需判断是否属于处理敏感个人信息，以及是否需要进行个人信息保护影响评估。《暂行办法》第七条第三项的表述是"取得个人同意或者符合法律、行政法规规定的其他情形"，与《个人信息保护法》的合法性基础体系相衔接，不能简化为"一律取得同意"或者"一律不需要同意"。</p>
+
+<h2>四、服务规范：六项日常义务</h2>
+<table>
+<tr><th>义务</th><th>条文</th><th>具体要求</th></tr>
+<tr><td>主体责任</td><td>第九条</td><td>依法承担网络信息内容生产者责任，履行网络信息安全义务；涉及个人信息的，依法承担个人信息处理者责任；与使用者签订服务协议，明确双方权利义务</td></tr>
+<tr><td>提示与未成年人保护</td><td>第十条</td><td>明确并公开服务的适用人群、场合、用途；指导使用者科学理性认识和依法使用；采取有效措施防范未成年人用户过度依赖或者沉迷</td></tr>
+<tr><td>输入信息与使用记录保护</td><td>第十一条</td><td>不得收集非必要个人信息；不得非法留存能够识别使用者身份的输入信息和使用记录；不得非法向他人提供；依法及时受理处理查阅、复制、更正、补充、删除个人信息的请求</td></tr>
+<tr><td>内容标识</td><td>第十二条</td><td>按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识</td></tr>
+<tr><td>服务连续性</td><td>第十三条</td><td>提供安全、稳定、持续的服务，保障用户正常使用</td></tr>
+<tr><td>投诉举报机制</td><td>第十五条</td><td>建立健全投诉、举报机制，设置便捷入口，公布处理流程和反馈时限，及时受理处理并反馈结果</td></tr>
+</table>
+<p>其中第十一条的"不得非法留存能够识别使用者身份的输入信息和使用记录"是实务中最容易出问题的一条。企业出于产品迭代需要留存对话日志时，应当先完成去标识化处理，明确留存目的与期限，并在隐私政策与服务协议中如实告知。若日志中直接保留了手机号、身份证号、企业名称等可识别信息，且无明确合法性基础，即构成违规。</p>
+
+<h2>六、安全评估与算法备案：触发条件与办理路径</h2>
+<p>《暂行办法》第十七条的触发条件是"提供具有<strong>舆论属性或者社会动员能力</strong>的生成式人工智能服务"。这一表述与《互联网信息服务算法推荐管理规定》《互联网信息服务深度合成管理规定》中的同类表述一致，属于既有监管口径的延续，判断上需要结合服务的公开程度、内容传播范围与对公众意见形成的影响综合认定。面向社会公众开放、内容可被公开传播、具有较大用户规模的服务，通常应当纳入。</p>
+<p>办理路径上还有两点常被忽略：</p>
+<ol>
+<li><strong>变更与注销备案同样是义务。</strong>条文明确要求"履行算法备案和<strong>变更、注销</strong>备案手续"。服务下线、备案信息发生变化的，应当分别办理注销或者变更，不能只做首次备案。</li>
+<li><strong>配合监督检查是法定义务。</strong>第十九条规定，有关主管部门依据职责开展监督检查，提供者应当依法予以配合，按要求对训练数据来源、规模、类型、标注规则、算法机制机理等予以说明，并提供必要的技术、数据等支持和协助。这意味着备案材料中的信息必须在事后仍然可追溯、可解释。</li>
+</ol>
+<p>此外，《网络安全法》2025年修正后新增第二十条，明确国家支持人工智能基础理论研究和算法等关键技术研发，推进训练数据资源、算力等基础设施建设，完善人工智能伦理规范，加强风险监测评估和安全监管。这一条为生成式人工智能的监管提供了更上位的法律依据。（2025年10月28日修改决定公布，自2026年1月1日起施行。）</p>
+
+<h2>七、常见问题</h2>
+<h3>问：只做企业内部应用，完全不向公众提供服务，需要备案吗？</h3>
+<p>《暂行办法》第二条规定不适用，因此不因该办法产生算法备案义务。但企业仍然需要遵守《个人信息保护法》《数据安全法》《网络安全法》等一般性法律义务；若内部系统涉及重要数据、核心数据或者大量个人信息，还应当履行相应的安全保护与评估义务。换言之，"不适用《暂行办法》"不等于"没有合规义务"。</p>
+<h3>问：使用开源模型对外提供服务，需要对模型训练数据负责吗？</h3>
+<p>需要。第七条要求"使用具有合法来源的数据和基础模型"，责任主体是提供者。使用开源模型可以降低部分风险，但不能把来源合法性责任转移给开源社区。合规做法是核对开源许可证的授权范围与限制条件，留存模型来源与版本记录，并对微调、二次训练所使用的自备数据单独做合法性审查。</p>
+
+
+
+<h2>八、实务要点与律师提示</h2>
+<p>生成式人工智能服务的合规体系可以压缩为一张"四层清单"：<strong>数据层</strong>（来源合法、知识产权、个人信息、质量与标注）、<strong>内容层</strong>（禁止生成内容、歧视防范、违法内容处置、生成内容标识）、<strong>服务层</strong>（服务协议、适用人群提示、未成年人保护、输入信息保护、投诉举报）、<strong>监管层</strong>（安全评估、算法备案与变更注销、监督检查配合）。每一层都应当有对应文件与台账，做到"问得到、查得着"。</p>
+<p>对<strong>准备上线生成式 AI 服务的企业</strong>，建议按以下顺序推进：第一步做适用范围判断（是否向境内公众提供）；第二步做数据合法性审查并形成书面结论；第三步把标识能力写进技术需求，而不是在验收阶段补做；第四步完成安全评估并办理备案；第五步建立违法内容处置流程与投诉举报台账；第六步建立版本变更时的备案变更机制。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《生成式人工智能服务管理暂行办法》（国家互联网信息办公室、国家发展和改革委员会、教育部、科学技术部、工业和信息化部、公安部、国家广播电视总局令第15号，2023年5月23日审议通过，2023年7月10日公布，<strong>2023年8月15日起施行</strong>）第二条（适用范围与除外）、第三条、第四条（内容安全与歧视防范）、第五条、第六条、第七条（训练数据处理活动）、第八条（数据标注）、第九条（提供者主体责任与服务协议）、第十条（适用人群与未成年人保护）、第十一条（输入信息与使用记录保护）、第十二条（生成内容标识）、第十三条（服务连续性）、第十四条（违法内容处置与报告）、第十五条（投诉举报机制）、第十六条（监督管理职责）、第十七条（安全评估与算法备案）、第十八条（使用者投诉举报权）、第十九条（监督检查配合）、第二十条（境外服务的处置）、第二十一条（法律责任）、第二十二条（用语含义）、第二十三条（行政许可与外商投资）；《互联网信息服务深度合成管理规定》（2022年11月25日公布，2023年1月10日施行）；《人工智能生成合成内容标识办法》（国信办通字〔2025〕2号，2025年9月1日施行）及配套强制性国家标准；《中华人民共和国个人信息保护法》（2021年11月1日施行）第十三条、第二十八条、第五十五条；《中华人民共和国网络安全法》（2025年10月28日修改决定公布，自2026年1月1日起施行）第二十条（新增，人工智能相关条款）。新旧条号对照提示：《网络安全法》2025年修正后，原第二十一条至第五十九条等条文序号整体后移两条，引用旧条号将导致错误，《暂行办法》第一条所引"网络安全法"仍应理解为现行有效版本。特别说明：《暂行办法》第二十一条未单独设定罚款幅度，处罚回落到《网络安全法》《数据安全法》《个人信息保护法》等上位规范；"具有舆论属性或者社会动员能力"的具体认定口径尚无公开的统一量化标准，<strong>实务中存在争议</strong>。请以国家互联网信息办公室及全国人大官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>要做生成式 AI 服务？先把备案与标识做实</h3><p>训练数据来源、内容标识、安全评估与算法备案是四条并列义务，缺一项都可能被认定为违法提供服务。电话/微信：15872427052电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="ai-neirong-biaoshi-yiwu.html" class="related-card"><div class="rc-tag">Data</div><h4>人工智能生成合成内容的标识义务：显式标识与隐式标识的要求、传播平台的核验义务与违规后果</h4></a><a href="suanfa-tuijian-beian.html" class="related-card"><div class="rc-tag">Data</div><h4>算法推荐服务的备案义务、透明度要求与用户退出权</h4></a><a href="shuju-anquan-dengji-baohu.html" class="related-card"><div class="rc-tag">Data</div><h4>网络安全等级保护义务与数据安全事件的责任认定</h4></a><a href="ai-kefu-zhinengwaihu-gerenxinxi.html" class="related-card"><div class="rc-tag">Data</div><h4>AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"生成式人工智能服务提供者的合规义务：训练数据、内容标识、安全评估与算法备案","description":"《生成式人工智能服务管理暂行办法》自2023年8月15日起施行，向中华人民共和国境内公众提供生成式人工智能服务的提供者，应当使用具有合法来源的数据和基础模型、不得侵害他人知识产权（第七条），对图片、视频等生成内容进行标识（第十二条），发现违法内容时及时采取停止生成、停止传输、消除等处置措施并向有关主管部门报告（第十四条）；提供具有舆论属性或者社会动员能力的服务的，应当开展安全评估，并按照《互联网信息服务算法推荐管理规定》履行算法备案和变更、注销备案手续（第十七条）。行业组织、企业、教育和科研机构等研发、应用生成式人工智能技术但未向境内公众提供服务的，不适用该办法（第二条）。","author":{"@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"}},"datePublished":"2026-09-28","dateModified":"2026-09-28"}</script>
+</body></html>
