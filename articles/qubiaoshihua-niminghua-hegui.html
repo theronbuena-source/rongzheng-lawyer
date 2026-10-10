@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="去标识化与匿名化的法定定义与法律后果差异：去标识化后的信息仍属个人信息，匿名化后的信息不属于个人信息；重标识风险评估的四级分级、去标识化效果评估流程，以及数据共享、交易与出境场景的适用边界。">
+<meta name="keywords" content="去标识化,匿名化,重标识风险,个人信息保护法第73条,数据脱敏,个人信息合规">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/qubiaoshihua-niminghua-hegui.html" />
+<title>去标识化与匿名化的法律区分：个人信息保护法定义、重标识风险与四项合规边界</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}
+.nav.hide{transform:translateY(-100%)}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; 去标识化与匿名化的法律区分</div><div class="cat">数据合规</div><h1>去标识化与匿名化的法律区分：个人信息保护法定义、重标识风险与四项合规边界</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论前置：一个概念、两条定义、四种后果</h2>
+<p>去标识化与匿名化在实践中经常被混用，但两者的法律后果截然不同。先把结论摆出来。</p>
+<ol>
+<li><strong>两条法定定义。</strong>《个人信息保护法》第七十三条规定：<strong>去标识化</strong>，是指个人信息经过处理，使其在<strong>不借助额外信息的情况下无法识别</strong>特定自然人的过程；<strong>匿名化</strong>，是指个人信息经过处理<strong>无法识别特定自然人且不能复原</strong>的过程。</li>
+<li><strong>一个决定性的法律后果差异。</strong>《个人信息保护法》第四条第一款明确：个人信息是以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，<strong>不包括匿名化处理后的信息</strong>。据此，匿名化处理后的信息不属于个人信息，不再适用个人信息保护法；而去标识化后的信息<strong>仍属个人信息</strong>，仍须适用告知同意、影响评估、跨境等全部规则。</li>
+<li><strong>去标识化是法定的安全措施，不是免责事由。</strong>《个人信息保护法》第五十一条要求个人信息处理者采取包括去标识化在内的措施保障个人信息安全。也就是说，去标识化是「怎么做」的合规要求，而不是「要不要遵守」的豁免理由。</li>
+<li><strong>匿名化的判断标准是「不能复原」。</strong>只要存在通过额外信息、辅助数据重新识别特定自然人的合理可能，就不能认定为已完成匿名化。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>企业最常见的合规误区是把「脱敏」「假名化」「哈希替换」直接等同于匿名化，据此认为数据不再受个人信息保护法约束，从而在共享、交易、出境时省略合法性基础。这一理解在监管与司法实践中难以获得支持。</div>
+
+<h2>二、去标识化与匿名化的逐项对比</h2>
+<p>下表从定义、可识别性、法律属性、合规义务四个维度对照。判断的落脚点始终是：处理后的信息能否识别到特定自然人。</p>
+<table>
+<tr><th>比较项</th><th>去标识化</th><th>匿名化</th><th>主要依据</th></tr>
+<tr><td>法定定义</td><td>不借助额外信息的情况下无法识别特定自然人</td><td>无法识别特定自然人且不能复原</td><td>《个人信息保护法》第七十三条第三项、第四项</td></tr>
+<tr><td>借助额外信息后能否识别</td><td>可能可以</td><td>不可以</td><td>同上</td></tr>
+<tr><td>是否可复原</td><td>可能可复原</td><td>不可复原</td><td>同上</td></tr>
+<tr><td>法律属性</td><td>仍属个人信息</td><td>不属于个人信息</td><td>《个人信息保护法》第四条第一款</td></tr>
+<tr><td>适用规则</td><td>适用个人信息保护法全部规则（告知同意、单独同意、影响评估、跨境等）</td><td>不适用个人信息保护法</td><td>同上</td></tr>
+<tr><td>义务定位</td><td>法定的安全保障措施之一（第五十一条）</td><td>属于处理目的之外的路径选择，需自行证明不可复原</td><td>《个人信息保护法》第五十一条</td></tr>
+<tr><td>举证与证明</td><td>不涉及豁免，无需额外证明</td><td>主张豁免的一方需证明已实现不可复原</td><td>举证责任的分配依个案与争议类型确定</td></tr>
+</table>
+<p>国家标准层面也有对应的技术指引：GB/T 37964—2019《信息安全技术 个人信息去标识化指南》描述了去标识化的目标、原则、过程和管理措施，并给出常见去标识化技术与模型；GB/T 42460—2023《信息安全技术 个人信息去标识化效果评估指南》则提供去标识化效果的分级与评估方法。</p>
+
+<h2>三、重标识风险评估：四级分级与评估流程</h2>
+<p>去标识化效果的核心判断指标是「标识度」，即数据能否直接或经由准标识符识别到个人信息主体。依 GB/T 42460—2023，个人信息标识度分为四级，级别越低风险越高。</p>
+<table>
+<tr><th>级别</th><th>风险水平</th><th>划分依据</th><th>可能的管控取向</th></tr>
+<tr><td>4 级</td><td>风险最低</td><td>不包含任何标识符</td><td>风险最低，可支持较开放的使用场景（具体仍须结合业务判断）</td></tr>
+<tr><td>3 级</td><td>风险较低</td><td>消除了直接标识符，但包含准标识符，且重标识风险低于可接受风险阈值</td><td>可在限定场景下使用，持续监控重标识风险</td></tr>
+<tr><td>2 级</td><td>风险较高</td><td>消除了直接标识符，但包含准标识符，且重标识风险高于或等于可接受风险阈值</td><td>需追加去标识化或补充管理措施，否则不宜扩大共享范围</td></tr>
+<tr><td>1 级</td><td>风险最高</td><td>包含直接标识符，在特定环境下能直接识别个人信息主体</td><td>应按个人信息严格管理，不产生匿名化效果</td></tr>
+</table>
+<p>评估流程通常包括五个环节：<strong>评估准备</strong>（确定数据集、使用环境、评估团队、依据、重标识风险计算方案与可接受风险阈值、评估方案）；<strong>定性评估</strong>（形成标识符清单，判断是否含标识符、是否含直接标识符）；<strong>定量评估</strong>（计算重标识风险并与阈值比较）；<strong>形成评估结论</strong>（形成去标识化效果分级结论并获管理层批准）；<strong>沟通与协商</strong>（含数据环境重大变更通知机制与定期重新评估计划）。</p>
+<div class="tip"><strong>实务要点：</strong>可接受风险阈值是整套评估的锚点，应当结合数据用途、共享方式（完全公开共享、受控公开共享、受限制共享等）与重标识后果共同确定，并在制度中固化。阈值一经设定，即成为后续评估与审计的比较基准。</div>
+
+<h2>四、常用去标识化技术与适用场景</h2>
+<p>技术选择应当服务于「降低区分度与识别度」这一目标，并兼顾数据可用性。</p>
+<table>
+<tr><th>技术类别</th><th>典型技术</th><th>适用场景与注意点</th></tr>
+<tr><td>统计技术</td><td>数据抽样、数据聚合</td><td>适用于统计分析；聚合后仍可能因样本过小被反推</td></tr>
+<tr><td>密码技术</td><td>确定性加密、保序加密、保留格式加密、同态加密</td><td>适用于需保持格式或可比对的场景；密钥管理是关键控制点</td></tr>
+<tr><td>抑制技术</td><td>屏蔽、局部抑制、记录抑制</td><td>直接删除或遮盖标识字段，简单有效但可能显著降低可用性</td></tr>
+<tr><td>泛化技术</td><td>取整、顶层与底层编码</td><td>如将出生日期泛化为年龄段，降低准标识符精度</td></tr>
+<tr><td>随机化技术</td><td>噪声添加、置换、微聚集</td><td>适用于统计发布；需评估噪声对结论的影响</td></tr>
+<tr><td>假名化技术</td><td>独立于标识符的假名创建、基于密码技术的标识符派生假名</td><td><strong>假名化本身不等于匿名化</strong>，映射表须单独存放并受技术、组织措施约束</td></tr>
+<tr><td>模型</td><td>k-匿名模型、差分隐私模型</td><td>常用于定量评估中的重标识风险计算</td></tr>
+</table>
+<div class="tip"><strong>风险提示：</strong>单点技术处理通常不足以实现匿名化。直接标识符（姓名、身份证件号、详细住址、电话号码、银行账户、设备标识符、生物识别码、互联网协议地址等）与准标识符（性别、出生日期、地理范围、职业、婚姻状况、受教育水平等）的组合，可能在与其他数据源比对后重新识别到个人。常见的重标识路径正是「准标识符交叉比对」。</div>
+
+<h2>五、四项合规边界：共享、交易、出境与内部使用</h2>
+<p>判断去标识化或匿名化是否达到预期效果，必须落到具体场景。以下四条边界最常被问到。</p>
+<ol>
+<li><strong>内部使用与安全措施：</strong>去标识化是《个人信息保护法》第五十一条项下的法定义务之一，即使数据仅在内部使用，也应当采取包括去标识化在内的必要安全措施，并建立分类分级保护制度。</li>
+<li><strong>对外提供与共享：</strong>去标识化后的数据仍属个人信息，向他人提供须具备合法性基础（如取得单独同意或符合法定情形），并履行告知义务。若确已实现匿名化，则不再属于个人信息，可以提供。</li>
+<li><strong>数据交易与数据产品挂牌：</strong>数据交易与产品挂牌通常要求确权、脱敏与标准化。此处「脱敏」是否达到匿名化标准，直接决定交易标的是否仍受个人信息保护法约束，是审查的核心问题。</li>
+<li><strong>数据出境：</strong>去标识化不影响数据出境的合规路径判断；匿名化数据因不属于个人信息，不构成个人信息出境。《网络数据安全管理条例》第二十四条对去标识化和匿名化作出了衔接性规定，具体适用仍须结合数据类型、数量与出境路径综合判断。</li>
+</ol>
+
+<h2>六、常见问题</h2>
+<h3>问：把姓名、手机号字段删掉，剩下的数据是不是就匿名化了？</h3>
+<p>不一定。删除直接标识符只是第一步。若数据仍包含准标识符（如性别、出生日期、邮政编码、职业、事件日期等），结合其他可得信息仍可能重新识别到特定自然人，则仍属去标识化而非匿名化，级别通常落在 3 级或 2 级。是否可认定为匿名化，需要按不可复原的标准综合判断。</p>
+<h3>问：对身份证号做哈希处理，算匿名化吗？</h3>
+<p>哈希属于假名化技术。若映射关系或密钥可获取，且原始标识符可被穷举或比对，则存在重新识别的可能，通常只能实现去标识化效果，不能认定为匿名化。哈希算法、盐值管理与密钥保管是关键控制点。</p>
+<h3>问：匿名化的证明责任在谁？</h3>
+<p>主张「已实现匿名化、不适用个人信息保护法」的一方，通常需要承担相应的证明责任。因此企业应当留存去标识化与匿名化处理的技术文档、效果评估报告、重标识风险计算方案与阈值设定依据、评估团队构成与管理层批准记录。</p>
+<h3>问：去标识化是否有统一的国家标准可以依据？</h3>
+<p>有。GB/T 37964—2019《信息安全技术 个人信息去标识化指南》提供去标识化的过程与管理措施；GB/T 42460—2023《信息安全技术 个人信息去标识化效果评估指南》提供效果分级与评估方法。两者均为推荐性国家标准，可作为技术合规与举证的重要依据。</p>
+
+<h2>七、法条与依据核验</h2>
+<p>本文引用依据如下，均以官方公布文本为准：</p>
+<ul>
+<li>《中华人民共和国个人信息保护法》第四条第一款（个人信息定义，不包括匿名化处理后的信息）、第六条（目的明确与最小范围）、第十三条（处理的合法性基础）、第五十一条（安全保障义务，明确包含去标识化等技术措施）、第七十三条第三项（去标识化定义）、第七十三条第四项（匿名化定义）。</li>
+<li>《网络数据安全管理条例》第二十四条（去标识化和匿名化的衔接规定）。</li>
+<li>GB/T 37964—2019《信息安全技术 个人信息去标识化指南》。</li>
+<li>GB/T 42460—2023《信息安全技术 个人信息去标识化效果评估指南》（提供去标识化效果四级分级与评估流程）。</li>
+<li>《中华人民共和国数据安全法》关于数据分类分级保护的规定。</li>
+<li>《中华人民共和国网络安全法》（2025 年修改，2026 年 1 月 1 日起施行）关于个人信息收集使用与安全保护的规定。</li>
+</ul>
+<p><strong>待核实与提示：</strong>①《中华人民共和国个人信息匿名化处理指南及评价方法》的制定状态与最终文本内容，本文未作确定性引用，仅提及可关注其进展；②去标识化效果分级中「可接受风险阈值」的取值，国家标准给出方法与参考，具体阈值应由处理者结合场景自行确定，不宜直接照搬；③「匿名化后是否仍可能因第三方数据融合而重新识别」在实践与学术层面均有讨论，监管口径仍在形成过程中，<strong>实务中存在争议</strong>；④本文所述均以处理活动发生在境内的合规判断为基础，涉境外主体时还须考虑域外适用规则。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>数据共享、数据交易或数据出境时，需要判断是否已完成匿名化、能否豁免适用个保法？</h3><p>我们可协助评估去标识化方案、重标识风险等级与合规豁免边界。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuju-jiaoyi-guapai.html" class="related-card"><div class="rc-tag">数据合规</div><h4>数据交易与数据产品挂牌的合规要求：确权、脱敏与标准化</h4></a><a href="shuju-zichan-rubiao.html" class="related-card"><div class="rc-tag">数据合规</div><h4>数据资产入表的条件与合规路径：确权、估值与会计处理</h4></a><a href="kuajing-shuju-chuanshu-hegui.html" class="related-card"><div class="rc-tag">数据合规</div><h4>数据出境的合规路径：安全评估、标准合同与认证的选择标准</h4></a><a href="wangluo-shuju-anquan-tiaoli-yiwu.html" class="related-card"><div class="rc-tag">数据合规</div><h4>网络数据安全管理条例的核心义务：个人信息处理规则、重要数据与平台责任</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"去标识化与匿名化的法律区分：个人信息保护法定义、重标识风险与四项合规边界","description":"去标识化与匿名化的法定定义与法律后果差异：去标识化后的信息仍属个人信息，匿名化后的信息不属于个人信息；重标识风险评估的四级分级、去标识化效果评估流程，以及数据共享、交易与出境场景的适用边界。","author":{"@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"}},"datePublished":"2026-10-07"}</script>
+</body></html>
