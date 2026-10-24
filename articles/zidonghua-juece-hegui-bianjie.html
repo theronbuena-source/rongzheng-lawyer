@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="个人信息保护法第二十四条对自动化决策提出三项要求：保证透明度与结果公平、不得实行不合理的差别待遇；推送与商业营销须提供不针对个人特征的选项或便捷拒绝方式；对个人权益有重大影响的决定，个人有权要求说明并拒绝仅由自动化决策作出。本文梳理三项要求的判断标准、配套的告知与影响评估义务，以及违法后果。">
+<meta name="keywords" content="自动化决策,个人信息保护法第二十四条,大数据杀熟,差别待遇,个性化推荐,拒绝权,算法解释,个人信息保护影响评估,算法备案">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/zidonghua-juece-hegui-bianjie.html" />
+<title>自动化决策的合规边界：差别待遇、说明义务与拒绝权——《个人信息保护法》第二十四条的三项要求</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 自动化决策的合规边界</div><div class="cat">Data Compliance &bull; Automated Decision-making</div><h1>自动化决策的合规边界：差别待遇、说明义务与拒绝权——《个人信息保护法》第二十四条的三项要求</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：自动化决策的三项法定要求</h2>
+<p>《个人信息保护法》第二十四条对自动化决策提出三项要求，构成合规判断的基本框架：<strong>第一，利用个人信息进行自动化决策，应当保证决策的透明度和结果公平、公正，不得对个人在交易价格等交易条件上实行不合理的差别待遇；第二，通过自动化决策方式向个人进行信息推送、商业营销，应当同时提供不针对其个人特征的选项，或者向个人提供便捷的拒绝方式；第三，通过自动化决策方式作出对个人权益有重大影响的决定，个人有权要求说明，并有权拒绝个人信息处理者仅通过自动化决策的方式作出决定。</strong></p>
+<p>三项要求的性质不同：第一项是结果性要求，指向"差别待遇"这一实体问题；第二项是选择权要求，指向营销场景中的退出机制；第三项是程序性权利，指向重大决定的可解释性与人工介入。三项要求叠加适用，一项合规不代表整体合规。</p>
+<div class="tip"><strong>实务要点：</strong>多数企业的合规动作停留在"隐私政策里写一段自动化决策说明"，这只解决了告知层面的问题，不满足第二十四条的任何一项实质要求。可验证的合规证据应当是：差别待遇的定价规则与测试记录、拒绝个性化推荐的显性入口与生效留痕、重大决定的说明模板与人工复核记录。</div>
+
+<h2>二、什么构成"自动化决策"</h2>
+<p>《个人信息保护法》第七十三条第二项把自动化决策定义为：通过计算机程序自动分析、评估个人的行为习惯、兴趣爱好或者经济、健康、信用状况等，并进行决策的活动。构成要件有二：一是自动化，即由程序而非人工完成分析与判断；二是"决策"，即输出对个人产生影响的结论，而不仅是数据统计。</p>
+<p>按此标准，以下场景通常构成自动化决策：基于用户画像的个性化推荐与排序、动态定价与优惠券发放、信用评分与授信额度审批、简历初筛与自动排班、保险核保与理赔初判、内容审核中的自动处置。以下场景通常不构成：纯粹的数据统计报表、不针对特定个人的宏观分析、仅作为辅助参考而最终由人工独立判断的处理。</p>
+<p>边界地带是"人机结合"。系统给出建议分、由人工点击确认的，是否属于自动化决策，取决于人工是否具有实质判断空间。若人工仅作形式确认、实际上不可能推翻系统结论，通常被认定为"仅通过自动化决策作出决定"，从而落入第二十四条第三款的规制范围。这一判断标准在监管实践中尚未形成统一口径，实务中存在争议。</p>
+
+<h2>三、要求一：不得实行不合理的差别待遇</h2>
+<p>第二十四条第一款禁止的是"对个人在交易价格等交易条件上实行不合理的差别待遇"，通常被称为"大数据杀熟"。构成该情形需要同时具备三个要素：存在差别待遇（同类商品或服务对不同个人适用不同价格或条件）、差别基于自动化决策（由算法而非明示的会员等级、促销规则形成）、差别不具有合理性。</p>
+<p>"合理性"的判断是核心。以下差别通常具有合理性：基于成本差异的差别（不同地区配送成本）、基于明示规则的差别（公开的新客优惠、会员等级折扣）、基于个人明确同意的差别（用户自主选择的套餐）。以下差别难以说明合理性：基于消费能力、设备型号、浏览频次、是否比价等画像标签的隐性加价；对老客户收取更高价格；对特定群体关闭优惠入口。</p>
+<p>举证责任分配对企业不利。个人信息侵权适用过错推定，处理者需证明自己没有过错（《个人信息保护法》第六十九条）；在差别待遇争议中，企业往往需要提交定价规则、算法逻辑说明与测试记录，才能证明差别具有合理依据。这也是为什么"定价规则留痕"应当成为合规基础设施，而不是争议发生后的补课。</p>
+<p>差别待遇还可能触发其他法律路径：具有市场支配地位的平台无正当理由对条件相同的交易相对人实行差别待遇的，可能构成滥用市场支配地位（《反垄断法》第二十二条）；以虚假的优惠价格误导消费者的，可能构成价格欺诈。三条路径的责任性质不同，可并行主张。</p>
+
+<h2>四、要求二：推送与营销中的选择权</h2>
+<p>第二十四条第二款规定，通过自动化决策方式向个人进行信息推送、商业营销的，应当同时提供不针对其个人特征的选项，或者向个人提供便捷的拒绝方式。这里的关键词是"同时"与"便捷"。</p>
+<p>"同时"意味着不能先推送、后补选项，也不能把选项藏在多层菜单中；"便捷"意味着拒绝的操作成本不应显著高于接受的操作成本。实践中被认定为不便捷的典型设计包括：关闭个性化推荐需要联系客服、需要提交书面申请、需要在每次推送后单独点击"不感兴趣"而无法一次性关闭、关闭入口仅在 App 某一版本的深层设置中。</p>
+<p>需要注意的是，第二款只规制"信息推送、商业营销"，不覆盖全部自动化决策场景。搜索结果排序、内容推荐是否属于"信息推送"，取决于是否主动向个人投送；仅提供检索排序的，通常按第一款的一般要求处理。</p>
+<table>
+<tr><th>场景</th><th>是否受第二款约束</th><th>合规动作</th></tr>
+<tr><td>App 首页个性化推荐信息流</td><td>是</td><td>提供"关闭个性化推荐"开关，关闭后仍可正常浏览非个性化内容</td></tr>
+<tr><td>短信、App 推送的营销信息</td><td>是</td><td>提供退订方式，退订即时生效，不得设置附加条件</td></tr>
+<tr><td>电商站内搜索结果排序</td><td>通常按第一款处理</td><td>说明排序逻辑的主要参数，提供按销量、价格等非个性化排序选项</td></tr>
+<tr><td>基于用户画像的定向广告投放</td><td>是</td><td>提供关闭定向广告的入口，关闭后不得继续基于画像投放</td></tr>
+</table>
+
+<h2>五、要求三：重大影响的说明义务与拒绝权</h2>
+<p>第二十四条第三款规定，通过自动化决策方式作出对个人权益有重大影响的决定，个人有权要求个人信息处理者予以说明，并有权拒绝个人信息处理者仅通过自动化决策的方式作出决定。这一款把"算法解释"从伦理讨论变成了法定义务。</p>
+<p>"重大影响"没有法定列举，通常结合后果的严重性与不可逆性判断：拒绝授信、拒绝录用、拒绝承保、大幅调整费率、限制账号功能、影响征信记录等，一般属于重大影响；推荐排序、优惠券面额调整等，通常不属于。判断时应以"对个人权益的影响程度"为标准，而非以企业内部的业务分类为标准。</p>
+<p>"说明"的程度不是公开源代码，而是就决定所依据的个人信息种类、决策逻辑的主要因素、对个人产生的影响作出可理解的解释。监管与司法实践普遍接受"适度解释"标准：能够使个人理解决策的基本依据即可，不要求披露商业秘密或算法全部参数。</p>
+<p>"拒绝权"的落实需要人工介入机制。个人拒绝仅通过自动化决策作出决定的，处理者应当提供人工复核通道，由具备相应权限的人员重新评估。仅在页面上设置"申诉"按钮、实际仍由同一系统自动回复的，不构成有效的人工介入。</p>
+
+<h2>六、配套义务：告知、影响评估与审计</h2>
+<p>自动化决策不是孤立义务，它与三项配套义务绑定。</p>
+<ol>
+<li><strong>告知。</strong>处理个人信息应当以显著方式、清晰易懂的语言真实、准确、完整地告知处理目的、方式、种类、保存期限等（《个人信息保护法》第十七条）；利用自动化决策的，还应当告知决策的基本逻辑与对个人的影响。</li>
+<li><strong>事前影响评估。</strong>利用个人信息进行自动化决策属于应当事前进行个人信息保护影响评估的法定情形（第五十五条第一项），评估应包含处理目的、处理方式是否合法正当必要，对个人权益的影响及安全风险，保护措施是否合法有效并与风险程度相适应；评估报告与处理情况记录至少保存三年。</li>
+<li><strong>审计与留存。</strong>定期合规审计中，自动化决策的规则文档、测试记录、拒绝与人工复核记录属于必查材料；算法推荐服务提供者还需按相关规定履行算法备案与安全评估义务，具体备案口径以《互联网信息服务算法推荐管理规定》及属地网信部门要求为准。</li>
+</ol>
+<p>违法后果分三层：行政层面，违反第二十四条的，责令改正、给予警告、没收违法所得，拒不改正的处一百万元以下罚款，情节严重的处五千万元以下或者上一年度营业额百分之五以下罚款，并可以责令暂停相关业务或者停业整顿、吊销相关业务许可或者营业执照（第六十六条）；民事层面，造成损害的按第六十九条承担过错推定责任；刑事层面，情节严重的可能触及侵犯公民个人信息罪。</p>
+
+<h2>七、常见问题</h2>
+<h3>问：会员等级折扣算不算"不合理的差别待遇"？</h3>
+<p>一般不算。会员等级规则公开、取得条件明确，属于基于明示规则的差别，具有合理性。但如果系统依据消费能力、设备型号等未公开标签在会员内部再加价，则落入第二十四条第一款的禁止范围。</p>
+<h3>问：关闭个性化推荐后，还能继续推送营销信息吗？</h3>
+<p>可以推送非个性化内容，但不得继续基于个人特征定向。关闭开关必须真实生效，关闭后仍按画像投放的，属于虚假关闭，构成违反第二款。</p>
+<h3>问：信贷审批全部由系统自动拒绝，需要给理由吗？</h3>
+<p>需要。拒绝授信通常属于对个人权益有重大影响的决定，个人有权要求说明，并有权拒绝仅通过自动化决策作出决定，处理者应当提供人工复核通道。</p>
+<h3>问："说明"是不是要求公开算法源代码？</h3>
+<p>不是。说明义务的标准是使个人了解决策所依据的个人信息种类、主要判断因素与影响，属于适度解释，不要求披露源代码或者全部参数；但以"商业秘密"为由完全拒绝说明的，难以满足第二十四条第三款。</p>
+<h3>问：人工点击确认一下，能不能避免被认定为"仅通过自动化决策"？</h3>
+<p>取决于人工是否有实质判断空间。人工仅作形式确认、客观上不可能推翻系统结论的，仍可能被认定为仅通过自动化决策作出决定。企业应保留人工复核的实质记录，包括复核意见、推翻率与复核人员权限设置。</p>
+<h3>问：自动化决策需要单独取得同意吗？</h3>
+<p>第二十四条本身未把自动化决策列为"单独同意"情形，其合法性基础仍依第十三条判断；但通过自动化决策向个人推送商业营销，属于营销类处理，还须遵守《广告法》《消费者权益保护法》关于商业信息发送与拒绝权的规定。是否为"单独同意"情形，应以处理活动的具体性质判断，实务中存在争议。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国个人信息保护法》第十三条（处理的合法性基础）、第十七条（告知义务）、第二十四条（自动化决策的透明度与结果公平、推送营销的选择权、重大影响的说明与拒绝权）、第五十五条（应当事前进行个人信息保护影响评估的情形，第一项为利用个人信息进行自动化决策）、第五十六条（影响评估的内容与记录保存三年）、第六十六条（法律责任）、第六十九条（过错推定与损害赔偿）、第七十三条第二项（自动化决策的定义）；《中华人民共和国反垄断法》第二十二条（滥用市场支配地位，包括无正当理由对条件相同的交易相对人实行差别待遇）；《中华人民共和国消费者权益保护法》第八条（知情权）、第二十条（真实信息义务）；《中华人民共和国广告法》第四十三条（未经同意不得发送广告、应当提供拒绝方式）；《互联网信息服务算法推荐管理规定》（国家互联网信息办公室等四部门令）。待核实事项：《互联网信息服务算法推荐管理规定》的具体条文序号，本文未逐一标注，备案口径以属地网信部门现行要求为准；"人机结合是否构成仅通过自动化决策""重大影响的范围"尚无统一监管口径，实务中存在争议，已在正文标注。特别说明：本文未引用任何具体裁判文书或案号。所引条文序号按现行有效版本标注，请以全国人民代表大会、国家互联网信息办公室官方公布文本为准。</p>
+
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>三项要求要落到可验证的记录上，才算合规</h3><p>定价规则、拒绝入口与人工复核的留痕，是争议中最直接的抗辩材料。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="dandu-tongyi-guize.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息「单独同意」的适用场景与取得方式</h4></a>
+<a href="suanfa-tuijian-beian.html" class="related-card"><div class="rc-tag">Data</div><h4>算法推荐服务的备案义务、透明度要求与用户退出权</h4></a>
+<a href="geren-xinxi-yingxiang-pinggu.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息保护影响评估：五项法定情形与三年记录保存</h4></a>
+<a href="hefaxing-jichu-tongyi-zhiwai.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息处理的合法性基础：同意之外的六种情形</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "自动化决策的合规边界：差别待遇、说明义务与拒绝权——《个人信息保护法》第二十四条的三项要求", "description": "个人信息保护法第二十四条对自动化决策提出三项要求：保证透明度与结果公平、不得实行不合理的差别待遇；推送与商业营销须提供不针对个人特征的选项或便捷拒绝方式；对个人权益有重大影响的决定，个人有权要求说明并拒绝仅由自动化决策作出。本文梳理三项要求的判断标准、配套的告知与影响评估义务，以及违法后果。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}, "telephone": "+86-15872427052", "email": "rz@lflawyers.com"}, "publisher": {"@type": "LegalService", "name": "湖北立丰律师事务所"}, "datePublished": "2026-10-21", "dateModified": "2026-10-21", "mainEntityOfPage": "https://www.rongzhenglawyer.com/articles/zidonghua-juece-hegui-bianjie.html"}</script>
+</body></html>

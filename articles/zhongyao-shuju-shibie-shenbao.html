@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="重要数据不是企业自行判断的概念，而是通过目录识别、由主管部门确认的数据。数据安全法第二十一条建立分类分级保护制度并确定重要数据目录，网络数据安全管理条例第二十九条要求网络数据处理者识别、申报重要数据，第三十条要求明确网络数据安全负责人与管理机构，第三十一条要求提供、委托、共同处理前开展风险评估，第三十三条要求每年度开展风险评估并向省级以上主管部门报送。本文梳理三步落地路径、三类评估的触发条件与报告内容、罚则与常见误区。">
+<meta name="keywords" content="重要数据,数据分类分级,重要数据目录,识别申报,年度风险评估,网络数据安全管理条例第二十九条,数据安全法第二十一条,数据安全负责人,合规审计,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/zhongyao-shuju-shibie-shenbao.html" />
+<title>重要数据的识别、申报与年度风险评估：三步落地路径与三类评估的触发条件</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 重要数据的识别、申报与年度风险评估</div><div class="cat">Data Compliance &bull; Important Data</div><h1>重要数据的识别、申报与年度风险评估：三步落地路径与三类评估的触发条件</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：三步走，三个义务主体，三类评估</h2>
+<p>重要数据合规不是一道"要不要做"的选择题，而是一条有明确节点的程序链。《数据安全法》第二十一条建立数据分类分级保护制度，并明确"国家数据安全工作协调机制统筹协调有关部门制定重要数据目录"；《网络数据安全管理条例》（国务院令第790号，2025年1月1日起施行）第二十九条至第三十三条把这条制度落到操作层面。落地路径可以概括为三步：</p>
+<ol>
+<li><strong>识别与申报。</strong>网络数据处理者应当按照国家有关规定<strong>识别、申报</strong>重要数据；对确认为重要数据的，相关地区、部门应当及时向网络数据处理者告知或者公开发布（条例第二十九条第三款、第四款）。</li>
+<li><strong>建立组织与人员。</strong>重要数据的处理者应当明确<strong>网络数据安全负责人</strong>和<strong>网络数据安全管理机构</strong>；负责人须具备专业知识与相关管理工作经历，由管理层成员担任，有权直接向有关主管部门报告（条例第三十条）。</li>
+<li><strong>完成评估与报送。</strong>提供、委托处理、共同处理重要数据<strong>前</strong>应当开展风险评估（第三十一条）；<strong>每年度</strong>对网络数据处理活动开展风险评估，并向省级以上有关主管部门报送风险评估报告（第三十三条）。</li>
+</ol>
+<p>此外还有一条常被忽略的"视同"规则：网络数据处理者处理<strong>1000万人以上</strong>个人信息的，还应当遵守条例第三十条、第三十二条对重要数据处理者作出的规定（第二十八条）。也就是说，即便没有被列入重要数据目录，只要个人信息处理规模达到该门槛，就要按重要数据处理者的标准配置负责人与管理机构，并在合并、分立、解散、破产时履行报告义务。</p>
+
+<h2>二、什么是重要数据：法律没有下定义，靠目录识别</h2>
+<p>《数据安全法》第二十一条没有给出"重要数据"的定义，而是采用<strong>目录管理</strong>的方式确定范围：国家数据安全工作协调机制统筹协调有关部门制定重要数据目录；各地区、各部门按照数据分类分级保护制度，确定本地区、本部门以及相关行业、领域的重要数据具体目录，对列入目录的数据进行重点保护。</p>
+<p>这一定性带来三个实务推论：</p>
+<ul>
+<li><strong>企业不能自行"认定"某类数据是或者不是重要数据。</strong>判断依据是所在地区、所在行业主管部门发布的具体目录，以及主管部门的确认结果。</li>
+<li><strong>未被列入目录，不等于没有义务。</strong>条例第二十九条要求网络数据处理者主动识别、申报，申报后由主管部门确认或者公开发布。消极等待目录出台，可能构成"未按规定识别、申报"。</li>
+<li><strong>国家核心数据是更严格的一层。</strong>关系国家安全、国民经济命脉、重要民生、重大公共利益等数据属于国家核心数据，实行更加严格的管理制度（《数据安全法》第二十一条第二款），罚则也明显更重。</li>
+</ul>
+<div class="tip"><strong>实务要点：</strong>识别工作的起点不是"哪些数据重要"，而是"我们属于哪个行业、受哪个主管部门监管"。同一家企业在不同业务线上可能对应不同行业的目录：工业数据看工信部门，金融数据看金融监管部门，汽车数据看网信与工信部门，医疗健康数据看卫生健康部门。先定行业、再对目录，比笼统做一次"数据盘点"有效得多。</div>
+
+<h2>三、识别与申报：四层结构拆开看</h2>
+<p>条例第二十九条用四款搭了一个闭环：</p>
+<ol>
+<li><strong>国家层：</strong>国家数据安全工作协调机制统筹协调有关部门制定重要数据目录。</li>
+<li><strong>地区与部门层：</strong>各地区、各部门按照分类分级保护制度，确定本地区、本部门以及相关行业、领域的重要数据具体目录，对列入目录的网络数据进行重点保护。</li>
+<li><strong>处理者层：</strong>网络数据处理者应当按照国家有关规定识别、申报重要数据。</li>
+<li><strong>反馈层：</strong>对确认为重要数据的，相关地区、部门应当及时向网络数据处理者告知或者公开发布；网络数据处理者应当履行网络数据安全保护责任。</li>
+</ol>
+<p>第四款还写了一项鼓励性措施：国家鼓励网络数据处理者使用数据标签标识等技术和产品，提高重要数据安全管理水平。标签标识不是法定义务，但在监管检查与出境评估中是有效的证明手段。</p>
+<p>需要区分"识别申报"与"出境评估申报"两件事。前者是分类分级制度下的常规动作，后者是数据出境路径选择中的一个选项，触发条件、受理机关与法律后果都不同，不能混为一谈。</p>
+
+<h2>四、负责人与管理机构：三个硬性要求</h2>
+<p>条例第三十条对重要数据处理者的组织建设提出三项硬性要求：</p>
+<ul>
+<li><strong>人员要求：</strong>网络数据安全负责人应当具备网络数据安全专业知识和相关管理工作经历，<strong>由网络数据处理者管理层成员担任</strong>，有权直接向有关主管部门报告网络数据安全情况。这意味着不能由中层技术负责人挂名。</li>
+<li><strong>机构职责：</strong>网络数据安全管理机构应当履行三项职责——制定实施网络数据安全管理制度、操作规程和网络数据安全事件应急预案；定期组织开展风险监测、风险评估、应急演练、宣传教育培训等活动，及时处置风险与事件；受理并处理网络数据安全投诉、举报。</li>
+<li><strong>背景审查：</strong>掌握有关主管部门规定的特定种类、规模的重要数据的网络数据处理者，应当对网络数据安全负责人和关键岗位人员进行安全背景审查，加强培训；审查时可以申请公安机关、国家安全机关协助。</li>
+</ul>
+<p>这三项要求与《个人信息保护法》第五十二条的"个人信息保护负责人"制度容易混淆。两者不是同一个岗位：前者对应重要数据安全，依据是数据安全法与网络数据安全管理条例；后者对应个人信息保护，依据是个保法。规模达到一定标准的企业可能同时需要设置两个角色，也可能由同一人兼任，但<strong>职责清单应当分别列明</strong>，避免检查时无法对应。</p>
+
+<h2>五、三类风险评估：触发条件、时点与内容各不相同</h2>
+<p>"风险评估"在重要数据合规中出现三次，含义并不相同。混为一谈是常见错误。</p>
+<table>
+<tr><th>类型</th><th>触发情形</th><th>时点</th><th>主要内容与报送</th></tr>
+<tr><td>处理前的专项评估</td><td>重要数据的处理者<strong>提供、委托处理、共同处理</strong>重要数据（履行法定职责或者法定义务的除外）</td><td>处理<strong>前</strong></td><td>六项重点内容：处理目的方式范围是否合法正当必要；数据遭篡改破坏泄露或者非法获取利用的风险及对国家安全、公共利益、个人组织合法权益的影响；接收方诚信守法情况；合同中的数据安全要求能否有效约束接收方；技术与管理措施能否有效防范风险；主管部门规定的其他内容（第三十一条）</td></tr>
+<tr><td>年度评估</td><td>重要数据的处理者</td><td><strong>每年度</strong></td><td>向<strong>省级以上</strong>有关主管部门报送风险评估报告，主管部门及时通报同级网信部门、公安机关（第三十三条）</td></tr>
+<tr><td>变动报告</td><td>重要数据的处理者因合并、分立、解散、破产等可能影响重要数据安全</td><td>变动时</td><td>采取措施保障安全，并向省级以上有关主管部门报告处置方案、接收方名称或者姓名和联系方式；主管部门不明确的，向省级以上数据安全工作协调机制报告（第三十二条）</td></tr>
+</table>
+<p>除上述三类外，还有两项与"评估"相关但性质不同的义务：<strong>合规审计</strong>——网络数据处理者应当定期自行或者委托专业机构对其处理个人信息遵守法律、行政法规的情况进行合规审计（第二十七条）；<strong>重要数据出境</strong>——在境内运营中收集和产生的重要数据确需向境外提供的，应当通过国家网信部门组织的数据出境安全评估（第三十七条）。</p>
+
+<h2>六、年度评估报告写什么：七项内容与两个易错点</h2>
+<p>条例第三十三条第二款列明了年度风险评估报告的七项内容：</p>
+<ol>
+<li>网络数据处理者基本信息、网络数据安全管理机构信息、网络数据安全负责人姓名和联系方式；</li>
+<li>处理重要数据的<strong>目的、种类、数量、方式、范围、存储期限、存储地点</strong>等，开展网络数据处理活动的情况，<strong>不包括网络数据内容本身</strong>；</li>
+<li>网络数据安全管理制度及实施情况，加密、备份、标签标识、访问控制、安全认证等技术措施和其他必要措施及其有效性；</li>
+<li>发现的网络数据安全风险，发生的网络数据安全事件及处置情况；</li>
+<li>提供、委托处理、共同处理重要数据的风险评估情况；</li>
+<li>网络数据出境情况；</li>
+<li>有关主管部门规定的其他报告内容。</li>
+</ol>
+<p>两个易错点值得单独提示。<strong>第一，报告不要求提交数据内容本身。</strong>第二项的括号是明确的限制，实践中不少企业把数据样本、字段明细一并报送，反而扩大了泄露面。<strong>第二，处理重要数据的<u>大型网络平台服务提供者</u></strong>，除上述内容外还应当充分说明关键业务和供应链网络数据安全等情况（第三十三条第三款）。是否属于"大型网络平台服务提供者"，按主管部门认定，不由企业自行判断。</p>
+<p>此外，条例第十二条要求网络数据处理者向其他处理者提供、委托处理个人信息和重要数据的，应当通过合同等约定处理目的、方式、范围以及安全保护义务，并对接收方履行义务的情况进行监督，<strong>处理情况记录至少保存3年</strong>。这项记录义务常与第三十一条的处理前评估配套出现，检查时通常一并调阅。</p>
+
+<h2>七、罚则与责任：三档罚款与"责令改正"的先行性</h2>
+<p>《数据安全法》第四十五条是重要数据违规的主要罚则，分三档：</p>
+<ul>
+<li><strong>第一档：</strong>不履行第二十七条、第二十九条、第三十条规定的数据安全保护义务的，责令改正，给予警告，可以并处五万元以上五十万元以下罚款；对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款。</li>
+<li><strong>第二档：</strong>拒不改正或者造成大量数据泄露等严重后果的，处五十万元以上二百万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照；对直接负责的主管人员和其他直接责任人员处五万元以上二十万元以下罚款。</li>
+<li><strong>第三档（核心数据）：</strong>违反国家核心数据管理制度，危害国家主权、安全和发展利益的，处二百万元以上一千万元以下罚款，并根据情况责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照；构成犯罪的，依法追究刑事责任。</li>
+</ul>
+<p>值得注意的是，条例作为行政法规，对重要数据义务的违反另有处罚规定，适用时应当按"上位法优先、特别规定优先"的规则确定依据。<strong>具体条款的对应关系在个案中可能存在争议</strong>，宜在收到责令改正通知后先行核对适用依据。</p>
+<p>责任并不止于罚款。条例第三十三条第四款规定，重要数据的处理者存在可能危害国家安全的重要数据处理活动的，省级以上有关主管部门应当责令其采取整改或者停止处理重要数据等措施。停止处理重要数据的后果，对依赖数据开展业务的企业往往是实质性的。</p>
+
+<h2>八、常见问题与实务提示</h2>
+<h3>问：没有被主管部门列入重要数据目录，还要做年度评估吗？</h3>
+<p>要看是否已被确认为重要数据的处理者。条例的逻辑是"识别申报—主管部门确认或者发布—按重要数据处理者履行义务"。在申报结果明确之前，稳妥做法是完成识别并留痕，同时按较重标准准备负责人、机构与评估材料，避免确认后被动补做。</p>
+<h3>问：处理1000万人以上个人信息，是不是就自动成为重要数据处理者？</h3>
+<p>不是"自动成为"，而是<strong>准用</strong>。条例第二十八条的表述是"还应当遵守本条例第三十条、第三十二条对处理重要数据的网络数据处理者作出的规定"，即只准用负责人与机构、变动报告两项义务，并未整体等同。这一区分在监管沟通中很重要。</p>
+<h3>问：年度评估可以委托第三方做吗？</h3>
+<p>条例未禁止委托，但报送主体与责任主体仍是网络数据处理者本身。委托第三方时，应当通过合同约定评估范围、数据处理权限与保密义务，并保留评估过程材料，防止"只买报告、不做整改"。</p>
+<h3>问：集团总部统一做一次评估，子公司还要单独做吗？</h3>
+<p>按处理者分别判断。每个具有独立数据处理者地位的法人，都应当就其自身的处理活动完成评估与报送；集团统一框架可以作为模板，但不能替代各主体的单独评估。<strong>集团层面与法人层面的责任划分，实务中存在争议</strong>。</p>
+<h3>问：重要数据出境，是用年度评估还是单独做安全评估？</h3>
+<p>两者并行。年度评估报告中的"网络数据出境情况"是披露项；重要数据确需出境的，还须依条例第三十七条通过国家网信部门组织的数据安全评估。前者不能替代后者。</p>
+<h3>问：违规后主动整改，能否减轻处罚？</h3>
+<p>《行政处罚法》第三十二条规定了主动消除或者减轻违法行为危害后果等从轻、减轻情形，第三十三条规定了违法行为轻微并及时改正、没有造成危害后果不予处罚的情形。整改的时点、范围与效果是关键，<strong>能否适用需结合具体情节判断</strong>，不宜预设结论。</p>
+<p><strong>律师提示：</strong>重要数据合规的成本主要不在"写报告"，而在"讲清楚自己处理了什么数据"。建议按四步推进：先做<strong>数据资产盘点</strong>（系统、字段、流向、存储位置），再对<strong>行业目录</strong>做逐项比对，形成识别结论与申报材料；随后<strong>配置负责人与机构</strong>并把职责写进制度；最后把<strong>三类评估</strong>排进年度日历，明确触发条件与责任人。四步都留痕，才能在检查或者出境评估时拿出可核查的证据链。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国数据安全法》（2021年9月1日起施行）第二十一条、第二十七条、第二十九条、第三十条、第三十一条、第四十五条；《网络数据安全管理条例》（国务院令第790号，2024年9月24日公布，2025年1月1日起施行）第五条、第十二条、第二十七条、第二十八条、第二十九条、第三十条、第三十一条、第三十二条、第三十三条、第三十七条；《中华人民共和国个人信息保护法》第五十二条；《中华人民共和国行政处罚法》第三十二条、第三十三条。特别说明：本文所引条文序号均依现行有效版本标注；《数据安全法》未对"重要数据"作出定义，范围以国家数据安全工作协调机制统筹、各地区各部门确定的具体目录为准，本文未援引任何具体行业目录的名称与内容，实际适用时应核对本企业所属行业主管部门发布的最新目录；第七节"条例与数据安全法罚则的对应关系"、第八节"集团与法人责任划分"等问题，实务中存在争议，已在正文标注，请以全国人大、国务院、国家网信办官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>重要数据是否已识别申报，先核对行业目录</h3><p>识别申报、负责人配置、三类评估与年度报送，任一环节缺失都可能被认定为未履行数据安全保护义务。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="wangluoanquanfa-2025-xiuzheng-hegui.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>网络安全法2025年修正的合规影响，人工智能条款、法律责任加重与义务清单变化</h4></a><a href="shuju-anquan-dengji-baohu.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>网络安全等级保护义务与数据安全事件的责任认定</h4></a><a href="gerenxinxi-baohu-fuzeren-sheli.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>个人信息保护负责人的设立门槛、法定职责与信息报送</h4></a><a href="shuju-chujing-mianpinggu.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>数据出境安全评估的适用边界与豁免情形</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"重要数据的识别、申报与年度风险评估：三步落地路径与三类评估的触发条件","description":"重要数据通过目录识别、由主管部门确认。本文依数据安全法第二十一条与网络数据安全管理条例第二十九条至第三十三条，梳理识别申报、负责人与机构配置、三类风险评估的触发条件与报告内容，以及罚则与常见误区。","author":{"@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"}},"datePublished":"2026-10-19","dateModified":"2026-10-19"}</script>
+</body></html>

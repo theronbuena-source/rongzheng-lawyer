@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="移动应用内嵌第三方软件开发工具包（SDK）收集个人信息，应当先区分法律关系：属于委托处理的适用《个人信息保护法》第二十一条，属于向其他处理者提供的适用第二十三条并取得单独同意，属于共同处理的适用第二十条并对外承担连带责任。本文梳理三种关系的定性标准与合同条款要求、告知与单独同意的取得方式、个人信息保护影响评估的触发情形、已收集个人信息清单与第三方共享清单的展示要求，以及违规情形与责任划分。">
+<meta name="keywords" content="第三方SDK,SDK合规,个人信息保护法第二十三条,单独同意,委托处理,共同处理,双清单,已收集个人信息清单,第三方共享个人信息清单,GB/T 41391-2022,GB/T 35273-2020,影响评估,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/disanfang-sdk-gerenxinxi-hegui.html" />
+<title>移动应用第三方SDK的个人信息合规：法律关系定性、告知同意与双清单要求</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 移动应用第三方SDK的个人信息合规</div><div class="cat">Data Compliance &bull; Third-party SDK</div><h1>移动应用第三方SDK的个人信息合规：法律关系定性、告知同意与双清单要求</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论先行：第三方SDK合规的六条规则</h2>
+<p>移动应用内嵌第三方SDK（软件开发工具包）带来的个人信息风险，核心不在于“能不能用”，而在于<b>法律关系定性、告知同意的完整性、以及责任的可追溯性</b>。可以直接引用六条规则：</p>
+<ol><li><strong>先定性再看义务。</strong>应用运营者与SDK提供者之间可能是委托处理、向其他处理者提供、共同处理三种关系之一，对应的合同义务、同意义务与责任形态完全不同。</li><li><strong>委托处理适用第二十一条。</strong>应当与受托人约定委托处理的目的、期限、处理方式、个人信息的种类、保护措施以及双方的权利和义务等，并对受托人的处理活动进行监督；未经处理者同意，受托人不得转委托。</li><li><strong>向其他处理者提供适用第二十三条。</strong>应当向个人告知接收方的名称或者姓名、联系方式、处理目的、处理方式和个人信息的种类，并<b>取得个人的单独同意</b>。</li><li><strong>共同处理适用第二十条。</strong>两个以上的处理者共同决定处理目的和处理方式的，应当约定各自的权利义务，但该约定不影响个人向其中任何一个处理者主张权利；<b>共同处理侵害个人信息权益造成损害的，应当依法承担连带责任</b>。</li><li><strong>触发影响评估。</strong>委托处理个人信息、向其他处理者提供个人信息属于《个人信息保护法》第五十五条规定的应当事前进行个人信息保护影响评估的情形。</li><li><strong>应当建立并展示清单。</strong>监管要求互联网企业建立已收集个人信息清单与第三方共享个人信息清单，在应用二级菜单中展示，方便用户查询。</li></ol>
+<p>这六条规则中，最容易出问题的是第一条。<b>很多应用把SDK一律写成“第三方服务提供方”而不作性质区分</b>，结果在用户投诉或监管检查时无法说明数据流向与责任主体，既难以自证合规，也难以向SDK提供者追偿。</p>
+<h2>二、法律关系定性：委托处理、向他人提供与共同处理</h2>
+<p>定性的标准不是合同名称，而是<b>谁决定处理目的和处理方式</b>。可以按以下思路逐层判断。</p>
+<table><tr><th>关系类型</th><th>判断要点</th><th>法律依据</th><th>核心义务</th></tr><tr><td>委托处理</td><td>SDK仅按运营者指示处理，不得自行决定处理目的与方式，不得超范围使用</td><td>《个人信息保护法》第二十一条</td><td>签订委托处理协议、约定目的期限方式种类与保护措施、进行监督、禁止未经同意转委托</td></tr><tr><td>向其他处理者提供</td><td>SDK提供者以自己名义、为自己的目的收集或使用个人信息（例如广告归因、风控画像）</td><td>《个人信息保护法》第二十三条</td><td>告知接收方名称与联系方式、处理目的方式与信息种类，取得<b>单独同意</b>；接收方变更目的方式须重新取得同意</td></tr><tr><td>共同处理</td><td>双方共同决定处理目的和处理方式（例如运营者与SDK提供者共同设定数据字段与使用场景）</td><td>《个人信息保护法》第二十条</td><td>约定各自权利义务；对个人的权利行使不得以约定对抗；侵权损害承担<b>连带责任</b></td></tr></table>
+<p>一个实务上的中间地带是“SDK提供者既按指令处理、又为自身目的使用部分数据”。这种情形应当<b>按数据用途拆分定性</b>：为运营者服务部分按委托处理处理，为自身目的使用部分按向其他处理者提供处理并取得单独同意。把整段关系笼统定性为委托处理，是监管检查中最常见的认定偏差。</p>
+<div class="tip"><strong>实务要点：</strong>与SDK提供者签订的协议至少应当包含八项内容：①处理目的、期限、方式与处理的个人信息种类；②保护措施与安全事件通报机制；③是否允许转委托及转委托的条件；④数据删除与返还的触发情形与期限；⑤提供者自身目的使用的范围与对应的同意取得责任；⑥审计与配合义务；⑦违约与赔偿条款；⑧协议终止后的数据处理安排。缺少第①、第⑤项的协议，在发生数据事件时几乎无法完成责任划分。</div>
+<h2>三、告知与单独同意：哪些情形必须取得单独同意</h2>
+<p>《个人信息保护法》第十七条要求处理者在处理个人信息前以显著方式、清晰易懂的语言真实、准确、完整地告知处理者名称与联系方式、处理目的与方式、信息种类与保存期限、个人行使权利的方式和程序等事项；第二十三条则把“向其他处理者提供个人信息”的告知内容进一步细化为接收方名称或姓名、联系方式、处理目的、处理方式和个人信息的种类，并要求取得<b>单独同意</b>。</p>
+<p>结合《个人信息保护法》第二十五条（公开）、第二十六条（公共场所图像采集与身份识别）、第二十九条（敏感个人信息）、第三十九条（向境外提供）等条文，需要取得单独同意的典型场景包括五类：</p>
+<ol><li>向其他个人信息处理者提供个人信息（第二十三条）；</li><li>公开处理的个人信息（第二十五条）；</li><li>在公共场所安装图像采集、个人身份识别设备收集的个人图像与身份识别信息用于维护公共安全之外的目的（第二十六条）；</li><li>处理敏感个人信息（第二十九条）；</li><li>向境外提供个人信息（第三十九条）。</li></ol>
+<p>SDK场景中最容易遗漏的是第一类与第四类。比如广告归因SDK把设备标识符提供给第三方归因平台，属于向其他处理者提供，需要单独同意；定位、通讯录、生物识别类SDK涉及敏感个人信息，同样需要单独同意。</p>
+<p>关于单独同意的取得方式，实务要点有三：<b>一是不能与其他同意事项打包在一个勾选框里</b>；<b>二是应当提供撤回同意的便捷方式</b>（《个人信息保护法》第十五条）；<b>三是不得以用户不同意处理其个人信息或者撤回同意为由拒绝提供产品或者服务，除非处理属于提供产品或服务所必需</b>（第十六条）。</p>
+<h2>四、影响评估与记录保存</h2>
+<p>《个人信息保护法》第五十五条规定，处理敏感个人信息、利用个人信息进行自动化决策、<b>委托处理个人信息、向其他个人信息处理者提供个人信息、公开个人信息</b>、向境外提供个人信息以及其他对个人权益有重大影响的处理活动，应当事前进行个人信息保护影响评估，并对处理情况进行记录。</p>
+<p>影响评估应当涵盖三项内容（第五十六条）：<b>个人信息处理目的、处理方式等是否合法、正当、必要；对个人权益的影响及安全风险；所采取的保护措施是否合法、有效并与风险程度相适应。</b>评估报告和处理情况记录应当至少保存三年。</p>
+<p>在SDK场景下，影响评估的实操价值在于把“清单化”做到位：逐项记录每个SDK的名称与版本、收集的个人信息字段、使用场景与目的、是否涉及敏感个人信息、是否向境外提供、对应的同意取得方式、隐私政策对应条款位置。这份清单既是影响评估的附件，也是应对监管问询与用户投诉时的核心材料。</p>
+<h2>五、双清单与必要个人信息范围</h2>
+<p>工业和信息化部在信息通信服务感知提升行动中要求互联网企业建立个人信息保护“双清单”，即<b>已收集个人信息清单</b>与<b>与第三方共享个人信息清单</b>，并在应用二级菜单中展示，方便用户查询：</p>
+<ul><li>已收集个人信息清单应当简洁、清晰列出应用（<b>包括内嵌第三方软件开发工具包SDK</b>）已经收集到的用户个人信息基本情况，包括信息种类、使用目的、使用场景等；</li><li>与第三方共享个人信息清单应当简洁、清晰列出应用与第三方共享的用户个人信息基本情况，包括与第三方共享的个人信息种类、使用目的、使用场景和共享方式等。</li></ul>
+<p>与双清单配套的是“最小必要”与“必要个人信息范围”的要求。《个人信息保护法》第六条要求处理个人信息应当具有明确、合理的目的，并应当与处理目的直接相关，采取对个人权益影响最小的方式；收集个人信息应当限于实现处理目的的最小范围，<b>不得过度收集个人信息</b>。在标准层面，可以参照《信息安全技术 个人信息安全规范》（GB/T 35273—2020）与《信息安全技术 移动互联网应用程序（App）收集个人信息基本要求》（GB/T 41391—2022，2022年11月1日实施）。后者在附录中给出了常见服务类型的必要个人信息范围与使用要求，并设置了“第三方收集管理”的专门条款。</p>
+<p>需要注意的是，GB/T 41391—2022与GB/T 35273—2020均为<b>推荐性国家标准</b>，不具备直接的法律强制力；但在监管执法与司法裁判中，通常作为判断处理者是否尽到合理注意义务、是否符合“最小必要”原则的重要参考。</p>
+<h2>六、违规情形与责任划分</h2>
+<p>监管与执法中，SDK相关的高频违规情形可以归纳为六类：</p>
+<ol><li><strong>隐私政策未披露SDK。</strong>隐私政策只写运营者自己收集的信息，未列明内嵌SDK收集的信息种类与用途。</li><li><strong>未取得单独同意即共享。</strong>把设备标识符等个人信息提供给第三方用于广告归因或画像，但未取得单独同意。</li><li><strong>未与SDK提供者签订协议。</strong>在不了解对方处理方式、不甄别法律关系、不签署合同的情况下即开展合作，一旦SDK存在漏洞或违法处理，运营者对外承担侵权责任后难以追偿。</li><li><strong>“抄作业”式隐私政策。</strong>未根据自身业务功能与处理实际撰写隐私政策，简单套用同类产品的模板。</li><li><strong>清单不完整或不展示。</strong>未建立双清单，或者仅在隐私政策中笼统描述，未在二级菜单中提供查询入口。</li><li><strong>未及时更新。</strong>SDK版本升级或新增SDK后未同步更新隐私政策、清单与影响评估记录。</li></ol>
+<p>责任划分方面，有三条基本规则：</p>
+<ul><li><strong>对个人的责任：</strong>共同处理侵害个人信息权益造成损害的，依法承担连带责任（《个人信息保护法》第二十条第二款）；委托处理中受托人按约定处理、超出约定范围处理造成损害的责任，依第二十一条与第六十九条结合判断。</li><li><strong>合同的内部效力：</strong>运营者与SDK提供者之间关于责任分配的约定，不影响个人向其中任何一方主张权利（第二十条第一款）。</li><li><strong>举证责任：</strong>《个人信息保护法》第六十九条规定，处理个人信息侵害个人信息权益造成损害，个人信息处理者<b>不能证明自己没有过错的，应当承担损害赔偿等侵权责任</b>。因此协议、清单、影响评估报告与日志记录，实质上就是“证明自己没有过错”的材料。</li></ul>
+<h3>常见问题</h3>
+<h3>问：SDK提供者算不算“第三方服务商”，可以只签一份采购合同吗？</h3>
+<p>不建议。采购合同通常只解决商务条款，不解决个人信息处理的目的、期限、方式、种类、保护措施与监督权等法定内容。属于委托处理的，应当补充符合《个人信息保护法》第二十一条的委托处理条款；属于向其他处理者提供的，应当明确数据处理目的范围，并由运营者负责取得单独同意。</p>
+<h3>问：用户已经同意了隐私政策，是否等于同意SDK共享？</h3>
+<p>不等于。向其他处理者提供个人信息需要取得<b>单独同意</b>（第二十三条），不能在隐私政策的概括同意中一并取得。单独同意应当是独立于其他处理目的的、针对该项具体处理活动的同意。</p>
+<h3>问：SDK里还嵌套了其他SDK（二次转委托），怎么处理？</h3>
+<p>委托处理情形下，未经个人信息处理者同意，受托人不得转委托他人处理个人信息（第二十一条第三款）。因此协议应当明确是否允许转委托、转委托的条件与层级，并要求提供者披露嵌套SDK清单；运营者应当将该清单纳入自身的第三方共享清单与影响评估范围。</p>
+<h3>问：出现数据事件，运营者和SDK提供者谁对外担责？</h3>
+<p>取决于法律关系定性。共同处理的，对个人承担连带责任；委托处理中受托人超出约定范围处理的，受托人应就其行为承担责任，运营者如未尽到监督义务亦可能被认定为有过错。实务中，对外承担责任后能否向SDK提供者追偿，主要取决于协议中的责任分配与赔偿条款是否完备。</p>
+<h2>七、行业参考：监管依据与标准</h2>
+<p>除《个人信息保护法》《数据安全法》外，SDK合规的监管依据主要包括：《移动互联网应用程序信息服务管理规定》《工业和信息化部关于开展纵深推进APP侵害用户权益专项整治行动的通知》（对应用服务提供者、SDK提供者和应用分发平台提出四类共十项整治任务，其中包括SDK违规收集、超范围收集、违规使用个人信息）、《工业和信息化部关于开展信息通信服务感知提升行动的通知》（双清单要求）以及《App违法违规收集使用个人信息行为认定方法》。</p>
+<p>标准层面的主要参考是《信息安全技术 个人信息安全规范》（GB/T 35273—2020）与《信息安全技术 移动互联网应用程序（App）收集个人信息基本要求》（GB/T 41391—2022）。</p>
+<p><strong>律师提示：</strong>SDK合规的技术含量不在“写多长的隐私政策”，而在<b>三张表</b>——SDK清单（名称、版本、字段、场景）、授权映射表（字段与单独同意事项的对应关系）、责任分配表（法律关系定性与对应条款）。三张表做出来，隐私政策、双清单与影响评估报告都可以直接生成；三张表缺失，任何一份文件都只是纸面合规。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国个人信息保护法》第六条（最小必要）、第十三条（合法性基础）、第十四条（同意的要件）、第十五条（撤回同意）、第十六条（不得因不同意而拒绝提供服务）、第十七条（告知事项）、第十九条（保存期限）、第二十条（共同处理与连带责任）、第二十一条（委托处理与禁止擅自转委托）、第二十二条（因合并分立等原因转移）、第二十三条（向其他处理者提供与单独同意）、第二十四条（自动化决策）、第二十五条（公开）、第二十六条（公共场所图像采集与身份识别）、第二十八条至第三十条（敏感个人信息）、第三十九条（向境外提供）、第五十一条（安全措施）、第五十五条（应当事前进行影响评估的情形）、第五十六条（影响评估内容与三年记录保存）、第六十九条（过错推定与举证责任）；《中华人民共和国数据安全法》；《移动互联网应用程序信息服务管理规定》；《工业和信息化部关于开展纵深推进APP侵害用户权益专项整治行动的通知》；《工业和信息化部关于开展信息通信服务感知提升行动的通知》（双清单要求，具体发文文号请以工业和信息化部公布为准）；《App违法违规收集使用个人信息行为认定方法》；《信息安全技术 个人信息安全规范》（GB/T 35273—2020）；《信息安全技术 移动互联网应用程序（App）收集个人信息基本要求》（GB/T 41391—2022，2022年4月15日发布、2022年11月1日实施，现行有效）。特别说明：①GB/T 35273—2020与GB/T 41391—2022均为推荐性国家标准，不具有直接法律强制力，但在监管执法与司法实践中通常作为认定处理者是否尽到合理注意义务的参考；②双清单要求出自工业和信息化部的专项整治与提升行动文件，属规范性文件，执行中请以主管部门最新要求为准；③本文所列高频违规情形系对监管实践与执法案例的归纳，不引用任何具体案例与案号。请以全国人大、国家网信办、工业和信息化部、国家市场监督管理总局官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>隐私政策与SDK实际行为不一致，如何整改？</h3><p>法律关系定性、合同条款补正、第三方共享清单编制与影响评估报告的留存，是应对监管检查与用户索赔的基础工作。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-weituo-gongtong-chuli.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息委托处理与共同处理的责任划分：受托人义务、连带责任与合同条款</h4></a><a href="dandu-tongyi-guize.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息「单独同意」的适用场景与取得方式：五项法定情形与常见瑕疵</h4></a><a href="geren-xinxi-xielou-zenmeban.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息泄露事件的通知义务与应急处置流程</h4></a><a href="geren-xinxi-yingxiang-pinggu.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息保护影响评估：五项法定情形、三项评估内容与三年记录保存要求</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "移动应用第三方SDK的个人信息合规：法律关系定性、告知同意与双清单要求", "description": "移动应用内嵌第三方软件开发工具包（SDK）收集个人信息，应当先区分法律关系：属于委托处理的适用《个人信息保护法》第二十一条，属于向其他处理者提供的适用第二十三条并取得单独同意，属于共同处理的适用第二十条并对外承担连带责任。本文梳理三种关系的定性标准与合同条款要求、告知与单独同意的取得方式、个人信息保护影响评估的触发情形、已收集个人信息清单与第三方共享清单的展示要求，以及违规情形与责任划分。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-15", "dateModified": "2026-10-15"}</script>
+</body></html>

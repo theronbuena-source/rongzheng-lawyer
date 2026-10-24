@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="电子数据的排除分为两层：篡改、伪造、无法确定真伪或有增删改影响真实性的，不得作为定案根据；未封存移送、笔录缺签名、名称格式注明不清等程序瑕疵，经补正或合理解释可以采用。本文依两高一部电子数据规定，梳理取证八个节点、真实性五项与完整性五项审查、身份同一性认定及辩护操作清单。">
+<meta name="keywords" content="电子数据,电子证据,收集提取,审查判断,完整性校验值,封存,见证人,绝对排除,可补正瑕疵,身份同一性">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/dianzi-shuju-shouji-shencha.html" />
+<title>电子数据的收集提取与审查判断：绝对排除、可补正瑕疵与身份同一性的证据链</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../criminal.html">刑事辩护</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../criminal.html">刑事辩护专题</a> &rsaquo; 电子数据的收集提取与审查判断</div><div class="cat">Criminal Defense &bull; Electronic Evidence</div><h1>电子数据的收集提取与审查判断：绝对排除、可补正瑕疵与身份同一性的证据链</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：电子数据的排除分"绝对排除"与"可补正"两层</h2>
+<p>电子数据已经是绝大多数刑事案件的核心证据，但它的取证规范并不是"违反即排除"。现行规则建立一个双层结构，可以直接记：</p>
+<ol>
+<li><strong>真实性无法保证的，绝对排除。</strong>电子数据系篡改、伪造或者无法确定真伪的；有增加、删除、修改等情形影响真实性的；其他无法保证真实性的，<strong>不得作为定案的根据</strong>（《关于办理刑事案件收集提取和审查判断电子数据若干问题的规定》第二十八条）。这一类没有补正空间。</li>
+<li><strong>程序瑕疵的，可以补正或作出合理解释。</strong>未以封存状态移送的；笔录或者清单上没有侦查人员、电子数据持有人（提供人）、见证人签名或者盖章的；对电子数据的名称、类别、格式等注明不清的；有其他瑕疵的——经补正或者作出合理解释的可以采用，不能补正或者作出合理解释的，不得作为定案的根据（第二十七条）。</li>
+<li><strong>合法性审查有四项硬指标。</strong>是否由二名以上侦查人员进行、取证方法是否符合技术标准；是否附有笔录、清单并经签名盖章；是否由符合条件的人员担任见证人、是否录像；电子数据检查是否通过写保护设备接入、是否制作备份（第二十四条）。</li>
+<li><strong>与非法证据排除规则衔接。</strong>《刑事诉讼法》第五十六条规定，收集物证、书证不符合法定程序，可能严重影响司法公正的，应当予以补正或者作出合理解释；不能补正或者作出合理解释的，对该证据应当予以排除。电子数据在证据种类上不属于物证、书证，但其取证程序的违法性审查可参照该条精神，<strong>具体适用方式实务中存在争议</strong>。</li>
+</ol>
+
+<h2>二、取证规范的关键节点</h2>
+<table>
+<tr><th>环节</th><th>法定要求</th><th>条文</th><th>常见瑕疵</th></tr>
+<tr><td>取证主体</td><td>由二名以上侦查人员进行，取证方法符合相关技术标准</td><td>第七条</td><td>仅一名侦查人员操作，笔录无第二人签名</td></tr>
+<tr><td>原始介质</td><td>能够扣押的，应当扣押、封存原始存储介质并制作笔录，记录封存状态</td><td>第八条</td><td>未封存、封存前后未拍照、手机未采取信号屏蔽措施</td></tr>
+<tr><td>无法扣押时</td><td>应在笔录中注明原因、存放地点或来源，并计算完整性校验值</td><td>第九条</td><td>无校验值、未注明原因，直接以截图代替</td></tr>
+<tr><td>冻结</td><td>经县级以上公安机关负责人或检察长批准，制作协助冻结通知书</td><td>第十一条、第十二条</td><td>无批准手续，未锁定账号或计算校验值</td></tr>
+<tr><td>笔录与清单</td><td>记录案由、对象、内容、时间、地点、方法、过程，附清单注明类别、格式、校验值</td><td>第十四条</td><td>清单缺项、无持有人签名且未注明原因</td></tr>
+<tr><td>见证人</td><td>由符合条件的人员担任；无法担任的应在笔录中注明并录像</td><td>第十五条</td><td>见证人系办案单位聘用人员，无录像</td></tr>
+<tr><td>检查</td><td>拆封过程录像，通过写保护设备接入，有条件时制作备份并对备份检查</td><td>第十六条</td><td>直接用取证电脑读写原始介质，未录像</td></tr>
+<tr><td>移送</td><td>以封存状态随案移送，并制作备份一并移送</td><td>第十八条</td><td>移送时已拆封，无备份</td></tr>
+</table>
+<p>这张表可以直接作为阅卷清单使用。电子数据的辨点高度依赖细节，而细节全部落在笔录、清单、录像、校验值这四类载体上。卷宗里没有这些材料，就等于取证过程无法重现。</p>
+
+<h2>三、真实性审查的五项内容</h2>
+<p>对电子数据是否真实，应当着重审查：是否移送原始存储介质，无法封存、不便移动时有无说明原因并注明收集提取过程及原始介质存放地点或者数据来源；是否具有数字签名、数字证书等特殊标识；收集提取过程是否可以重现；如有增加、删除、修改等情形是否附有说明；完整性是否可以保证（第二十二条）。</p>
+<p>完整性验证则要看五项：原始存储介质的扣押、封存状态；收集提取过程与录像；完整性校验值比对；与备份数据比较；冻结后的访问操作日志（第二十三条）。<strong>校验值是最硬的一项</strong>：没有校验值，就无法证明送检的数据与提取时的数据同一；校验值不一致，则直接落入第二十八条的绝对排除。</p>
+
+<h2>四、身份同一性与关联性</h2>
+<p>电子数据最常见的辩点不是"数据假"，而是"这个账号不是他用的"。规则对此有明确指引：认定犯罪嫌疑人、被告人的网络身份与现实身份的同一性，可以通过核查相关 IP 地址、网络活动记录、上网终端归属、相关证人证言以及犯罪嫌疑人、被告人供述和辩解等进行<strong>综合判断</strong>；认定其与存储介质的关联性，可以通过核查证人证言及供述等进行综合判断（第二十五条）。</p>
+<p>条文用的是"综合判断"，意味着不能仅凭账号昵称、头像、绑定手机号就认定身份。设备 IMEI、MAC 地址、登录 IP 与基站信息、支付账户实名信息，才是可以相互印证的客观连接点。若卷宗中仅有账号截图而无设备与网络痕迹，同一性认定缺乏基础。</p>
+
+<h2>五、鉴定与专门性问题</h2>
+<p>对电子数据涉及的专门性问题难以确定的，由司法鉴定机构出具鉴定意见，或者由公安部指定的机构出具报告；检察院直接受理的案件，也可以由最高人民检察院指定的机构出具报告（第十七条）。对鉴定意见有异议的，可以申请法院通知鉴定人出庭；经通知拒不出庭的，鉴定意见不得作为定案的根据（第二十六条）。</p>
+<p>需要注意报告与鉴定意见的区别：公安部指定机构出具的是"报告"，不是司法鉴定意见，其证据属性与审查标准不同。对报告提出异议时，同样可以申请通知出具人出庭，参照适用前三款规定（第二十六条第四款）。</p>
+
+<h2>六、辩护操作清单</h2>
+<ol>
+<li><strong>先看有没有原始介质。</strong>有封存、有照片、有拆封录像，才有完整性讨论的基础；扣押清单缺失的，直接质疑来源。</li>
+<li><strong>再比校验值。</strong>提取时计算的校验值、移送时的校验值、鉴定时的校验值，三者应一致。不一致的，要求说明原因。</li>
+<li><strong>查见证人与录像。</strong>见证人不适格且无录像的，属于第二十七条第（三）项瑕疵，主张不能补正。</li>
+<li><strong>查检查环节。</strong>是否使用写保护设备、是否对备份而非原始介质进行检查。直接读写原始介质的，可能造成数据变动。</li>
+<li><strong>查同一性证据链。</strong>账号与人的连接点是否只有口供；仅有口供而无客观痕迹的，主张证明不足。</li>
+<li><strong>查数据完整性缺口。</strong>聊天记录是否只提取了片段、是否有选择性导出、时间戳是否连续。片段性数据容易被断章取义。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>提出排除申请要注意时机。依《刑事诉讼法》第五十六条第二款，当事人及其辩护人、诉讼代理人有权申请排除以非法方法收集的证据，应当提供相关线索或者材料。开庭前提出并附具体线索（页码、笔录缺项、校验值差异），比在法庭上概括质疑"取证程序违法"有效得多。</div>
+
+<h2>七、常见问题</h2>
+<h3>问：公安机关只提供微信聊天记录截图，没有原始手机，能作为定案依据吗？</h3>
+<p>要看是否符合第九条的例外。无法扣押原始介质的，应在笔录中注明原因、存放地点或来源，并计算完整性校验值；未注明原因、无校验值的，属于程序瑕疵，可主张不能补正而排除（第二十七条）。</p>
+<h3>问：手机没有封存，直接开机提取，怎么办？</h3>
+<p>属于第八条封存义务的违反。若同时无录像、无校验值，真实性无法保证，可主张落入第二十八条；若仅封存不规范但数据可重现、校验值一致，通常认定为可补正瑕疵。</p>
+<h3>问：见证人是辅警，算合格见证人吗？</h3>
+<p>存在争议。规则要求"符合条件的人员"担任见证人，未明确排除辅警。若见证人系办案单位工作人员，独立性不足，可主张第十五条瑕疵并要求录像佐证；<strong>实务中存在争议</strong>。</p>
+<h3>问：聊天记录只截取了几页，能要求提供完整记录吗？</h3>
+<p>可以。片段性数据影响真实性与完整性判断，可依第二十二条、第二十三条要求出示原始介质或完整备份，并申请当庭展示（第二十一条）。</p>
+<h3>问：鉴定人不出庭，鉴定意见一定不能采信吗？</h3>
+<p>经人民法院通知，鉴定人拒不出庭作证的，鉴定意见不得作为定案的根据（第二十六条第二款）。注意前提是"经通知"且"拒不出庭"，仅未通知的不适用。</p>
+<h3>问：电子数据被排除后，还能用其他证据定罪吗？</h3>
+<p>可以。排除的是该项证据，不是整个案件。但若全案仅依赖被排除的电子数据，则据以定案的证据不足，应作有利于被告人的处理。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《最高人民法院、最高人民检察院、公安部关于办理刑事案件收集提取和审查判断电子数据若干问题的规定》（法发〔2016〕22号，2016年10月1日施行）第一条（电子数据定义与四类范围）、第二条（三性审查）、第五条（完整性保护六种方法）、第六条（初查与在线提取的证据能力）、第七条（二名以上侦查人员）、第八条（扣押封存原始存储介质）、第九条（无法扣押时的提取与校验值）、第十条（打印拍照录像固定）、第十一条（冻结的四类情形与批准）、第十二条（协助冻结与解除）、第十三条（调取）、第十四条（笔录与清单）、第十五条（见证人）、第十六条（检查与写保护）、第十七条（鉴定与指定机构报告）、第十八条（封存状态移送与备份）、第二十条（未移送的补正通知与三日期间）、第二十一条（当庭展示）、第二十二条（真实性审查五项）、第二十三条（完整性验证五项）、第二十四条（合法性审查四项）、第二十五条（身份同一性与关联性的综合判断）、第二十六条（鉴定人出庭与拒不出庭的后果）、第二十七条（四类可补正瑕疵）、第二十八条（三类绝对排除）、第三十条（施行日期）；《中华人民共和国刑事诉讼法》（2018年修正）第五十六条（非法证据排除与申请排除的线索材料要求）。特别说明：电子数据是否适用《刑事诉讼法》第五十六条关于物证、书证的排除规则，理论与实务均有不同意见，本文已标注"实务中存在争议"；辅警能否担任见证人亦无统一规定。请以最高人民法院、最高人民检察院、公安部官方公布文本为准。</p>
+
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>电子数据能不能用，先看封存、校验值与录像</h3><p>三类绝对排除没有补正空间，四类程序瑕疵可以补正；身份同一性不能只靠口供。　电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="feifa-zhengju-paichu.html" class="related-card"><div class="rc-tag">Criminal</div><h4>非法证据排除规则的申请条件、时机与举证策略</h4></a><a href="weixin-liaotianjilu-zhengju.html" class="related-card"><div class="rc-tag">Civil</div><h4>微信聊天记录的电子证据资格：原件认定、主体识别与保全要点</h4></a><a href="xingshi-shean-caiwu-chakou.html" class="related-card"><div class="rc-tag">Criminal</div><h4>刑事案件涉案财物的查封、扣押、冻结与处置：案外人的财产救济路径</h4></a><a href="xingshi-ershen-shangsu.html" class="related-card"><div class="rc-tag">Criminal</div><h4>刑事二审的上诉不加刑原则、改判情形与上诉状要点</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../criminal.html">刑事辩护</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "电子数据的收集提取与审查判断：绝对排除、可补正瑕疵与身份同一性的证据链", "description": "电子数据的排除分为两层：篡改、伪造、无法确定真伪或有增删改影响真实性的，不得作为定案根据；未封存移送、笔录缺签名、名称格式注明不清等程序瑕疵，经补正或合理解释可以采用。本文依两高一部电子数据规定，梳理取证八个节点、真实性五项与完整性五项审查、身份同一性认定及辩护操作清单。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-18", "dateModified": "2026-10-18"}</script>
+</body></html>

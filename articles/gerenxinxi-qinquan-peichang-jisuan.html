@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="个人信息保护法第六十九条规定过错推定，处理者不能证明自己没有过错即应担责；赔偿按个人损失或处理者获利确定，难以确定时由法院酌定，且不限于财产损失。本文拆解四个要件的举证分配、三种计算路径的适用与难点，以及企业侧的可举证合规要求。">
+<meta name="keywords" content="个人信息侵权,损害赔偿,过错推定,个人信息保护法第六十九条,举证责任,损失计算,获利返还,酌定赔偿,公益诉讼,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/gerenxinxi-qinquan-peichang-jisuan.html" />
+<title>个人信息侵权的损害赔偿：过错推定、举证责任分配与损失计算的三条路径</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 个人信息侵权的损害赔偿</div><div class="cat">Data Compliance &bull; Liability</div><h1>个人信息侵权的损害赔偿：过错推定、举证责任分配与损失计算的三条路径</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：过错推定＋三种计算方式</h2>
+<p>个人信息被泄露、被滥用之后，受害人最关心的两个问题是：要不要证明平台有过错？能赔多少？<strong>结论是：处理个人信息侵害个人信息权益造成损害，个人信息处理者不能证明自己没有过错的，应当承担损害赔偿等侵权责任；赔偿数额按照个人因此受到的损失或者个人信息处理者因此获得的利益确定，两者均难以确定的，根据实际情况确定。该规则同时适用于财产损失与精神损害。</strong>依据是《中华人民共和国个人信息保护法》第六十九条。</p>
+<p>这条规则有三个要点：</p>
+<ol>
+<li><strong>举证责任倒置（过错推定）。</strong>受害人无须证明处理者有过错；处理者须证明自己没有过错，证明不能即担责。这与《民法典》第一千一百六十五条第一款的一般过错责任相反。</li>
+<li><strong>两种计算基准并列。</strong>可以按「个人受到的损失」计算，也可以按「处理者因此获得的利益」计算，二者择一，不要求受害人先证明损失。</li>
+<li><strong>兜底为酌定。</strong>两种基准均难以确定时，由法院根据实际情况确定赔偿数额。这意味着「损失难以证明」不构成驳回请求的理由。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>第六十九条的适用范围有边界。它针对的是「个人信息处理者」，即自主决定处理目的、处理方式的组织、个人（第七十三条第一项）。黑客、非法购买信息的中间商等以非法手段获取信息的主体，不属于个人信息处理者，对其应适用《民法典》第一千一百八十二条，且该条仅赔偿财产损失。这一区分在网络侵权案件中经常成为争点。</div>
+
+<h2>二、构成要件与举证责任的分配</h2>
+<p>个人信息侵权案件的审理，通常围绕四个要件展开，但举证责任的分配与一般侵权不同。</p>
+<table>
+<tr><th>要件</th><th>由谁举证</th><th>具体内容</th></tr>
+<tr><td>个人信息被处理</td><td>原告（初步证明）</td><td>曾向被告提供信息（注册、下单、办卡记录）；信息出现在被告控制的场景中</td></tr>
+<tr><td>权益受侵害</td><td>原告（初步证明）</td><td>信息被泄露、被他人知悉、被用于营销或诈骗；私生活安宁受侵扰</td></tr>
+<tr><td>损害</td><td>原告（初步证明）</td><td>财产损失（被骗款项、账户被盗）；精神损害（骚扰、恐吓、名誉受损）</td></tr>
+<tr><td>过错</td><td><strong>被告</strong>（倒置）</td><td>是否履行告知同意义务、是否采取加密与权限管理、是否建立合规制度、是否及时处置</td></tr>
+</table>
+<p>原告的「初步证明」标准并非严格证明。司法实践中，只要能证明信息由被告收集、且泄露发生在被告控制的环节，法院可以结合高度盖然性标准认定因果关系，将「泄露主体确系他人」的举证责任转由被告承担。这一点在电商平台、快递、酒店等场景的判决中体现得较为明显。</p>
+<p>被告的免责抗辩，通常围绕「已尽安全保障义务」展开，可以从以下方面准备：</p>
+<ul>
+<li><strong>制度层面：</strong>是否制定个人信息保护内部管理制度与操作规程（第五十一条）；是否指定个人信息保护负责人；是否开展合规审计与影响评估。</li>
+<li><strong>技术层面：</strong>是否采取加密、去标识化、访问权限分级、操作日志留存等措施；是否通过网络安全等级保护测评。</li>
+<li><strong>流程层面：</strong>是否履行告知义务并取得同意（第十三条、第十七条）；敏感个人信息是否取得单独同意（第二十九条）；是否按最小必要原则收集。</li>
+<li><strong>处置层面：</strong>发现泄露后是否立即采取补救措施并按规定通知履行个人信息保护职责的部门和个人（第五十七条）。</li>
+</ul>
+<p>需要注意的是，「已通过等级保护测评」不等于「没有过错」。测评是合规基线，不能替代具体场景下的注意义务；法院仍会审查与本案泄露环节直接相关的防护措施是否到位。</p>
+
+<h2>三、三种损失计算路径的具体展开</h2>
+<p><strong>路径一：按个人受到的损失计算。</strong>适用于损失可以量化或部分量化的情形，包括：被骗取的资金、账户被盗刷的金额、为维权支出的公证费、律师费、鉴定费、差旅费等合理费用。精神损害亦可计入，第六十九条第二款使用的是「损失」而非「财产损失」，与《民法典》第一千一百八十二条不同，这是个人信息保护法的一个特点。</p>
+<p>难点在于：单一受害人的损失金额往往很小，而诉讼成本较高。这也是大量个人信息案件以公益诉讼或代表人诉讼方式提起的原因（第七十条）。</p>
+<p><strong>路径二：按处理者获得的利益计算。</strong>适用于处理者通过违法处理个人信息直接获利的情形，例如：出售个人信息所得价款、以非法获取的信息开展营销所获得的收益、以「大数据风控」名义收费的数据服务收入。计算时可申请法院调取被告的财务账册、合同、发票；被告拒不提供的，法院可以参照原告主张与在案证据酌定。</p>
+<p>难点在于：获利与特定个人信息之间的对应关系难以证明。通常需要通过信息条数、单条定价、交易流水等间接证据推算。</p>
+<p><strong>路径三：由法院根据实际情况酌定。</strong>这是实践中最常用的路径。酌定时通常考虑以下因素：</p>
+<ol>
+<li>信息的敏感程度（是否属于生物识别、医疗健康、金融账户、行踪轨迹、不满十四周岁未成年人信息）；</li>
+<li>涉及的自然人人数与信息条数；</li>
+<li>处理行为的持续时间与影响范围；</li>
+<li>处理者的主观状态（过失、重大过失或明知）；</li>
+<li>是否采取补救措施、是否配合调查；</li>
+<li>处理者的规模与获利能力；</li>
+<li>是否已受到行政处罚（避免重复评价，但不影响民事赔偿）。</li>
+</ol>
+<p>酌定路径下，个案裁判结果差异较大，从数百元到数万元不等，缺乏统一尺度，这一点在实务中存在争议。代理案件时，应尽量将请求建立在可量化的基础上（如信息条数乘以单条价值、维权合理支出明细），避免完全依赖酌定。</p>
+
+<h2>四、与相邻请求权基础的界分</h2>
+<p><strong>与隐私权侵权的界分。</strong>个人信息权益与隐私权保护的对象不同：私密信息同时受两者保护，适用隐私权规则；非私密的一般个人信息，适用个人信息保护规则。实践中，原告常同时主张隐私权与个人信息权益，法院会分别审查。选择请求权基础时应注意：隐私权侵权适用《民法典》第一千一百六十五条的过错责任，个人信息侵权适用第六十九条的过错推定，后者的举证负担明显更轻。</p>
+<p><strong>与网络服务提供者责任的界分。</strong>《民法典》第一千一百九十四条至第一千一百九十七条规定了网络侵权的一般规则，包括通知删除规则与「知道或应当知道」的责任。平台既是网络服务提供者又是个人信息处理者时，两条规则可能竞合：信息由平台用户发布而侵害他人个人信息权益的，适用网络侵权规则；信息由平台自身收集、使用、泄露的，适用个人信息保护法。</p>
+<p><strong>与不正当竞争、商业秘密的界分。</strong>企业数据被爬取，主张的往往是不正当竞争或商业秘密，而非个人信息权益。主体不同、保护客体不同，赔偿计算方式也不同，不能混用。</p>
+
+<h2>五、诉讼操作：起诉前后的六个动作</h2>
+<ol>
+<li><strong>固定泄露事实。</strong>对泄露页面、骚扰短信、诈骗通话录音进行公证或可信时间戳固定；保存信息出现的具体字段（姓名、电话、地址、订单号），以证明信息来源于特定处理者。</li>
+<li><strong>发出权利请求。</strong>依第四十五条至第五十条，向处理者提出查阅、复制、更正、删除请求，并要求书面答复。处理者拒绝或逾期不答复的，本身构成独立的诉由，也可作为过错的证据。</li>
+<li><strong>申请调查取证。</strong>起诉后申请法院责令被告提交个人信息处理规则、安全措施记录、泄露事件处置记录、与第三方的共享清单。被告无正当理由拒不提交的，可主张对其作不利推定。</li>
+<li><strong>主张合理支出。</strong>将公证费、律师费、鉴定费、差旅费单独列明，附票据。虽然法律未明确规定由败诉方承担，但作为损失组成部分主张，获得支持的可能性较高。</li>
+<li><strong>考虑公益诉讼路径。</strong>侵害众多个入权益的，人民检察院、法律规定的消费者组织和由国家网信部门确定的组织可以依法提起公益诉讼（第七十条）。单一受害人损失小、维权成本高的案件，可向上述主体反映。</li>
+<li><strong>同步行政投诉。</strong>向履行个人信息保护职责的部门投诉，行政处罚决定可以作为民事诉讼中的有力证据，但需注意行政处罚与民事赔偿的功能不同，不能相互替代。</li>
+</ol>
+
+<h2>六、企业侧的合规应对</h2>
+<p>对个人信息处理者而言，第六十九条的实际影响是「举证成本前移」：平时不留痕，诉讼时无法证明无过错。</p>
+<ul>
+<li><strong>建立可举证的安全措施记录。</strong>加密方式、权限清单、日志留存期限、员工保密协议、离职权限回收记录，都应形成可调取的书面材料。</li>
+<li><strong>留存同意证据。</strong>同意的时间、方式、内容、撤回记录应可回溯；敏感个人信息须有单独同意的记录。</li>
+<li><strong>建立泄露应急处置流程。</strong>明确发现、评估、补救、通知的时限与责任人，并留存处置记录，这在诉讼中是减轻责任的重要事实。</li>
+<li><strong>在与第三方的共享、委托处理合同中明确责任分配。</strong>受托处理人造成泄露的，处理者对外仍需承担责任，对内可依合同追偿，合同条款应明确通知义务、配合义务与赔偿标准。</li>
+</ul>
+
+<h2>七、常见问题（FAQ）</h2>
+<p><strong>问1：信息被泄露，我需要证明平台有过错吗？</strong><br>答：不需要。依第六十九条，由平台证明自己没有过错；证明不能即承担赔偿责任。</p>
+<p><strong>问2：只泄露了姓名和手机号，没有财产损失，能索赔吗？</strong><br>答：可以主张。第六十九条第二款的「损失」不限于财产损失，精神损害亦可；但需证明信息处理行为与损害之间的关联，且精神损害的程度会影响赔偿数额。</p>
+<p><strong>问3：平台说「已通过等级保护测评」，能免责吗？</strong><br>答：不能当然免责。测评是合规基线，法院仍会审查与本案泄露环节直接相关的防护措施是否到位。</p>
+<p><strong>问4：信息是黑客窃取的，平台还要赔吗？</strong><br>答：要看平台是否尽到安全保障义务。平台不能证明自己无过错的，仍应承担赔偿责任；赔偿后可向实施侵害的第三人追偿。</p>
+<p><strong>问5：赔偿金额一般有多少？</strong><br>答：个案差异较大，从数百元到数万元不等。法律未设固定标准或上限，实务中多由法院酌定，存在争议。建议以可量化的损失或获利为基础主张。</p>
+<p><strong>问6：可以要求平台删除信息并赔礼道歉吗？</strong><br>答：可以。依第四十七条提出删除请求，并可在诉讼中一并主张停止侵害、赔礼道歉；此类请求与损害赔偿可以并存。</p>
+
+<h2>八、法条与依据核验</h2>
+<p>本文引用规范如下，均以官方公布文本为准：《中华人民共和国个人信息保护法》第十三条、第十七条、第二十九条、第四十四条至第五十条、第五十一条、第五十七条、第六十六条、第六十九条、第七十条、第七十三条；《中华人民共和国民法典》第一千一百六十五条、第一千一百八十二条、第一千一百八十三条、第一千一百九十四条至第一千一百九十七条。最高人民法院、最高人民检察院关于个人信息保护公益诉讼的相关规定未在本文中引用具体条号，如需援引请另行核实现行文本。</p>
+<p>提示三点：其一，第六十九条与《民法典》第一千一百八十二条的关键差别在于「损失」是否限于财产损失，本文按条文文义表述为「不限于财产损失，精神损害亦可计入」，该理解与主流学理及检察机关的释法意见一致，但个案中仍有法院按财产损失口径把握，属实务争议。其二，本文所述酌定赔偿的考虑因素系对裁判实践的归纳，不是法定清单，不构成对具体案件赔偿数额的预测。其三，个人信息保护领域的司法解释尚未出台，本文未引用任何「司法解释条号」，以避免张冠李戴。</p>
+
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>信息被泄露，能赔多少、怎么举证</h3><p>过错由处理者证明，损失可以按获利计算，难以确定时由法院酌定——举证策略决定结果。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-xielou-zenmeban.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息泄露事件的通知义务与应急处置流程</h4></a><a href="hefaxing-jichu-tongyi-zhiwai.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息处理的合法性基础：同意之外的六种情形与适用边界</h4></a><a href="geren-xinxi-chayue-shanchu.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息查阅、复制与删除请求的处理规则：例外情形与拒绝理由</h4></a><a href="wangluo-baoli-xinxi-zhili.html" class="related-card"><div class="rc-tag">Data</div><h4>网络暴力信息的治理规则与被害人救济：平台处置义务、通知删除与索赔路径</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "个人信息侵权的损害赔偿：过错推定、举证责任分配与损失计算的三条路径", "description": "个人信息保护法第六十九条规定过错推定，处理者不能证明自己没有过错即应担责；赔偿按个人损失或处理者获利确定，难以确定时由法院酌定，且不限于财产损失。本文拆解四个要件的举证分配、三种计算路径的适用与难点，以及企业侧的可举证合规要求。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-21", "dateModified": "2026-10-21"}</script>
+</body></html>

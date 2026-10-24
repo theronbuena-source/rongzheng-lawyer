@@ -1,22 +1,135 @@
 <!DOCTYPE html><html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="数据资源会计处理新规下数据资产入表的条件、数据确权与合规审查要求、估值方法与信息披露义务。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="数据资产入表,数据确权,数据合规,湖北立丰律师事务所">
+<meta name="description" content="数据资源入表不是新设资产类别，而是在现行企业会计准则下按持有目的分别确认为无形资产或存货，采用未来适用法，已费用化支出不得重新资本化。本文依财会〔2023〕11号梳理三类去向、四项确认前提、成本构成与摊销减值、三项强制列示与八项自愿披露，并澄清以评估值入账等四个常见误区。">
+<meta name="keywords" content="数据资产入表,数据资源会计处理,财会2023年11号,无形资产,存货,开发支出,数据确权,历史成本,数据资源披露">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/shuju-zichan-rubiao.html" />
 <title>数据资产入表的条件与合规路径：确权、估值与会计处理</title>
-<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--text:#444;--text-muted:#999;--gold:#a0844c;--gold-light:#c4a86c;--rule:#e8e4dc}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}a{color:inherit;text-decoration:none}.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);letter-spacing:.04em}.nav-logo span{color:var(--gold)}.nav-links{display:flex;gap:32px;align-items:center}.nav-links a{font-size:13px;color:var(--text-muted);letter-spacing:.04em;transition:color .2s}.nav-links a:hover{color:var(--ink)}.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35;margin-bottom:12px}.page-header .meta{font-size:13px;color:var(--text-muted)}.article-body{max-width:860px;margin:0 auto;padding:48px 40px}.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;color:var(--text);line-height:2}.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;transition:.25s;font-weight:600}.cta-inner a:hover{background:var(--gold-light)}.author-card{max-width:860px;margin:0 auto 64px;padding:40px 40px 0}.author-inner{display:flex;gap:24px;align-items:flex-start;background:var(--white);border:1px solid var(--rule);padding:32px}.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover}.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted)}.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}footer a{color:var(--gold-light)}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}}</style></head><body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../criminal.html">刑事</a><a href="../maritime.html">海事</a><a href="../datacompliance.html">数据</a><a href="../index.html#contact">联系</a></div></div></nav>
-<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 数据资产入表的条件与合规路径：确权、估值与会计处理</div><div class="cat">Data Compliance</div><h1>数据资产入表的条件与合规路径：确权、估值与会计处理</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div></header>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 数据资产入表的条件与合规路径</div><div class="cat">Data Compliance &bull; Data Asset Recognition</div><h1>数据资产入表的条件与合规路径：确权、估值与会计处理</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
 <article class="article-body">
-<h2>一、数据也能变成公司资产？2024年起正式入表</h2>
-<p>财政部《企业数据资源相关会计处理暂行规定》自2024年1月1日起施行——企业合法拥有或控制的数据资源符合资产确认条件的可以作为无形资产或存货入表。这是中国首次将数据资源纳入企业财务报表体系。但入表有严格的前提条件：数据必须是企业通过合法方式获取并拥有或控制的——通过爬虫非法抓取或未经用户同意收集的数据不能入表。数据资产的价值需要能够被可靠计量——需要有估值模型和可验证的估值依据。帮多家企业处理数据资产入表前的合规梳理——最关键的一步是证明企业对数据的控制权具有合法性基础。</p>
-<h2>二、数据确权——入表前最难的合规工作</h2>
-<p>数据确权是数据资产入表的最大障碍。现行法律对数据权利的界定还不完善，《数据安全法》和《个人信息保护法》确立了数据处理的规则但未明确数据权利归属。目前实务中通过合同关系、技术措施和商业模式三个维度来证明企业对数据的控制权——数据采集时获得的有效授权、数据存储和管理系统中的访问控制措施、数据在商业活动中被企业独立使用的证据。数据确权不是一锤子买卖——需要持续保持数据合规状态，数据来源的合法性发生变化时数据资产的价值也会受到减值影响。</p>
-<h2>三、数据资产的估值和合规审计</h2>
-<p>数据资产估值方法包括成本法（取得和治理数据的累计投入）、收益法（数据预期带来的经济利益折现）和市场法（同类数据资产的交易价格参考）。无论采用哪种估值方法都需要基于一个前提——数据资产的合规性不存在重大瑕疵。因此数据资产入表必须经过专项合规审计——由律师事务所或会计师事务所出具合规意见书。一旦数据资产的合规状况发生重大变化（如因数据泄露被行政处罚），已经入表的数据资产需要进行减值测试和相应的会计处理。</p>
+
+<h2>一、结论先行：入表不是新准则，是现行准则下的确认问题</h2>
+<p>"数据资产入表"这个说法容易被误解为财政部新设了一类资产。准确的表述是：数据资源符合现行企业会计准则关于资产定义与确认条件的，按其持有目的与业务模式，分别确认为<strong>无形资产</strong>或者<strong>存货</strong>；不符合确认条件的，仍然费用化，只是可以自愿披露。四句话把这个制度说清楚：</p>
+<ol>
+<li><strong>规范依据是《企业数据资源相关会计处理暂行规定》（财会〔2023〕11号），2024年1月1日起施行。</strong>它是对现行准则的细化，不是会计政策变更，也不新设会计科目。</li>
+<li><strong>按经济利益实现方式分流。</strong>企业使用的，适用无形资产准则；日常活动中持有、最终目的用于出售的，适用存货准则；研究开发过程中满足资本化条件的支出，在"开发支出"项目下列示。</li>
+<li><strong>采用未来适用法。</strong>施行前已费用化计入当期损益的数据资源相关支出<strong>不再调整</strong>，不得把前期已费用化的支出重新资本化。这一点决定了"补记历史数据资产"在会计上不成立。</li>
+<li><strong>不满足确认条件的也能披露。</strong>企业合法拥有或控制、预期带来经济利益，但因不满足资产确认条件而未确认为资产的数据资源，仍属该规定的适用范围，可以自愿披露相关信息。</li>
+</ol>
+
+<h2>二、三类去向：无形资产、存货与开发支出</h2>
+<table>
+<tr><th>比较项</th><th>确认为无形资产</th><th>确认为存货</th><th>开发支出列示</th></tr>
+<tr><td>适用情形</td><td>企业自用，或利用数据资源对客户提供服务</td><td>日常活动中持有、最终目的用于出售</td><td>内部研究开发项目，处于开发阶段且满足资本化条件</td></tr>
+<tr><td>成本构成</td><td>购买价款、相关税费，以及数据权属鉴证、质量评估、登记结算、安全管理等可直接归属的支出；自行研发的按无形资产准则区分研究阶段与开发阶段</td><td>外购的包括购买价款、相关税费、保险费及权属鉴证、质量评估、登记结算、安全管理等费用；数据加工的还包括采集、脱敏、清洗、标注、整合、分析、可视化等加工成本</td><td>满足资本化条件的开发支出，未达到预定用途前在"开发支出"列示</td></tr>
+<tr><td>后续计量</td><td>使用寿命有限的分期摊销；使用寿命不确定的不摊销，每年减值测试</td><td>成本与可变现净值孰低，计提存货跌价准备</td><td>达到预定用途后转入无形资产</td></tr>
+<tr><td>资产负债表列示</td><td>"无形资产"项目下增设"其中：数据资源"</td><td>"存货"项目下增设"其中：数据资源"</td><td>"开发支出"项目下增设"其中：数据资源"</td></tr>
+<tr><td>终止确认</td><td>出售时按无形资产处置处理；对客户提供服务的，摊销计入当期损益或相关资产成本，同时按收入准则确认收入</td><td>出售时结转成本至当期损益，同时按收入准则确认收入</td><td>项目终止的，计入当期损益</td></tr>
+</table>
+<p>这张表的关键不在科目，而在<strong>业务模式决定准则适用</strong>。同一批数据，用于内部风控是无形资产，用于打包出售是存货，两条路径的成本构成、摊销方式、减值测试方法都不同。企业如果把对外售卖的数据产品确认为无形资产，会导致成本结转与收入确认不匹配。</p>
+
+<h2>三、四项确认前提</h2>
+<p>《企业会计准则——基本准则》关于资产的定义与确认条件，是数据资源能否入表的门槛。四项须同时满足：</p>
+<ol>
+<li><strong>企业拥有或者控制。</strong>这是最难的一项。数据具有可复制性、非排他性，企业往往只能证明"持有"而非"控制"。可举证的控制迹象包括：通过合同取得排他使用权、通过技术措施限制他人访问、通过登记或备案形成权属凭证、在业务中独立决定数据的使用方式与目的。</li>
+<li><strong>由过去的交易或者事项形成。</strong>自行采集形成的数据，须能还原采集行为的合法性与时点；外购数据须有合同与付款凭证。</li>
+<li><strong>预期会给企业带来经济利益。</strong>需要有可验证的商业场景：已签订的数据服务合同、已上线的数据产品、可量化的降本增效测算。仅有"未来可能有用"的设想不足以支撑。</li>
+<li><strong>成本能够可靠计量。</strong>这是审计中最容易出问题的一项。数据采集、清洗、标注的人工成本如何归集，服务器与存储成本如何分摊，需要成本核算体系支撑。缺乏归集口径的，往往只能费用化。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>不要把"评估值"当成入账价值。会计计量遵循历史成本原则，数据资源入账金额是其取得或开发过程中实际发生的成本，评估机构的估值只用于交易定价、出资、质押融资等场景，不能直接作为账面价值。以评估增值调账，属于违反会计准则的处理。</div>
+
+<h2>四、数据确权：现行法能给出什么</h2>
+<p>数据确权是入表合规审查中最难的部分，难在现行法没有给出"数据所有权"这样的完整权利形态，只给出了行为规范与保护规则：</p>
+<ul>
+<li><strong>《数据安全法》第三条</strong>界定数据为"任何以电子或者其他方式对信息的记录"，并确立数据处理包括收集、存储、使用、加工、传输、提供、公开等行为。该法规范的是处理活动，未规定数据权利归属。</li>
+<li><strong>《个人信息保护法》第四条</strong>界定个人信息为"以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，不包括匿名化处理后的信息"。涉及个人信息的数据资源，其利用受该法约束；匿名化处理后的信息不属于个人信息。</li>
+<li><strong>《个人信息保护法》第十三条</strong>列举处理个人信息的合法性基础（同意、订立或履行合同所必需、履行法定职责或义务所必需、应对突发公共卫生事件或紧急情况下保护自然人生命健康和财产安全所必需、在合理范围内处理已公开的个人信息、法律行政法规规定的其他情形）。数据来源的合法性，最终要落到这一条上。</li>
+</ul>
+<p>政策层面提出的"数据资源持有权、数据加工使用权、数据产品经营权"三权分置，目前属于政策表述与改革方向，尚未上升为法律层面的权利类型。企业在合规文件中使用这些概念时，应当注明其政策来源，<strong>不宜表述为法定权利</strong>。这一点<strong>待立法进一步明确</strong>。</p>
+<p>因此，"确权"在入表实务中的可操作含义是：形成一条完整的证据链，证明企业对特定数据集合享有排他的、可处分的、来源合法的控制利益。这条链通常包括数据来源合同、授权记录、采集行为的合规证明（告知同意记录或合法性基础说明）、技术访问控制措施、内部数据管理制度。</p>
+
+<h2>五、计量、摊销与减值</h2>
+<p>确认为无形资产的数据资源，需要估计使用寿命。估计时应考虑：数据资源相关业务模式、权利限制、更新频率和时效性、有关产品或技术迭代、同类竞品等因素。数据资源的特殊性在于时效性强——三年前的消费行为数据，商业价值可能已大幅衰减，使用寿命往往短于软件著作权等传统无形资产。</p>
+<p>使用寿命不确定的，不摊销，但应当在每个会计期间进行减值测试。数据资源发生下列情形时，应当考虑计提减值：数据来源的合法性基础丧失（如授权被撤回、同意被撤回）；因数据泄露或者违规处理被行政处罚，导致相关数据被要求删除；技术迭代使数据失去应用场景；合同到期未续约导致排他性丧失。</p>
+<p>《暂行规定》要求披露数据资源相关权利的失效情况、失效事由、对企业的影响及风险分析；已确认为资产的，还应披露账面原值、累计摊销、减值准备或跌价准备以及失效部分的会计处理。</p>
+
+<h2>六、列示与披露</h2>
+<p>资产负债表层面，企业在"存货""无形资产""开发支出"三个项目下分别增设"其中：数据资源"明细项，反映期末账面价值。这是强制列示要求，不是自愿披露。</p>
+<p>附注层面，确认为无形资产的数据资源，应当按类别披露账面原值、累计摊销、减值准备、当期摊销额等；确认为存货的，应当按外购、自行加工等类别披露，并披露发出成本确定方法、可变现净值确定依据、跌价准备计提与转回情况、受限或用于担保的数据资源存货账面价值等。</p>
+<p>此外还有八项<strong>自愿披露</strong>内容，包括：应用场景或业务模式及其对企业创造价值的影响方式；形成数据资源的原始数据类型、规模、来源、权属、质量；加工维护和安全保护情况；运营应用、作价出资、流通交易、服务计费等情况；重大交易事项中数据资源的影响及风险分析；权利失效情况及影响；转让、许可、应用涉及的地域、领域及法律法规限制；其他有必要披露的信息。</p>
+
+<h2>七、四个常见误区</h2>
+<ul>
+<li><strong>误区一：把客户数据当成自有资产。</strong>企业受托处理客户数据，仅享有受托人地位，不享有可确认的经济利益，不能入表。这类数据入表不仅会计上不成立，还可能触发个人信息保护合规风险。</li>
+<li><strong>误区二：把前期费用化的支出重新资本化。</strong>《暂行规定》采用未来适用法，施行前已费用化的支出不再调整。试图"追溯确认"的做法不符合规定。</li>
+<li><strong>误区三：以评估值入账。</strong>历史成本原则不可突破。评估增值只能体现在交易价格或者出资作价中。</li>
+<li><strong>误区四：认为入表就等于确权完成。</strong>会计确认与法律确权是两套判断。入表不产生权利，也不对抗第三人；反之，权属存在争议的数据，即便入表，也可能因权属瑕疵被计提减值甚至追溯调整。</li>
+</ul>
+
+<h2>八、常见问题</h2>
+<h3>问：数据资产入表是强制要求吗？</h3>
+<p>符合资产定义与确认条件的，应当按现行准则确认，这不是可选项；不符合确认条件的，不得强行入表，但可以自愿披露相关信息（财会〔2023〕11号"一、关于适用范围"及"三、关于列示和披露要求"）。</p>
+<h3>问：2024年之前已经费用化的数据支出，能补记成资产吗？</h3>
+<p>不能。该规定采用未来适用法，施行前已费用化计入当期损益的数据资源相关支出不再调整，不得重新资本化。</p>
+<h3>问：外购数据的入账成本包括哪些？</h3>
+<p>包括购买价款、相关税费，以及数据权属鉴证、质量评估、登记结算、安全管理等可直接归属于该资产的支出。作为存货核算的，还包括保险费；自行加工的，还包括采集、脱敏、清洗、标注、整合、分析、可视化等加工成本。</p>
+<h3>问：数据资源的使用寿命一般怎么定？</h3>
+<p>没有统一年限。应结合业务模式、权利限制、更新频率和时效性、产品或技术迭代、同类竞品等因素估计；无法合理估计的，作为使用寿命不确定的无形资产，不摊销但每年减值测试。</p>
+<h3>问：数据被要求删除，已入表的资产怎么处理？</h3>
+<p>属于权利失效情形，应进行减值测试，计提减值准备；构成资产处置的，按无形资产或存货的终止确认规则处理，并在附注中披露失效事由、影响及风险分析。</p>
+<h3>问：入表后能不能用于质押融资或作价出资？</h3>
+<p>会计确认不等于法律上的可质押、可出资。数据资产质押、作价出资涉及权属登记、价值评估与监管接受度，目前实践仍在探索，<strong>各地做法不一，部分事项待相关规定明确</strong>。已用于担保的数据资源存货，应在附注中披露其账面价值。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《企业数据资源相关会计处理暂行规定》（财政部财会〔2023〕11号，2024年1月1日起施行）"一、关于适用范围"（适用范围、未来适用法）、"二、关于会计处理适用的准则"第1项至第7项（确认为无形资产的条件与成本构成、使用寿命估计因素、对客户提供服务的处理、确认为存货的条件与成本构成、存货的初始与后续计量、出售存货的成本结转、出售未确认为资产的数据资源的收入确认）、"三、关于列示和披露要求"（一）资产负债表相关列示（存货、无形资产、开发支出三项下增设"其中：数据资源"）、（二）相关披露（无形资产类与存货类披露要求、其他披露要求及八项自愿披露）、"四、附则"（施行日期）；《企业会计准则——基本准则》关于资产定义与确认条件的规定；《企业会计准则第6号——无形资产》关于研究阶段与开发阶段划分、资本化条件、使用寿命与摊销的规定；《企业会计准则第1号——存货》及其实用指南；《企业会计准则第8号——资产减值》；《企业会计准则第14号——收入》（财会〔2017〕22号）；《中华人民共和国数据安全法》第三条（数据与数据处理定义）；《中华人民共和国个人信息保护法》第四条（个人信息定义、匿名化除外）、第十三条（处理个人信息的合法性基础）、第五十一条（安全管理制度与措施）。特别说明：数据资源"三权分置"（持有权、加工使用权、产品经营权）系政策文件表述，尚未成为法律规定的权利类型，本文已注明"待立法进一步明确"；数据资产质押、作价出资的规则仍在探索，已标注"各地做法不一、部分事项待明确"。请以财政部、全国人大官方公布文本为准。</p>
+
 </article>
-<section class="cta-box"><div class="cta-inner"><h3>数据资产入表怎么做？合规路径</h3><p>完成数据确权、合规评估和入表方案。</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
-<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。立丰海事海商专业委员会主任。湖北省法学会西政法学研究会副秘书长。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 武汉市洪山区欢乐大道1号宏泰大厦18/19楼</span></div></div></div></section>
-<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../criminal.html">刑事</a><a href="../maritime.html">海事</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<section class="cta-box"><div class="cta-inner"><h3>入表前先回答四个问题：谁控制、成本多少、收益在哪、能否计量</h3><p>评估值不能入账，前期费用不能追溯资本化，客户数据不能当自有资产。　电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuju-jiaoyi-guapai.html" class="related-card"><div class="rc-tag">Data</div><h4>数据交易与数据产品挂牌的合规要求：确权、脱敏与标准化</h4></a><a href="jinrong-shuju-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>金融业个人信息处理的特殊规则与信用信息管理要求</h4></a><a href="geren-xinxi-baohu-qiye-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息保护法对企业的主要义务：告知同意、影响评估与出境评估</h4></a><a href="shuju-chujing-mianpinggu.html" class="related-card"><div class="rc-tag">Data</div><h4>数据出境安全评估的适用边界与豁免情形</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数据资产入表的条件与合规路径：确权、估值与会计处理", "author": {"@type": "Attorney", "name": "荣郑", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-18", "description": "数据资源会计处理新规下数据资产入表的条件、数据确权与合规审查要求、估值方法与信息披露义务。湖北立丰律师事务所高级合伙人。"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数据资产入表的条件与合规路径：确权、估值与会计处理", "description": "数据资源入表不是新设资产类别，而是在现行企业会计准则下按持有目的分别确认为无形资产或存货，采用未来适用法，已费用化支出不得重新资本化。本文依财会〔2023〕11号梳理三类去向、四项确认前提、成本构成与摊销减值、三项强制列示与八项自愿披露，并澄清以评估值入账等四个常见误区。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-18", "dateModified": "2026-10-18"}</script>
 </body></html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="个人信息泄露事件发生后依照个人信息保护法应当履行的通知义务、通知的内容与时限要求，以及应急处置的流程与证据留存。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="个人信息泄露,个保法,数据合规,通报义务,企业合规,湖北立丰律师事务所">
+<meta name="description" content="个人信息泄露后，处理者应当立即补救，并同时通知履行个人信息保护职责的部门和个人；通知内容包括信息种类、原因、可能危害、补救措施与联系方式，处置记录至少保存三年。本文依《个人信息保护法》第五十一条、第五十七条、第五十九条、第六十六条，梳理三类事件的认定、六步处置流程、证据留存与过错推定下的举证责任。">
+<meta name="keywords" content="个人信息泄露,通知义务,应急处置,个人信息保护法第五十七条,过错推定,数据安全事件报告,合规记录,湖北立丰律师事务所">
 <link rel="canonical" href="https://www.rongzhenglawyer.com/articles/geren-xinxi-xielou-zenmeban.html" />
 <title>个人信息泄露事件的通知义务与应急处置流程</title>
 <style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
@@ -19,8 +19,15 @@ a{color:inherit;text-decoration:none}
 .page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
 .article-body{max-width:860px;margin:0 auto;padding:48px 40px}
 .article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
 .article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
 .article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
 .author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
 .author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
 .author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
@@ -40,27 +47,84 @@ footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;paddi
 footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
 @media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
 <body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../civil.html">民商事专题</a><a href="../index.html#contact">联系</a></div></div></nav>
-<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规与银行金融</a> &rsaquo; 个人信息泄露事件的通知义务与应急处置流程</div><div class="cat">Data Compliance</div><h1>个人信息泄露事件的通知义务与应急处置流程</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div></header>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 个人信息泄露事件的通知义务与应急处置流程</div><div class="cat">Data Compliance &bull; Data Breach</div><h1>个人信息泄露事件的通知义务与应急处置流程</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
 <article class="article-body">
-<h2>一、《个保法》第五十七条：72小时内必须通报</h2>
-<p>企业发生个人信息泄露、篡改或丢失时，《个人信息保护法》第五十七条明确规定：应当立即采取补救措施，并通知履行个人信息保护职责的部门和个人。虽然《个保法》本身没有明确"72小时"的要求，但参考《网络安全法》及工信部《网络安全事件应急预案》的规定，企业在发现网络安全事件后应当立即启动应急机制，重大安全事件应在72小时内向主管部门报告。企业在信息安全事件发生后拖延处理的，可能面临最高五千万元或上一年度营业额百分之五的罚款。</p>
-<h2>二、发现泄露后企业应立即采取的四项应急措施</h2>
-<p><strong>第一，立即切断泄露源。</strong>锁定漏洞、关闭受影响的系统端口、隔离受影响的服务器——这是技术层面的第一反应。在漏洞被修复之前，不得重启受影响系统以免数据被二次窃取。</p>
-<p><strong>第二，启动内部调查。</strong>组建由法务、信息安全、公关、人力资源等部门组成的应急响应小组，判定泄露范围、泄露数据类型（是否包含敏感个人信息）、受影响的个人信息主体数量。</p>
-<p><strong>第三，履行通报义务。</strong>向网信部门或行业主管部门报告；向受影响的个人信息主体发送通知——通知内容应至少包括：泄露事件的基本情况、泄露信息种类、可能造成的危害、企业已采取的补救措施、个人信息主体可以采取的减轻危害的措施、企业联系方式。</p>
-<p><strong>第四，外部法律支持。</strong>联系专业数据合规律师，评估是否需要向公安机关报案、是否需要启动司法鉴定、是否需要通知境外合作方（如涉及跨境数据传输）。</p>
-<h2>三、不要犯的三个错误</h2>
-<p><strong>错误一：隐瞒不报。</strong>有些企业担心影响声誉选择内部处理不对外通报——这是最严重的错误。隐瞒不报被发现的，罚款起点更高，还可能面临暂停相关业务、吊销营业执照的处罚。</p>
-<p><strong>错误二：先解决了再报告。</strong>《个保法》第五十七条要求"立即"采取补救措施并通知，不是"解决后再通知"。即使泄露事件还在处理中，也应当在发现后第一时间报告。</p>
-<p><strong>错误三：通知内容不完整。</strong>只告知"发生了数据安全事件"而未说明具体泄露的信息类型、可能危害、补救措施，这种空洞的告知书可能被认为未履行通报义务。</p>
-<h2>四的建议</h2>
-<p>最好的危机应对是在危机发生前就做好准备——制定书面的个人信息安全事件应急预案，明确应急响应小组的人员构成和职责分工，定期进行应急演练。如果企业已经发生了个人信息泄露事件，第一时间联系专业律师评估法律风险和应对策略。荣郑律师2024年即参与湖北省数据局数据资产入表等前沿项目，能够为各类企业提供数据合规法律服务。</p>
+<h2>一、结论先行：三层义务、两个时限</h2>
+<p>个人信息泄露事件发生后，企业最容易犯的错误不是「没发现」，而是「发现了不知道要做什么、什么时候做」。结论先行：</p>
+<ol>
+<li><strong>立即补救。</strong>发生或者可能发生个人信息泄露、篡改、丢失的，应当立即采取补救措施（《个人信息保护法》第五十七条第一款）。</li>
+<li><strong>双重通知。</strong>应当通知履行个人信息保护职责的部门<strong>和个人</strong>；通知义务是两项，不能以「已向监管报告」替代对个人的告知。</li>
+<li><strong>免于通知个人的例外只有两种。</strong>处理者采取措施能够有效避免信息泄露、篡改、丢失造成危害的，可以不通知个人；履行个人信息保护职责的部门认为可能造成危害的，有权要求处理者通知。</li>
+<li><strong>记录义务。</strong>处理者应当对泄露事件的处理情况予以记录，该记录至少保存三年（《个人信息保护法》第五十七条第三款）。</li>
+</ol>
+<p>两个时限需要记住：向监管部门报告依《网络安全法》《数据安全法》的「立即」「及时」要求，不设统一天数；而记录保存是明确的三年。</p>
+
+<h2>二、触发条件：「泄露、篡改、丢失」如何认定</h2>
+<p>《个人信息保护法》第五十一条要求处理者采取加密、去标识化等安全技术措施，制定内部管理制度与操作规程，并制定个人信息安全事件应急预案。第五十七条的触发条件则是「发生或者可能发生」泄露、篡改、丢失——<strong>注意「可能发生」四个字</strong>，意味着尚未造成实际损害但风险已经出现时，补救义务即已启动。</p>
+<p>三类事件的判断标准不同：</p>
+<ul>
+<li><strong>泄露</strong>：信息被未获授权的主体获取，包括外部攻击、内部人员导出、供应商误传、系统配置错误导致公网可访问。</li>
+<li><strong>篡改</strong>：信息被未获授权地修改，完整性受损，常见于权限管理失效、接口未做鉴权。</li>
+<li><strong>丢失</strong>：信息不可用或者灭失，包括误删除且无备份、存储介质损坏、勒索软件加密。</li>
+</ul>
+<p>实务中争议最大的是「可能发生」。判断应结合数据敏感程度、涉及人数、是否可被识别到特定个人、是否已被实际访问等因素，<strong>不宜以「尚未发现被利用」为由不作处理</strong>。</p>
+
+<h2>三、通知监管部门：内容与时点</h2>
+<p>《网络安全法》第四十二条第二款规定，发生或者可能发生个人信息泄露、毁损、丢失的，应当立即采取补救措施，按照规定及时告知用户并向有关主管部门报告。《数据安全法》第二十九条要求，发生数据安全事件时，应当立即启动应急预案、采取相应处置措施，并按照规定向有关主管部门报告。</p>
+<p>两部法律使用的都是「立即」「及时」「按照规定」，并未设定统一的天数。这是因为报告义务的具体时限分散在行业规定中：金融、医疗、电信、汽车数据等领域各有专门要求。企业应当先确定自身所处行业，再核对对应的行业规范，<strong>不能笼统按「72小时」处理</strong>——该数字来源于部分域外立法与个别行业要求，并非我国一般性规定。</p>
+<p>报告内容通常包括：事件基本情况与发现时间、涉及的个人信息类型与数量、可能造成的危害、已采取的补救措施、后续处置计划与联系人。</p>
+
+<h2>四、通知个人：内容、方式与免于通知的例外</h2>
+<p>《个人信息保护法》第五十七条第一款要求通知包括下列内容：泄露、篡改、丢失的个人信息种类、原因和可能造成的危害；个人信息处理者采取的补救措施和个人可以采取的减轻危害的措施；个人信息处理者的联系方式。</p>
+<table>
+<tr><th>通知对象</th><th>法律依据</th><th>核心要求</th></tr>
+<tr><td>履行个人信息保护职责的部门</td><td>《个人信息保护法》第五十七条；《网络安全法》第四十二条；《数据安全法》第二十九条</td><td>立即补救并及时报告，内容真实、完整，不得瞒报、漏报</td></tr>
+<tr><td>受影响的个人</td><td>《个人信息保护法》第五十七条</td><td>告知种类、原因、可能危害、补救措施、个人可采取的措施、联系方式</td></tr>
+<tr><td>社会公众（特定情形）</td><td>《个人信息保护法》第五十七条第二款</td><td>处理者采取措施能够有效避免危害的，可不通知个人；监管部门认为可能造成危害的，有权要求通知</td></tr>
+</table>
+<p>通知方式应当与原有联系渠道一致，通常采用短信、站内信、邮件、App 弹窗等；难以逐一告知的，可以采取公告方式。应注意：<strong>通知本身不得成为二次泄露的渠道</strong>，例如在短信中直接写明「您的身份证号×××已泄露」，反而扩大了暴露面。</p>
+
+<h2>五、应急处置的六步流程</h2>
+<ol>
+<li><strong>发现与初判（当日）。</strong>由安全团队确认事件是否真实、影响范围、是否仍在持续。此阶段的每一份日志都应即时固定。</li>
+<li><strong>止损与隔离（当日）。</strong>关闭泄露接口、重置凭据、下线受影响系统、阻断异常访问，避免损害扩大。</li>
+<li><strong>取证与溯源（1—3日）。</strong>保存系统日志、访问记录、数据库审计记录、变更记录；注意取证的完整性，避免因修复动作破坏证据。</li>
+<li><strong>影响评估（1—3日）。</strong>统计涉及人数、信息类型（是否含敏感个人信息）、是否可识别到特定个人、是否已被利用。</li>
+<li><strong>报告与告知（评估后立即）。</strong>按行业规定向主管部门报告，按第五十七条通知个人，必要时发布公告。</li>
+<li><strong>整改与复盘（事件后）。</strong>修补技术与管理漏洞，更新应急预案，形成事件报告并归档。</li>
+</ol>
+<div class="tip"><strong>实务要点：</strong>第六步的整改记录，往往是后续行政检查、民事诉讼中最重要的减责证据。相反，若企业无法提供处置记录，即便实际损害不大，也可能被认定为「未按规定采取必要措施」。</div>
+
+<h2>六、证据留存与记录义务</h2>
+<p>《个人信息保护法》第五十七条第三款规定，处理者应当对个人信息泄露、篡改、丢失事件的处理情况予以记录，记录至少保存三年。记录内容应当能够还原「谁在什么时间做了什么判断」，至少包含：事件发现时间与途径、影响范围、处置措施与时间点、内部决策过程、对外报告与告知情况、整改结果。</p>
+<p>与记录义务配套的还有两项制度：一是个人信息保护影响评估报告与处理情况记录至少保存三年（第五十六条）；二是合规审计制度要求处理者定期开展合规审计，审计中必然核查事件记录。因此，记录不是「出了事才补」，而是日常合规体系的一部分。</p>
+<p>需要提醒的是，<strong>记录与证据是两个层次</strong>。记录是法定义务的履行；证据是诉讼中的攻防材料。前者可以事后整理，后者必须在事件发生当时固定，尤其是日志、快照、邮件与即时通讯记录。</p>
+
+<h2>七、法律责任：行政处罚与民事赔偿</h2>
+<p>行政责任方面，《个人信息保护法》第六十六条对违法处理个人信息规定了阶梯式处罚：责令改正、警告、没收违法所得；拒不改正的，并处一百万元以下罚款；情节严重的，处五千万元以下或者上一年度营业额百分之五以下罚款，并可以责令暂停相关业务或者停业整顿、通报有关主管部门吊销相关业务许可或者吊销营业执照；对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款。</p>
+<p>民事责任方面，第五十九条采用<strong>过错推定</strong>：处理个人信息侵害个人信息权益造成损害，个人信息处理者不能证明自己没有过错的，应当承担损害赔偿等侵权责任。这一举证格局对处理者极为不利——一旦发生泄露，企业需要自证「已尽到安全保护义务」，而这正是第五十一条各项措施、第五十七条处置记录发挥作用的地方。</p>
+<p>此外，泄露事件还可能触发《数据安全法》的处罚，以及刑法上侵犯公民个人信息罪的风险（如内部人员出售信息）。三条责任线并行，不互相吸收。</p>
+
+<h2>八、常见问题</h2>
+<h3>问：泄露了几百条信息，也要报告吗？</h3>
+<p>法律未设数量门槛，触发条件是「发生或者可能发生」泄露并可能造成危害。数量少但属敏感个人信息（如行踪轨迹、金融账户、不满十四周岁未成年人信息）的，同样应当评估是否需要报告。</p>
+<h3>问：已经采取了补救措施，还要通知个人吗？</h3>
+<p>《个人信息保护法》第五十七条第二款规定，处理者采取措施能够有效避免信息泄露、篡改、丢失造成危害的，可以不通知个人；但监管部门认为可能造成危害的，有权要求通知。是否「有效避免」需要举证。</p>
+<h3>问：内部员工导出的信息，算泄露事件吗？</h3>
+<p>算。泄露不以外部攻击为限，内部人员越权访问、导出、外传同样构成。此类事件往往还伴随刑事风险。</p>
+<h3>问：报告主管部门后，还需要向网信、公安分别报告吗？</h3>
+<p>依行业与事件性质确定。「履行个人信息保护职责的部门」包括网信、市场监管等；涉及网络安全事件的，还可能涉及公安机关。实务中建议按「首报+同步抄送」处理，避免多头重复但又不遗漏。</p>
+<h3>问：能不能先内部处理完再报告？</h3>
+<p>不建议，且可能构成瞒报。法律要求「立即」「及时」，拖延报告本身可能被认定为未履行义务，加重处罚。</p>
+<h3>问：客户起诉索赔，企业怎么举证免责？</h3>
+<p>核心是证明已履行第五十一条的安全保护义务与第五十七条的处置义务，包括安全措施记录、权限管理、加密与去标识化、应急预案与演练记录、事件处置记录。举证不能的，依第五十九条承担赔偿责任。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国个人信息保护法》第五十一条（安全保护义务与应急预案）、第五十二条（个人信息保护负责人的设立与职责）、第五十六条（影响评估报告与处理情况记录保存三年）、第五十七条（泄露、篡改、丢失的补救、通知与记录义务）、第五十九条（过错推定责任）、第六十六条（法律责任）、第七十三条（个人信息处理者的定义）；《中华人民共和国网络安全法》第四十二条第二款（泄露、毁损、丢失的补救、告知与报告）、第七十六条（个人信息定义）；《中华人民共和国数据安全法》第二十九条（数据安全事件的处置与报告）；《网络数据安全管理条例》关于个人信息安全事件报告的规定。特别说明：本文关于「报告时限」的表述不采用任何统一天数，因我国法律未设统一期限，具体时限分散于行业规定；部分资料所称「72小时」并非我国一般性规定，引用时须核对具体行业规范。记录保存期限「三年」依据第五十六条、第五十七条。行政处罚的具体幅度以第六十六条为准，执法实践中还会参照部门规章与裁量基准，个案存在差异。请以全国人大官方公布文本为准。</p>
 </article>
-<section class="cta-box"><div class="cta-inner"><h3>企业发生数据泄露？应急处理</h3><p>第一时间履行通报义务至关重要。荣郑律师提供专业的个人信息泄露应急法律支持。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="cta-box"><div class="cta-inner"><h3>泄露发生后，处置动作决定责任大小</h3><p>补救、报告、告知、记录四个环节的时间与内容，是行政检查与民事索赔中最关键的证据。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
 <section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
-<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-baohu-qiye-hegui.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>个人信息保护法对企业的主要义务：告知同意、影响评估与出境评估</h4></a><a href="kuajing-shuju-chuanshu-hegui.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>数据出境的合规路径：安全评估、标准合同与认证的选择标准</h4></a></div></section>
-<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuzi-yichan-jicheng.html" class="related-card"><div class="rc-tag">Data</div><h4>数字遗产的继承：账户余额与虚拟财产的取得路径及限制</h4></a><a href="zidonghua-juece-hegui-bianjie.html" class="related-card"><div class="rc-tag">Data</div><h4>自动化决策的合规边界：差别待遇、说明义务与拒绝权</h4></a><a href="shuju-anquan-dengji-baohu.html" class="related-card"><div class="rc-tag">Data</div><h4>网络安全等级保护义务与数据安全事件的责任认定</h4></a><a href="jinrong-shuju-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>金融业个人信息处理的特殊规则与信用信息管理要求</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "个人信息泄露事件的通知义务与应急处置流程", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-16", "description": "个人信息泄露事件发生后依照个人信息保护法应当履行的通知义务、通知的内容与时限要求，以及应急处置的流程与证据留存。湖北立丰律师事务所高级合伙人。"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "个人信息泄露事件的通知义务与应急处置流程", "description": "个人信息泄露后，处理者应当立即补救，并同时通知履行个人信息保护职责的部门和个人；通知内容包括信息种类、原因、可能危害、补救措施与联系方式，处置记录至少保存三年。本文依《个人信息保护法》第五十一条、第五十七条、第五十九条、第六十六条，梳理三类事件的认定、六步处置流程、证据留存与过错推定下的举证责任。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-19", "dateModified": "2026-10-23"}</script>
 </body></html>

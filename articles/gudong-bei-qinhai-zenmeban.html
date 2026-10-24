@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="控股股东、实际控制人滥用控制权的认定标准，以及小股东提起知情权之诉与损害公司利益之诉的适用条件与操作要点。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="小股东被欺负,股东知情权,大股东滥用控制权,公司决议无效,湖北立丰律师事务所">
+<meta name="description" content="控股股东滥用控制权的认定看三件事：主体是否为控股股东或实际控制人、行为是否属滥用股东权利或利用关联关系、后果是否造成公司或其他股东损失。本文梳理公司法第二十一条、第二十二条、第八十九条第三款、第一百八十九条与第二百三十一条的五条救济路径、各自期限与举证顺序。">
+<meta name="keywords" content="控股股东滥用控制权,小股东救济,股东代表诉讼,决议撤销,股权回购,公司司法解散,公司法第八十九条第三款,公司法第一百八十九条,湖北立丰律师事务所">
 <link rel="canonical" href="https://www.rongzhenglawyer.com/articles/gudong-bei-qinhai-zenmeban.html" />
 <title>控股股东滥用控制权的认定标准与小股东的救济路径</title>
 <style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
@@ -19,8 +19,15 @@ a{color:inherit;text-decoration:none}
 .page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
 .article-body{max-width:860px;margin:0 auto;padding:48px 40px}
 .article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
 .article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
 .article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
 .author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
 .author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
 .author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
@@ -40,24 +47,94 @@ footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;paddi
 footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
 @media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
 <body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../corporate.html">公司股权</a><a href="../civil.html">民商事专题</a><a href="../index.html#contact">联系</a></div></div></nav>
-<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">公司股权与并购重组</a> &rsaquo; 控股股东滥用控制权的认定标准与小股东的救济路径</div><div class="cat">Corporate Law</div><h1>控股股东滥用控制权的认定标准与小股东的救济路径</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div></header>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../corporate.html">公司股权与并购重组</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">公司股权与并购重组专题</a> &rsaquo; 控股股东滥用控制权的认定与救济</div><div class="cat">Corporate &amp; M&amp;A &bull; Minority Protection</div><h1>控股股东滥用控制权的认定标准与小股东的救济路径</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
 <article class="article-body">
-<h2>一、小股东最常见的困境：投了钱却没有任何话语权</h2>
-<p>朋友拉你合伙开公司，你投了50万占了20%的股份，但公司成立后大股东从不通知你开股东会、从不给你看财务报表、公司赚了多少钱你完全不知道。你问他，他说"公司现在没利润"；你要查账，他说"经营机密不方便"。这不是"行业惯例"，这是大股东在侵害你的合法权利——新《公司法》给你的保护比你想象的要强得多。</p>
-<h2>二、第一步：行使股东知情权，依法查账</h2>
-<p>2024年7月1日施行的新《公司法》第五十七条是小股东维权最重要的法律武器。以前股东只能查阅会计账簿，现在可以直接查阅会计凭证——包括发票、合同、银行流水等原始凭证。这是本次修法最重要的突破之一，它让小股东能够穿透财务报表看到公司的真实经营状况。</p>
-<p>行使知情权的步骤：①向公司发出书面查阅申请，说明查阅范围和目的；②公司收到申请后15日内应予以答复；③公司拒绝或逾期不答复的，股东可以向法院提起股东知情权之诉。实务建议：书面申请是所有后续维权的基础，不能口头说"让我看看账"，必须通过EMS邮寄书面申请并保留快递单和签收记录。</p>
-<h2>三、第二步：大股东滥用控制权的救济</h2>
-<p>如果你通过查账发现大股东存在以下行为：私自将公司资金转入个人账户、将公司业务转移到自己控股的另一家公司、以不合理价格处置公司资产、排斥小股东参与公司经营决策——这些都属于大股东滥用控制权。</p>
-<p>新《公司法》第一百八十条、第一百八十八条规定，控股股东、实际控制人利用其控制地位损害公司或者其他股东利益的，应当承担赔偿责任。实务建议：通过知情权之诉获取证据后，提起损害公司利益责任纠纷之诉或股东直接诉讼。"查账+索赔"的组合拳是小股东最有效的维权策略。</p>
-<h2>四、极端情形下的救济：申请公司解散</h2>
-<p>如果公司治理已经完全失灵——股东会连续两年以上无法召开、股东表决无法达到法定或章程规定的比例、公司经营管理发生严重困难——符合条件的股东可以申请司法解散公司。这是最后的救济手段，但也是最有威慑力的。"如果你让我活不下去，那就谁都别活了"——这种威慑本身，往往能迫使大股东回到谈判桌上。</p>
+
+<h2>一、结论先行：认定看三件事，救济有五条路</h2>
+<p>小股东被大股东「挤出」公司，最常见的疑问是：大股东把公司业务转给自己另一家公司、长期不安排分红、把小股东排除在经营之外，这些行为算不算违法，能怎么救济？<strong>结论是：认定控股股东滥用控制权，看三件事——主体是否为控股股东或实际控制人；行为是否属于滥用股东权利或者利用关联关系损害公司利益；后果是否造成公司或其他股东损失。救济有五条路径：请求确认决议无效、请求撤销决议或确认决议不成立；依公司法第二十一条、第二十二条请求赔偿；依第一百八十九条提起股东代表诉讼；依第八十九条第三款请求公司以合理价格收购股权；依第二百三十一条请求司法解散。</strong></p>
+<p>三条认定要素与五条救济路径，各自的门槛和期限不同，先看清全貌再动手：</p>
+<table>
+<tr><th>救济路径</th><th>规范依据</th><th>门槛</th><th>期限</th></tr>
+<tr><td>确认决议无效</td><td>公司法第二十五条</td><td>决议内容违反法律、行政法规</td><td>法律未设除斥期间</td></tr>
+<tr><td>撤销决议</td><td>公司法第二十六条</td><td>召集程序、表决方式违法或违章，或内容违章</td><td>决议作出之日起六十日；未被通知参会的自知道或应当知道之日起六十日，最长不超过决议作出之日起一年</td></tr>
+<tr><td>确认决议不成立</td><td>公司法第二十七条</td><td>未开会、未表决、出席人数或表决权数不足、同意票数不足</td><td>法律未设除斥期间</td></tr>
+<tr><td>损害赔偿之诉</td><td>公司法第二十一条、第二十二条、第一百九十二条</td><td>滥用股东权利或利用关联关系造成损失</td><td>适用三年诉讼时效</td></tr>
+<tr><td>股东代表诉讼</td><td>公司法第一百八十九条</td><td>公司利益受损且公司怠于起诉</td><td>前置程序三十日；诉讼时效三年</td></tr>
+<tr><td>请求公司收购股权</td><td>公司法第八十九条第三款</td><td>控股股东滥用权利，严重损害公司或其他股东利益</td><td>条文未设期限，实务中存在争议</td></tr>
+<tr><td>司法解散</td><td>公司法第二百三十一条</td><td>持股百分之十以上，公司经营管理发生严重困难</td><td>法律未设除斥期间</td></tr>
+</table>
+<div class="tip"><strong>实务要点：</strong>五条路径不是平行的「任选其一」，而是有清楚的适用边界：决议类救济针对「程序与内容」，损害赔偿针对「损失」，代表诉讼针对「公司受损」，回购针对「退出」，解散针对「终止」。选错路径最常见的后果不是败诉，而是错过期限——尤其是六十日的撤销权除斥期间，一旦逾期即消灭，不能中止、中断。</div>
+
+<h2>二、主体识别：谁是控股股东，谁是实际控制人</h2>
+<p>公司法第二百六十五条第二项界定控股股东：出资额占有限责任公司资本总额超过百分之五十，或者持有的股份占股份有限公司股本总额超过百分之五十的股东；出资额或者持股比例虽然低于百分之五十，但依其出资额或者持有的股份所享有的表决权已足以对股东会的决议产生重大影响的股东。</p>
+<p>第三项界定实际控制人：通过投资关系、协议或者其他安排，能够实际支配公司行为的人。</p>
+<p>两点实务意义：</p>
+<ul>
+<li><strong>持股不足百分之五十也可能是控股股东。</strong>股权分散的公司中，持股百分之三十甚至更低，只要其表决权足以对股东会决议产生重大影响，即可认定为控股股东。判断时应结合历次股东会的表决情况、其他股东的持股分布、是否存在一致行动安排。</li>
+<li><strong>名义股东与实际控制人可能分离。</strong>通过多层持股、代持、协议控制支配公司的人，属于实际控制人。起诉时应把实际控制人一并列为被告，否则即使胜诉也可能无法执行。</li>
+</ul>
+<p>第一百九十二条进一步规定：公司的控股股东、实际控制人指示董事、高级管理人员从事损害公司或者股东利益的行为的，与该董事、高级管理人员承担连带责任。这一条改变了以往「幕后指挥者难以追责」的局面，但主张时必须证明「指示」的存在——会议记录、微信指示、审批流程、薪酬安排都是可用证据。</p>
+
+<h2>三、六类典型滥用行为与认定思路</h2>
+<p>滥用控制权不是一个独立的行为类型，而是一组行为的概括。实务中高频出现的有六类。</p>
+<table>
+<tr><th>行为类型</th><th>典型表现</th><th>认定要点</th></tr>
+<tr><td>关联交易转移利润</td><td>以明显偏离市场的价格与关联方交易，把利润转移至控股股东控制的其他企业</td><td>交易是否履行关联交易审议程序、价格是否公允、是否披露（第二十二条）</td></tr>
+<tr><td>资金占用</td><td>以借款、预付款、备用金名义将公司资金转出，长期不还</td><td>有无真实交易背景、有无审批、是否计息、是否归还（可同时构成抽逃出资）</td></tr>
+<tr><td>资产低价处置</td><td>将公司核心资产、土地房产、知识产权低价转让给关联方</td><td>是否评估、是否经股东会决议、价格与评估值或市场价的偏离程度</td></tr>
+<tr><td>剥夺参与权</td><td>不通知小股东参加股东会、不提供会议材料、拒绝小股东查阅财务资料</td><td>通知是否送达、是否给予合理准备时间（第二十六条、第五十七条）</td></tr>
+<tr><td>排他性经营安排</td><td>将公司业务机会转由关联公司承接，公司仅保留空壳</td><td>商业机会是否属于公司、公司是否具备履行能力、是否经豁免程序（第一百八十三条）</td></tr>
+<tr><td>恶意不分红</td><td>长期盈利但连续不分配利润，同时通过薪酬、关联交易向控股股东输送利益</td><td>是否连续五年盈利且符合分配条件、是否有合理经营需要</td></tr>
+</table>
+<p>认定思路上应把握两点。第一，<strong>程序违法与实质不公需分开论证</strong>：未履行审议程序本身构成程序瑕疵，可作为撤销决议或主张过错的依据；是否造成损失，还需要价格比对、资金流向、财务数据支撑。第二，<strong>商业判断与滥用控制的界限</strong>：公司经营决策本有风险，亏损、转型失败、不分红并不当然等于滥用。区分的关键是有无「为自己或关联方谋取不当利益」的指向，以及决策过程是否排斥其他股东参与。</p>
+
+<h2>四、五条救济路径的适用条件</h2>
+<p><strong>路径一：确认决议无效。</strong>第二十五条规定，股东会、董事会决议内容违反法律、行政法规的无效。典型情形包括：决议剥夺股东法定知情权、决议免除董事法定责任、决议分配利润违反资本维持原则。无效自始不发生效力，不受六十日期限限制。</p>
+<p><strong>路径二：撤销决议。</strong>第二十六条规定，会议召集程序、表决方式违反法律、行政法规或者公司章程，或者决议内容违反公司章程的，股东可以自决议作出之日起六十日内请求撤销；但召集程序或表决方式仅有轻微瑕疵、对决议未产生实质影响的除外。未被通知参加会议的股东，自知道或应当知道决议作出之日起六十日内可以请求撤销，自决议作出之日起一年内未行使的，撤销权消灭。</p>
+<p><strong>路径三：确认决议不成立。</strong>第二十七条列举四种情形：未召开会议作出决议；会议未对决议事项进行表决；出席会议的人数或者所持表决权数未达到法定或章程规定；同意决议事项的人数或者所持表决权数未达到法定或章程规定。决议不成立与无效、可撤销的效果不同，不成立的决议自始没有法律约束力。</p>
+<p><strong>路径四：损害赔偿与股东代表诉讼。</strong>第二十一条规定，股东不得滥用股东权利损害公司或者其他股东的利益，滥用给公司或者其他股东造成损失的，应当承担赔偿责任。第二十二条规定，控股股东、实际控制人、董事、监事、高级管理人员不得利用关联关系损害公司利益，违反给公司造成损失的，应当承担赔偿责任。</p>
+<p>公司利益受损而公司不起诉时，股东可依第一百八十九条提起代表诉讼：有限责任公司股东、股份有限公司连续一百八十日以上单独或者合计持有百分之一以上股份的股东，可以书面请求监事会向人民法院提起诉讼；监事有前述情形的，书面请求董事会提起诉讼。监事会或董事会拒绝起诉，或者自收到请求之日起三十日内未起诉，或者情况紧急、不起诉将使公司利益受到难以弥补的损害的，股东有权为公司利益以自己的名义直接起诉。该条第四款还规定了双重代表诉讼：公司全资子公司的董事、监事、高级管理人员损害子公司利益，或他人侵犯全资子公司合法权益的，母公司股东可以按前述程序请求全资子公司的监事会、董事会起诉，或直接以自己名义起诉。</p>
+<p><strong>路径五：司法解散。</strong>第二百三十一条规定，公司经营管理发生严重困难，继续存续会使股东利益受到重大损失，通过其他途径不能解决的，持有公司百分之十以上表决权的股东，可以请求人民法院解散公司。这是最后手段，举证重点在于「经营管理严重困难」（如持续两年以上无法召开股东会、表决无法达到法定或章程比例、董事长期冲突且无法解决），而非单纯亏损。</p>
+
+<h2>五、第八十九条第三款：新增的退出通道及其未解问题</h2>
+<p>第八十九条第一款保留了三类异议股东回购请求权：公司连续五年不向股东分配利润而连续五年盈利且符合分配条件；公司合并、分立、转让主要财产；公司章程规定的营业期限届满或者章程规定的其他解散事由出现，股东会通过决议修改章程使公司存续。行使程序是：自股东会决议作出之日起六十日内与公司协商，协商不成的，自决议作出之日起九十日内向人民法院起诉。</p>
+<p>第三款是2023年修订新增的内容：<strong>公司的控股股东滥用股东权利，严重损害公司或者其他股东利益的，其他股东有权请求公司按照合理的价格收购其股权。</strong>这一款为被压制的小股东提供了「不带解散后果的退出」通道，意义重大。</p>
+<p>但它留下三个未解问题，实务中争议明显：</p>
+<ol>
+<li><strong>是否适用六十日、九十日的期限。</strong>第三款条文未设期限，与第一款明文规定的六十日协商期、九十日起诉期形成对比。一种观点认为第三款应参照第一款的期限；另一种观点认为第三款是独立请求权，适用三年诉讼时效。起诉时应同时准备「未超期」的论证，避免因期限问题被驳回。</li>
+<li><strong>「严重损害」如何量化。</strong>条文未设标准。可参考的因素包括：损害持续时间、涉及金额占公司净资产的比例、是否导致公司无法正常经营、是否影响股东的基本权利。个案判断差异较大。</li>
+<li><strong>「合理价格」如何确定。</strong>通常需委托评估，以评估基准日的股权公允价值为基础；评估时应扣除滥用行为造成的减值，避免小股东因滥权行为获得超额补偿。若回购价格未涵盖全部损失，未涵盖部分可另行主张损害赔偿，但不得重复受偿。</li>
+</ol>
+
+<h2>六、举证结构与取证顺序</h2>
+<p>滥用控制权案件的败诉，多数败在举证。建议按以下顺序推进。</p>
+<ol>
+<li><strong>第一步：用知情权取得基础材料。</strong>第五十七条规定，股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议和财务会计报告；可以要求查阅公司会计账簿、会计凭证。要求查阅应提出书面请求并说明目的；公司有合理根据认为查阅有不正当目的、可能损害公司利益的，可以拒绝，并应在十五日内书面答复说明理由；公司拒绝的，股东可以提起诉讼。股东还可以委托会计师事务所、律师事务所等中介机构进行查阅。</li>
+<li><strong>第二步：固定关联关系。</strong>通过企业信用信息公示系统、裁判文书、招投标记录，梳理控股股东控制的其他企业的股权结构与高管名单，证明交易对手属于关联方。</li>
+<li><strong>第三步：价格与流向比对。</strong>将关联交易价格与同期市场价、第三方报价、评估报告比对；通过银行流水、发票、合同，还原资金最终去向。</li>
+<li><strong>第四步：固定程序瑕疵。</strong>收集会议通知、签到表、表决票、会议记录，核对是否通知全部股东、是否按章程规定的比例通过。</li>
+<li><strong>第五步：量化损失。</strong>损失可以是公司减少的利润、资产减值的差额、被占用资金的利息。主张时应当区分「公司损失」（通过代表诉讼主张，胜诉利益归公司）与「股东自身损失」（通过直接诉讼主张）。</li>
+</ol>
+<p>需要提示的是，知情权诉讼与损害赔偿诉讼是两个独立的诉，前者解决「能不能看」，后者解决「赔不赔」。知情权之诉的裁判范围限于查阅、复制，不会直接认定滥用行为，但取得的材料可作为后续诉讼的证据。</p>
+
+<h2>七、常见问题（FAQ）</h2>
+<p><strong>问1：大股东持股百分之六十七，小股东持股百分之三十三，小股东能阻止决议吗？</strong><br>答：对需要三分之二以上表决权通过的事项（修改章程、增减注册资本、合并分立解散或变更公司形式），百分之三十三的表决权可以形成否决；对过半数通过的一般事项则无法阻止。但即便决议通过，程序违法或内容违章的仍可请求撤销。</p>
+<p><strong>问2：公司连续多年不分红，可以直接起诉要求分配利润吗？</strong><br>答：原则上需先有载明具体分配方案的股东会决议。无决议时，股东一般不能直接请求分配利润；但控股股东滥用权利导致不分红、变相分配利益的，可考虑第八十九条第三款的回购路径或损害赔偿路径。</p>
+<p><strong>问3：股东代表诉讼的胜诉利益归谁？</strong><br>答：归公司。股东是以自己的名义为公司利益起诉，胜诉利益不直接归属于原告股东。</p>
+<p><strong>问4：代表诉讼必须先书面请求监事会吗？</strong><br>答：是前置程序。可以书面请求监事会起诉；监事本人是被告的，书面请求董事会起诉。拒绝起诉、三十日内未起诉，或者情况紧急的，股东可以直接起诉。未履行前置程序即起诉，可能被驳回。</p>
+<p><strong>问5：请求公司回购股权，价格谈不拢怎么办？</strong><br>答：协商不成的可起诉，由法院委托评估确定合理价格。评估基准日、评估方法、是否扣除滥权造成的减值，都是争议焦点。</p>
+<p><strong>问6：小股东能不能直接起诉大股东赔偿自己的损失？</strong><br>答：可以。第二十一条明确滥用股东权利给其他股东造成损失的应承担赔偿责任；第一百九十条亦规定董事、高级管理人员违反法律、行政法规或章程损害股东利益的，股东可以起诉。但需区分「股东自身损失」与「公司损失」，后者应通过代表诉讼主张。</p>
+
+<h2>八、法条与依据核验</h2>
+<p>本文引用规范如下，均以官方公布文本为准：《中华人民共和国公司法》（2023年12月29日修订，2024年7月1日施行）第二十一条、第二十二条、第二十三条、第二十五条、第二十六条、第二十七条、第二十八条、第五十七条、第八十九条、第一百八十三条、第一百八十九条、第一百九十条、第一百九十二条、第二百三十一条、第二百六十五条第二项与第三项；《中华人民共和国民法典》第一百八十八条（三年诉讼时效）。</p>
+<p>条号提示：2023年修订前的旧公司法中，股东知情权为第三十三条，决议撤销为第二十二条，股东代表诉讼为第一百五十一条，司法解散为第一百八十二条，条号与现行文本完全不同。旧文或旧案例援引时应整体重核，不能直接照搬。本文关于第八十九条第三款是否适用六十日、九十日期限的表述，属实务争议事项，现行法未作规定，个案结论应以受诉法院的裁判口径为准。此外，「严重损害」「合理价格」均系不确定概念，本文列举的考量因素系对裁判实践的归纳，不构成法定标准。</p>
+
 </article>
-<section class="cta-box"><div class="cta-inner"><h3>小股东权益被侵害？维权路径</h3><p>新公司法为小股东提供了更强保护。知情权之诉+索赔组合拳，让大股东回到谈判桌。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="cta-box"><div class="cta-inner"><h3>小股东被挤出公司，该走哪条路</h3><p>决议撤销只有六十日，代表诉讼要先履行前置程序，回购与解散各有门槛——路径选错等于放弃权利。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
 <section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
-<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="gongsi-zhili-gudong-quanyi.html" class="related-card"><div class="rc-tag">Corporate</div><h4>新公司法下股东知情权之诉的行使范围与操作步骤</h4></a><a href="guquan-daichi-falv-fengxian.html" class="related-card"><div class="rc-tag">Corporate</div><h4>股权代持协议的效力认定、名义股东风险与隐名股东显名化路径</h4></a></div></section>
-<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="gongsi-zhili-gudong-quanyi.html" class="related-card"><div class="rc-tag">Corporate</div><h4>新公司法下股东知情权之诉的行使范围与操作步骤</h4></a><a href="gongsi-jueyi-xiaoli.html" class="related-card"><div class="rc-tag">Corporate</div><h4>公司决议效力瑕疵的三种类型：不成立、无效与可撤销的区分</h4></a><a href="gudong-daibiao-susong-dongjian-gao.html" class="related-card"><div class="rc-tag">Corporate</div><h4>股东代表诉讼的前置程序、诉讼请求与举证要点</h4></a><a href="gongsi-jiangju-sifa-jiesan.html" class="related-card"><div class="rc-tag">Corporate</div><h4>公司僵局的司法解散：受理条件、百分之十表决权门槛与判决后的清算衔接</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权与并购重组</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "控股股东滥用控制权的认定标准与小股东的救济路径", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-16", "description": "控股股东、实际控制人滥用控制权的认定标准，以及小股东提起知情权之诉与损害公司利益之诉的适用条件与操作要点。湖北立丰律师事务所高级合伙人。"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "控股股东滥用控制权的认定标准与小股东的救济路径", "description": "控股股东滥用控制权的认定看三件事：主体是否为控股股东或实际控制人、行为是否属滥用股东权利或利用关联关系、后果是否造成公司或其他股东损失。本文梳理公司法第二十一条、第二十二条、第八十九条第三款、第一百八十九条与第二百三十一条的五条救济路径、各自期限与举证顺序。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-16", "dateModified": "2026-10-21"}</script>
 </body></html>
