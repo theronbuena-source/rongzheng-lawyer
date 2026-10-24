@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="《密码法》把密码分为核心密码、普通密码与商用密码，企业日常接触的加密技术绝大多数属于商用密码。本文说明商用密码的检测认证、进口许可与出口管制要求，关键信息基础设施运营者的商用密码应用安全性评估（密评）义务，以及密评的评估对象、三个层面与常见不通过原因。">
+<meta name="keywords" content="商用密码,密码法,商用密码应用安全性评估,密评,关键信息基础设施,SM2,SM3,SM4,商用密码管理条例,数据加密合规,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/shangyong-mima-hegui-yiwu.html" />
+<title>商用密码合规：密码法三类密码的分工与密评怎么做</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 商用密码合规</div><div class="cat">DATA COMPLIANCE &middot; 密码与技术措施</div><h1>商用密码合规：密码法三类密码的分工与密评怎么做</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论先行：数据加密不只是技术选择，还是法定义务</h2>
+<p>企业谈数据安全，通常把「加密」当作技术方案的一部分，由技术团队自行决定算法与实现。但在法律层面，加密已经是一项有明确规范体系的法定义务：《数据安全法》要求采取技术措施和其他必要措施保障数据安全，《个人信息保护法》把加密、去标识化列为安全措施，而具体到密码的使用，则由《密码法》与《商用密码管理条例》专门规范。</p>
+<p>对绝大多数企业而言，需要关注的是<strong>商用密码</strong>。核心密码、普通密码用于保护国家秘密信息，由国家密码管理部门管理；商用密码保护的是不属于国家秘密的信息，企业是使用主体，也是合规义务主体。合规义务集中在三处：<strong>产品与服务的检测认证、进出口管制、特定主体的应用安全性评估</strong>。</p>
+
+<h2>二、三类密码的分工</h2>
+<table>
+<tr><th>类别</th><th>保护对象</th><th>管理方式</th><th>企业相关性</th></tr>
+<tr><td>核心密码</td><td>国家秘密信息（最高级别）</td><td>国家密码管理部门严格统一管理</td><td>一般不涉及</td></tr>
+<tr><td>普通密码</td><td>国家秘密信息</td><td>国家密码管理部门管理</td><td>一般不涉及</td></tr>
+<tr><td>商用密码</td><td>不属于国家秘密的信息</td><td>依法使用、鼓励推广；特定产品服务实行检测认证与进出口管制</td><td>直接相关，是本文重点</td></tr>
+</table>
+<p>判断某个场景是否属于商用密码，看的是<strong>被保护信息的性质</strong>，不是技术的先进程度。企业用国密算法加密用户数据库、用数字证书做身份认证、用密码模块保护支付报文，都属于商用密码的应用。</p>
+
+<h2>三、产品与服务的检测认证</h2>
+<p>《密码法》确立的基本规则是：涉及国家安全、国计民生、社会公共利益的商用密码产品，应当依法列入网络关键设备和网络安全专用产品目录，由具备资格的机构安全认证合格或者安全检测符合要求后，方可销售或者提供；用于网络关键设备和网络安全专用产品的商用密码服务，也须由具备资格的机构认证合格后方可提供。</p>
+<p>这里的关键词是<strong>「列入目录」</strong>。并非所有商用密码产品都要强制检测认证，只有列入目录的才强制。企业作为<strong>采购方</strong>的合规动作是：核对供应商是否提供了有效的认证证书或检测报告，并在合同中约定证书失效、产品召回、安全事件的责任承担。</p>
+<p>企业作为<strong>销售方或服务提供方</strong>的合规动作是：确认自身产品是否落入目录，落入的必须完成认证检测；未落入的，也应留存自评依据。<strong>「我们的产品不是密码产品」是最常见的抗辩，也是最容易被推翻的抗辩</strong>——只要产品具备加密、完整性校验、身份鉴别等密码功能，就存在被认定为商用密码产品的可能。</p>
+
+<h2>四、进出口管制</h2>
+<p>商用密码的进口与出口实行管理：进口商用密码或者含有商用密码技术的设备，涉及国家安全的，应当依照法律、行政法规的规定办理进口许可；出口商用密码或者含有商用密码技术的设备，涉及国家安全的，依法实行出口管制。</p>
+<p>实务中容易踩坑的场景包括：跨境业务中向境外部署含加密模块的硬件设备、向境外客户提供带有加密功能的软件、开源加密组件随产品出口、跨境数据传输中使用自研加密协议。<strong>判断的关键是「是否涉及国家安全」与「是否属于管制清单范围」</strong>，具体以现行有效的许可目录与管制清单为准，不能凭经验推断。</p>
+
+<h2>五、密评：谁要做、评什么</h2>
+<p>《密码法》要求：法律、行政法规和国家有关规定要求使用商用密码进行保护的关键信息基础设施，其运营者应当使用商用密码进行保护，<strong>自行或者委托商用密码检测机构开展商用密码应用安全性评估</strong>。这就是通常所说的「密评」。</p>
+<p><strong>谁要做？</strong>直接义务主体是上述关键信息基础设施运营者。但实务中义务会向下传导：为关基提供系统建设、运维、云服务的供应商，会被要求在项目验收中提供密评结论；等保三级以上系统、政务系统、金融与能源行业系统，也常由行业监管要求开展密评。</p>
+<p><strong>评什么？</strong>密评围绕密码应用的<strong>合规性、正确性、有效性</strong>三个维度展开：</p>
+<table>
+<tr><th>维度</th><th>核心问题</th><th>常见缺陷</th></tr>
+<tr><td>合规性</td><td>是否使用符合法律法规与相关标准的密码算法、密码技术、密码产品与服务</td><td>使用自研算法或已淘汰算法替代国密算法</td></tr>
+<tr><td>正确性</td><td>密码算法的实现、密钥管理、协议设计是否正确</td><td>密钥硬编码、IV 复用、随机数不随机</td></tr>
+<tr><td>有效性</td><td>密码应用是否真正覆盖需要保护的业务环节，能否抵御相应威胁</td><td>只在传输层加密，存储层明文；只在部分节点部署</td></tr>
+</table>
+<p>评估通常分为方案评估（设计阶段）、系统评估（建设完成或运行阶段）与整体评估（多系统综合），三者关注点不同。<strong>最经济的做法是在设计阶段做方案评估</strong>，因为此时改设计的成本最低；等到系统上线后再评估，往往只能做补救性整改。</p>
+
+<h2>六、六个常见不通过原因</h2>
+<ol>
+<li><strong>密钥管理缺失</strong>：有加密算法但没有密钥全生命周期管理（生成、分发、使用、轮换、销毁），密钥与代码一起存放。</li>
+<li><strong>算法不合规</strong>：使用 MD5、SHA-1、DES 等已不适宜继续使用的算法，或自研「加密算法」。</li>
+<li><strong>覆盖不全</strong>：只对传输通道加密，数据库内明文存储；或只覆盖核心系统，边缘系统随意接入。</li>
+<li><strong>身份鉴别薄弱</strong>：仅用口令鉴别，未使用基于密码技术的鉴别机制；或证书体系未验证有效性。</li>
+<li><strong>产品无有效认证</strong>：使用了未通过认证检测的密码产品，或证书已过期。</li>
+<li><strong>文档与实现不一致</strong>：方案文档写了国密算法，实际代码仍在调用国际算法库。</li>
+</ol>
+<div class="tip"><strong>提醒一个高频误区：</strong>「用了 HTTPS 就等于满足了密码要求」。密评看的是密码算法、密钥管理与覆盖范围是否符合要求，而不是有没有启用 TLS。若 TLS 使用的是不合规算法套件，或私钥管理混乱，仍然不通过。</div>
+
+<h2>七、与等保、数据安全合规的衔接</h2>
+<p>三套体系的关系可以这样理解：<strong>等级保护</strong>解决「整体安全能力要达到什么级别」，<strong>密评</strong>解决「密码这一项技术措施用得对不对、够不够」，<strong>数据安全合规</strong>解决「数据处理活动本身是否合法」。三者不互相替代，但在执行上高度重叠——等保测评中涉及密码的指标，往往直接引用密评结论；数据安全整改中的加密措施，也要以密评为准。</p>
+<p>因此在项目管理上，建议把密评纳入统一的安全合规计划，与等保测评、个人信息保护影响评估、合规审计共用一套资产清单与系统边界图，避免重复盘点和口径冲突。</p>
+
+<h2>八、常见问题</h2>
+<p><strong>问：非关基企业需要做密评吗？</strong>《密码法》的直接强制对象是上述关基运营者。但行业监管、等保要求、政府采购与项目验收常另有要求，是否需做应结合所属行业规定与合同约定判断。</p>
+<p><strong>问：使用开源加密库需要注意什么？</strong>三件事：算法是否合规、密钥管理是否到位、库的版本是否存在已知漏洞。开源本身不构成合规问题，但「用了开源就不需要管理密钥」是错的。</p>
+<p><strong>问：密评不通过会有什么后果？</strong>可能影响项目验收、等保测评结论、行业监管评价；对关基运营者而言，还涉及《密码法》法律责任章的相应处罚。具体后果应结合行业规定判断。</p>
+<p><strong>问：国密算法是否强制使用？</strong>在法律法规与相关标准要求使用商用密码保护的场景，应使用符合要求的密码算法与技术；具体要求以现行标准与行业规定为准，不能一概而论。</p>
+<p>把密码合规落到日常，其实就三句话：<strong>算法要合规、密钥要管住、覆盖要到位</strong>。前两条决定能不能通过评估，第三条决定加密是不是真的有用。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《密码法》（2020年1月1日施行）第二十六条、第二十七条、第二十八条及法律责任章；《商用密码管理条例》（2023年修订，国务院令第760号，2023年7月1日施行）；《数据安全法》第二十七条；《个人信息保护法》第五十一条。商用密码产品目录、进口许可与出口管制清单的具体范围，以国家密码管理部门现行公布的文件为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>加密方案上线前，先把合规性核一遍</h3><p>涉及密评准备、密码产品采购合同审查、进出口合规判断，可在设计阶段先做方案评估，避免上线后返工。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuju-anquan-dengji-baohu.html" class="related-card"><div class="rc-tag">Data</div><h4>数据安全等级保护的要求与落地</h4></a><a href="guanjian-xinxi-jichusheshi-yunyingzhe-yiwu.html" class="related-card"><div class="rc-tag">Data</div><h4>关键信息基础设施运营者的特别义务</h4></a><a href="shuju-hegui-guanli-zhidu-dajian.html" class="related-card"><div class="rc-tag">Data</div><h4>数据合规制度与组织架构要建的六件事</h4></a><a href="qubiaoshihua-niminghua-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>去标识化与匿名化的合规要求</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "商用密码合规：密码法三类密码的分工与密评怎么做", "description": "《密码法》把密码分为核心密码、普通密码与商用密码，企业日常接触的加密技术绝大多数属于商用密码。本文说明商用密码的检测认证、进口许可与出口管制要求，关键信息基础设施运营者的商用密码应用安全性评估（密评）义务，以及密评的评估对象、三个层面与常见不通过原因。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-24", "dateModified": "2026-10-24"}</script>
+</body></html>

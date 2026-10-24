@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="爬虫本身不违法，违法的是特定的抓取方式与使用后果。本文给出四步判断框架——访问对象、技术手段、数据内容、后果与用途，分述刑事风险（非法获取计算机信息系统数据罪、破坏计算机信息系统罪、侵犯公民个人信息罪）、民事风险（不正当竞争、著作权、个人信息侵权）与行政风险，并给出企业侧可落地的七项内控措施。">
+<meta name="keywords" content="爬虫合规,数据抓取合法性,robots协议,非法获取计算机信息系统数据罪,反不正当竞争法,实质性替代,三重授权,公开数据,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/pachong-shuju-caiji-hefa-bianjie.html" />
+<title>爬虫抓取数据的合法边界：刑事、民事、行政三条线的判断方法</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 爬虫合法性边界</div><div class="cat">DATA COMPLIANCE &middot; 数据获取</div><h1>爬虫抓取数据的合法边界：刑事、民事、行政三条线的判断方法</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论先行：判断爬虫是否合法，看四个变量</h2>
+<p>「爬虫违法吗」这个问题没有统一答案，因为法律规范的从来不是技术本身，而是<strong>抓取方式</strong>与<strong>使用后果</strong>。可操作的判断框架包含四个变量：</p>
+<ol>
+<li><strong>访问对象</strong>：抓的是无需登录即可访问的公开页面、需登录的用户区、还是后台管理接口。</li>
+<li><strong>技术手段</strong>：是否遵守 robots 协议、是否绕过验证码与频率限制、是否伪造身份凭证、是否破解加密接口。</li>
+<li><strong>数据内容</strong>：是否含个人信息、是否属他人商业秘密、是否为受著作权保护的作品或数据库、是否可能构成重要数据。</li>
+<li><strong>后果与用途</strong>：是否造成目标系统负载异常或瘫痪、是否形成对原平台的实质性替代、是否用于转卖或训练商业模型。</li>
+</ol>
+<p>四个变量中，<strong>技术手段与用途后果的权重最高</strong>。同样抓取公开页面，遵守协议、低频访问、仅作分析参考，风险很低；绕过防护、高频并发、整体复制并对外提供替代服务，则可能同时触发刑事、民事、行政三条线。</p>
+
+<h2>二、刑事线：三个罪名与各自的落脚点</h2>
+<table>
+<tr><th>罪名</th><th>条文</th><th>爬虫场景下的构成要点</th></tr>
+<tr><td>非法获取计算机信息系统数据罪</td><td>刑法第二百八十五条第二款</td><td>违反国家规定，侵入或采用其他技术手段获取系统内数据，情节严重。核心在「突破防护」</td></tr>
+<tr><td>破坏计算机信息系统罪</td><td>刑法第二百八十六条</td><td>对系统功能、数据、应用程序删除修改增加干扰，后果严重。高频请求致服务瘫痪可能落入</td></tr>
+<tr><td>侵犯公民个人信息罪</td><td>刑法第二百五十三条之一</td><td>抓取的信息属于公民个人信息且达到情节严重标准</td></tr>
+</table>
+<p><strong>「公开数据」不是绝对抗辩。</strong>司法实践的基本逻辑是：公开可访问意味着他人可以正常浏览，并不意味着可以无限制地批量获取；若行为人通过破解验证码、伪造请求头、轮换代理IP突破频率限制等技术手段，使原本受限的访问变为不受限的获取，仍可能被评价为「其他技术手段」。反之，遵守 robots 协议、不突破任何技术措施的常规访问，通常不构成该罪。</p>
+<p>「情节严重」的量化标准由《最高人民法院、最高人民检察院关于办理危害计算机信息系统安全刑事案件应用法律若干问题的解释》（法释〔2011〕19号）第一条设定，包括身份认证信息组数、违法所得数额、经济损失数额等指标。<strong>援引时必须核对现行文本与具体数值</strong>，并按数据类型对应正确的档次。</p>
+<p><strong>破坏计算机信息系统罪的风险常被低估。</strong>并发数过高导致目标网站响应缓慢、服务中断，只要造成后果严重，即使行为人主观上只想「抓点数据」，也可能构成该罪。技术上「加个限速」这一步，法律意义远大于工程意义。</p>
+
+<h2>三、民事线：不正当竞争、著作权与个人信息侵权</h2>
+<p><strong>不正当竞争</strong>是数据抓取案件中最常见的民事路径。《反不正当竞争法》就经营者利用技术手段妨碍、破坏其他经营者合法提供的网络产品或者服务正常运行作了禁止性规定（该条在2025年修订后条序有调整，援引时以现行文本为准）。裁判关注的核心是：抓取行为是否<strong>实质性替代</strong>了原平台的服务、是否损害了原平台的商业模式与用户粘性、是否违背商业道德与诚实信用。</p>
+<p>判断「实质性替代」的常见指标包括：抓取的数据范围是否覆盖原平台的核心内容、抓取后是否以相同或近似方式向用户提供、是否导致原平台流量与交易机会明显下降、是否破坏原平台的展示规则（如去除水印、跳过广告、绕过付费墙）。</p>
+<p><strong>著作权</strong>路径适用于抓取作品内容（文章、图片、视频、评论）并公开传播的情形，涉及复制权、信息网络传播权；<strong>数据库</strong>若构成汇编作品亦可主张。需要注意的是，单纯抓取事实性数据通常不构成著作权侵权，但抓取他人具有独创性的编排与选择则可能落入。</p>
+<p><strong>个人信息侵权</strong>适用于抓取内容含个人信息的情形，请求权基础是《个人信息保护法》与《民法典》人格权编。此时「公开」同样不是免责理由——依据《个人信息保护法》第二十七条，处理已公开的个人信息应当在合理范围内，且<strong>对个人权益有重大影响的，仍应取得个人同意</strong>。</p>
+
+<h2>四、行政线：三条容易被忽略的监管义务</h2>
+<p><strong>一是网络运行安全义务。</strong>抓取行为若影响目标系统正常运行，可能触发《网络安全法》关于不得从事危害网络安全活动的规定。</p>
+<p><strong>二是数据安全义务。</strong>抓取并汇聚形成规模数据集的，可能触及《数据安全法》关于数据分类分级、重要数据识别的要求；若汇聚结果达到重要数据标准而未申报，风险由「抓取」转为「持有」。</p>
+<p><strong>三是个人信息处理者义务。</strong>一旦以自身名义处理抓取所得的个人信息，即成为独立的个人信息处理者，须履行告知、同意、最小必要、安全保障、影响评估、权利响应等全套义务。<strong>「数据不是我收集的」不能免责</strong>——处理者身份由实际处理行为决定，不由数据来源决定。</p>
+
+<h2>五、四步判断表：把场景落进格子</h2>
+<table>
+<tr><th>场景</th><th>刑事风险</th><th>民事风险</th><th>建议</th></tr>
+<tr><td>遵守 robots、低频抓取公开新闻标题用于内部分析</td><td>低</td><td>低（注意不得全文转载）</td><td>留存抓取日志与用途说明</td></tr>
+<tr><td>抓取公开商品价格用于比价工具并对外展示</td><td>低至中</td><td>中至高（实质性替代风险）</td><td>限字段、限频率、标注来源、不复制评价内容</td></tr>
+<tr><td>绕过验证码批量抓取用户昵称与头像</td><td>高（突破技术措施＋个人信息）</td><td>高</td><td>不做。已做的应立即停止并清理</td></tr>
+<tr><td>抓取需登录的用户资料库</td><td>高</td><td>高</td><td>须有明确授权，且不得超出授权范围</td></tr>
+<tr><td>高频并发抓取致目标站点瘫痪</td><td>高（破坏计算机信息系统罪）</td><td>高（赔偿损失）</td><td>严格限速与熔断，事前沟通授权</td></tr>
+<tr><td>抓取数据转卖给第三方</td><td>高</td><td>高</td><td>禁止。转卖是量刑与赔偿的加重因素</td></tr>
+</table>
+
+<h2>六、企业侧七项内控措施</h2>
+<ol>
+<li><strong>抓取清单化</strong>：每个抓取任务登记目标站点、字段、频率、用途、存放位置、保留期限，形成台账。</li>
+<li><strong>协议与技术双合规</strong>：读取并遵守 robots 协议；不绕过验证码、不伪造凭证、不破解加密接口。</li>
+<li><strong>限速与熔断</strong>：设置并发上限与响应时间阈值，目标站点异常时自动停止。</li>
+<li><strong>字段最小化</strong>：只取业务必需字段，主动剔除个人信息与敏感字段，能匿名化即匿名化。</li>
+<li><strong>用途锁定</strong>：抓取数据仅用于声明的分析目的，禁止二次转售、禁止用于对外提供替代性服务。</li>
+<li><strong>来源与授权留痕</strong>：保存 robots 记录、抓取时间戳、对方授权文件（如有）、沟通记录。</li>
+<li><strong>定期清理</strong>：到期删除，避免「抓的时候是少量，几年后变成大量」的数量累积风险。</li>
+</ol>
+<div class="tip"><strong>一个实操建议：</strong>把「抓取合规评审」前置到需求评审环节，而不是等代码上线后再补。技术上改一个并发参数只要五分钟，法律上把「突破技术措施」的行为痕迹清理掉几乎不可能——日志、代理IP记录、请求特征都会成为证据。</div>
+
+<h2>七、被爬企业的应对路径</h2>
+<p>如果企业是<strong>被爬一方</strong>，可用的工具依次是：技术措施（频率限制、验证码、签名校验、行为风控）、合同措施（用户协议与 robots 声明、API 授权条款）、民事救济（不正当竞争之诉、著作权之诉、行为保全）、投诉与举报（向网信、市场监管部门举报）、刑事报案（系统被侵入、数据被非法获取且有明确损失）。</p>
+<p>其中<strong>行为保全（诉前禁令）</strong>往往是最有效的即时手段，但需要提供明确的侵权证据与担保。因此平时就要做好三件事：日志完整留存、异常访问可识别、损失可量化。</p>
+
+<h2>八、常见问题</h2>
+<p><strong>问：遵守 robots 协议就一定合法吗？</strong>不一定。robots 只是行业惯例与技术声明，不构成授权。违反它未必违法，遵守它也不必然免责——若抓取内容含个人信息、构成实质性替代或造成系统损害，仍可能承担责任。</p>
+<p><strong>问：抓取公开的裁判文书、企业工商信息合法吗？</strong>风险相对较低，但要看用途：用于数据分析一般可以，用于批量转售、用于形成替代性数据库服务，则可能触发不正当竞争或数据来源合法性争议。同时须剔除其中的个人信息。</p>
+<p><strong>问：API 授权抓取就完全安全吗？</strong>要看授权范围。超出约定字段、频率、用途使用，仍构成违约甚至侵权。授权协议中的数据使用限制条款是关键证据。</p>
+<p><strong>问：员工个人写爬虫，公司能否切割责任？</strong>取决于公司是否知情、是否获益、是否有管理措施。有明确禁止性制度、有技术管控、发现后及时处置并留痕，是有效切割的基础。</p>
+<p>归根到底，爬虫合规不是「能不能爬」的是非题，而是<strong>「以什么方式爬、爬什么、爬完做什么」</strong>的分寸题。把这三个问题在需求阶段回答清楚并留下书面记录，绝大多数风险可以在源头化解。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《刑法》第二百五十三条之一、第二百八十五条、第二百八十六条；《反不正当竞争法》（2025年修订，2025年10月15日施行，涉网络不正当竞争行为的条文条序已调整，援引前须核对现行文本）；《著作权法》；《个人信息保护法》第二十七条；《民法典》人格权编；《网络安全法》；《数据安全法》；《最高人民法院、最高人民检察院关于办理危害计算机信息系统安全刑事案件应用法律若干问题的解释》（法释〔2011〕19号）第一条。本文未引具体案号，所涉裁判思路为一般性归纳，个案结论以生效裁判为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>抓取业务上线前，值得做一次四条线的合规评审</h3><p>涉及爬虫技术方案合法性评估、被爬取方的维权路径、数据汇聚后的持有风险，可先做场景梳理再定策略。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="feifa-huoqu-jisuanji-xinxi-xitong-shuju-zui.html" class="related-card"><div class="rc-tag">Data</div><h4>非法获取计算机信息系统数据罪的构成与门槛</h4></a><a href="shuju-hegui-xingshi-fengxian-qingdan.html" class="related-card"><div class="rc-tag">Data</div><h4>企业数据合规的八类刑事风险</h4></a><a href="shuju-zhuqu-falv-jiexian.html" class="related-card"><div class="rc-tag">Data</div><h4>数据主权的法律界限与境外调取应对</h4></a><a href="yigongkai-gerenxinxi-chuli.html" class="related-card"><div class="rc-tag">Data</div><h4>已公开个人信息的处理规则与边界</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "爬虫抓取数据的合法边界：刑事、民事、行政三条线的判断方法", "description": "爬虫本身不违法，违法的是特定的抓取方式与使用后果。本文给出四步判断框架——访问对象、技术手段、数据内容、后果与用途，分述刑事风险（非法获取计算机信息系统数据罪、破坏计算机信息系统罪、侵犯公民个人信息罪）、民事风险（不正当竞争、著作权、个人信息侵权）与行政风险，并给出企业侧可落地的七项内控措施。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-24", "dateModified": "2026-10-24"}</script>
+</body></html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="非法获取计算机信息系统数据罪（《刑法》第二百八十五条第二款）以「违反国家规定、侵入或以其他技术手段获取」为行为要件，以「情节严重」为入罪门槛。身份认证信息十组、其他身份认证信息五百组、违法所得五千元或损失一万元以上是常见标准。本文梳理构成要件、与侵犯公民个人信息罪的竞合处理、爬虫案件的四个辩护切入点。">
+<meta name="keywords" content="非法获取计算机信息系统数据罪,刑法285条,爬虫,身份认证信息,五百组,违法所得五千元,法释2011年19号,破坏计算机信息系统罪,数据犯罪,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/feifa-huoqu-jisuanji-xinxi-xitong-shuju-zui.html" />
+<title>非法获取计算机信息系统数据罪的构成与竞合：爬虫、越权导出与身份认证信息</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 非法获取计算机信息系统数据罪</div><div class="cat">Data Compliance &bull; Cyber Crime</div><h1>非法获取计算机信息系统数据罪的构成与竞合：爬虫、越权导出与身份认证信息</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论先行：三个要件缺一不可</h2>
+<p>非法获取计算机信息系统数据罪的成立，必须同时满足三个要件：<strong>对象是计算机信息系统中存储、处理或者传输的数据</strong>；<strong>行为是违反国家规定侵入该系统，或者采用其他技术手段获取</strong>；<strong>达到情节严重的标准</strong>。三者缺一，即不构成该罪。</p>
+<p>实务中最常见的误判，是把「越权访问公司系统导出数据」直接等同于「非法获取」。越权属于违反内部管理规定，是否上升到「违反国家规定」、是否构成「侵入」，需要单独论证。同样，抓取公开网页数据是否构成「侵入」，取决于是否突破技术措施，不能一概而论。</p>
+
+<h2>二、规范依据：条文与司法解释</h2>
+<p>《刑法》第二百八十五条第二款规定：违反国家规定，侵入前款规定以外的计算机信息系统或者采用其他技术手段，获取该计算机信息系统中存储、处理或者传输的数据，或者对该计算机信息系统实施非法控制，情节严重的，处三年以下有期徒刑或者拘役，并处或者单处罚金；情节特别严重的，处三年以上七年以下有期徒刑，并处罚金。</p>
+<p>「情节严重」的标准由《最高人民法院、最高人民检察院关于办理危害计算机信息系统安全刑事案件应用法律若干问题的解释》（法释〔2011〕19号）第一条明确，主要包括：获取支付结算、证券交易、期货交易等网络金融服务的身份认证信息<strong>十组以上</strong>；获取前述以外的身份认证信息<strong>五百组以上</strong>；非法控制计算机信息系统<strong>二十台以上</strong>；违法所得<strong>五千元以上</strong>或者造成经济损失<strong>一万元以上</strong>；以及其他情节严重的情形。</p>
+<p>「违反国家规定」不是泛指违反任何规定，而是指违反全国人大及其常委会制定的法律和决定、国务院制定的行政法规和规定的行政措施等。企业内部规章、劳动合同、员工手册不属于「国家规定」，这是区分民事违约与刑事犯罪的第一道分界。</p>
+
+<h2>三、四个构成要件的展开</h2>
+<ol>
+<li><strong>对象要件</strong>：「计算机信息系统」指具备自动处理数据功能的系统，包括计算机、网络设备、通信设备、自动化控制设备等。「数据」限于系统中存储、处理或传输的数据，纸质文件、离线存储介质中的孤立文件不属于本罪对象。</li>
+<li><strong>行为要件之一「侵入」</strong>：指未经授权或者超越授权，采用技术手段进入系统。使用他人账号密码登录、破解验证码、绕过身份认证，均可能构成侵入。</li>
+<li><strong>行为要件之二「其他技术手段」</strong>：指侵入以外的、能够获取数据的技术方法，典型如利用系统漏洞、植入木马、中间人攻击。是否包含普通网络爬虫，取决于是否突破或规避了技术保护措施。</li>
+<li><strong>结果要件「情节严重」</strong>：按法释〔2011〕19号第一条判断。身份认证信息是核心概念，指用于确认用户在系统中身份的账号、密码、数字证书、令牌等。</li>
+</ol>
+
+<h2>四、三类典型行为与入罪标准的对照</h2>
+<table>
+<tr><th>行为类型</th><th>是否「侵入/技术手段」</th><th>入罪标准</th><th>常见争点</th></tr>
+<tr><td>破解登录、使用窃取的账号密码进入后台导出数据</td><td>是（侵入）</td><td>身份认证信息十组/五百组；违法所得五千元或损失一万元</td><td>账号是否属「身份认证信息」；授权范围</td></tr>
+<tr><td>利用系统漏洞批量拉取数据库</td><td>是（其他技术手段）</td><td>同上</td><td>漏洞是否属「技术措施缺失」；数据是否公开</td></tr>
+<tr><td>抓取需登录才能访问的页面数据</td><td>视是否突破技术措施</td><td>同上</td><td>是否绕过反爬、验证码、加密接口</td></tr>
+<tr><td>抓取完全公开、无需登录的页面</td><td>通常否</td><td>一般不构成本罪</td><td>可能涉不正当竞争、著作权，而非本罪</td></tr>
+</table>
+<div class="tip"><strong>实务要点：</strong>「公开数据」与「需授权数据」的界线，是本罪辩护的主战场。完全公开、未设任何技术限制的页面，抓取行为难以评价为「侵入」；但只要设置了登录、验证码、频率限制、加密接口等任一技术措施并被规避，认定侵入的可能性就显著上升。</div>
+
+<h2>五、与相邻罪名的区分与竞合</h2>
+<p><strong>与侵犯公民个人信息罪。</strong>同一行为同时构成本罪与侵犯公民个人信息罪的，属于想象竞合，从一重处断。实务中选择的关键在于数量：若窃取的是大量个人信息且条数达标，侵犯公民个人信息罪的量刑往往更重（情节特别严重可达七年）；若窃取的是企业经营数据、代码、虚拟财产，则本罪更贴合。</p>
+<p><strong>与破坏计算机信息系统罪（《刑法》第二百八十六条）。</strong>核心区别在于是否造成系统功能不能正常运行。仅获取数据、未破坏系统功能的，定本罪；删除、修改、增加数据导致系统不能正常运行的，可能构成破坏计算机信息系统罪。</p>
+<p><strong>与侵犯商业秘密罪（《刑法》第二百一十九条）。</strong>若获取的数据属于权利人采取保密措施的技术信息、经营信息，且行为人明知，可能同时构成侵犯商业秘密罪。此时同样涉及竞合判断。</p>
+
+<h2>六、爬虫案件的四个辩护切入点</h2>
+<ol>
+<li><strong>否定「侵入」</strong>：证明目标页面公开可访问、未设置任何技术措施，或已获得网站 robots 协议与用户协议的许可范围。</li>
+<li><strong>否定「身份认证信息」属性</strong>：cookie、session、设备指纹是否属于「身份认证信息」存在争议；若属普通业务数据，应按违法所得或损失标准判断，入罪门槛提高。</li>
+<li><strong>质疑「情节严重」的认定</strong>：违法所得的计算是否扣除成本、是否重复计算；经济损失是否有审计依据；组数的鉴定方法是否科学。</li>
+<li><strong>否定「违反国家规定」</strong>：仅违反用户协议、内部规章的，不满足本罪前置要件，应回归民事或反不正当竞争法评价。</li>
+</ol>
+<p>需要强调的是，即便不构成本罪，抓取行为仍可能承担民事赔偿责任（《反不正当竞争法》2025年修订第十三条第三款关于以欺诈、胁迫、避开或者破坏技术管理措施等不正当方式获取、使用其他经营者合法持有的数据的规定），以及《数据安全法》第三十二条项下的行政责任。刑事不构成不等于没有风险。</p>
+
+<h2>七、常见问题</h2>
+<h3>问：抓取公开的招聘信息、商品价格，构成犯罪吗？</h3>
+<p>通常不构成本罪。完全公开、无需登录、未设技术限制的页面，难以认定「侵入」。但若违反网站明确的技术限制（如突破验证码、伪造请求头绕过封禁），或抓取后用于实质性替代原网站服务，可能触发反不正当竞争法责任，情节严重的还可能进入刑事评价。</p>
+<h3>问：员工离职前批量下载公司数据库，定什么罪？</h3>
+<p>需要分层判断：若使用本人合法权限下载、未突破权限，一般属违约或侵犯商业秘密问题；若盗用他人账号、破解权限限制，则可能构成非法获取计算机信息系统数据罪。若数据含大量个人信息且条数达标，还可能构成侵犯公民个人信息罪，从一重处断。</p>
+<h3>问：违法所得怎么算？</h3>
+<p>通常按行为人因该行为实际获得的收入计算，是否扣除服务器、人力等成本存在争议。若无法查清违法所得，则以造成的经济损失为准，实践中多依赖被害人提供的审计报告或鉴定意见，辩护时应重点质证计算口径。</p>
+<h3>问：单位实施的行为，谁承担责任？</h3>
+<p>单位犯本罪的，对单位判处罚金，并对直接负责的主管人员和其他直接责任人员依照自然人犯罪的规定处罚。技术负责人、项目决策人通常是追责重点，普通开发、运维人员若有明确证据证明不知情且未获利，一般不作为责任人员。</p>
+<h3>问：只「看」不「存」，还算获取吗？</h3>
+<p>本罪要求「获取」，通常指将数据置于自己控制之下。仅浏览、截屏少量数据，是否构成「获取」存在争议；但若通过技术手段批量读取并缓存、传输，则已属获取。数量与目的会影响最终定性。</p>
+
+<h2>八、小结：合规的三道防线</h2>
+<p>对企业而言，防线有三：<strong>权限分层、操作留痕、技术措施到位</strong>。权限分层确保越权可识别；操作留痕使「是否越权」可举证；技术措施（登录、验证码、频率限制、接口鉴权）既是防护手段，也是刑事上区分「公开数据」与「受保护数据」的客观依据。对数据抓取方而言，接入前核查目标网站的用户协议与技术限制，是成本最低的风险控制。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国刑法》第二百八十五条第二款（非法获取计算机信息系统数据、非法控制计算机信息系统罪）、第二百八十六条（破坏计算机信息系统罪）、第二百一十九条（侵犯商业秘密罪）、第二百五十三条之一（侵犯公民个人信息罪）；《最高人民法院、最高人民检察院关于办理危害计算机信息系统安全刑事案件应用法律若干问题的解释》（法释〔2011〕19号）第一条（「情节严重」的认定，含身份认证信息十组、五百组、非法控制二十台、违法所得五千元或损失一万元等标准）；《中华人民共和国数据安全法》第三十二条（合法、正当方式收集数据）；《中华人民共和国反不正当竞争法》（2025年修订）第十三条第三款（以欺诈、胁迫、避开或者破坏技术管理措施等不正当方式获取、使用其他经营者合法持有的数据）。特别说明：法释〔2011〕19号第一条各项标准的表述经归纳，援引时请核对官方文本；「其他技术手段」是否涵盖普通网络爬虫、cookie 与设备指纹是否属于「身份认证信息」、违法所得能否扣除成本，实务中存在争议，文中已作区分说明。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>抓取、越权导出，刑事风险如何评估</h3><p>是否「侵入」、数据是否公开、情节是否达标，决定罪与非罪。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuju-zhuqu-falv-jiexian.html" class="related-card"><div class="rc-tag">Data</div><h4>第三方数据抓取的法律边界：民事、行政与刑事责任的界分</h4></a><a href="qinfan-gongmin-gerenxinxi-qingjie-yanzhong.html" class="related-card"><div class="rc-tag">Data</div><h4>侵犯公民个人信息罪的「情节严重」如何认定</h4></a><a href="shuju-jiaoyi-guapai.html" class="related-card"><div class="rc-tag">Data</div><h4>数据交易与数据产品挂牌的合规要求：确权、脱敏与标准化</h4></a><a href="wangluoanquanfa-2025-xiuzheng-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>网络安全法2025年修正的合规影响：人工智能条款与法律责任加重</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "非法获取计算机信息系统数据罪的构成与竞合：爬虫、越权导出与身份认证信息", "description": "非法获取计算机信息系统数据罪（《刑法》第二百八十五条第二款）以「违反国家规定、侵入或以其他技术手段获取」为行为要件，以「情节严重」为入罪门槛。身份认证信息十组、其他身份认证信息五百组、违法所得五千元或损失一万元以上是常见标准。本文梳理构成要件、与侵犯公民个人信息罪的竞合处理、爬虫案件的四个辩护切入点。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-24", "dateModified": "2026-10-24"}</script>
+</body></html>

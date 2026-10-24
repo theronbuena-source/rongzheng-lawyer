@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="数据合规问题不会随股权交割而消失，收购方可能继承标的公司的全部数据负债。本文给出尽调的八个维度与红旗清单、数据负债的量化方法、股权收购与资产收购的责任差异，以及陈述保证、专项赔偿、托管、交割前提条件等交易条款的设计要点，并说明外资并购涉及的安全审查交叉问题。">
+<meta name="keywords" content="数据合规尽调,并购数据合规,数据负债,陈述与保证,专项赔偿,股权收购,资产收购,交割前提条件,外商投资安全审查,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/binggou-jiaoyi-shuju-hegui-diaocha.html" />
+<title>并购交易中的数据合规尽职调查：查什么、怎么定价、条款怎么设</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 并购数据合规尽调</div><div class="cat">DATA COMPLIANCE &middot; 交易与并购</div><h1>并购交易中的数据合规尽职调查：查什么、怎么定价、条款怎么设</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论先行：数据负债会随交易一并继承</h2>
+<p>并购交易中最容易被低估的风险，是标的公司的数据合规负债。它的特点是<strong>隐蔽、滞后、连带</strong>：违规收集行为发生在收购前，行政处罚或民事索赔可能在交割后一两年才出现；而收购方作为权利义务承继者，往往难以切割。</p>
+<p>以股权收购为例，标的公司的法人主体不变，此前的违法行为、未履行的合规义务、潜在的索赔请求权，全部留在同一个主体内，收购方通过持股间接承担。即使是资产收购，若一并受让了用户数据库、系统平台、客户合同，数据处理者身份随之转移，义务也随之转移。</p>
+<p>因此，数据合规尽调不是「加分项」，而是<strong>定价与条款设计的事实基础</strong>。尽调发现的每一项缺陷，都应在价格、赔偿、交割条件三个工具中找到对应安排。</p>
+
+<h2>二、尽调的八个维度</h2>
+<table>
+<tr><th>维度</th><th>核查内容</th><th>关键文件</th></tr>
+<tr><td>数据资产</td><td>业务场景、系统清单、数据类别与量级、存储位置、流转路径</td><td>数据地图、系统清单、数据库字典</td></tr>
+<tr><td>合法性基础</td><td>告知与同意机制、单独同意情形、非同意路径的依据</td><td>隐私政策及历史版本、同意记录样本、合法性评估说明</td></tr>
+<tr><td>制度与组织</td><td>制度体系、负责人设置与备案、影响评估与合规审计</td><td>制度汇编、备案回执、评估与审计报告</td></tr>
+<tr><td>第三方管理</td><td>SDK 清单、委托处理与共享协议、受托方监督</td><td>SDK 台账、数据处理协议、审计记录</td></tr>
+<tr><td>数据出境</td><td>出境场景、已采取路径、合同备案、人数测算</td><td>安全评估或标准合同文件、出境台账</td></tr>
+<tr><td>重要数据与关基</td><td>识别结论、申报记录、认定文件</td><td>识别报告、申报回执、认定通知</td></tr>
+<tr><td>安全事件与监管互动</td><td>历史泄露与事件、通报、整改通知、处罚</td><td>事件报告、整改回复、处罚决定书</td></tr>
+<tr><td>争议与刑事风险</td><td>涉数据诉讼、投诉举报、员工涉数据案件</td><td>诉讼清单、投诉台账、判决裁定</td></tr>
+</table>
+<p>尽调方法上，<strong>文件核查必须与技术验证交叉</strong>。只看隐私政策，看不到实际收集了哪些字段；只访谈管理层，听不到一线运维的真实操作。建议至少做三项技术验证：抓包看 App 实际调用的第三方域名、查数据库看敏感字段是否加密、看日志系统是否留存导出记录。</p>
+
+<h2>三、红旗清单：见到就要重点处理</h2>
+<ol>
+<li>隐私政策长期未更新，或政策文本与实际收集字段明显不符。</li>
+<li>存在「一揽子同意」「默认勾选」「拒绝即不能使用」等设计。</li>
+<li>App 或网站嵌入大量第三方 SDK，但没有清单、没有协议、没有披露。</li>
+<li>数据出境但无任何申报、备案或合同文件，或人数测算明显偏低。</li>
+<li>曾发生数据泄露但无事件报告、无用户通知、无整改记录。</li>
+<li>收到过监管整改通知，回复材料与实际整改情况不一致。</li>
+<li>核心数据字段明文存储、密钥硬编码、生产数据流入测试环境。</li>
+<li>存在买卖、交换数据的合同或流水记录。</li>
+<li>员工批量导出数据的日志异常，且无调查结论。</li>
+<li>数据来源依赖爬取，且抓取方式存在突破技术措施的情形。</li>
+</ol>
+<div class="tip"><strong>红旗不等于不能买，但必须定价。</strong>发现红旗后应做三件事：估算整改成本（技术改造成本＋流程重构成本＋可能的业务调整成本）、估算处罚与索赔敞口（参照同类案例的处罚幅度与索赔规模）、在交易文件中设置对应的专项赔偿与交割前提条件。</div>
+
+<h2>四、数据负债怎么量化</h2>
+<p>量化不是精算，但要有结构。可按四类成本估算：</p>
+<table>
+<tr><th>成本类型</th><th>构成</th><th>估算方法</th></tr>
+<tr><td>整改成本</td><td>系统改造、SDK 替换、加密改造、制度重构、人员配置</td><td>按改造项逐一报价，加管理成本系数</td></tr>
+<tr><td>合规成本</td><td>影响评估、合规审计、密评、等保测评、法律意见</td><td>按项目市场价估算，考虑年度重复发生</td></tr>
+<tr><td>处罚敞口</td><td>行政处罚可能的罚款区间</td><td>参照同类违法行为既有处罚案例的幅度</td></tr>
+<tr><td>或有负债</td><td>民事索赔、集体诉讼、用户补偿、业务中断</td><td>按用户规模、数据敏感度、历史同类事件估算</td></tr>
+</table>
+<p>四类成本相加后，还要考虑<strong>时间成本</strong>：整改期间业务可能受限，若涉及上市或融资，时间延误的价值损失往往超过直接成本。</p>
+
+<h2>五、股权收购与资产收购的责任差异</h2>
+<table>
+<tr><th>比较项</th><th>股权收购</th><th>资产收购</th></tr>
+<tr><td>主体承继</td><td>主体不变，历史责任全部承继</td><td>仅承继受让资产相关的责任</td></tr>
+<tr><td>数据负债</td><td>全部继承，包括已发生未暴露的</td><td>受让数据与合同的，相应义务随之转移</td></tr>
+<tr><td>合同处理</td><td>合同主体不变，无需逐份变更</td><td>需逐份取得相对方同意或办理变更</td></tr>
+<tr><td>切割空间</td><td>小，只能靠交易文件与赔偿机制</td><td>较大，可通过不接收特定资产隔离风险</td></tr>
+<tr><td>典型问题</td><td>隐性负债、历史处罚、未了结争议</td><td>数据迁移的合法性、用户同意的覆盖范围</td></tr>
+</table>
+<p>资产收购中一个高频问题是：<strong>受让用户数据库后，原有同意是否继续有效？</strong>若原同意的主体、目的、方式与新主体实际处理行为不一致，需要重新取得同意或另行建立合法性基础。把数据库搬过来就直接使用，是典型的合规断裂。</p>
+
+<h2>六、交易条款怎么设</h2>
+<p><strong>陈述与保证。</strong>不要只写「符合数据保护法律法规」这种概括表述。应具体列明：已就全部处理活动取得合法基础；隐私政策与实际处理一致；不存在未披露的数据泄露与监管调查；数据出境已履行法定路径；不存在买卖数据行为。概括保证在索赔时几乎无用，具体保证才可执行。</p>
+<p><strong>专项赔偿。</strong>针对尽调发现的红旗事项，设置专门赔偿条款：约定赔偿范围（罚款、和解金、律师费、整改成本）、起赔门槛、赔偿上限、存续期限。数据类风险的潜伏期长，<strong>存续期限应长于一般条款</strong>。</p>
+<p><strong>托管安排。</strong>从交易价款中划出一部分放入托管账户，在存续期届满或特定风险消除后释放。这是最直接的履约保障。</p>
+<p><strong>交割前提条件。</strong>把关键整改作为交割前提：完成数据出境申报、完成 SDK 清理、完成泄露事件处置与报告、取得必要的监管确认。条件不满足则不交割或延期交割。</p>
+<p><strong>过渡期承诺。</strong>约定交割前标的公司不得变更隐私政策、不得新增数据出境、不得处置数据资产，避免「交割前突击动作」扩大风险。</p>
+
+<h2>七、外资并购的交叉审查</h2>
+<p>外资并购涉及数据领域的，可能同时触发其他审查：<strong>外商投资安全审查</strong>（涉及重要领域、影响国家安全）、<strong>网络安全审查</strong>（关键信息基础设施运营者采购网络产品服务影响国家安全，或掌握超100万用户个人信息赴国外上市）、<strong>数据出境安全评估</strong>（交割后数据向境外母公司汇聚）。</p>
+<p>三项审查的触发条件不同，但实务中常同时出现。建议在交易架构设计阶段就做联合判断，避免签署协议后才发现某一项无法通过，导致交易被迫重构。</p>
+
+<h2>八、常见问题</h2>
+<p><strong>问：标的公司规模很小，也要做数据尽调吗？</strong>要，但可以按比例简化。重点核查三条：收集了什么数据、有没有合法基础、有没有出境。这三条覆盖了八成以上的实际风险。</p>
+<p><strong>问：卖方不愿提供完整数据清单怎么办？</strong>这本身就是风险信号。可退而求其次：要求卖方就清单完整性作出明确保证，并据此设置更高的专项赔偿比例或更长的存续期。</p>
+<p><strong>问：交割后发现未披露的违规，能索赔吗？</strong>取决于交易文件的约定与证据。有具体陈述保证＋专项赔偿＋完整尽调记录，索赔基础才扎实；只有概括保证，往往陷入「是否属于已知风险」的争议。</p>
+<p><strong>问：数据资产能否单独作为交易标的？</strong>可以，但须解决三个问题：数据来源的合法性、原始主体同意的覆盖范围、受让方能否建立独立的合法性基础。这也是数据资产质押融资面临的同一组问题。</p>
+<p>一句话概括：<strong>并购中的数据合规，尽调是发现问题，定价是消化问题，条款是分配问题。</strong>三步都做到，交易才真正安全；只做尽调不定价、不定条款，等于花钱买了一份风险清单。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《个人信息保护法》第十三条、第十四条、第十七条、第二十三条、第三十八条至第四十条、第六十六条；《数据安全法》第二十七条、第四十五条、第四十六条；《网络安全审查办法》；《数据出境安全评估办法》；《促进和规范数据跨境流动规定》。外商投资安全审查的具体范围以现行有效规定为准。本文所述估值方法与条款安排为实务建议，不构成对特定交易的法律意见。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>交易前的一轮数据尽调，往往比交割后的补救便宜得多</h3><p>涉及数据合规尽调清单设计、红旗事项定性与定价、交易文件中的数据条款起草，可在意向阶段即介入。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuju-zichan-zhiya-rongzi.html" class="related-card"><div class="rc-tag">Data</div><h4>数据资产质押融资的法律障碍与路径</h4></a><a href="shuju-hegui-xingshi-fengxian-qingdan.html" class="related-card"><div class="rc-tag">Data</div><h4>企业数据合规的八类刑事风险</h4></a><a href="jingwai-shangshi-shuju-anquan-shencha.html" class="related-card"><div class="rc-tag">Data</div><h4>赴境外上市的数据安全审查</h4></a><a href="geren-xinxi-xielou-zenmeban.html" class="related-card"><div class="rc-tag">Data</div><h4>发生个人信息泄露后应当怎么做</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "并购交易中的数据合规尽职调查：查什么、怎么定价、条款怎么设", "description": "数据合规问题不会随股权交割而消失，收购方可能继承标的公司的全部数据负债。本文给出尽调的八个维度与红旗清单、数据负债的量化方法、股权收购与资产收购的责任差异，以及陈述保证、专项赔偿、托管、交割前提条件等交易条款的设计要点，并说明外资并购涉及的安全审查交叉问题。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-24", "dateModified": "2026-10-24"}</script>
+</body></html>
