@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="人工智能生成内容能否构成作品，取决于人在提示词设计、参数调整与多轮修改中是否形成独创性智力投入；权属先看约定，无约定且构成作品的按创作性投入判断。训练数据涉及他人知识产权的不得侵害，生成内容须依法标识。本文梳理著作权法第三条、第十一条、第十九条与生成式人工智能服务管理暂行办法第七条至第十二条的规则。">
+<meta name="keywords" content="AIGC著作权,独创性,训练数据侵权,生成式人工智能服务管理暂行办法,内容标识,合理使用">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/aigc-zhuzuoquan-guishu.html" />
+<title>人工智能生成内容的著作权归属与训练数据侵权风险</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; 人工智能生成内容的著作权归属与训练数据侵权风险</div><div class="cat">Data Compliance</div><h1>人工智能生成内容的著作权归属与训练数据侵权风险</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
+<article class="article-body">
+<h2>一、结论先行：三个判断层次、一条标识义务</h2>
+<p>人工智能生成内容（AIGC）的著作权问题，实质是三个递进判断：生成内容是否构成《著作权法》意义上的作品；若构成，权利归谁；若不构成或使用他人数据训练模型，侵权风险如何分配。三者顺序不能颠倒。</p>
+<p>可直接引用的结论：</p>
+<ol>
+<li><strong>作品的门槛仍是独创性。</strong>《著作权法》第三条所称作品，是指文学、艺术和科学领域内具有独创性并能以一定形式表现的智力成果。AI 生成内容能否成为作品，取决于人在提示词设计、参数调整、多轮筛选修改中是否形成了足以体现个性化选择与安排的智力投入，法律未设专条，司法实践存在分歧。</li>
+<li><strong>权属先看约定。</strong>法律未就 AIGC 单设归属规则，实践中优先适用服务协议约定；无约定且构成作品的，通常按「谁投入创作性劳动谁享有」判断，使用者主张权利须举证其智力投入的具体过程。</li>
+<li><strong>训练数据不得侵害他人知识产权。</strong>《生成式人工智能服务管理暂行办法》第七条明确，提供者开展预训练、优化训练等训练数据处理活动，涉及知识产权的，不得侵害他人依法享有的知识产权，并应使用具有合法来源的数据和基础模型。</li>
+<li><strong>内容责任由提供者承担。</strong>该办法第九条规定，提供者依法承担网络信息内容生产者责任；涉及个人信息的，依法承担个人信息处理者责任。</li>
+<li><strong>标识是法定义务。</strong>该办法第十二条要求提供者按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识；《人工智能生成合成内容标识办法》进一步细化了显式标识与隐式标识要求。</li>
+<li><strong>使用者不是免责主体。</strong>使用者将侵权生成内容用于商业发布，仍可能依《民法典》第一千一百六十五条承担过错侵权责任，不能以「内容由 AI 生成」免责。</li>
+</ol>
+
+<h2>二、作品认定：独创性判断落在「人的智力投入」上</h2>
+<p>《著作权法》第三条以「独创性＋可表现」为核心，第十条列举十七项著作人身权与财产权。传统作品的独创性来自自然人的创作行为；AI 生成内容的争点在于，生成过程中的「人」究竟提供了创作还是仅提供了指令。</p>
+<p>目前较有共识的判断思路是看三组事实：一是提示词是否足够具体，是否体现对画面构成、风格、细节的个性化选择；二是生成过程是否经过多轮调整、筛选、局部修改，而非一次性输出即采用；三是最终成果与训练数据中的既有作品是否存在实质性相似。三组事实都指向「人的智力投入是否可被辨识」，而不是「是否使用了 AI 工具」。用工具本身不影响作品认定，Photoshop 与生成式模型的区别在于后者引入不可完全预测的输出。</p>
+<p>需要明确的是，这一判断标准尚未被法律或司法解释固定，各地裁判尺度不一，实务中存在争议。代理案件中不宜直接断言「AI 生成内容必然有版权」或「必然无版权」，应围绕前述三组事实构建证据：提示词原文与修改记录、生成日志、迭代版本的对比截图、发布与署名记录。</p>
+
+<h2>三、权属分配的四种情形</h2>
+<table>
+<thead><tr><th>情形</th><th>权属判断</th><th>依据/说明</th><th>举证要点</th></tr></thead>
+<tbody>
+<tr><td>个人使用通用工具生成</td><td>有约定从约定；无约定且构成作品的，倾向于由作出创作性投入的使用者主张</td><td>法律无专条，依《著作权法》第三条、第十一条的一般原理</td><td>提示词与迭代记录、首次发表与署名</td></tr>
+<tr><td>职务行为中生成</td><td>符合法人作品要件的，由法人或非法人组织视为作者；否则可能构成职务作品，权利归属按第十八条处理</td><td>《著作权法》第十一条第三款、第十八条</td><td>工作任务指向、物质技术条件、责任承担</td></tr>
+<tr><td>委托他人用 AI 生成</td><td>合同约定优先；未约定或未订立合同的，著作权属于受托人</td><td>《著作权法》第十九条</td><td>委托合同条款、交付与验收记录</td></tr>
+<tr><td>平台服务协议另有约定</td><td>按协议确定使用范围与权利归属，但协议不得违反法律强制性规定</td><td>《生成式人工智能服务管理暂行办法》第九条要求签订服务协议明确权利义务</td><td>协议原文、用户协议版本与生效时间</td></tr>
+</tbody>
+</table>
+<p>最容易被忽略的是第二行。企业员工用公司账号生成营销图并对外发布，若符合「由法人主持、代表法人意志创作、由法人承担责任」的要件，可认定为法人作品；若不符合，则可能落入职务作品，作者仍是员工，单位仅在特定范围内享有优先使用权。企业应在内部制度中明确 AI 工具使用规范与成果归属，仅靠「员工手册一句话」往往不足以对抗作者的署名权。</p>
+
+<h2>四、训练数据的两类侵权风险</h2>
+<p><strong>第一类是复制与改编风险。</strong>训练阶段大规模抓取图片、文字、音频，可能涉及复制权；生成阶段输出与既有作品实质性相似的表达，可能涉及改编权、信息网络传播权。第七条要求使用具有合法来源的数据和基础模型，这一要求同时构成行政监管义务与民事过错的判断因素。</p>
+<p><strong>第二类是合理使用抗辩的边界。</strong>《著作权法》第二十四条规定了十三项可以不经许可、不支付报酬的合理使用情形，包括为个人学习研究、适当引用、新闻报道、课堂教学或科学研究等。文本与数据挖掘是否属于其中的「科学研究」或「其他情形」，我国法上并无明确规定，实务中存在争议。较为稳妥的判断是：以营利为目的、规模化复制他人作品用于训练，难以直接套用现有合理使用条款；能否通过「不影响作品正常使用、不合理损害权利人合法权益」的检验，需结合使用目的、数量、对原作市场的影响逐一论证。</p>
+<p>权利人一侧的举证难点在于证明训练数据中包含其作品。可行路径包括：以生成结果与自身作品的实质性相似反推训练数据来源；通过模型输出特定风格、特定错误特征（例如水印残留、署名残留）建立关联；请求法院要求提供者就训练数据来源、规模、类型作出说明（该办法第十九条规定提供者有配合说明的义务）。</p>
+
+<h2>五、标识义务与平台责任</h2>
+<p>《生成式人工智能服务管理暂行办法》第十二条要求提供者按《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识；第十七条要求具有舆论属性或者社会动员能力的服务开展安全评估并履行算法备案。标识义务的功能是让公众知悉内容来源，减少混淆，同时为侵权追溯提供线索。</p>
+<p>传播平台的责任按《民法典》网络侵权规则处理：权利人发出有效通知后，平台未及时采取必要措施的，对损害扩大部分承担连带责任；平台知道或者应当知道侵权而未处理的，承担连带责任。对 AIGC 而言，平台还需结合标识信息判断内容来源，未按要求核验标识的，可能被认定未尽合理注意义务。</p>
+
+<h2>六、常见问题</h2>
+<h3>问：我用 AI 画的图，能登记版权吗？</h3>
+<p>取决于是否具备独创性且能证明人的智力投入。实践中已有作品登记案例，但登记仅为初步证据，发生争议时仍以独创性审查为准。申请时应保留提示词、迭代记录与创作说明。</p>
+<h3>问：AI 生成内容的著作权能转让吗？</h3>
+<p>若被认定为作品且权利归属于使用者，可以依法转让或许可使用，应签订书面合同并明确权利种类、地域范围、期限与是否可以转授权。</p>
+<h3>问：用 AI 模仿某画师风格，侵权吗？</h3>
+<p>风格本身不受著作权保护，但若生成结果与具体作品在表达上实质性相似，可能构成侵权；若在宣传中使人误认为与该画师存在关联，还可能涉及《反不正当竞争法》的混淆行为。</p>
+<h3>问：公司用 AI 生成文案发布，需要标注吗？</h3>
+<p>提供生成服务的平台负有标识义务；内容发布者是否必须标注，取决于内容类型与所用平台的标识情况，涉及深度合成的人脸、声音等内容应特别谨慎，避免误导公众。</p>
+<h3>问：训练数据全是网上公开的，就没问题吗？</h3>
+<p>不成立。「公开可访问」不等于「授权使用」，第七条要求的是合法来源，仍需通过授权、许可或者落入合理使用等合法依据。</p>
+<h3>问：被 AI 生成内容侵权，起诉谁？</h3>
+<p>可起诉直接实施侵权行为的使用者；若平台未尽通知删除义务或者明知侵权，可一并主张平台责任；若争点在训练数据，可起诉模型提供者。被告选择应结合证据掌握情况确定。</p>
+
+<h2>七、实务提示</h2>
+<ol>
+<li><strong>建立生成过程留痕制度。</strong>保存提示词、参数、迭代版本、生成时间与账号信息，这是主张权利与抗辩侵权的基础材料。</li>
+<li><strong>合同写清三件事。</strong>成果归属、使用范围（是否可商用、可否转授权）、侵权责任承担与赔偿机制。</li>
+<li><strong>商用前做相似度筛查。</strong>对拟发布内容进行反向图片检索与文本比对，重点排查人物形象、知名 IP 元素、他人摄影作品。</li>
+<li><strong>训练数据建立来源台账。</strong>记录数据来源、授权方式、清洗规则与删除机制，应对监管检查与权利人主张。</li>
+<li><strong>收到侵权通知后先固定证据再回应。</strong>核对通知是否包含权属证明、侵权定位与联系方式，符合要件的应及时处置，避免损害扩大部分的连带责任。</li>
+</ol>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国著作权法》第三条（作品定义与类型）、第十条（著作权十七项权利）、第十一条（作者与法人作品）、第十八条（职务作品）、第十九条（委托作品归属）、第二十四条（十三项合理使用情形）；《中华人民共和国民法典》第一千一百六十五条（过错侵权责任）、第一千一百九十四条至第一千一百九十七条（网络侵权与通知删除规则）；《生成式人工智能服务管理暂行办法》（国家互联网信息办公室等部门令第15号，2023年8月15日施行）第四条（尊重知识产权等五项要求）、第七条（训练数据五项要求，含合法来源与不得侵害知识产权）、第九条（内容生产者责任与个人信息处理者责任、服务协议）、第十二条（生成内容标识）、第十七条（安全评估与算法备案）、第十九条（配合说明训练数据来源等义务）；《互联网信息服务深度合成管理规定》（标识要求）；《人工智能生成合成内容标识办法》（显式标识与隐式标识要求）。特别说明：AIGC 是否构成作品、权属如何分配，我国法律与司法解释尚无专条，本文所述判断思路系对现行裁判取向的类型化归纳，实务中存在争议，不代表统一裁判标准；文本与数据挖掘能否构成合理使用亦无明文，文中已标注争议；《人工智能生成合成内容标识办法》的具体条文序号本文未标注，援引时应核对现行文本；本文未引用具体裁判文书与案号。条文序号依现行有效文本标注，请以全国人大及国家网信办官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>AI 画的图有没有版权，看的是人的投入</h3><p>提示词、迭代记录、相似度筛查，三样材料决定权利归属与侵权风险。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="suanfa-tuijian-beian.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>算法推荐服务的备案义务、透明度要求与用户退出权</h4></a><a href="shuju-zhuqu-falv-jiexian.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>第三方数据抓取的法律边界：授权范围、技术措施规避与民事、行政、刑事责任的界分</h4></a><a href="wangluo-shuju-anquan-tiaoli-yiwu.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>网络数据安全管理条例的核心义务：个人信息处理规则、重要数据与平台责任</h4></a><a href="shuju-hegui-xingshi-fengxian-qingdan.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>企业数据合规的八类刑事风险：从侵犯公民个人信息到拒不履行安全管理义务</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "人工智能生成内容的著作权归属与训练数据侵权风险", "description": "人工智能生成内容能否构成作品，取决于人在提示词设计、参数调整与多轮修改中是否形成独创性智力投入；权属先看约定，无约定且构成作品的按创作性投入判断。训练数据涉及他人知识产权的不得侵害，生成内容须依法标识。本文梳理著作权法第三条、第十一条、第十九条与生成式人工智能服务管理暂行办法第七条至第十二条的规则。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}, "telephone": "+86-15872427052", "email": "rz@lflawyers.com"}, "datePublished": "2026-10-26", "dateModified": "2026-10-26", "publisher": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}</script>
+</body></html>
