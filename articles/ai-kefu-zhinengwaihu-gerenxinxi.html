@@ -1,34 +1,137 @@
 <!DOCTYPE html><html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="企业使用AI客服、智能外呼与自动化推荐时的合规要求，包括告知同意的取得、自动化决策的透明度要求、通话录音的留存与合规审计。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="AI客服合规,智能外呼,自动化决策,个人信息保护法,湖北立丰律师事务所">
-<meta name="author" content="荣郑律师">
-<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/ai-kefu-zhinengwaihu-gerenxinxi.html">
+<meta name="description" content="AI客服与智能外呼落在《个人信息保护法》的常规义务框架内，核心是五条义务：合法性基础、告知、单独同意、自动化决策约束与事前影响评估。本文梳理委托处理与共同处理的定性、告知同意的三层要求、录音留存与删除规则、敏感个人信息与评估义务，以及违规后果与责任分配。">
+<meta name="keywords" content="AI客服合规,智能外呼,自动化决策,告知同意,单独同意,个人信息保护影响评估,委托处理,录音留存,去标识化,个人信息保护法第二十四条">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/ai-kefu-zhinengwaihu-gerenxinxi.html" />
 <title>AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存</title>
-<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--ink-soft:#333;--text:#444;--text-muted:#999;--gold:#a0844c;--gold-light:#c4a86c;--rule:#e8e4dc;--rule-light:#f2efe8}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);transition:transform .35s}.nav.hide{transform:translateY(-100%)}.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;min-height:64px;gap:24px}.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);letter-spacing:.04em;white-space:nowrap}.nav-logo span{color:var(--gold)}.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;color:var(--text-muted);letter-spacing:.04em;transition:color .2s;padding:4px 0}.nav-links a:hover{color:var(--ink)}.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}.breadcrumb{font-size:12px;color:var(--text-muted);letter-spacing:.04em;margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);letter-spacing:.02em;margin-bottom:12px;line-height:1.35}.page-header .meta{font-size:13px;color:var(--text-muted);letter-spacing:.02em}.article-body{max-width:860px;margin:0 auto;padding:48px 40px}.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px;letter-spacing:.02em}.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;color:var(--text);line-height:2}.article-body strong{color:var(--ink)}.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}.cta-inner p{font-size:14px;color:rgba(255,255,255,.62);margin-bottom:20px}.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;letter-spacing:.04em;border-radius:2px;transition:.25s;font-weight:600}.cta-inner a:hover{background:var(--gold-light)}.author-card{max-width:860px;margin:0 auto 64px;padding:40px 40px 0}.author-inner{display:flex;gap:24px;align-items:flex-start;background:var(--white);border:1px solid var(--rule);padding:32px}.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.related-card{border:1px solid var(--rule);padding:20px 24px;transition:all .25s;display:block}.related-card:hover{border-color:var(--gold)}.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink);line-height:1.4}footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px;letter-spacing:.04em}footer a{color:var(--gold-light)}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px;flex-wrap:wrap}@media(max-width:768px){.nav-inner{padding:10px 22px;align-items:flex-start}.nav-links{gap:14px}.page-header{padding:132px 22px 44px}.page-header h1{font-size:26px}.article-body{padding:32px 22px}.author-inner{flex-direction:column;align-items:center;text-align:center}.related-grid{grid-template-columns:1fr}.cta-inner{padding:24px 20px}}</style></head><body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../articles/">文章</a><a href="../criminal.html">刑事</a><a href="../civil.html">民商事</a><a href="../tools.html">工具</a><a href="../index.html#contact">联系</a></div></div></nav>
-<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规与银行金融</a> &rsaquo; AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存</div><div class="cat">Data Compliance</div><h1>AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月25日</div></header>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; AI客服与智能外呼的合规要点</div><div class="cat">Data Compliance &bull; AI Customer Service</div><h1>AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年10月</div></header>
 <article class="article-body">
-<h2>一、AI客服和智能外呼不是不能用，关键看数据怎么来、怎么用</h2>
-<p>越来越多企业把AI客服、智能外呼、自动推荐、智能质检接入销售和售后流程。技术本身不是问题，真正的合规风险在于：客户手机号从哪里来，是否取得必要授权，是否告知使用目的，是否进行录音，是否用客户画像做差别营销，是否把个人信息提供给第三方模型或供应商。</p>
-<p>如果企业只是把AI当成“更便宜的话务员”，没有同步建立个人信息处理规则，就可能触碰过度收集、未经同意处理、敏感个人信息处理不当、自动化决策不透明等风险。</p>
-<h2>二、智能外呼最先检查三个问题：来源、告知、拒绝</h2>
-<p>智能外呼的第一风险是号码来源。客户号码如果来自公开爬取、购买名单、员工私下导入或合作方未授权共享，后续外呼话术再规范也难以弥补源头风险。</p>
-<p>第二是告知同意。企业应当向客户说明处理个人信息的目的、方式、种类、保存期限以及联系方式。第三是拒绝机制。客户明确表示不愿接收营销电话或要求删除信息时，企业应当有可执行的退订、屏蔽和删除流程，而不是继续换号码反复拨打。</p>
-<h2>三、AI客服录音和质检，要管好保存期限和访问权限</h2>
-<p>AI客服通常会产生通话录音、文本转写、意图标签、客户画像和质检评分。这些数据可能包含姓名、电话、地址、订单、投诉、健康、金融等个人信息，甚至包含敏感个人信息。企业需要设定保存期限、访问权限、下载审批、脱敏规则和日志审计。</p>
-<p>如果把录音和聊天记录提供给外部AI服务商训练模型，还要额外审查委托处理协议、数据出境、匿名化或去标识化、供应商安全能力和删除返还机制。不要把“接入API”误认为没有个人信息流转。</p>
-<h2>四、自动化推荐和用户画像，要避免不透明和不公平</h2>
-<p>企业基于客户浏览、购买、咨询、信用、位置、消费能力等信息进行自动化推荐或营销分层时，要关注自动化决策规则。尤其是对价格、额度、服务条件、风控拒绝等产生重大影响的场景，应当确保透明、公平、公正，并保留人工申诉或解释渠道。</p>
-<p>对普通营销推荐，也建议提供不针对个人特征的选项或便捷拒绝方式。对医疗、金融、未成年人、招聘、征信等高风险场景，更应当在上线前做个人信息保护影响评估。</p>
-<h2>五、实务建议：上线前做一张AI应用合规清单</h2>
-<p>企业上线AI客服和智能外呼前，至少要检查十项内容：数据来源是否合法、隐私政策是否覆盖、是否取得必要同意、外呼话术是否合规、录音是否提示、客户拒绝机制是否有效、供应商协议是否完整、数据是否出境、权限和日志是否可审计、是否需要个人信息保护影响评估。</p>
-<p>荣郑律师为企业提供数据合规服务时，会把AI应用拆成数据采集、模型调用、业务决策、客户触达、数据留存和供应商管理六个环节，逐项排查风险。技术可以快，合规底座不能空。</p></article>
-<section class="cta-box"><div class="cta-inner"><h3>AI客服和智能外呼上线前，先做个人信息合规检查</h3><p>从话术、授权、数据来源、录音留存到自动化决策，可以协助企业梳理AI应用的数据合规风险。</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
-<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。湖北省法学会西政法学研究会副秘书长，湖北经视及武汉电视台常年法律嘉宾。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
-<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-baohu-qiye-hegui.html" class="related-card"><div class="rc-tag">Related</div><h4>个人信息保护法对企业的主要义务：告知同意、影响评估与出境评估</h4></a>
-<a href="suanfa-tuijian-beian.html" class="related-card"><div class="rc-tag">Related</div><h4>算法推荐服务的备案义务、透明度要求与用户退出权</h4></a></div></section>
-<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../articles/">文章总览</a><a href="../criminal.html">刑事专题</a><a href="../civil.html">民商事专题</a><a href="../tools.html">律师工具</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<h2>一、结论先行：五条义务与三个期限</h2>
+<p>AI客服、智能外呼、智能质检并不需要专门的许可，它们落在《个人信息保护法》的常规义务框架内。把合规要求压缩，就是五条义务：</p>
+<ol>
+<li><strong>合法性基础：</strong>处理个人信息应当具备法定情形之一，如取得个人同意、为订立或者履行合同所必需、履行法定职责或者义务等（《个人信息保护法》第十三条）。营销外呼通常不属于「履行合同所必需」，须取得同意。</li>
+<li><strong>告知：</strong>处理前应当以显著方式、清晰易懂的语言真实、准确、完整地告知处理者名称与联系方式、处理目的与方式、信息种类与保存期限、个人行使权利的方式和程序（第十七条）。</li>
+<li><strong>单独同意：</strong>向其他处理者提供个人信息、处理敏感个人信息、向境外提供个人信息，应当取得个人的单独同意（第二十三条、第二十九条、第三十九条）。</li>
+<li><strong>自动化决策约束：</strong>利用个人信息进行自动化决策，应当保证决策的透明度和结果公平、公正，不得对个人在交易价格等交易条件上实行不合理的差别待遇（第二十四条第一款）。</li>
+<li><strong>影响评估：</strong>处理敏感个人信息、利用个人信息进行自动化决策、委托处理、向他人提供、向境外提供等情形，应当事前进行个人信息保护影响评估，并对处理情况进行记录（第五十五条、第五十六条）。</li>
+</ol>
+<p>三个期限要单独记：影响评估记录<strong>至少保存三年</strong>（第五十六条）；通话录音与文本转写的保存期限由处理目的决定，目的实现后应当删除；发生个人信息泄露、篡改、丢失的，应当立即采取补救措施并通知履行个人信息保护职责的部门和个人。</p>
+
+<h2>二、AI客服与智能外呼的法律定性</h2>
+<p>判断合规义务，第一步是定性：企业在这些场景中扮演什么角色。</p>
+<p><strong>定性一：个人信息处理者。</strong>企业自主决定处理目的与处理方式，属于个人信息处理者，承担《个人信息保护法》下的全部义务，不因「使用了第三方技术」而免责。</p>
+<p><strong>定性二：委托处理中的委托人。</strong>企业采购第三方AI客服系统、语音识别服务、大模型API，由供应商按其指令处理数据，构成委托处理关系。企业应当与受托人约定委托处理的目的、期限、处理方式、个人信息种类、保护措施以及双方的权利义务，并对受托人的处理活动进行监督（第二十一条）。</p>
+<p><strong>定性三：共同处理者。</strong>企业与供应商共同决定处理目的与方式的，构成共同处理，应当约定各自的权利义务，但该约定不影响个人向其中任何一方要求行使权利；造成损害的，承担连带责任。</p>
+<div class="tip"><strong>实务要点：</strong>「接入API」不是免责事由。<strong>只要数据从企业流向供应商，就存在个人信息流转，就必须回答三个问题：数据去了哪里、用来做什么、什么时候删除。</strong>把这三件事写进合同，比事后解释更有效。</div>
+
+<h2>三、告知与同意的三层要求</h2>
+<p>AI客服与智能外呼的告知同意，不是一句「继续通话即视为同意」可以解决的。要求分三层：</p>
+<table>
+<tr><th>层次</th><th>要求</th><th>常见错误</th></tr>
+<tr><td>告知内容</td><td>处理者名称与联系方式、处理目的与方式、信息种类、保存期限、行使权利的方式和程序（第十七条）</td><td>隐私政策只写「为改进服务」，不写具体目的与期限</td></tr>
+<tr><td>同意质量</td><td>自愿、明确作出；法律、行政法规规定应当取得单独同意的，须单独作出（第十四条）</td><td>默认勾选、捆绑授权、以提供服务为条件强制同意</td></tr>
+<tr><td>变更处理</td><td>处理目的、方式、种类发生变更的，应当重新取得同意（第十四条第二款）</td><td>上线新用途不重新告知，沿用旧授权</td></tr>
+</table>
+<p>三个高频场景需要单独说明：</p>
+<p><strong>场景一：号码来源。</strong>客户号码若来自公开爬取、购买名单、员工私下导入或者合作方未授权共享，后续话术再规范也无法弥补源头缺陷。号码来源的合法性是整个链条的起点。</p>
+<p><strong>场景二：拒绝机制。</strong>个人明确表示不愿接收营销电话或者要求删除信息的，企业应当有可执行的退订、屏蔽与删除流程。仅有「请按9退订」而实际未生效，属于未提供便捷的拒绝方式。</p>
+<p><strong>场景三：录音提示。</strong>通话录音属于处理个人信息，应当在通话开始时明确提示「本次通话将录音」，并说明用途。未提示而录音，可能构成未履行告知义务。</p>
+
+<h2>四、自动化决策：透明度、公平性与拒绝权</h2>
+<p>《个人信息保护法》第二十四条对自动化决策设定了三层要求，逐款适用：</p>
+<p><strong>第一款：透明度与公平性。</strong>利用个人信息进行自动化决策，应当保证决策的透明度和结果公平、公正，不得对个人在交易价格等交易条件上实行不合理的差别待遇。「大数据杀熟」即属此款禁止的情形。</p>
+<p><strong>第二款：信息推送与商业营销的选项。</strong>通过自动化决策方式向个人进行信息推送、商业营销，应当同时提供不针对其个人特征的选项，或者向个人提供便捷的拒绝方式。</p>
+<p><strong>第三款：重大影响的说明与拒绝。</strong>通过自动化决策方式作出对个人权益有重大影响的决定，个人有权要求个人信息处理者予以说明，并有权拒绝个人信息处理者仅通过自动化决策的方式作出决定。</p>
+<p>AI客服场景中，第三款的适用最容易被忽略。当系统基于客户画像自动决定是否给予优惠、是否通过审核、是否限制服务、是否列入风险名单时，即可能构成「对个人权益有重大影响」。此时企业应当：<strong>提供人工复核渠道；对决定理由作出说明；允许个人拒绝仅由机器作出决定。</strong>客服话术中「系统就是这样判定的，我改不了」这类表述，恰恰是合规风险的典型信号。</p>
+
+<h2>五、通话录音与质检：留存、权限与删除</h2>
+<p>AI客服与智能质检会产生大量衍生数据：通话录音、文本转写、意图标签、情绪评分、客户画像、质检评分。这些数据可能包含姓名、电话、地址、订单、投诉、健康与金融信息，其中健康、金融账户、行踪轨迹等属于敏感个人信息。</p>
+<p>管理上应当落实五项措施：</p>
+<ol>
+<li><strong>保存期限：</strong>按处理目的确定最短必要期限，到期自动删除或者匿名化；不得以「以后可能有用」为由无限期保存。</li>
+<li><strong>访问权限：</strong>按岗位设置最小必要权限，禁止批量导出；导出行为留日志。</li>
+<li><strong>下载审批：</strong>录音、转写文本的对外提供应当经审批并记录用途。</li>
+<li><strong>脱敏规则：</strong>用于质检、模型训练的语料应当去标识化；<strong>去标识化后的信息仍属个人信息</strong>，只有匿名化（无法识别且不能复原）后才不受《个人信息保护法》约束。</li>
+<li><strong>日志审计：</strong>记录查询、导出、删除操作，日志保存期限与评估记录一致。</li>
+</ol>
+<p>如果企业将录音与聊天记录提供给外部AI服务商训练模型，还要额外审查四件事：<strong>委托处理协议是否覆盖训练用途；数据是否出境；是否完成去标识化或者匿名化；供应商的删除与返还机制是否可执行。</strong>「供应商说不会用于训练」是陈述，不是保障，须落到合同条款与审计权。</p>
+
+<h2>六、敏感个人信息与影响评估</h2>
+<p>只有在具有特定的目的和充分的必要性，并采取严格保护措施的情形下，个人信息处理者方可处理敏感个人信息（第二十八条）。处理敏感个人信息应当取得个人的单独同意；法律、行政法规规定应当取得书面同意的，从其规定（第二十九条）。处理敏感个人信息还应当向个人告知处理的必要性以及对个人权益的影响（第三十条）。</p>
+<p>需要事前进行个人信息保护影响评估并记录处理情况的情形，包括：处理敏感个人信息；利用个人信息进行自动化决策；委托处理、向其他处理者提供、公开个人信息；向境外提供个人信息；以及其他对个人权益有重大影响的处理活动（第五十五条）。</p>
+<p>评估应当包含三项内容：<strong>处理目的、处理方式等是否合法、正当、必要；对个人权益的影响及安全风险；保护措施是否合法、有效并与风险程度相适应。</strong>评估报告与处理记录应当至少保存三年（第五十六条）。</p>
+<p>医疗、金融、招聘、教育、未成年人相关场景的AI外呼，属于高风险叠加：既涉及敏感个人信息，又可能构成自动化决策，还常伴随录音。这类场景的评估不能套用模板，应当逐项说明必要性与替代方案。</p>
+
+<h2>七、违规后果与责任分配</h2>
+<p>违法处理个人信息的后果分三层：</p>
+<p><strong>第一层：行政处罚。</strong>情节严重的，由省级以上履行个人信息保护职责的部门责令改正，没收违法所得，并处五千万元以下或者上一年度营业额百分之五以下罚款，并可以责令暂停相关业务或者停业整顿、通报有关主管部门吊销相关业务许可或者吊销营业执照；对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款（第六十六条）。</p>
+<p><strong>第二层：民事赔偿。</strong>处理个人信息侵害个人信息权益造成损害，个人信息处理者不能证明自己没有过错的，应当承担损害赔偿等侵权责任（第六十九条）。<strong>这是过错推定，举证责任在被告一方。</strong></p>
+<p><strong>第三层：内部责任分配。</strong>企业与AI供应商之间的责任，依委托处理协议确定；构成共同处理的，对外承担连带责任。协议约定不能对抗个人的赔偿请求。</p>
+
+<h2>八、常见问题与实务提示</h2>
+<h3>问：智能外呼前必须取得客户同意吗？</h3>
+<p>营销类外呼通常不属于「为订立或者履行合同所必需」，应当取得个人同意。若号码来源不明或者未经同意，即使接通后立即说明并允许退订，也不能补正前置的合法性缺陷。</p>
+<h3>问：客户说「别再打了」，还需要做什么？</h3>
+<p>应当停止外呼并按要求删除或者屏蔽号码，且该处理应当可执行、可核查。仅口头答应而系统仍继续外呼，属于未提供便捷的拒绝方式。</p>
+<h3>问：通话录音可以保存多久？</h3>
+<p>按处理目的确定最短必要期限，目的实现后应当删除。若以质检为目的，保存期限应当与质检周期匹配；以争议处理为目的的，可以保存至争议解决，但须在告知中说明。</p>
+<h3>问：把录音交给第三方做质检，需要什么手续？</h3>
+<p>构成委托处理，应当订立委托处理协议，明确目的、期限、方式、信息种类、保护措施与双方权利义务，并对受托人进行监督（第二十一条）；同时应当事前进行个人信息保护影响评估（第五十五条）。</p>
+<h3>问：AI客服自动给出的优惠额度，算自动化决策吗？</h3>
+<p>若基于客户画像自动决定交易条件，属于自动化决策，须保证透明度与结果公平，不得实行不合理的差别待遇（第二十四条第一款）。若该决定对个人权益有重大影响，还应当提供说明与拒绝仅由机器决定的权利。</p>
+<h3>问：用客户对话数据训练模型，需要重新取得同意吗？</h3>
+<p>处理目的由「提供服务」变更为「模型训练」，属于目的变更，应当重新取得同意（第十四条第二款）；用于训练的语料应当去标识化，且不得超出告知的目的范围。</p>
+<p><strong>律师提示：</strong>AI客服与智能外呼的合规，核心不在技术，而在四个可核查的动作：<strong>号码来源能否追溯、告知同意能否举证、录音与转写能否按期删除、供应商协议能否约束用途。</strong>建议上线前把AI应用拆成数据采集、模型调用、业务决策、客户触达、数据留存、供应商管理六个环节，逐环节形成书面记录；上线后按季度复核一次。合规底座不是一次性文件，而是持续运行的记录。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国个人信息保护法》第十三条（处理的合法性基础）、第十四条（同意的要件与变更后的重新取得）、第十七条（告知内容）、第二十一条（委托处理）、第二十三条（向其他处理者提供与单独同意）、第二十四条（自动化决策的三款要求）、第二十八条（敏感个人信息的处理规则）、第二十九条（敏感个人信息的单独同意）、第三十条（敏感个人信息的告知）、第三十九条（向境外提供的单独同意）、第五十五条（事前影响评估的情形）、第五十六条（评估内容与至少三年的记录保存）、第六十六条（法律责任）、第六十九条（过错推定）、第七十三条（个人信息与去标识化、匿名化的定义）；《中华人民共和国民法典》第一千零三十五条（处理个人信息的原则与条件）。特别说明：AI客服与智能外呼本身不需要专门许可，本文所述义务均来自《个人信息保护法》的一般规则；算法推荐服务的备案与透明度要求另由《互联网信息服务算法推荐管理规定》规范，本文未逐条引用；敏感个人信息的范围、去标识化与匿名化的界限，实践中仍有争议，已在正文提示。本文未引用任何具体裁判文书，条文序号依现行有效文本标注，请以全国人大官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>AI客服上线前，先做个人信息合规检查</h3><p>号码来源、告知同意、录音删除与供应商用途，四项动作决定风险敞口。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-baohu-qiye-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息保护法对企业的主要义务：告知同意、影响评估与出境评估</h4></a><a href="suanfa-tuijian-beian.html" class="related-card"><div class="rc-tag">Data</div><h4>算法推荐服务的备案义务、透明度要求与用户退出权</h4></a><a href="zidonghua-juece-hegui-bianjie.html" class="related-card"><div class="rc-tag">Data</div><h4>自动化决策的合规边界：差别待遇、说明义务与拒绝权——《个人信息保护法》第二十四条的三项要求</h4></a><a href="geren-xinxi-weituo-gongtong-chuli.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息委托处理与共同处理的责任划分：受托人义务、连带责任与合同条款</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存", "description": "企业使用AI客服、智能外呼与自动化推荐时的合规要求，包括告知同意的取得、自动化决策的透明度要求、通话录音的留存与合规审计。湖北立丰律师事务所高级合伙人。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}, "telephone": "+86-15872427052", "email": "rz@lflawyers.com"}, "datePublished": "2026-06-25", "dateModified": "2026-06-25", "mainEntityOfPage": "https://www.rongzhenglawyer.com/articles/ai-kefu-zhinengwaihu-gerenxinxi.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI客服与智能外呼的合规要点：告知同意、自动化决策与录音留存", "description": "AI客服与智能外呼落在《个人信息保护法》的常规义务框架内，核心是五条义务：合法性基础、告知、单独同意、自动化决策约束与事前影响评估。本文梳理委托处理与共同处理的定性、告知同意的三层要求、录音留存与删除规则、敏感个人信息与评估义务，以及违规后果与责任分配。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-25", "dateModified": "2026-10-24"}</script>
 </body></html>
