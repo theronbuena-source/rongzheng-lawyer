@@ -113,4 +113,52 @@ footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margi
 <footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "非法获取计算机信息系统数据罪的构成与竞合：爬虫、越权导出与身份认证信息", "description": "非法获取计算机信息系统数据罪（《刑法》第二百八十五条第二款）以「违反国家规定、侵入或以其他技术手段获取」为行为要件，以「情节严重」为入罪门槛。身份认证信息十组、其他身份认证信息五百组、违法所得五千元或损失一万元以上是常见标准。本文梳理构成要件、与侵犯公民个人信息罪的竞合处理、爬虫案件的四个辩护切入点。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-24", "dateModified": "2026-10-24"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "抓取公开的招聘信息、商品价格，构成犯罪吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常不构成本罪。完全公开、无需登录、未设技术限制的页面，难以认定「侵入」。但若违反网站明确的技术限制（如突破验证码、伪造请求头绕过封禁），或抓取后用于实质性替代原网站服务，可能触发反不正当竞争法责任，情节严重的还可能进入刑事评价。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "员工离职前批量下载公司数据库，定什么罪？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "需要分层判断：若使用本人合法权限下载、未突破权限，一般属违约或侵犯商业秘密问题；若盗用他人账号、破解权限限制，则可能构成非法获取计算机信息系统数据罪。若数据含大量个人信息且条数达标，还可能构成侵犯公民个人信息罪，从一重处断。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "违法所得怎么算？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常按行为人因该行为实际获得的收入计算，是否扣除服务器、人力等成本存在争议。若无法查清违法所得，则以造成的经济损失为准，实践中多依赖被害人提供的审计报告或鉴定意见，辩护时应重点质证计算口径。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "单位实施的行为，谁承担责任？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "单位犯本罪的，对单位判处罚金，并对直接负责的主管人员和其他直接责任人员依照自然人犯罪的规定处罚。技术负责人、项目决策人通常是追责重点，普通开发、运维人员若有明确证据证明不知情且未获利，一般不作为责任人员。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "只「看」不「存」，还算获取吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本罪要求「获取」，通常指将数据置于自己控制之下。仅浏览、截屏少量数据，是否构成「获取」存在争议；但若通过技术手段批量读取并缓存、传输，则已属获取。数量与目的会影响最终定性。"
+      }
+    }
+  ]
+}
+</script>
 </body></html>

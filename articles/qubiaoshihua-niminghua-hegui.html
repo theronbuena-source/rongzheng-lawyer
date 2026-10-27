@@ -138,4 +138,44 @@ footer a{color:#c4a86c}
 <footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"去标识化与匿名化的法律区分：个人信息保护法定义、重标识风险与四项合规边界","description":"去标识化与匿名化的法定定义与法律后果差异：去标识化后的信息仍属个人信息，匿名化后的信息不属于个人信息；重标识风险评估的四级分级、去标识化效果评估流程，以及数据共享、交易与出境场景的适用边界。","author":{"@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","worksFor":{"@type":"LegalService","name":"湖北立丰律师事务所"}},"datePublished":"2026-10-07"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "把姓名、手机号字段删掉，剩下的数据是不是就匿名化了？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。删除直接标识符只是第一步。若数据仍包含准标识符（如性别、出生日期、邮政编码、职业、事件日期等），结合其他可得信息仍可能重新识别到特定自然人，则仍属去标识化而非匿名化，级别通常落在 3 级或 2 级。是否可认定为匿名化，需要按不可复原的标准综合判断。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "对身份证号做哈希处理，算匿名化吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "哈希属于假名化技术。若映射关系或密钥可获取，且原始标识符可被穷举或比对，则存在重新识别的可能，通常只能实现去标识化效果，不能认定为匿名化。哈希算法、盐值管理与密钥保管是关键控制点。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "匿名化的证明责任在谁？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主张「已实现匿名化、不适用个人信息保护法」的一方，通常需要承担相应的证明责任。因此企业应当留存去标识化与匿名化处理的技术文档、效果评估报告、重标识风险计算方案与阈值设定依据、评估团队构成与管理层批准记录。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "去标识化是否有统一的国家标准可以依据？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "有。GB/T 37964—2019《信息安全技术 个人信息去标识化指南》提供去标识化的过程与管理措施；GB/T 42460—2023《信息安全技术 个人信息去标识化效果评估指南》提供效果分级与评估方法。两者均为推荐性国家标准，可作为技术合规与举证的重要依据。"
+      }
+    }
+  ]
+}
+</script>
 </body></html>
