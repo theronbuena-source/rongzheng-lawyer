@@ -124,4 +124,44 @@ footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margi
 <footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "爬虫抓取数据的合法边界：刑事、民事、行政三条线的判断方法", "description": "爬虫本身不违法，违法的是特定的抓取方式与使用后果。本文给出四步判断框架——访问对象、技术手段、数据内容、后果与用途，分述刑事风险（非法获取计算机信息系统数据罪、破坏计算机信息系统罪、侵犯公民个人信息罪）、民事风险（不正当竞争、著作权、个人信息侵权）与行政风险，并给出企业侧可落地的七项内控措施。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-10-24", "dateModified": "2026-10-24"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "遵守 robots 协议就一定合法吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。robots 只是行业惯例与技术声明，不构成授权。违反它未必违法，遵守它也不必然免责——若抓取内容含个人信息、构成实质性替代或造成系统损害，仍可能承担责任。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "抓取公开的裁判文书、企业工商信息合法吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "风险相对较低，但要看用途：用于数据分析一般可以，用于批量转售、用于形成替代性数据库服务，则可能触发不正当竞争或数据来源合法性争议。同时须剔除其中的个人信息。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "API 授权抓取就完全安全吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "要看授权范围。超出约定字段、频率、用途使用，仍构成违约甚至侵权。授权协议中的数据使用限制条款是关键证据。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "员工个人写爬虫，公司能否切割责任？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "取决于公司是否知情、是否获益、是否有管理措施。有明确禁止性制度、有技术管控、发现后及时处置并留痕，是有效切割的基础。"
+      }
+    }
+  ]
+}
+</script>
 </body></html>
