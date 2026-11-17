@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="工程签证的效力认定争议、签证与索赔的证据链构建方法、工期延误索赔的举证要求，以及停窝工损失的司法认定标准。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="工程签证,工期索赔,停窝工损失,湖北立丰律师事务所">
+<meta name="description" content="工程签证是工程量与工期争议中最直接的证据，其效力取决于签认主体权限、内容完整性与形成时间。本文依《建工解释一》第十条、第十九条、第二十条与《民法典》相关规定，梳理签证与索赔的区分、三类签认主体的效力、四种不被采信的情形，以及索赔证据链的四层结构。">
+<meta name="keywords" content="工程签证,签证效力,工期索赔,索赔证据链,建工解释一第十条,建工解释一第二十条,表见代理,停窝工损失,湖北立丰律师事务所">
 <link rel="canonical" href="https://www.rongzhenglawyer.com/articles/gongcheng-qianzheng-suopei.html" />
 <title>工程签证的效力认定与索赔证据链构建</title>
 <style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
@@ -19,8 +19,15 @@ a{color:inherit;text-decoration:none}
 .page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
 .article-body{max-width:860px;margin:0 auto;padding:48px 40px}
 .article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
 .article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
 .article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
 .author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
 .author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
 .author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
@@ -40,25 +47,124 @@ footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;paddi
 footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
 @media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
 <body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../construction.html">建设工程</a><a href="../civil.html">民商事专题</a><a href="../index.html#contact">联系</a></div></div></nav>
-<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../construction.html">建设工程与房地产专题</a> &rsaquo; 工程签证的效力认定与索赔证据链构建</div><div class="cat">Construction Law</div><h1>工程签证的效力认定与索赔证据链构建</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div></header>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../construction.html">建设工程与房地产</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../construction.html">建设工程与房地产</a> &rsaquo; 工程签证的效力认定与索赔证据链</div><div class="cat">Construction &amp; Real Estate &bull; Claims &amp; Evidence</div><h1>工程签证的效力认定与索赔证据链构建</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
 <article class="article-body">
-<h2>一、工程签证是施工方的利润生命线——签证不规范等于白干</h2>
-<p>建设工程的复杂性决定了合同签订时的图纸和预算难以覆盖全部施工内容。工程签证和索赔是施工方在合同价格之外获得额外工程款的两个核心法律工具。业内有一句话：施工方的利润不是算出来的，是"签"出来的——签证和索赔管理的好坏，直接决定了项目的盈亏。</p>
-<p>工程签证是指发包人（或其监理工程师）对承包人超出合同范围的施工内容、工程变更、工程量增减等事项的书面确认。工程索赔则是在发生非因承包人原因造成的费用增加或工期延长时，承包人向发包人提出的补偿要求。两者的核心区别在于：签证是双方协商一致的确认，索赔是单方提出的请求。实务中，签证比索赔更容易获得支持——因为签证已有发包人的签字认可，证明力更强。</p>
-<h2>二、工程签证怎么签才有法律效力？六类常见争议一次说清</h2>
-<p>签证的效力争议主要集中在以下六种情形：一是仅有监理签字而无发包人盖章——根据监理合同的授权范围和交易习惯，如果监理合同明确授权监理工程师签署经济签证，则监理签字有效；反之则仅对技术签证有效，对经济签证无效。二是签证内容超出原合同范围——超出合同范围的签证如果构成实质性变更（如大幅增加造价、改变结构形式），需要以补充协议形式经双方盖章确认，而非简单签字。三是签证事后补签——事后补签的效力认定需要考虑补签时是否存在胁迫、欺诈等情形，以及补签是否客观反映了当时的工程实际。四是签证内容模糊——仅有"同意""情况属实"等笼统表述而无具体数量、单价的，不能直接作为结算依据，需要结合其他证据确定工程量。五是发包人拒绝签证——这是施工方最常遇到的困境，需要通过索赔程序来解决。六是签证单为施工方单方制作——仅有施工方签章、发包方拒绝签章的签证单，原则上不能单独作为定案依据。</p>
-<h2>三、工期延误了谁负责？索赔要提供哪些证据？</h2>
-<p>工期延误是建设工程纠纷中最常见的争议类型之一。承包人向发包人主张工期延误造成的损失（如管理费增加、设备租赁费、材料价格上涨等），需要完成以下几项举证：一是证明延误事件的存在——如发包人未能按时提供施工场地、未能按时支付工程进度款、甲供材料供应延迟、指定分包商进度滞后、设计变更频繁等；二是证明延误事件与工期延误之间的因果关系——这是举证责任中最容易被忽视的环节，需要提供同期施工日志、监理日志、会议纪要等过程记录；三是证明实际损失的具体金额——管理费、设备租赁费等可以按照合同约定或行业标准计算，但需要提供相应的支出凭证。</p>
-<p>发包人在面对工期延误索赔时，最常见的抗辩理由是"承包人自身施工组织不当"和"存在交叉延误"。前者的逻辑是将延误归因于承包人自身的管理问题而非发包人的行为；后者的逻辑是双方共同造成了延误，应当按比例分担。施工方防范这些抗辩的最有效手段是过程管理——在施工全过程中保留完整的工作联系单、会议纪要、照片、视频等记录，确保每一项延误事件的原因、时间和影响范围都有据可查。</p>
-<h2>四、停窝工损失怎么算？法院支持的认定标准</h2>
-<p>停窝工是指因非承包人原因导致施工无法正常进行，施工人员和设备处于闲置状态而产生的损失。停窝工损失的司法认定比较困难——主要原因在于停窝工损失是"机会成本"性质的损失，不像直接支出那样有明确凭证。施工方主张停窝工损失需要提供三类证据：一是停窝工的事实证据——发包人或监理人发出的停工通知、当地政府的停工令、气候影响证明等；二是人员在场的证据——考勤记录、工资发放记录、住宿费票据等；三是机械设备在场证据——设备台账、租赁合同、进出场记录等。</p>
-<p>实务中一个常见错误是：施工方在停工后没有及时撤出人员和设备，导致损失扩大。根据减损规则，施工方在停工后有义务采取合理措施减少损失——如果停工原因消除后长期未通知施工方恢复施工，或者停工后提出不合理条件阻挠复工，施工方可以撤出人员设备并就合理的等待期间（通常以7-14天为宜）主张停窝工损失，超出的部分则可能被认定为扩大的损失。</p>
+<h2>一、结论先行：签证为什么常常「签了不算」</h2>
+<p>签证在结算争议中地位极高——《最高人民法院关于审理建设工程施工合同纠纷案件适用法律问题的解释（一）》（法释〔2020〕25号）第二十条明确：<strong>当事人对工程量有争议的，按照施工过程中形成的签证等书面文件确认；承包人能够证明发包人同意其施工，但未能提供签证文件证明工程量发生的，可以按照其他证据确认实际发生的工程量。</strong>这一条把签证放在工程量认定的第一位。</p>
+
+<p>一份有效签证需同时满足四个条件：签认主体有相应权限（或构成表见代理）、记载的工程量或费用可量化、与已完成的施工内容对应、形成于施工过程之中而非事后补签。缺少任何一项，签证就从「直接证据」退化为需要其他证据印证的线索。</p>
+
+<h2>二、四种书面文件的区分</h2>
+<table>
+<tr><th>文件类型</th><th>典型形式</th><th>法律性质</th><th>证明力要点</th></tr>
+<tr><td>工程签证</td><td>签证单、工程量或费用确认单</td><td>双方对事实与费用的确认，具合同变更性质</td><td>需双方授权代表签字盖章，内容可量化</td></tr>
+<tr><td>索赔文件</td><td>索赔意向通知书、索赔报告、费用计算书</td><td>单方权利主张，触发对方审核义务</td><td>需在合同期限内送达并留存送达证据</td></tr>
+<tr><td>工程联系单</td><td>工作联系单、监理通知单</td><td>过程沟通文件，通常不直接产生付款义务</td><td>可证明指令与事实，金额需另行确认</td></tr>
+<tr><td>会议纪要</td><td>专题会议纪要、协调会记录</td><td>视内容而定，载明具体事项并经各方签字的可构成确认</td><td>需各方签字，仅一方记录且未签字的证明力弱</td></tr>
+</table>
+
+<h2>三、谁签的签证有效：三类签认主体</h2>
+<p><strong>合同约定的授权代表。</strong>发包人代表、项目经理、总监理工程师在授权范围内签署的签证有效。超出授权范围（如约定变更超过一定金额须报公司审批）的效力待定，需审查是否经追认。</p>
+<p><strong>项目部的其他人员。</strong>施工员、资料员、技术负责人签署的签证是否有效，取决于是否构成表见代理。判断标准是相对人是否有理由相信其有代理权：该人员是否长期代表发包人处理同类事务、是否持有项目部印章、此前同类签证是否被实际履行。仅一次签字且无其他佐证的，通常难以认定。<strong>「认人不认章」是这类争议的实务共识</strong>——重点看签字人是否有权限，不只盖章真假。</p>
+<p><strong>监理工程师。</strong>签字效力取决于合同授权。监理通常有权确认工程量与质量，是否有权确认费用、变更价款，要看监理合同授权范围。监理签字确认「工程量属实」的可作为工程量证据；签字确认「增加费用若干」的，若无发包人授权，往往不被直接采信。</p>
+<div class="tip"><strong>实务要点：</strong>预防动作很具体：进场时以书面形式确认发包人代表、项目经理、监理的姓名、职务、权限与签字样本，附于合同或会议纪要。这份名单在诉讼中的价值，往往超过事后补做的任何说明。</div>
+<h2>四、签证不被采信的四种情形</h2>
+<ol>
+<li><strong>事后补签。</strong>施工完成数月甚至数年后集中补签，对方常以「签字人已离职」「未实际发生」抗辩，法院会要求补强施工记录、影像资料、材料进场单。</li>
+<li><strong>内容不可量化。</strong>只写「增加工作量」「情况属实，费用另议」，未记载项目、数量、单价或计价方式，只能证明事实，不能确定价款。</li>
+<li><strong>与合同约定冲突。</strong>合同约定变更须经特定程序（书面指令、限额审批）而签证未经该程序的，对方可主张程序瑕疵。需审查该程序是否属效力性约定，以及发包人是否以实际履行方式放弃该程序。</li>
+<li><strong>单方制作、无对方签字。</strong>只有承包人盖章的「签证单」本质是单方文件，不能作为确认依据，但可作为索赔通知或事实记录配合其他证据使用。</li>
+</ol>
+<p>第三种情形存在明显裁判分歧：一种观点认为程序约定属内部管理要求，不影响实体效力；另一种认为程序是核心条款，未经程序不产生变更效果。<strong>实务中存在争议</strong>，需结合合同文本、履行习惯与实际履行情况判断。</p>
+<h2>五、索赔证据链的四层结构</h2>
+<p><strong>第一层：权利基础。</strong>证明索赔事由属于合同约定或法律规定的可索赔情形，如发包人未按约定提供施工条件、指令变更导致停工、图纸迟延交付。依据包括合同条款、《民法典》第五百零九条（全面履行与诚信原则）、第五百七十七条（违约责任）。</p>
+<p><strong>第二层：程序履行。</strong>证明在合同期限内发出索赔意向通知与索赔报告并完成送达，核心是<strong>送达证据</strong>：签收单、邮寄凭证、电子邮件、监理收文登记。《建工解释一》第十条对工期顺延作了有利解释：约定顺延须经发包人或监理签证确认的，承包人虽未取得确认，但能证明在约定期限内申请过顺延且事由符合约定的，主张顺延应予支持；但约定未在期限内申请视为不顺延的，按约定处理，发包人期限后同意或承包人提出合理抗辩的除外。</p>
+<p><strong>第三层：事实与因果。</strong>证明延误或损失客观发生、与对方行为有因果关系。材料包括施工日志、监理日志、停窝工人员机械台班记录、现场影像、气象资料、政府停工通知、材料价格凭证。</p>
+<p><strong>第四层：金额计算。</strong>证明损失的计算方法与依据。停窝工损失通常按人工窝工费、机械闲置费、周转材料摊销、管理费分项计算，需提供工资表、机械租赁合同与台班单价、租赁费发票。仅有总额主张而无计算过程与凭证的，往往被大幅折减。</p>
+<h2>六、期限、鉴定与实务提示</h2>
+<p><strong>其一，索赔期限的性质。</strong>合同常约定「索赔事件发生后28天内提出，逾期视为放弃」。多数裁判将其视为程序性约定，逾期不当然丧失实体权利，但会加重举证责任；也有裁判按约定认定失权。<strong>实务中存在争议</strong>，稳妥做法是期限内核发意向通知，报告未获答复时书面催告。</p>
+<p><strong>其二，固定价与鉴定。</strong>第二十八条规定，约定按固定价结算的，一方请求对工程造价鉴定的不予支持；第二十九条规定，诉讼前已达成结算协议、诉讼中申请鉴定的不予准许。这意味着<strong>签证与结算协议的效力往往比鉴定意见更具决定性</strong>。</p>
+
+<p><strong>律师提示：</strong>签证的功夫在施工期间，不在诉讼期间。三件事最值得投入：进场时固定签认主体名单与签字样本；每份签证写清项目、数量、单价、时间与依据；所有通知类文件留存送达凭证。做到这三点，结算争议的绝大部分会在事实层面消解。</p>
+<h2>七、常见问题</h2>
+<h3>问：只有项目经理签字、没有盖公章的签证有效吗？</h3>
+<p>可能有效。签证效力看签认主体是否有权限，而非只看印章。项目经理属于合同约定的授权代表时，其签字在授权范围内有效；超出授权范围或者由其他人员签署的，需审查是否构成表见代理，即相对人是否有理由相信其有代理权。</p>
+<h3>问：监理签字确认的签证，能直接作为结算依据吗？</h3>
+<p>取决于监理的授权范围。监理通常有权确认工程量与质量，签字确认「工程量属实」的可作为工程量证据；但确认费用或者变更价款，若无发包人授权，往往不被直接采信。审查时应核对监理合同与施工合同中的授权条款。</p>
+<h3>问：签证上只写「情况属实、费用另议」，有用吗？</h3>
+<p>能证明事实发生，但不能直接确定价款。此类签证属于内容不可量化，仍需通过计价规范、合同约定或者造价鉴定确定金额。实务中应尽量在签证中写明项目、数量、单价与计价依据。</p>
+<h3>问：事后补签的签证，法院会采信吗？</h3>
+<p>会被严格审查。形成时间与施工时间严重脱节的，法院通常要求补强施工日志、影像资料、材料进场单等证据；对方以「未实际发生」抗辩时，仅有补签签证往往不足以认定。补签时应同步说明补签原因并附过程材料。</p>
+<h3>问：索赔超过合同约定的28天期限，还能主张吗？</h3>
+<p>存在争议。多数裁判将索赔期限视为程序性约定，逾期不当然丧失实体权利，但会加重举证责任；也有裁判按约定认定失权。稳妥做法是在期限内核发意向通知，并在报告未获答复时书面催告，保留送达证据。</p>
+<h3>问：已经签了结算协议，还能申请造价鉴定推翻吗？</h3>
+<p>一般不能。《建工解释一》第二十九条规定，当事人在诉讼前已经对建设工程价款结算达成协议，诉讼中一方申请对工程造价进行鉴定的，人民法院不予准许；第二十八条对固定价结算也有类似限制。除非能证明协议存在无效或者可撤销事由。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国民法典》第五百零九条（全面履行与诚信原则）、第五百四十三条（协商变更合同）、第五百七十七条（违约责任）、第八百零七条（建设工程价款优先受偿）；《最高人民法院关于审理建设工程施工合同纠纷案件适用法律问题的解释（一）》（法释〔2020〕25号，2021年1月1日起施行）第十条（工期顺延的签证确认与申请规则）、第十二条（承包人拒绝修理时发包人请求减价）、第十三条（发包人过错的三种情形）、第十九条（计价标准与设计变更的结算）、第二十条（工程量以签证等书面文件确认）、第二十一条（逾期不答复视为认可结算文件）、第二十八条（固定价结算不予鉴定）、第二十九条（诉前结算协议不予鉴定）。特别说明：条文序号与数额标准均依现行有效版本标注，与旧版序号存在位移的不再沿用；具体适用请以官方公布文本及办案地口径为准。</p>
 </article>
-<section class="cta-box"><div class="cta-inner"><h3>工程签证被拒？主张索赔</h3><p>工程签证和索赔直接关系施工方利润。规范签证流程、收集索赔证据、争取合法权益。</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="cta-box"><div class="cta-inner"><h3>签证能不能算数，取决于签字的人、写的内容、形成的时间</h3><p>签认主体权限的核对、签证内容的量化、索赔通知的送达留痕，是结算争议中最先被审查的三件事。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
 <section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
-<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="jianshe-gongcheng-youxian-shouchang.html" class="related-card"><div class="rc-tag">Civil & Commercial</div><h4>工程款追索的路径选择：价款优先受偿权、质量反诉应对与实际施工人主张</h4></a><a href="hetongjiufen-xiaoli-weiyue-jiechu.html" class="related-card"><div class="rc-tag">Civil & Commercial</div><h4>合同效力审查、违约金调减与解除权行使的一年除斥期间</h4></a></div></section>
-<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../construction.html">建设工程</a><a href="../civil.html">民商事专题</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="gongcheng-jiesuan-dan-tui-fan.html" class="related-card"><div class="rc-tag">Construction</div><h4>工程结算单签字后能否推翻</h4></a>
+<a href="tinggong-kangbian-gongqi-shunyan.html" class="related-card"><div class="rc-tag">Construction</div><h4>发包人欠付工程款，承包人能否停工</h4></a>
+<a href="gongcheng-biaojian-daili-xiangmu-zhang.html" class="related-card"><div class="rc-tag">Construction</div><h4>项目部印章与表见代理的认定</h4></a>
+<a href="zaojia-jianding-yijian-zhizheng.html" class="related-card"><div class="rc-tag">Construction</div><h4>造价鉴定意见的质证要点</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../construction.html">建设工程与房地产</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "工程签证的效力认定与索赔证据链构建", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-15", "description": "工程签证的效力认定争议、签证与索赔的证据链构建方法、工期延误索赔的举证要求，以及停窝工损失的司法认定标准。湖北立丰律师事务所高级合伙人。"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "工程签证的效力认定与索赔证据链构建", "description": "工程签证是工程量与工期争议中最直接的证据，其效力取决于签认主体权限、内容完整性与形成时间。本文依《建工解释一》第十条、第十九条、第二十条与《民法典》相关规定，梳理签证与索赔的区分、三类签认主体的效力、四种不被采信的情形，以及索赔证据链的四层结构。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-09", "dateModified": "2026-11-09"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "只有项目经理签字、没有盖公章的签证有效吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可能有效。签证效力看签认主体是否有权限，而非只看印章。项目经理属于合同约定的授权代表时，其签字在授权范围内有效；超出授权范围或者由其他人员签署的，需审查是否构成表见代理，即相对人是否有理由相信其有代理权。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "监理签字确认的签证，能直接作为结算依据吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "取决于监理的授权范围。监理通常有权确认工程量与质量，签字确认「工程量属实」的可作为工程量证据；但确认费用或者变更价款，若无发包人授权，往往不被直接采信。审查时应核对监理合同与施工合同中的授权条款。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "签证上只写「情况属实、费用另议」，有用吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "能证明事实发生，但不能直接确定价款。此类签证属于内容不可量化，仍需通过计价规范、合同约定或者造价鉴定确定金额。实务中应尽量在签证中写明项目、数量、单价与计价依据。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "事后补签的签证，法院会采信吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "会被严格审查。形成时间与施工时间严重脱节的，法院通常要求补强施工日志、影像资料、材料进场单等证据；对方以「未实际发生」抗辩时，仅有补签签证往往不足以认定。补签时应同步说明补签原因并附过程材料。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "索赔超过合同约定的28天期限，还能主张吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "存在争议。多数裁判将索赔期限视为程序性约定，逾期不当然丧失实体权利，但会加重举证责任；也有裁判按约定认定失权。稳妥做法是在期限内核发意向通知，并在报告未获答复时书面催告，保留送达证据。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "已经签了结算协议，还能申请造价鉴定推翻吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般不能。《建工解释一》第二十九条规定，当事人在诉讼前已经对建设工程价款结算达成协议，诉讼中一方申请对工程造价进行鉴定的，人民法院不予准许；第二十八条对固定价结算也有类似限制。除非能证明协议存在无效或者可撤销事由。"
+      }
+    }
+  ]
+}
+</script>
 </body></html>

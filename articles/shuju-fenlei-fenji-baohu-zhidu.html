@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="《数据安全法》第二十一条建立数据分类分级保护制度并划定核心数据；《网络数据安全管理条例》（国务院令第790号，2025年1月1日施行）第五条重申分类分级，第二十九条要求编制重要数据目录并由处理者识别申报，第三十条至第三十三条对重要数据处理者设负责人、处理前风险评估、转移报告与年度报告四项硬义务。本文梳理三层数据的界分方法与企业落地步骤。">
+<meta name="keywords" content="数据分类分级,重要数据目录,核心数据,数据安全法第二十一条,网络数据安全管理条例,重要数据识别申报,年度风险评估,等保,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/shuju-fenlei-fenji-baohu-zhidu.html" />
+<title>数据分类分级保护制度怎么落地：一般数据、重要数据与核心数据的三层义务</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; 数据分类分级保护制度的落地</div><div class="cat">Data Compliance &bull; Data Classification</div><h1>数据分类分级保护制度怎么落地：一般数据、重要数据与核心数据的三层义务</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+<h2>一、结论先行：三句话讲清分类分级</h2>
+<p>数据分类分级不是企业可做可不做的内部管理动作，而是法定义务的起点。《数据安全法》第二十一条规定：国家建立数据分类分级保护制度，根据数据在经济社会发展中的重要程度，以及一旦遭到篡改、破坏、泄露或者非法获取、非法利用，对国家安全、公共利益或者个人、组织合法权益造成的危害程度，对数据实行分类分级保护；国家数据安全工作协调机制统筹协调有关部门制定重要数据目录；关系国家安全、国民经济命脉、重要民生、重大公共利益等数据属于国家核心数据，实行更加严格的管理制度。</p>
+<p>第一句话：<strong>分级由「危害程度」决定，不由「数据量」决定。</strong>同样是客户名单，十万条普通联系方式的危害程度，可能低于一份涉及港口吞吐能力或电网调度参数的少量数据。</p>
+<p>第二句话：<strong>重要数据以目录加申报确定，企业不能自行宣布「我不是重要数据处理者」了事。</strong>《网络数据安全管理条例》第二十九条要求网络数据处理者按国家有关规定识别、申报重要数据，对确认为重要数据的，由相关地区、部门告知或公开发布。</p>
+<p>第三句话：<strong>义务随级别递增。</strong>一般数据适用基础安全义务；重要数据叠加负责人、机构、处理前风险评估、转移报告与年度报告；核心数据适用更严格的管理制度。个人信息还另有一套以敏感个人信息为轴的分级规则，与数据分级并行而非替代。</p>
+
+<h2>二、三层结构：一般、重要、核心</h2>
+<table>
+<tr><th>层级</th><th>界定方式</th><th>主要义务</th><th>常见误区</th></tr>
+<tr><td>一般数据</td><td>不属于重要数据、核心数据的数据</td><td>网络安全等级保护基础上的安全管理制度、技术措施、事件处置（《网络数据安全管理条例》第九条）</td><td>认为「一般」等于「不设防」，忽略等保与事件报告义务</td></tr>
+<tr><td>重要数据</td><td>以地区、部门、行业的重要数据具体目录为准，处理者负有识别申报义务</td><td>明确网络数据安全负责人与管理机构；提供、委托、共同处理前风险评估；合并分立解散破产时的处置报告；年度风险评估并报送</td><td>只做内部标签，不履行申报与年度报送</td></tr>
+<tr><td>核心数据</td><td>关系国家安全、国民经济命脉、重要民生、重大公共利益</td><td>实行更加严格的管理制度，具体要求依法律、行政法规与行业规定</td><td>把核心数据误判为重要数据，义务清单整体降级</td></tr>
+</table>
+<p>三个层级之间不是简单的危害程度递进，而是适用不同规范群。重要数据的义务集中在《网络数据安全管理条例》第四章；核心数据目前主要是「更加严格」的原则表述，具体制度由法律、行政法规与行业规定填充，企业应主动向主管部门确认要求，不宜自行推演。</p>
+
+<h2>三、重要数据怎么识别与申报</h2>
+<p>识别路径有两步。第一步，<strong>对照目录</strong>：查看本地区、本部门、本行业已公布的重要数据具体目录，逐项比对自身业务产生的数据是否落入目录项下。第二步，<strong>按危害程度判断</strong>：目录未覆盖但一旦遭篡改、破坏、泄露可能影响国家安全、经济运行、社会稳定、公共健康与安全的，应主动申报。</p>
+<p>申报之后有一个易被忽略的环节：第二十九条规定，对确认为重要数据的，相关地区、部门应及时向处理者告知或公开发布。这意味着「未被告知」不等于「不是重要数据」，不能以未收到通知为由免除识别义务。稳妥做法是保留识别记录、专家论证意见与申报回执。</p>
+<p>另一个高频错误是把「重要数据」与「个人信息数量大」等同。两者判断标准不同：前者看国家安全与公共利益影响，后者看个人权益影响。处理一千万人以上的个人信息会触发条例第二十八条的准用规则，但这不等于该数据自动成为重要数据。</p>
+
+<h2>四、重要数据处理者的四项硬义务</h2>
+<p><strong>第一，负责人与机构。</strong>依第三十条，应明确网络数据安全负责人与管理机构；机构负责制定制度、操作规程与应急预案，组织风险监测、评估、演练与培训；负责人须具备专业知识与管理经历，由管理层成员担任，有权直接向主管部门报告。掌握特定种类、规模重要数据的，还应对关键岗位人员作安全背景审查。</p>
+<p><strong>第二，处理前风险评估。</strong>依第三十一条，提供、委托处理、共同处理重要数据前应作风险评估（履行法定职责或法定义务的除外），重点评估处理目的与方式的合法性、正当性、必要性，接收方的诚信守法情况，合同约束与技术措施能否有效防范风险。</p>
+<p><strong>第三，主体变动时的处置报告。</strong>依第三十二条，因合并、分立、解散、破产等可能影响重要数据安全的，应采取措施保障安全，并向省级以上有关主管部门报告处置方案与接收方信息；主管部门不明确的，向省级以上数据安全工作协调机制报告。并购交易中的数据合规尽调因此不只是商业判断，而是法定义务的一环。</p>
+<p><strong>第四，年度风险评估与报送。</strong>依第三十三条，应每年度开展风险评估并向省级以上有关主管部门报送报告，内容包括处理者与负责人信息、处理重要数据的目的种类数量方式范围与存储地点、制度与技术措施及其有效性、风险与事件处置、数据出境情况等。存在可能危害国家安全的处理活动的，主管部门可责令整改或停止处理。</p>
+
+<h2>五、一千万人门槛与合规审计</h2>
+<p>《网络数据安全管理条例》第二十八条规定，处理一千万人以上个人信息的，还应当遵守本条例第三十条、第三十二条对重要数据处理者作出的规定。即：达到该规模，即便数据不属于重要数据，也须设立安全负责人与管理机构，并在合并分立解散破产时履行处置报告义务。</p>
+<p>第二十七条另设合规审计义务：应定期自行或者委托专业机构，对处理个人信息遵守法律、行政法规的情况进行审计。审计报告与整改记录应留档备查。</p>
+
+<h2>六、与等级保护、个人信息分级的关系</h2>
+<p>三套制度须分清对象。<strong>网络安全等级保护</strong>（《网络安全法》第二十一条）保护网络系统，按系统受破坏后的危害定级。<strong>数据分类分级</strong>（《数据安全法》第二十一条）保护数据本身，按数据遭破坏后的危害程度分级。<strong>个人信息分级</strong>（《个人信息保护法》第二十八条）以敏感个人信息为轴，涉及生物识别、特定身份、医疗健康、金融账户、行踪轨迹及不满十四周岁未成年人信息，触发单独同意与影响评估。</p>
+<p>三者并行不替代：一个三级等保系统里可能同时存在一般数据、重要数据与敏感个人信息，三类义务须叠加履行。企业落地时的顺序建议是：先做数据资产盘点与分类，再对照行业目录定级，再按级别映射义务清单，最后把义务落到制度、岗位与技术措施，并以年度评估验证有效性。</p>
+<h2>七、常见问题</h2>
+<h3>问：数据分类分级是强制义务吗？</h3>
+<p>是。《数据安全法》第二十一条建立数据分类分级保护制度，网络数据处理者须按国家规定识别、申报重要数据（《网络数据安全管理条例》第二十九条）。未识别申报不因「未收到通知」而免除义务。</p>
+<h3>问：怎么判断自己的数据是不是重要数据？</h3>
+<p>两步：先对照本地区、本部门、本行业已公布的重要数据具体目录逐项比对；目录未覆盖但一旦遭篡改、破坏、泄露可能影响国家安全、经济运行、社会稳定、公共健康与安全的，应主动申报。</p>
+<h3>问：处理一千万人以上个人信息，会触发哪些额外义务？</h3>
+<p>依《网络数据安全管理条例》第二十八条，还应当遵守第三十条、第三十二条对重要数据处理者的规定，即明确网络数据安全负责人与管理机构，并在合并、分立、解散、破产时报告重要数据处置方案。这不等于该数据自动成为重要数据。</p>
+<h3>问：重要数据的年度风险评估报告要写什么？</h3>
+<p>依第三十三条，包括处理者基本信息、管理机构与负责人信息、处理重要数据的目的种类数量方式范围存储期限与地点、安全管理制度与技术措施及其有效性、发现的风险与事件处置、提供委托共同处理的风险评估情况、数据出境情况等，并报送省级以上有关主管部门。</p>
+<h3>问：等级保护定级和数据分类分级是一回事吗？</h3>
+<p>不是。等级保护按网络系统受破坏后的危害程度定级（《网络安全法》第二十一条），分类分级按数据本身遭破坏后的危害程度分级（《数据安全法》第二十一条），个人信息另有以敏感信息为轴的分级规则。三套制度并行，义务叠加。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国数据安全法》第二十一条（数据分类分级保护制度、重要数据目录、核心数据）；《网络数据安全管理条例》（国务院令第790号，2024年9月24日公布，2025年1月1日施行）第五条（分类分级保护）、第九条（等保基础上的安全防护）、第二十七条（合规审计）、第二十八条（一千万人以上准用第三十条、第三十二条）、第二十九条（重要数据目录与识别申报）、第三十条（负责人与管理机构）、第三十一条（处理前风险评估）、第三十二条（合并分立破产时的处置报告）、第三十三条（年度风险评估报告与报送）；《中华人民共和国网络安全法》第二十一条（网络安全等级保护制度）；《中华人民共和国个人信息保护法》第二十八条（敏感个人信息范围）。特别说明：核心数据的具体管理制度尚由法律、行政法规与行业规定逐步填充，企业不宜自行推演；重要数据目录以各地区、各部门公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>分级不是自选动作，是义务起点</h3><p>级别定错，后续的评估、报告、出境路径全部错位。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="zhongyao-shuju-shibie-shenbao.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>重要数据的识别、申报与年度风险评估：三步落地路径与三类评估的触发条件</h4></a>
+<a href="shuju-anquan-dengji-baohu.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>网络安全等级保护义务与数据安全事件的责任认定</h4></a>
+<a href="shuju-chujing-shuliang-menkan.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>数据出境的数量门槛与自贸区负面清单：10万人、100万人与1万人敏感个人信息的适用边界</h4></a>
+<a href="wangluoanquan-shencha-shenbao.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>网络安全审查的申报义务：三类触发情形、100万用户标准与审查流程</h4></a>
+</div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数据分类分级保护制度怎么落地：一般数据、重要数据与核心数据的三层义务", "description": "《数据安全法》第二十一条建立数据分类分级保护制度并划定核心数据；《网络数据安全管理条例》（国务院令第790号，2025年1月1日施行）第五条重申分类分级，第二十九条要求编制重要数据目录并由处理者识别申报，第三十条至第三十三条对重要数据处理者设负责人、处理前风险评估、转移报告与年度报告四项硬义务。本文梳理三层数据的界分方法与企业落地步骤。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-11", "dateModified": "2026-11-11"}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "数据分类分级是强制义务吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是。《数据安全法》第二十一条建立数据分类分级保护制度，网络数据处理者须按国家规定识别、申报重要数据（《网络数据安全管理条例》第二十九条）。未识别申报不因「未收到通知」而免除义务。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "怎么判断自己的数据是不是重要数据？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "两步：先对照本地区、本部门、本行业已公布的重要数据具体目录逐项比对；目录未覆盖但一旦遭篡改、破坏、泄露可能影响国家安全、经济运行、社会稳定、公共健康与安全的，应主动申报。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "处理一千万人以上个人信息，会触发哪些额外义务？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "依《网络数据安全管理条例》第二十八条，还应当遵守第三十条、第三十二条对重要数据处理者的规定，即明确网络数据安全负责人与管理机构，并在合并、分立、解散、破产时报告重要数据处置方案。这不等于该数据自动成为重要数据。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "重要数据的年度风险评估报告要写什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "依第三十三条，包括处理者基本信息、管理机构与负责人信息、处理重要数据的目的种类数量方式范围存储期限与地点、安全管理制度与技术措施及其有效性、发现的风险与事件处置、提供委托共同处理的风险评估情况、数据出境情况等，并报送省级以上有关主管部门。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "等级保护定级和数据分类分级是一回事吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是。等级保护按网络系统受破坏后的危害程度定级（《网络安全法》第二十一条），分类分级按数据本身遭破坏后的危害程度分级（《数据安全法》第二十一条），个人信息另有以敏感信息为轴的分级规则。三套制度并行，义务叠加。"
+      }
+    }
+  ]
+}</script>
+</body></html>

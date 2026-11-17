@@ -1,171 +1,178 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="取保候审的法定条件、保证金金额与保证人资格要求，以及提请批准逮捕前后37天各节点的具体操作。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="取保候审条件,取保候审多少钱,黄金37天,湖北立丰律师事务所">
-<meta name="author" content="荣郑律师">
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="取保候审适用于可能判处管制拘役、可能判处有期徒刑以上但不致发生社会危险性、患严重疾病或者怀孕哺乳、羁押期限届满四种情形。本文梳理保证人与保证金两种方式的选择、保证金数额的确定与退还、十二个月期限、被取保候审人的六项义务与违反后果，以及侦查阶段各节点的操作要点。">
+<meta name="keywords" content="取保候审条件,取保候审保证金,保证人,黄金37天,羁押必要性审查,刑事诉讼法第六十七条,刑事诉讼法第七十一条,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/qubaohoushen-quanliucheng.html" />
 <title>取保候审的法定条件、保证金与保证人规则：侦查阶段的37个关键日</title>
-
-<style>
-  :root{--bg:#fafaf8;--white:#fff;--ink:#111;--ink-soft:#333;--text:#444;--text-muted:#999;--gold:#a0844c;--gold-light:#c4a86c;--rule:#e8e4dc;--rule-light:#f2efe8}
-  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-
-  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);transition:transform .35s}
-  .nav.hide{transform:translateY(-100%)}
-  .nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
-  .nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);letter-spacing:.04em}
-  .nav-logo span{color:var(--gold)}
-  .nav-links{display:flex;gap:32px;align-items:center}
-  .nav-links a{font-size:13px;color:var(--text-muted);letter-spacing:.04em;transition:color .2s}
-  .nav-links a:hover{color:var(--ink)}
-
-  .page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
-  .breadcrumb{font-size:12px;color:var(--text-muted);letter-spacing:.04em;margin-bottom:24px}
-  .breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
-  .page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
-  .page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);letter-spacing:.02em;margin-bottom:12px;line-height:1.35}
-  .page-header .meta{font-size:13px;color:var(--text-muted);letter-spacing:.02em}
-
-  .article-body{max-width:860px;margin:0 auto;padding:48px 40px}
-  .article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px;letter-spacing:.02em}
-  .article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;color:var(--text);line-height:2}
-  .article-body ul{margin:12px 0 20px 1.5em;font-size:15px;color:var(--text)}
-  .article-body li{margin-bottom:8px;line-height:1.85}
-  .article-body strong{color:var(--ink)}
-
-  /* Author card */
-  .author-card{max-width:860px;margin:0 auto 64px;padding:40px 40px 0}
-  .author-inner{display:flex;gap:24px;align-items:flex-start;background:var(--white);border:1px solid var(--rule);padding:32px}
-  .author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
-  .author-info h4{font-size:17px;color:var(--ink);margin-bottom:4px}
-  .author-info .author-title{font-size:13px;color:var(--text-muted);letter-spacing:.02em;margin-bottom:8px}
-  .author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
-  .author-info .author-contact{font-size:12px;color:var(--text-muted);letter-spacing:.02em}
-  .author-info .author-contact span{margin-right:16px}
-
-  /* Related */
-  .related{max-width:860px;margin:0 auto 80px;padding:0 40px}
-  .related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px;letter-spacing:.02em}
-  .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .related-card{border:1px solid var(--rule);padding:20px 24px;transition:all .25s;display:block}
-  .related-card:hover{border-color:var(--gold)}
-  .related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
-  .related-card h4{font-size:15px;color:var(--ink);line-height:1.4}
-
-  footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px;letter-spacing:.04em}
-  footer a{color:var(--gold-light)}
-  .f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px;flex-wrap:wrap}
-
-  @media(max-width:768px){
-    .page-header h1{font-size:26px}.article-body{padding:32px 20px}
-    .author-inner{flex-direction:column;align-items:center;text-align:center}
-    .related-grid{grid-template-columns:1fr}
-  }
-</style>
-</head>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
 <body>
-
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-logo">荣<span>郑</span></a>
-    <div class="nav-links">
-      <a href="../index.html">首页</a>
-      <a href="../criminal.html">刑事专题</a>
-      <a href="../civil.html">民商事专题</a>
-      <a href="../index.html#contact">联系</a>
-    </div>
-  </div>
-</nav>
-
-<header class="page-header">
-  <div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../criminal.html">刑事辩护专题</a> &rsaquo; 取保候审的法定条件、保证金与保证人规则：侦查阶段的37个关键日</div>
-  <div class="cat">Criminal Defense &bull; Practical Guide</div>
-  <h1>取保候审的法定条件、保证金与保证人规则：侦查阶段的37个关键日</h1>
-  <div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div>
-</header>
-
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../criminal.html">刑事辩护</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../criminal.html">刑事辩护专题</a> &rsaquo; 取保候审的法定条件、保证金与保证人规则</div><div class="cat">Criminal Defense &bull; Practical Guide</div><h1>取保候审的法定条件、保证金与保证人规则：侦查阶段的37个关键日</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div></header>
 <article class="article-body">
-
-  <h2>一、取保候审是什么条件？不是"没事了"，只是换个地方等审判</h2>
-  <p>取保候审是《刑事诉讼法》规定的强制措施之一，在性质上仍然属于刑事强制措施——只是将羁押状态变更为非羁押状态，并不意味着案件的终结。许多家属误以为"人出来了就没事了"，这是一个需要及早纠正的认知偏差。</p>
-  <p>取保候审期间，被取保人仍需遵守相关义务：未经批准不得离开所居住的市、县，随传随到，不得干扰证人作证，不得毁灭、伪造证据或串供。违反上述义务的，已交纳的保证金可能被没收，并可能被变更为逮捕。但另一方面，实践中取保候审后最终不起诉、缓刑的比例确实显著高于羁押状态，因此争取取保候审仍然是辩护工作的重中之重。</p>
-
-  <h2>二、取保候审要多少钱？保证人和保证金怎么选？</h2>
-  <p>根据《刑事诉讼法》第六十七条，人民法院、人民检察院和公安机关对有下列情形之一的犯罪嫌疑人、被告人可以取保候审：</p>
-  <ul>
-    <li>可能判处管制、拘役或者独立适用附加刑的；</li>
-    <li>可能判处有期徒刑以上刑罚，采取取保候审不致发生社会危险性的；</li>
-    <li>患有严重疾病、生活不能自理，怀孕或者正在哺乳自己婴儿的妇女，采取取保候审不致发生社会危险性的；</li>
-    <li>羁押期限届满，案件尚未办结，需要采取取保候审的。</li>
-  </ul>
-  <p>实务中，辩护律师在论证"不致发生社会危险性"时，通常从以下要素切入：涉案金额较小、系初犯偶犯、有固定住所和稳定工作、有需要抚养的未成年人或需要赡养的老人、愿意退赃退赔并已实际履行、取得了被害人的谅解、同案犯已全部到案不存在串供风险等。</p>
-
-  <h2>三、黄金37天：每个时间节点家属该做什么？完整时间表</h2>
-  <p>刑事拘留的最长期限为37天（公安机关拘留期限最长30天 + 检察院审查批准逮捕期限7天），这37天被称为刑事案件的<strong>"黄金37天"</strong>。具体时间节点和辩护策略如下：</p>
-  <p><strong>拘留后24小时内</strong>——公安机关应当通知家属，家属应第一时间获取《拘留通知书》，了解涉嫌罪名和办案单位。</p>
-  <p><strong>拘留后3日内</strong>——公安机关提请检察院审查批准逮捕（特殊情况下可延长至7日，流窜作案、多次作案、结伙作案的重大嫌疑分子可延长至30日）。辩护律师应在此阶段完成首次会见，了解案情。</p>
-  <p><strong>报捕前（拘留后第1-7天）</strong>——如案件明显属于民事纠纷或证据不足，律师应在公安机关报捕前即提交《不予提请批准逮捕的法律意见》，争取公安机关不报捕。</p>
-  <p><strong>审查批捕阶段（报捕后7日内）</strong>——这是整个黄金37天中最关键的阶段。检察院在收到公安机关的提请批准逮捕书后，应在7日内作出批准逮捕或不批准逮捕的决定。辩护律师应在该阶段向检察院提交《不予批准逮捕的法律意见》，并争取与承办检察官当面沟通。</p>
-  <p><strong>批捕后（逮捕后）</strong>——即使已被批准逮捕，辩护律师仍可在逮捕后向检察院提交《羁押必要性审查申请书》，申请变更强制措施为取保候审。</p>
-
-  <h2>四、家属现在就能做的七件事，越早越好</h2>
-  <p>取保候审有两种方式：提出保证人或者交纳保证金，两种方式只能择一使用。</p>
-  <p><strong>保证人</strong>须满足以下条件：与本案无牵连、有能力履行保证义务、享有政治权利且人身自由未受限制、有固定的住处和收入。保证人的义务是监督被取保人遵守规定、发现被取保人可能发生或已经发生违反规定的行为时及时向执行机关报告。</p>
-  <p><strong>保证金</strong>则根据案件性质、情节、被取保人的经济状况等因素确定，一般为数千元至数万元不等。实务中，保证金方式的优点在于操作简便、不需要保证人承担法律风险；但缺点是如果违反规定，保证金可能被没收。律师一般建议优先选择保证金方式，除非当事人经济确实困难。</p>
-
-  <h2>五、取保候审期间要注意什么？违反规定随时可能被收监</h2>
-  <p>家属在亲人被刑事拘留后，可以立即做以下七件事：</p>
-  <ol style="margin:12px 0 20px 1.5em;font-size:15px;color:var(--text)">
-    <li style="margin-bottom:8px"><strong>获取《拘留通知书》</strong>，了解涉嫌罪名和羁押场所。</li>
-    <li style="margin-bottom:8px"><strong>委托专业刑事辩护律师</strong>，越早介入越好，不要等待"过几天看看情况"——每浪费一天都是在消耗黄金37天。</li>
-    <li style="margin-bottom:8px"><strong>不要自行联系被害人或其家属"私了"</strong>——在未咨询律师的情况下自行与对方接触，可能构成妨碍作证或串供。</li>
-    <li style="margin-bottom:8px"><strong>不要试图销毁或转移任何文件、电子设备、账目</strong>——这可能构成毁灭证据罪。</li>
-    <li style="margin-bottom:8px"><strong>准备退赃退赔资金</strong>——这是争取取保候审和不批捕最有效的筹码之一。</li>
-    <li style="margin-bottom:8px"><strong>整理被拘留人的身份信息、工作证明、居住证明、家庭成员情况</strong>，供律师在申请取保候审时使用。</li>
-    <li style="margin-bottom:8px"><strong>保持冷静，不要被各种"能办人""有关系"的中间人所骗</strong>——刑事案件唯一合法的辩护渠道是聘请执业律师。如果有人声称"给钱就能放人"，极有可能是诈骗。</li>
-  </ol>
-
-  <h2>六、取保候审常见误区：澄清家属最关心的三个问题</h2>
-  <p><strong>误区一："37天到了人就会自动出来。"</strong>——错误。刑事拘留最长期限37天，是指公安机关拘留后到检察院作出批捕决定的法定期限上限。如果检察院批准逮捕，羁押将继续，案件进入侦查、起诉、审判阶段，不存在"37天自动放人"的规定。</p>
-  <p><strong>误区二："取保候审说明案子很轻，可以不用请律师了。"</strong>——错误。取保候审只是强制措施的变更，案件仍在进行中。相反，取保候审期间是辩护律师固定有利证据、与办案单位沟通、争取不起诉或轻判的关键阶段。</p>
-  <p><strong>误区三："请律师没用，检察院该批捕还是会批捕。"</strong>——错误。根据公开数据，在律师有效介入的情况下，不批捕率显著高于无律师介入的情形。尤其在案件属于民事纠纷、证据不足、情节轻微的案件中，律师的法律意见可以直接影响检察官的判断。</p>
-
-</article>
-
-<!-- Author Card -->
-<section class="author-card">
-  <div class="author-inner">
-    <img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'">
-    <div class="author-info">
-      <h4>荣郑律师</h4>
-      <div class="author-title">湖北立丰律师事务所 · 高级合伙人</div>
-      <div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。湖北省法学会西政法学研究会副秘书长，湖北经视及武汉电视台常年法律嘉宾。</div>
-      <div class="author-contact">
-        <span>&#x1F4F1; 15872427052</span>
-        <span>&#x1F4E7; rz@lflawyers.com</span>
-        <span>&#x1F4CD; 湖北省武汉市</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Related Articles -->
-<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="zhapianzui-feifa-zhanyou-mudi.html" class="related-card"><div class="rc-tag">Criminal Defense</div><h4>诈骗罪的三档量刑、非法占有目的的认定与涉案金额辩护</h4></a><a href="bangxinzui-mingzhi-rensing.html" class="related-card"><div class="rc-tag">Criminal Defense</div><h4>帮信罪的量刑档次与「明知」推定：七类推定情形的反驳要点</h4></a><a href="weixian-jiashi-zuijia.html" class="related-card"><div class="rc-tag">Criminal Defense</div><h4>醉酒危险驾驶案的入罪标准与不起诉条件</h4></a></div></section>
-
-<footer>
-  <div class="f-nav"><a href="../index.html">首页</a><a href="../criminal.html">刑事专题</a><a href="../civil.html">民商事专题</a><a href="../index.html#contact">联系</a></div>
-  <p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p>
-</footer>
-
-<script>
-let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;document.getElementById('nav').classList.toggle('hide',y>last&&y>200);last=y});
+<h2>一、结论先行：四种法定情形与三条硬期限</h2>
+<p><strong>结论：</strong>取保候审是强制措施的一种，不是案件终结。依《刑事诉讼法》第六十七条，人民法院、人民检察院和公安机关对有下列情形之一的犯罪嫌疑人、被告人，<strong>可以</strong>取保候审：</p>
+<ol>
+<li>可能判处管制、拘役或者独立适用附加刑的；</li>
+<li>可能判处有期徒刑以上刑罚，采取取保候审不致发生社会危险性的；</li>
+<li>患有严重疾病、生活不能自理，怀孕或者正在哺乳自己婴儿的妇女，采取取保候审不致发生社会危险性的；</li>
+<li>羁押期限届满，案件尚未办结，需要采取取保候审的。</li>
+</ol>
+<p>条文用的是「可以」而非「应当」，这意味着符合条件并不等于必然获批。三条期限同样关键：取保候审最长不得超过<strong>十二个月</strong>（第七十九条）；决定取保候审应当责令提出保证人或者交纳保证金（第六十八条）；被取保候审人违反规定，已交纳的保证金可以没收部分或者全部，并区别情形责令具结悔过、重新交纳保证金、提出保证人，或者监视居住、予以逮捕（第七十一条）。</p>
+<h2>二、取保候审不是「没事了」：性质与后续走向</h2>
+<p>取保候审只是把羁押状态变更为非羁押状态，案件仍在侦查、起诉、审判的轨道上推进。三件事不会因取保而消失：</p>
+<ul>
+<li><strong>侦查不会停止。</strong>取保期间仍需随传随到，接受讯问、辨认、鉴定等侦查活动。</li>
+<li><strong>强制措施可能变更。</strong>发现不应当取保、或者被取保候审人违反规定的，可以变更为监视居住或者逮捕（第七十一条、第九十六条）。</li>
+<li><strong>案件结果不确定。</strong>取保不等于不起诉、不等于缓刑，也不等于无罪。是否起诉、如何量刑，取决于事实、证据与情节。</li>
+</ul>
+<p>理解这一点有实际意义：把取保当作目标，容易在申请材料上只强调「不会跑」，而忽略「不致发生社会危险性」的实质论证——后者才是决定能否获批的关键。</p>
+<h2>三、保证人保证与保证金保证：条件、金额与退还</h2>
+<p>两种保证方式择一即可，不得同时要求（第六十八条）。对照如下。</p>
+<table>
+<tr><th>比较项</th><th>保证人保证</th><th>保证金保证</th></tr>
+<tr><td>法律依据</td><td>第六十八条、第六十九条、第七十条</td><td>第六十八条、第七十二条、第七十三条</td></tr>
+<tr><td>核心条件</td><td>与本案无牵连；有能力履行保证义务；享有政治权利、人身自由未受限制；有固定住处和收入</td><td>以保证被取保候审人不逃避、不妨碍刑事诉讼为原则，综合考虑案件性质情节、社会危险性、可能判处刑罚轻重、经济状况确定</td></tr>
+<tr><td>主要义务</td><td>监督被保证人遵守规定；发现可能发生或者已经发生违规行为的，及时报告</td><td>将保证金存入执行机关指定银行的专门账户</td></tr>
+<tr><td>违反后果</td><td>未履行义务的，处以罚款；构成犯罪的，依法追究刑事责任</td><td>没收部分或者全部保证金，并可责令具结悔过、重新交纳、提出保证人，或者监视居住、逮捕</td></tr>
+<tr><td>结束时处理</td><td>解除保证义务</td><td>未违反第七十一条规定的，凭解除通知或者有关法律文书到银行领取退还的保证金</td></tr>
+</table>
+<p>实务中的选择逻辑：<strong>有稳定住所与固定收入的本地亲属，走保证人更快；异地办案、亲属不便到场的，走保证金更现实。</strong>保证金数额没有统一标准，由决定机关在法定考量因素内裁量，缴纳后应当索取凭证并妥善保管，这是后续退还的唯一凭据。</p>
+<h2>四、37天从哪来：拘留、提请批捕与审查批捕的时限链</h2>
+<p>「黄金37天」不是法律术语，而是三个法定期限相加的结果，依《刑事诉讼法》第九十一条：</p>
+<ul>
+<li>公安机关对被拘留的人认为需要逮捕的，应当在拘留后<strong>三日以内</strong>提请人民检察院审查批准；</li>
+<li>特殊情况下，提请审查批准的时间可以<strong>延长一日至四日</strong>；</li>
+<li>对于流窜作案、多次作案、结伙作案的重大嫌疑分子，提请审查批准的时间可以<strong>延长至三十日</strong>；</li>
+<li>人民检察院应当自接到提请批准逮捕书后的<strong>七日以内</strong>，作出批准逮捕或者不批准逮捕的决定。</li>
+</ul>
+<p>30日加7日即37日。需要注意的是，37天是<strong>上限</strong>而非必经期限：多数案件在3日至7日内即完成提请与审查。把37天当作固定日程表，容易错过更早的介入窗口。人民检察院不批准逮捕的，公安机关应当立即释放；需要继续侦查且符合取保候审、监视居住条件的，依法取保候审或者监视居住。</p>
+<h2>五、申请与变更：谁有权提、向谁提、几日内答复</h2>
+<p>依第九十七条，犯罪嫌疑人、被告人及其法定代理人、近亲属或者辩护人<strong>有权申请变更强制措施</strong>；人民法院、人民检察院和公安机关收到申请后，应当在<strong>三日以内</strong>作出决定；不同意变更的，应当告知申请人并说明不同意的理由。</p>
+<p>申请对象的判断规则是「向办案机关提」：侦查阶段向公安机关，审查起诉阶段向人民检察院，审判阶段向人民法院。向没有办案权的机关递交，通常只会被转办，白白消耗时间。</p>
+<p>申请材料应当围绕第六十七条的四种情形组织，而不是泛泛陈述家庭困难：</p>
+<ol>
+<li><strong>对应情形</strong>：属于哪一种法定情形，附相应证据（病历、诊断证明、怀孕检查记录、羁押期限计算表）。</li>
+<li><strong>社会危险性评估</strong>：固定住所、稳定职业、家庭成员、保证人情况、有无前科、是否本地户籍、案件性质与涉嫌罪名、是否退赔取得谅解。</li>
+<li><strong>不妨碍诉讼的承诺</strong>：随传随到、不接触证人、不离开所居住的市县。</li>
+</ol>
+<p>逮捕之后仍有出口：依第九十五条，犯罪嫌疑人、被告人被逮捕后，人民检察院仍应当对羁押的必要性进行审查，对不需要继续羁押的，应当建议予以释放或者变更强制措施，有关机关应当在十日以内将处理情况通知人民检察院。这就是通常所说的羁押必要性审查。</p>
+<h2>六、被取保候审人的六项义务与违反后果</h2>
+<p>依第七十一条，被取保候审的犯罪嫌疑人、被告人应当遵守以下规定：</p>
+<ol>
+<li>未经执行机关批准不得离开所居住的市、县；</li>
+<li>住址、工作单位和联系方式发生变动的，在二十四小时以内向执行机关报告；</li>
+<li>在传讯的时候及时到案；</li>
+<li>不得以任何形式干扰证人作证；</li>
+<li>不得毁灭、伪造证据或者串供；</li>
+<li>决定机关可以根据案件情况，责令其不得进入特定场所、不得与特定人员会见或者通信、不得从事特定活动，并将护照等出入境证件、驾驶证件交执行机关保存。</li>
+</ol>
+<p>违反上述规定的后果是递进的：没收部分或者全部保证金 → 责令具结悔过 → 重新交纳保证金或者提出保证人 → 监视居住 → 予以逮捕。需要逮捕的，可以先行拘留。这意味着取保期间的一次擅自外出、一次未接电话，都可能导致重新羁押。</p>
+<div class="tip"><strong>律师提示：</strong>取保期间最容易被忽视的两件事，一是变更住址或者换手机号后未在二十四小时内报告，二是因工作出差擅自跨市。两者在办案机关看来都属于「逃避侦查」的表征，足以支撑没收保证金甚至逮捕。建议把报告义务做成清单，任何变动先报告、留痕，再行动。</div>
+<h2>七、常见问题</h2>
+<h3>问：取保候审是不是就意味着不会判刑了？</h3>
+<p>不是。取保候审只是强制措施，案件仍会继续侦查、起诉、审判。取保与最终的起诉、量刑没有必然联系，实务中取保后仍被判处实刑的情形并不少见。</p>
+<h3>问：保证金交多少？能退吗？</h3>
+<p>数额由决定机关综合案件性质情节、社会危险性、可能判处刑罚轻重与经济状况确定，没有统一标准。被取保候审人在取保期间未违反《刑事诉讼法》第七十一条规定的，取保结束时凭解除通知或者有关法律文书到银行领取退还的保证金。</p>
+<h3>问：保证人和保证金可以同时要求吗？</h3>
+<p>不可以。依第六十八条，决定取保候审应当责令提出保证人或者交纳保证金，二者择一。实践中有的办案机关同时要求，可以据此提出异议。</p>
+<h3>问：申请取保被驳回，还能再申请吗？</h3>
+<p>可以。法律未限制申请次数，但反复提交相同材料意义有限。有效做法是针对驳回理由补充证据，或者在逮捕后申请羁押必要性审查（第九十五条），也可以在审查起诉、审判阶段分别向对应的办案机关提出。</p>
+<h3>问：取保候审最长能持续多久？到期怎么办？</h3>
+<p>最长不得超过十二个月（第七十九条）。期限届满应当解除取保候审或者变更强制措施；对于取保候审期限届满的，应当及时解除并向被取保候审人宣布，退还保证金。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国刑事诉讼法》（2018年10月26日第三次修正）第三十九条（辩护律师会见与通信）、第六十七条（取保候审的四种情形）、第六十八条（保证人或者保证金）、第六十九条（保证人条件）、第七十条（保证人义务与违反后果）、第七十一条（被取保候审人的义务与违反后果）、第七十二条（保证金数额的确定）、第七十三条（保证金退还）、第七十九条（取保候审十二个月、监视居住六个月）、第八十二条（先行拘留）、第八十四条（拘留证、送看守所、通知家属）、第八十五条（拘留后二十四小时以内讯问）、第九十条（审查批捕）、第九十一条（提请批捕与审查批捕时限）、第九十五条（羁押必要性审查）、第九十六条（不当强制措施的撤销与变更）、第九十七条（申请变更强制措施与三日答复）。特别说明：「黄金37天」系实务称谓，法律上为第九十一条三个期限相加的上限，非必经期限；取保候审的批准属办案机关裁量，本文不承诺任何结果；文中不含虚构案例、案号与金额，条文序号依2018年修正的现行有效版本标注，请以全国人大官方公布文本为准。</p></article>
+<section class="cta-box"><div class="cta-inner"><h3>取保申请被驳回，多数是条件与材料没有对上</h3><p>四种法定情形、两种保证方式、六项义务与违反后果，先逐项核对再提交申请。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="zhapian-beijuliu-jianshu-zenmeban.html" class="related-card"><div class="rc-tag">Criminal</div><h4>刑事拘留后的37天：家属与辩护律师的操作节点</h4></a><a href="jiya-biyaoxing-shencha.html" class="related-card"><div class="rc-tag">Criminal</div><h4>羁押必要性审查的启动与审查标准：应当立即审查的情形与一般不予变更的情形</h4></a><a href="juliu-tongzhishu-24xiaoshi.html" class="related-card"><div class="rc-tag">Criminal</div><h4>收到刑事拘留通知书后的24小时：核实羁押、律师会见与取保节点</h4></a><a href="huanxing-shitiao-yong-tiaojian.html" class="related-card"><div class="rc-tag">Criminal</div><h4>缓刑的适用条件与撤销：刑法第七十二条至第七十七条的实务把握</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../criminal.html">刑事辩护</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "取保候审的法定条件、保证金与保证人规则：侦查阶段的37个关键日", "description": "取保候审适用于可能判处管制拘役、可能判处有期徒刑以上但不致发生社会危险性、患严重疾病或者怀孕哺乳、羁押期限届满四种情形。本文梳理保证人与保证金两种方式的选择、保证金数额的确定与退还、十二个月期限、被取保候审人的六项义务与违反后果，以及侦查阶段各节点的操作要点。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-14", "dateModified": "2026-11-13"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "取保候审是不是就意味着不会判刑了？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是。取保候审只是强制措施，案件仍会继续侦查、起诉、审判。取保与最终的起诉、量刑没有必然联系，实务中取保后仍被判处实刑的情形并不少见。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "保证金交多少？能退吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "数额由决定机关综合案件性质情节、社会危险性、可能判处刑罚轻重与经济状况确定，没有统一标准。被取保候审人在取保期间未违反《刑事诉讼法》第七十一条规定的，取保结束时凭解除通知或者有关法律文书到银行领取退还的保证金。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "保证人和保证金可以同时要求吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不可以。依第六十八条，决定取保候审应当责令提出保证人或者交纳保证金，二者择一。实践中有的办案机关同时要求，可以据此提出异议。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "申请取保被驳回，还能再申请吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。法律未限制申请次数，但反复提交相同材料意义有限。有效做法是针对驳回理由补充证据，或者在逮捕后申请羁押必要性审查（第九十五条），也可以在审查起诉、审判阶段分别向对应的办案机关提出。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "取保候审最长能持续多久？到期怎么办？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最长不得超过十二个月（第七十九条）。期限届满应当解除取保候审或者变更强制措施；对于取保候审期限届满的，应当及时解除并向被取保候审人宣布，退还保证金。"
+      }
+    }
+  ]
+}
 </script>
-
-<!-- Schema.org Article -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "取保候审的法定条件、保证金与保证人规则：侦查阶段的37个关键日", "description": "取保候审的法定条件、保证金金额与保证人资格要求，以及提请批准逮捕前后37天各节点的具体操作。湖北立丰律师事务所高级合伙人。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}, "telephone": "+86-15872427052", "email": "rz@lflawyers.com", "address": {"@type": "PostalAddress", "addressLocality": "武汉市", "addressRegion": "湖北省"}}, "datePublished": "2026-06-14", "publisher": {"@type": "Organization", "name": "荣郑律师个人网站"}}</script>
-</body>
-</html>
+</body></html>

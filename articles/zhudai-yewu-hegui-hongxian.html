@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="2025年10月1日起施行的互联网助贷新规，要求商业银行将利息、增信服务费、担保费等全部计入综合融资成本，年化不得超过24%，并实行合作机构名单制管理、总行集中管理，禁止平台机构以任何形式向借款人收取息费。本文梳理业务定性、成本口径、合作协议条款设计与存量整改路径。">
+<meta name="keywords" content="互联网助贷,助贷新规,综合融资成本,增信服务费,名单制管理,商业银行互联网贷款,融资担保,助贷合作协议,金融消费者保护,湖北立丰律师事务所">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/zhudai-yewu-hegui-hongxian.html" />
+<title>互联网助贷业务的合规红线：二十四%综合融资成本、名单制与银行主体责任</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../corporate.html">公司股权与并购重组</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">公司股权与并购重组</a> &rsaquo; 互联网助贷业务的合规红线</div><div class="cat">Banking &amp; Finance &bull; Online Lending</div><h1>互联网助贷业务的合规红线：二十四%综合融资成本、名单制与银行主体责任</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+<h2>一、结论先行：三条红线同时生效</h2>
+<p>2025年10月1日，《国家金融监督管理总局关于加强商业银行互联网助贷业务管理提升金融服务质效的通知》施行（业内通称「助贷新规」）。这份文件不是原则性倡导，而是给商业银行的助贷业务划了三条可直接检查的红线：</p>
+<ol>
+<li><strong>成本红线：</strong>借款人承担的综合融资成本，须把利息、增信服务费、担保费及其他所有费用合并计算，年化不得超过24%。</li>
+<li><strong>准入红线：</strong>合作机构实行名单制管理，由商业银行总行准入、集中管理并对外披露，分支机构不得自行新增合作机构。</li>
+<li><strong>收费红线：</strong>平台机构不得以任何形式向借款人收取息费，也不得通过设定审批通过率下限等方式干预银行授信决策。</li>
+</ol>
+<p>三条红线指向同一个监管判断：<strong>助贷的本质是银行放贷，平台只能提供技术与获客服务，不能成为变相的资金批发商或风险承担者。</strong>这一点决定了合作协议怎么改、收费结构怎么拆、存量业务怎么处置。</p>
+
+<h2>二、定性：助贷不是新业务，是互联网贷款的一种</h2>
+<p>助贷新规明确，互联网助贷业务属于互联网贷款范畴，适用现行互联网贷款监管框架。这一定性解决了一个长期争议：过去有观点认为，银行只出资、平台负责获客与风控的「大助贷、小资方」模式，可以绕开互联网贷款关于风控自主、合作机构管理的要求。现在这条口子被封住了。</p>
+<p>随之而来的是三项可检查的义务：</p>
+<ul>
+<li><strong>风控不得外包。</strong>授信审批、合同签订、贷款支付、贷后管理等核心环节，须由银行独立完成，不得交由合作机构代为履行。</li>
+<li><strong>集中度管理。</strong>银行须对单一合作机构、单一增信机构的业务规模设定限额，防止风险过度集中于少数平台。</li>
+<li><strong>消费者权益保护前置。</strong>收费明示、投诉处理、催收管理的责任落在银行，不能以「平台行为」为由免责。</li>
+</ul>
+
+<h2>三、二十四%怎么算：把所有费用装进一个口径</h2>
+<p>过去行业的通行做法是「低利率＋高担保费」：合同写年化利率7%，另收担保费15%、服务费8%，借款人实际负担远超24%，但单看利率是合规的。助贷新规的应对办法是<strong>穿透计算</strong>——不看费用名目，只看借款人实际付出的全部对价。</p>
+<table>
+<tr><th>费用项目</th><th>是否计入综合融资成本</th><th>常见违规做法</th></tr>
+<tr><td>贷款利息</td><td>计入</td><td>以「手续费」「账户管理费」名义在放款时一次性扣收</td></tr>
+<tr><td>增信服务费、担保费</td><td>计入</td><td>由平台关联的融资担保公司收取，费率与贷款期限不匹配</td></tr>
+<tr><td>会员费、权益包、加速包</td><td>计入</td><td>以「非必需服务」名义搭售，默认勾选、取消入口隐蔽</td></tr>
+<tr><td>咨询费、顾问费、材料费</td><td>计入</td><td>合同中使用模糊表述，实际按借款金额比例收取</td></tr>
+<tr><td>逾期罚息、违约金</td><td>按监管口径合并评估</td><td>罚息按日万分之五叠加复利，实际年化远超上限</td></tr>
+</table>
+<p>计算时有三个技术点必须固定：<strong>一是分母选择</strong>，应为借款人实际到手的本金，砍头息、前置扣费不得计入本金；<strong>二是期间口径</strong>，按实际占用资金的时间折算年化，分期产品的名义费率不能直接当成年化利率；<strong>三是浮动条款</strong>，合同中预留「根据风险状况调整担保费率」的，须按最高可能费率测算，否则整改后仍可能突破上限。</p>
+<div class="tip"><strong>实务要点：</strong>监管口径的24%与民事审判中的利率保护标准不是同一回事。银行等金融机构的借贷不适用民间借贷四倍LPR上限，但超过24%的部分在诉讼中常被调减，信用卡息费纠纷已有大量此类裁判。<strong>监管合规与司法调减是两条独立的线，须分别测算。</strong></div>
+
+<h2>四、名单制与总行集中管理：一条最容易失守的防线</h2>
+<p>名单制不是「列个表备案」，而是三道工序：总行制定准入标准并开展尽职调查；形成合作机构名单并向社会披露；存续期间持续监测，出现重大风险及时移出名单并停止新增业务。</p>
+<p>实践中三类问题最集中：一是<strong>分支机构自行签约</strong>，分行的合作协议未纳入总行名单；二是<strong>多层转授权</strong>，平台再委托第三方引流、催收，实际合作方游离于名单之外；三是<strong>名单更新滞后</strong>，机构已被列入经营异常或涉刑，名单仍未调整。检查时通常从「合作协议签署主体」与「实际收款主体」两个方向倒查，一旦不一致，即被认定为名单外合作。</p>
+
+<h2>五、银行的主体责任：不能靠协议条款转移</h2>
+<p>助贷合作协议中常见的免责条款，例如「因平台提供信息不实导致的损失由平台承担」「催收由平台负责，与银行无关」，在监管检查与民事裁判中通常不被认可。银行至少承担四项不可转移的责任：</p>
+<ol>
+<li><strong>授信决策责任。</strong>是否放款、额度多少、利率几何，须由银行独立判断；平台设定「通过率不低于某比例」即构成干预。</li>
+<li><strong>息费明示责任。</strong>须以借款人可理解的方式逐项列明全部息费，形成明示表，不得以链接、折叠页代替。</li>
+<li><strong>催收管理责任。</strong>委托第三方催收的，须在协议中明确催收规范、禁止行为与投诉处理机制，并对催收行为承担管理责任。</li>
+<li><strong>数据合规责任。</strong>借款人信息的收集、使用、对外提供，须符合《个人信息保护法》关于告知同意、最小必要与对外提供的规定；平台超范围采集的，银行作为共同处理者可能承担连带责任。</li>
+</ol>
+
+<h2>六、违规的后果与合同效力：两条线要分开看</h2>
+<p><strong>监管线：</strong>助贷新规属于监管规范性文件，违反的后果是监管措施与行政处罚，包括责令整改、暂停新增业务、罚款、问责相关人员，不直接产生民事效力。</p>
+<p><strong>民事线：</strong>综合融资成本突破24%的借款合同，通常不因此整体无效——监管规定多被认定为管理性规定，不影响合同效力；但超出部分能否获得支持，法院会结合费用性质、是否实际支付、借款人是否知情等因素判断，<strong>实务中存在争议</strong>，已有裁判将变相收取的担保费、服务费纳入利息一并调减。</p>
+<p><strong>刑事线：</strong>以助贷为名，实际从事无牌放贷、职业放贷、暴力催收、非法获取公民个人信息的，可能触及非法经营罪、催收非法债务罪、侵犯公民个人信息罪，这与合规整改不是同一个层面的问题，须单独评估。</p>
+<h2>七、常见问题</h2>
+<h3>问：助贷新规从什么时候开始施行？适用于存量业务吗？</h3>
+<p>自2025年10月1日起施行。新规提出的是持续性监管要求，存量合作同样需要整改：合作机构须重新纳入总行名单，综合融资成本须按新口径重算，不符合的应压降或退出。</p>
+<h3>问：24%是按合同利率算，还是把所有费用都算进去？</h3>
+<p>按借款人承担的全部对价计算，包括利息、增信服务费、担保费、会员费、咨询费等各项费用，折算为年化后不得超过24%。以费率名目拆分规避的，监管上按穿透原则合并计算。</p>
+<h3>问：平台公司还能向借款人收服务费吗？</h3>
+<p>不能。助贷新规明确平台机构不得以任何形式向借款人收取息费。平台的收入应来自银行支付的技术服务费，且该费用不得转由借款人承担。</p>
+<h3>问：银行能不能把风控交给平台，自己只出资金？</h3>
+<p>不可以。助贷业务属于互联网贷款，授信审批、合同签订、贷款支付、贷后管理等核心风控环节须由银行独立完成，不得外包给合作机构。</p>
+<h3>问：综合融资成本超过24%，借款合同就无效吗？</h3>
+<p>通常不因此无效。助贷新规属于监管规范性文件，违反的后果主要是监管措施与行政处罚；民事上超出部分能否获支持，法院会综合费用性质与实际支付情况判断，实务中存在争议。</p>
+<h3>问：新规对融资担保公司有什么影响？</h3>
+<p>增信服务费被纳入综合融资成本统一核算，过去依靠高担保费率获取收益的模式空间被压缩；同时担保公司作为增信机构须纳入银行名单管理，接受集中度限制与持续监测。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《国家金融监督管理总局关于加强商业银行互联网助贷业务管理提升金融服务质效的通知》（2025年10月1日起施行，文号待核实）；《商业银行互联网贷款管理暂行办法》；《个人贷款管理办法》；《中华人民共和国民法典》第六百八十条（禁止高利放贷、借款利率不得违反国家有关规定）；《中华人民共和国个人信息保护法》第十三条、第十七条、第二十三条、第五十一条；《中华人民共和国刑法》第二百二十五条（非法经营罪）、第二百九十三条之一（催收非法债务罪）、第二百五十三条之一（侵犯公民个人信息罪）。特别说明：24%系监管口径而非法律条文，其与民事审判中利率调减标准（金融机构借贷不适用民间借贷四倍LPR规则）是两条独立的线；助贷新规的正式文号与条款序号以国家金融监督管理总局官方公布文本为准，本文所引要求系依公开报道归纳，正式引用前请核对原文。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>助贷合作模式的合规体检，从息费口径开始</h3><p>综合融资成本测算、合作协议权责重划与存量业务整改，是当前最紧迫的三件事。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="weituo-daikuan-xiaoli-lilv.html" class="related-card"><div class="rc-tag">Banking</div><h4>委托贷款的效力认定、利率上限与受托银行的责任边界：名委实贷的识别标准</h4></a>
+<a href="xinyongka-xifei-weiyuejin-tiaojian.html" class="related-card"><div class="rc-tag">Banking</div><h4>信用卡透支息费的司法调减：24%上限、格式条款与盗刷举证</h4></a>
+<a href="minjian-jiedai-lilv-zhaiwu.html" class="related-card"><div class="rc-tag">Civil Litigation</div><h4>民间借贷利率上限（LPR四倍）与夫妻共同债务的认定标准</h4></a>
+<a href="jinrong-shuju-hegui.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>金融业个人信息处理的特殊规则与信用信息管理要求</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权与并购重组</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "互联网助贷业务的合规红线：二十四%综合融资成本、名单制与银行主体责任", "description": "2025年10月1日起施行的互联网助贷新规，要求商业银行将利息、增信服务费、担保费等全部计入综合融资成本，年化不得超过24%，并实行合作机构名单制管理、总行集中管理，禁止平台机构以任何形式向借款人收取息费。本文梳理业务定性、成本口径、合作协议条款设计与存量整改路径。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-10", "dateModified": "2026-11-10"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "助贷新规从什么时候开始施行？适用于存量业务吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "自2025年10月1日起施行。新规提出的是持续性监管要求，存量合作同样需要整改：合作机构须重新纳入总行名单，综合融资成本须按新口径重算，不符合的应压降或退出。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "24%是按合同利率算，还是把所有费用都算进去？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "按借款人承担的全部对价计算，包括利息、增信服务费、担保费、会员费、咨询费等各项费用，折算为年化后不得超过24%。以费率名目拆分规避的，监管上按穿透原则合并计算。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "平台公司还能向借款人收服务费吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不能。助贷新规明确平台机构不得以任何形式向借款人收取息费。平台的收入应来自银行支付的技术服务费，且该费用不得转由借款人承担。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "银行能不能把风控交给平台，自己只出资金？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不可以。助贷业务属于互联网贷款，授信审批、合同签订、贷款支付、贷后管理等核心风控环节须由银行独立完成，不得外包给合作机构。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "综合融资成本超过24%，借款合同就无效吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常不因此无效。助贷新规属于监管规范性文件，违反的后果主要是监管措施与行政处罚；民事上超出部分能否获支持，法院会综合费用性质与实际支付情况判断，实务中存在争议。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "新规对融资担保公司有什么影响？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "增信服务费被纳入综合融资成本统一核算，过去依靠高担保费率获取收益的模式空间被压缩；同时担保公司作为增信机构须纳入银行名单管理，接受集中度限制与持续监测。"
+      }
+    }
+  ]
+}</script>
+</body></html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="处理个人信息应具有明确、合理的目的，与处理目的直接相关，采取对个人权益影响最小的方式，收集限于实现处理目的的最小范围。本文梳理《个人信息保护法》第五条、第六条、第十三条、第十六条的合规边界，以及超范围收集的六种典型形态与整改路径。">
+<meta name="keywords" content="最小必要,过度收集,个人信息保护法第六条,必要个人信息,App合规,拒绝授权,告知同意,单独同意,个人信息保护法第十六条,数据合规">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/app-zuixiao-biyao-gerenxinxi.html" />
+<title>App收集个人信息的「最小必要」边界：必要范围、拒绝授权的后果与整改</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; App收集个人信息的最小必要边界</div><div class="cat">Data Compliance</div><h1>App收集个人信息的「最小必要」边界：必要范围、拒绝授权的后果与整改</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：一条原则、三项测试、一个禁止</h2>
+<p>“最小必要”不是一句口号，而是《个人信息保护法》明文规定的处理规则。<strong>该法第六条规定：处理个人信息应当具有明确、合理的目的，并应当与处理目的直接相关，采取对个人权益影响最小的方式；收集个人信息，应当限于实现处理目的的最小范围，不得过度收集个人信息。</strong></p>
+<p>落到具体判断上，可以用三项测试：<strong>目的测试</strong>——这项信息是否服务于一个明确、合理、已告知的业务功能；<strong>关联测试</strong>——该信息与实现该功能是否直接相关，而非“可能有用”；<strong>比例测试</strong>——是否存在对个人权益影响更小、同样能实现目的的方式。三项中任何一项不通过，收集行为即缺乏合法性基础。</p>
+<p>与此配套的是一条禁止性规则：<strong>个人信息处理者不得以个人不同意处理其个人信息或者撤回同意为由，拒绝提供产品或者服务，但是处理个人信息属于提供产品或者服务所必需的除外（第十六条）。</strong>换言之，用户拒绝授权非必要信息，App不能因此关闭基本功能；只有该信息属于“提供产品或者服务所必需”时，拒绝才构成合理的功能限制。</p>
+<h2>二、合法性基础：同意不是唯一路径</h2>
+<p>《个人信息保护法》第十三条规定了处理个人信息的七项合法性基础：取得个人同意；为订立、履行个人作为一方当事人的合同所必需，或者按照依法制定的劳动规章制度和依法签订的集体合同实施人力资源管理所必需；为履行法定职责或者法定义务所必需；为应对突发公共卫生事件，或者紧急情况下为保护自然人的生命健康和财产安全所必需；为公共利益实施新闻报道、舆论监督等行为，在合理的范围内处理个人信息；依照本法规定在合理的范围内处理个人自行公开或者其他已经合法公开的个人信息；法律、行政法规规定的其他情形。</p>
+<p>第二款明确：依照本法其他有关规定，处理个人信息应当取得个人同意，但有前款第二项至第七项规定情形的，不需取得个人同意。这一结构对App合规的意义在于：<strong>凡属“履行合同所必需”的信息，不需要单独取得同意，但也不得超出“必需”的范围。</strong>把“必需”解释得过宽，实质是把同意架空。</p>
+<p>需要区分“同意”的三种形态：一般同意（告知后取得）、单独同意（法律明确规定的情形，如处理敏感个人信息、向他人提供、公开、用于自动化决策等）、书面同意（法律、行政法规规定的情形）。《个人信息保护法》第二十八条、第二十九条规定，处理敏感个人信息应具有特定的目的和充分的必要性，并取得个人的单独同意。把生物识别、行踪轨迹、医疗健康等信息混杂在概括授权中，是常见的合规瑕疵。</p>
+<h2>三、必要个人信息范围：行业分类的意义</h2>
+<p>“最小必要”在监管落地层面被具体化为“必要个人信息范围”。国家网信办等四部门发布的《常见类型移动互联网应用程序必要个人信息范围规定》，按地图导航、网约车、即时通信、网络购物、餐饮外卖、求职招聘、网络借贷等常见类型，逐类列明“基本功能服务”与对应的必要个人信息范围，并明确：App运营者不得因用户不同意提供非必要个人信息，而拒绝用户使用其基本功能服务。</p>
+<p>该规定的适用逻辑是“功能—信息”对应：<strong>先确定基本功能服务，再确定实现该功能所必需的信息，超出部分即为非必要。</strong>例如网络购物类的基本功能是商品浏览与下单，必要信息通常限于注册用户的手机号码、收货人姓名与地址、支付信息；通讯录、位置、相册、麦克风不属于必要信息，不得以拒绝授权为由阻断购物功能。</p>
+<p>需要提示的是：行业分类只是底线，不是上限。分类未覆盖的新业态，仍应回到《个人信息保护法》第六条作个别判断；分类已列明的情形，若App实际功能超出“基本功能服务”，新增功能所需的信息应单独告知并单独取得同意，不能并入首次概括授权。</p>
+<p><strong>待核实提示：</strong>该规定按39类常见类型列明必要信息范围，各类的具体条目应以国家网信办发布的现行文本为准；本文未逐类比对条文序号，具体案件中的“必要”判断仍应结合功能设计与用户预期。</p>
+<h2>四、六种典型超范围形态与合规做法</h2>
+<p>监管通报与实务争议中，超范围收集集中在六种形态。下表把形态与合规做法并列，便于自查。</p>
+<table>
+<tr><th>典型形态</th><th>问题所在</th><th>合规做法</th></tr>
+<tr><td>首次启动即索取通讯录、位置、相册权限</td><td>与基本功能无直接关联，属概括授权</td><td>改为“用时申请”，在触发对应功能时说明用途并申请权限</td></tr>
+<tr><td>以“提升体验”为由收集设备标识、应用列表</td><td>目的不明确、不具体，无法通过目的测试</td><td>逐项说明用途；无法说明的停止收集</td></tr>
+<tr><td>拒绝非必要授权即退出或限制基本功能</td><td>违反第十六条的禁止性规定</td><td>保留基本功能可用；仅对确需该信息的功能作说明与限制</td></tr>
+<tr><td>隐私政策一揽子授权，敏感信息混入其中</td><td>未取得单独同意</td><td>对敏感个人信息设置独立弹窗、单独勾选，并告知必要性与影响</td></tr>
+<tr><td>后台持续获取位置、剪贴板读取无提示</td><td>超出实现目的的最小范围，且未告知</td><td>改为前台按需获取；剪贴板读取应触发提示并说明用途</td></tr>
+<tr><td>嵌入第三方SDK默认收集并共享</td><td>未告知接收方，未取得单独同意</td><td>披露SDK清单与共享目的，签署数据处理协议，提供关闭选项</td></tr>
+</table>
+<p>这张表的共同线索是“告知—同意—必要”三者的错位：有的告知了但不必要，有的必要但未单独同意，有的既未告知也不必要。整改时应按“功能清单—信息清单—权限清单—第三方清单”四张表逐项对齐，而不是只改隐私政策文本。</p>
+<h2>五、告知义务与同意的有效性</h2>
+<p>《个人信息保护法》第十七条要求处理者在处理前以显著方式、清晰易懂的语言真实、准确、完整地告知：处理者的名称与联系方式；处理目的、处理方式、处理的个人信息种类、保存期限；个人行使本法规定权利的方式和程序；法律、行政法规规定应当告知的其他事项。告知事项发生变更的，应当将变更部分告知个人。</p>
+<p>同意的有效性取决于四个条件：<strong>充分知情、自愿、明确、可撤回。</strong>“继续使用即视为同意”的默示同意，在监管口径中通常不被认可为有效同意；默认勾选、捆绑授权、以拒绝授权相要挟，均可能导致同意无效。撤回同意应当与作出同意同样便捷，不能设置客服电话、书面申请等障碍。</p>
+<p>另一个高频争点是“告知的颗粒度”。把处理目的写成“为改善产品与服务”“为保障账号安全”，属于目的不明确；正确做法是逐项对应具体功能，例如“用于向您展示附近门店”“用于校验设备登录环境”。目的越具体，后续判断“必要”越有依据。</p>
+<h2>六、违规后果与整改路径</h2>
+<p>超范围收集个人信息的法律后果分三层。第一层是<strong>行政责任</strong>：《个人信息保护法》第六十六条规定，违法处理个人信息的，由履行个人信息保护职责的部门责令改正，给予警告，没收违法所得，对违法处理个人信息的应用程序，责令暂停或者终止提供服务；拒不改正的，并处一百万元以下罚款；对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。情节严重的，处五千万元以下或者上一年度营业额百分之五以下罚款，并可以责令暂停相关业务或者停业整顿、通报有关主管部门吊销相关业务许可或者吊销营业执照。</p>
+<p>第二层是<strong>民事责任</strong>：处理个人信息侵害个人信息权益造成损害，个人信息处理者不能证明自己没有过错的，应当承担损害赔偿等侵权责任（第六十九条，过错推定）。第三层是<strong>刑事风险</strong>：违反国家有关规定，向他人出售或者提供公民个人信息，情节严重的，可能构成侵犯公民个人信息罪。</p>
+<p>整改的可行路径是四步：①<strong>做减法</strong>——按功能逐项核对信息清单，删除无对应功能的信息收集；②<strong>改时机</strong>——把权限申请从“首次启动”改为“用时申请”，并说明用途；③<strong>补同意</strong>——敏感信息、对外提供、自动化决策分别设置单独同意；④<strong>留证据</strong>——保留版本化的隐私政策、授权记录、SDK清单与数据处理协议，形成可追溯的合规档案。</p>
+<h2>七、常见问题</h2>
+<h3>问：App要求授权通讯录才能使用，合法吗？</h3>
+<p>通常不合法。通讯录一般不属于基本功能所必需的信息，运营者不得因用户不同意提供非必要个人信息而拒绝提供基本功能服务（《个人信息保护法》第十六条）。仅当某项功能确实依赖通讯录（如好友匹配）时，才可在该功能场景下申请并说明用途。</p>
+<h3>问：“最小必要”的法律依据是哪一条？</h3>
+<p>《个人信息保护法》第六条：处理个人信息应当具有明确、合理的目的，并应当与处理目的直接相关，采取对个人权益影响最小的方式；收集个人信息，应当限于实现处理目的的最小范围，不得过度收集个人信息。第五条另规定合法、正当、必要和诚信原则。</p>
+<h3>问：哪些信息属于敏感个人信息？</h3>
+<p>《个人信息保护法》第二十八条列举：生物识别、宗教信仰、特定身份、医疗健康、金融账户、行踪轨迹等信息，以及不满十四周岁未成年人的个人信息。处理此类信息应具有特定目的和充分必要性，并取得单独同意（第二十九条）。</p>
+<h3>问：用户拒绝授权，App可以直接退出吗？</h3>
+<p>不能一概而论。若所请求的信息属于提供产品或者服务所必需，拒绝授权导致无法提供服务的，属于合理限制；若非必需，则不得以此拒绝提供基本功能服务（第十六条）。判断标准是该信息与基本功能是否存在直接、必要的对应关系。</p>
+<h3>问：超范围收集个人信息会被罚多少？</h3>
+<p>依《个人信息保护法》第六十六条，可责令改正、警告、没收违法所得，对应用程序责令暂停或终止提供服务；拒不改正的，并处一百万元以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款；情节严重的，处五千万元以下或者上一年度营业额百分之五以下罚款，并可责令停业整顿或吊销相关业务许可、营业执照。</p>
+<h3>问：第三方SDK收集信息，App运营者要负责吗？</h3>
+<p>要。运营者应披露SDK清单与共享目的，签署数据处理协议，并取得必要的单独同意。未告知接收方名称、联系方式、处理目的与方式的，可能被认定为未履行告知义务，与SDK提供方共同承担相应责任。</p>
+<h2>八、实务要点与律师提示</h2>
+<p><strong>对App运营者：</strong>①建立“功能—信息—权限”三张对应表，任何新增收集项都必须挂靠到具体功能；②首次启动只申请基本功能所必需的信息，其余权限改为场景化申请；③敏感个人信息（生物识别、宗教信仰、特定身份、医疗健康、金融账户、行踪轨迹，以及不满十四周岁未成年人的个人信息）必须单独同意并告知必要性与影响；④第三方SDK按“清单化”管理，签约时明确处理目的、期限与安全措施。</p>
+<p><strong>对用户：</strong>遇到“不授权就退出”的，可先截图保存授权弹窗与功能限制页面，再向监管部门投诉；主张权利时注意区分“拒绝提供基本功能”（可能违法）与“拒绝提供依赖该信息的功能”（通常合法）。</p>
+<p><strong>对企业内部合规：</strong>把个人信息保护影响评估嵌入产品上线流程，对处理敏感信息、自动化决策、委托处理、对外提供、出境等情形事前评估并留存记录（记录至少保存三年）。评估不是形式文件，而是证明“必要性”的核心证据。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国个人信息保护法》第五条、第六条、第十三条、第十四条、第十五条、第十六条、第十七条、第二十八条、第二十九条、第三十条、第五十五条、第五十六条、第六十六条、第六十九条；《常见类型移动互联网应用程序必要个人信息范围规定》（国家互联网信息办公室等四部门2021年发布）；《App违法违规收集使用个人信息行为认定方法》（2019年发布）；《中华人民共和国刑法》第二百五十三条之一。说明：《个人信息保护法》第六条、第十六条原文已在正文引述；《常见类型移动互联网应用程序必要个人信息范围规定》按常见类型逐类列明必要个人信息范围，本文未逐条比对条文序号与具体条目，正文已标注待核实，适用时应以国家网信办发布的现行文本为准。“最小必要”的具体判断依赖功能设计与用户预期，监管通报与个案认定存在差异，不宜机械套用行业清单。请以全国人大、国家互联网信息办公室官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>“不授权就退出”，可能已经越界</h3><p>功能与信息的对应关系、单独同意的设置、第三方SDK的披露，是监管检查最先看的三处。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 &middot; 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="gerenxinxi-chujing-biaozhun-hetong.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>个人信息出境标准合同的适用门槛、备案义务与重新订立情形：10万人与100万人的两套口径</h4></a><a href="disanfang-sdk-gerenxinxi-hegui.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>移动应用第三方SDK的个人信息合规：法律关系定性、告知同意与双清单要求</h4></a><a href="yinsizhengce-geshi-tiaokuan-xiaoli.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>隐私政策的效力边界：格式条款审查、提示说明义务与「同意」的认定</h4></a><a href="zidonghua-juece-hegui-bianjie.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>自动化决策的合规边界：差别待遇、说明义务与拒绝权——《个人信息保护法》第二十四条的三项要求</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "App收集个人信息的「最小必要」边界：必要范围、拒绝授权的后果与整改", "description": "处理个人信息应具有明确、合理的目的，与处理目的直接相关，采取对个人权益影响最小的方式，收集限于实现处理目的的最小范围。本文梳理《个人信息保护法》第五条、第六条、第十三条、第十六条的合规边界，以及超范围收集的六种典型形态与整改路径。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-04", "dateModified": "2026-11-04"}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "App要求授权通讯录才能使用，合法吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常不合法。通讯录一般不属于基本功能所必需的信息，运营者不得因用户不同意提供非必要个人信息而拒绝提供基本功能服务（《个人信息保护法》第十六条）。仅当某项功能确实依赖通讯录（如好友匹配）时，才可在该功能场景下申请并说明用途。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "“最小必要”的法律依据是哪一条？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《个人信息保护法》第六条：处理个人信息应当具有明确、合理的目的，并应当与处理目的直接相关，采取对个人权益影响最小的方式；收集个人信息，应当限于实现处理目的的最小范围，不得过度收集个人信息。第五条另规定合法、正当、必要和诚信原则。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "哪些信息属于敏感个人信息？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《个人信息保护法》第二十八条列举：生物识别、宗教信仰、特定身份、医疗健康、金融账户、行踪轨迹等信息，以及不满十四周岁未成年人的个人信息。处理此类信息应具有特定目的和充分必要性，并取得单独同意（第二十九条）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "用户拒绝授权，App可以直接退出吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不能一概而论。若所请求的信息属于提供产品或者服务所必需，拒绝授权导致无法提供服务的，属于合理限制；若非必需，则不得以此拒绝提供基本功能服务（第十六条）。判断标准是该信息与基本功能是否存在直接、必要的对应关系。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "超范围收集个人信息会被罚多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "依《个人信息保护法》第六十六条，可责令改正、警告、没收违法所得，对应用程序责令暂停或终止提供服务；拒不改正的，并处一百万元以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款；情节严重的，处五千万元以下或者上一年度营业额百分之五以下罚款，并可责令停业整顿或吊销相关业务许可、营业执照。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "第三方SDK收集信息，App运营者要负责吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "要。运营者应披露SDK清单与共享目的，签署数据处理协议，并取得必要的单独同意。未告知接收方名称、联系方式、处理目的与方式的，可能被认定为未履行告知义务，与SDK提供方共同承担相应责任。"
+      }
+    }
+  ]
+}</script>
+</body></html>

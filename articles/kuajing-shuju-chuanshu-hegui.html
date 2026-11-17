@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="数据出境的三条合规路径（安全评估、标准合同备案、个人信息保护认证）的适用范围与选择标准、申报流程，以及违规出境的后果。湖北立丰律师事务所高级合伙人。">
-<meta name="keywords" content="数据出境,跨境数据传输,安全评估,湖北立丰律师事务所">
+<meta name="description" content="数据出境有三条合法路径：安全评估、标准合同备案、个人信息保护认证。先判断是否属于豁免情形，再按当年1月1日起累计出境人数确定路径：不满十万人免于程序，十万人至一百万人可走标准合同或认证，一百万人以上或敏感个人信息一万人以上须申报安全评估。">
+<meta name="keywords" content="数据出境,安全评估,个人信息出境标准合同,个人信息保护认证,促进和规范数据跨境流动规定,豁免情形,自贸区负面清单">
 <link rel="canonical" href="https://www.rongzhenglawyer.com/articles/kuajing-shuju-chuanshu-hegui.html" />
 <title>数据出境的合规路径：安全评估、标准合同与认证的选择标准</title>
 <style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
@@ -19,8 +19,15 @@ a{color:inherit;text-decoration:none}
 .page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
 .article-body{max-width:860px;margin:0 auto;padding:48px 40px}
 .article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
 .article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
 .article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
 .author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
 .author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
 .author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
@@ -40,26 +47,101 @@ footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;paddi
 footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
 @media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
 <body>
-<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../civil.html">民商事专题</a><a href="../index.html#contact">联系</a></div></div></nav>
-<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规与银行金融专题</a> &rsaquo; 数据出境的合规路径：安全评估、标准合同与认证的选择标准</div><div class="cat">Data Compliance &bull; Cross-Border</div><h1>数据出境的合规路径：安全评估、标准合同与认证的选择标准</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年6月</div></header>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; 数据出境的三条路径</div><div class="cat">Data Compliance</div><h1>数据出境的合规路径：安全评估、标准合同与认证的选择标准</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
 <article class="article-body">
-<h2>一、数据出境怎么合法？三条路径：安全评估、标准合同、认证</h2>
-<p>数据出境合规是《个人信息保护法》《数据安全法》《网络安全法》共同构建的监管体系中最复杂、也是企业违法风险最高的领域之一。我国目前为企业提供了三条合法向境外提供数据的路径：通过国家网信部门组织的安全评估、经专业机构进行个人信息保护认证、按照标准合同与境外接收方订立合同。这三条路径的适用门槛和程序要求各不相同，企业需要根据自身的数据处理规模和数据类型来选择适合的路径。</p>
-<p>三条路径的选择遵循"阶梯式"逻辑。最严格的路径——数据出境安全评估——适用于处理大规模个人信息或者重要数据的企业。根据《数据出境安全评估办法》，关键信息基础设施运营者、处理一百万人以上个人信息的数据处理者、自上年1月1日起累计向境外提供十万人以上个人信息或者一万人以上敏感个人信息的数据处理者，必须通过数据出境安全评估。对于不满足上述门槛的普通企业，可以选择标准合同或者认证路径。这种"管住大的、放活小的"的监管思路，体现了精准监管和比例原则的平衡。</p>
-<h2>二、什么情况必须走安全评估？重要数据和关键信息基础设施运营者是红线</h2>
-<p>安全评估是三条路径中审查最为严格的，由国家网信办统一组织。申报安全评估需要提交的材料包括：申报书、数据出境风险自评估报告、数据处理者与境外接收方拟订立的法律文件、安全评估工作需要的其他材料。评估的核心内容包括：数据出境的目的、范围、方式的合法性、正当性和必要性；境外接收方所在国家或地区的数据保护法律环境对出境数据安全的影响；数据处理者与境外接收方订立的法律文件中约定的数据安全保护责任和义务是否充分；数据处理者和境外接收方的数据安全保障能力。</p>
-<p>安全评估的有效期为两年。有效期届满或者在有效期内出现影响数据出境安全的情况时，需要重新申报评估。实务中企业最大的难点在于自评估报告的撰写——自评估要求企业全面盘点出境数据的类型、数量、范围、目的和接收方的情况，许多企业在数据资产梳理环节就遇到了困难。荣郑律师在2024年参与湖北省数据局数据资产入表项目，对企业数据资产盘点有丰富的实践经验，可以帮助企业高效完成自评估环节。</p>
-<h2>三、中小企业数据出境首选标准合同备案——流程怎么走？</h2>
-<p>对于不需要走安全评估路径的企业，标准合同备案是目前最便捷的数据出境合规路径。国家网信办发布的《个人信息出境标准合同办法》提供了标准合同范本，企业无需自行起草——直接使用范本与境外接收方签署即可，签署后在个人信息出境活动发生前向省级网信办备案。与安全评估的"审批制"不同，标准合同备案采用"备案制"，程序上更为简便。</p>
-<p>但标准合同不是"签了就完事"。企业需要在签署标准合同前完成个人信息保护影响评估，评估内容与安全评估中的自评估有相似之处。另外，备案后如果数据出境的目的、范围、类型、敏感程度、境外接收方等发生变化，或者延长个人信息境外保存期限的，需要重新签订标准合同并重新备案。最大误区是认为"已经签了标准合同就可以一直用"——标准合同是动态的文件，需要随着企业数据出境实际情况的变化而更新。</p>
-<h2>四、认证路径：面向特定场景的专业选择</h2>
-<p>认证路径目前主要适用于跨国集团公司内部的数据跨境传输等特定场景，由国家网信办认可的认证机构执行。认证的核心是评估数据处理者在数据处理全生命周期中是否符合个人信息保护的要求——包括数据收集、存储、使用、加工、传输、提供、公开、删除等各个环节。通过认证后，认证机构会持续对数据处理者进行监督审核。</p>
-<p>认证路径的优势在于灵活性——它可以针对特定行业、特定场景进行定制化的认证方案；缺点在于认证标准较高且认证机构较少，企业寻找合适的认证机构可能需要较长时间。目前实践中选择认证路径的企业相对较少，大多数企业倾向于标准合同路径。</p>
+<h2>一、结论先行：先看豁免，再定路径</h2>
+<p><strong>数据出境合规的判断顺序是"三步走"：第一步判断是否属于法定豁免情形，属于则无需履行任何出境程序；第二步判断是否触发安全评估；第三步在未触发评估时，选择订立标准合同并备案，或者通过个人信息保护认证。</strong>三者的门槛以《促进和规范数据跨境流动规定》（国家网信办令第16号）为准，2022年《数据出境安全评估办法》中与之不一致的表述不再适用。</p>
+<h2>二、第一步：哪些情形可以豁免</h2>
+<p>第16号令明确了若干免予申报评估、订立标准合同、通过认证的情形，核心是"不涉及重要数据、不涉及敏感个人信息、数量有限"的出境活动。典型包括：为订立、履行个人作为一方当事人的合同所必需（如跨境购物、跨境寄递、跨境支付、机票酒店预订、考试服务）；按照依法制定的劳动规章制度和依法签订的集体合同实施跨境人力资源管理所必需；紧急情况下为保护自然人的生命健康和财产安全所必需；非关键信息基础设施运营者，自当年1月1日起累计向境外提供不满十万人个人信息（不含敏感个人信息）。</p>
+<p>还有两类特殊规则。一是国际贸易、跨境运输、学术合作、跨国生产制造和市场营销等活动中收集和产生的数据，不包含个人信息或者重要数据的，免于履行出境程序；二是自由贸易试验区可以制定需要纳入管理的数据清单（负面清单），清单外的数据出境免于程序。负面清单须经省级网络安全和信息化委员会批准，并报国家网信部门、国家数据管理部门备案。</p>
+<h2>三、第二步：什么时候必须申报安全评估</h2>
+<p>触发安全评估的情形有两类。第一类是主体特殊：关键信息基础设施运营者向境外提供个人信息或者重要数据，无论数量多少，均应申报。第二类是数量达到门槛：非关键信息基础设施运营者，自当年1月1日起累计向境外提供一百万人以上个人信息（不含敏感个人信息），或者一万人以上敏感个人信息。</p>
+<p>评估由国家网信部门组织，申报材料包括申报书、数据出境风险自评估报告、数据处理者与境外接收方拟订立的法律文件、以及评估所需的其他材料。评估重点关注：出境目的、范围、方式的合法性正当性必要性；境外接收方所在国家或地区的数据保护法律环境；法律文件约定的责任义务是否充分；双方的数据安全保障能力。</p>
+<table><tr><th>情形</th><th>安全评估</th><th>标准合同／认证</th><th>免于程序</th></tr><tr><td>关键信息基础设施运营者出境个人信息或重要数据</td><td>必须申报</td><td>不适用</td><td>不适用</td></tr><tr><td>向境外提供重要数据</td><td>必须申报</td><td>不适用</td><td>不适用</td></tr><tr><td>非CIIO，当年累计出境一百万人以上个人信息（不含敏感）</td><td>必须申报</td><td>不适用</td><td>不适用</td></tr><tr><td>非CIIO，当年累计出境一万人以上敏感个人信息</td><td>必须申报</td><td>不适用</td><td>不适用</td></tr><tr><td>非CIIO，当年累计出境十万人至一百万人个人信息（不含敏感）</td><td>不需要</td><td>可择一</td><td>不适用</td></tr><tr><td>非CIIO，当年累计出境不满十万人个人信息（不含敏感）</td><td>不需要</td><td>不需要</td><td>适用</td></tr></table>
+<h2>四、第三步之一：标准合同备案的适用与流程</h2>
+<p>标准合同适用于未触发安全评估的情形，即非关键信息基础设施运营者，当年累计出境个人信息低于一百万人（不含敏感），且敏感个人信息低于一万人。企业使用国家网信部门发布的标准合同范本，与境外接收方订立合同，无需自行起草条款，但不得删改范本中的必备内容。</p>
+<p>程序上有四个节点：开展个人信息保护影响评估；与境外接收方订立标准合同；在个人信息出境活动发生前向所在地省级网信部门备案；出境情况发生变化时重新订立并重新备案。影响评估与备案是两项独立义务，评估结论应能支撑"出境对个人权益的影响可控"这一判断。</p>
+<p>需要重新订立并备案的情形包括：出境目的、范围、类型、方式、敏感程度发生变化；境外接收方所在国家或地区的法律环境发生变化；境外接收方发生变更；延长境外保存期限；以及其他影响个人权益的情形。把标准合同当成"签一次管终身"的文件，是备案后被要求整改的高频原因。</p>
+<h2>五、第三步之二：个人信息保护认证</h2>
+<p>认证路径由依法设立的认证机构实施，依据《个人信息保护认证实施规则》，对个人信息处理者的处理活动是否符合法律法规与技术要求进行评价。通过认证后，认证机构会持续监督审核，认证证书有有效期，期满需重新评价。</p>
+<h2>六、常见误区</h2>
+<p>误区一："签了标准合同就合规了"。遗漏影响评估、未按期备案、变化后未重新订立，都是独立的违规点。误区二："按上年数据算人数"。第16号令的口径是"自当年1月1日起累计"。误区三："境外接收方是子公司就不用管"。关联公司同样是独立的境外接收方，仍需订立法律文件并履行程序。误区四："做了匿名化就不算个人信息出境"。匿名化须达到不可复原的程度，去标识化后的信息仍属个人信息。</p>
+<h2>七、违规后果与实务要点</h2>
+<p>违规出境的后果分三层。个人信息保护层面，依《个人信息保护法》第六十六条，情节严重的可处五千万元以下或者上一年度营业额百分之五以下罚款，并可责令暂停相关业务、停业整顿、吊销许可或营业执照。数据安全层面，依《数据安全法》第四十六条，向境外提供重要数据未履行义务的，可处十万元以上一百万元以下罚款，情节严重的可处一百万元以上一千万元以下罚款，并可吊销相关业务许可证或营业执照。刑事层面，向境外非法提供公民个人信息情节严重的，可能构成侵犯公民个人信息罪。</p>
+<p><strong>律师提示：</strong>①先做数据出境台账，按系统、按接收方、按人数分别统计，这是所有判断的起点；②每年1月1日重置计数，避免用旧口径误判；③把影响评估、备案、重新备案做成流程节点，而不是一次性动作；④自贸区企业应主动核对本地负面清单，清单外可直接适用豁免；⑤评估结果三年有效，建立到期前六十个工作日的提醒机制。</p>
+<h3>问：数据出境必须先做安全评估吗？</h3>
+<p>不是。判断顺序是先看是否属于豁免情形，再看是否触发安全评估；未触发评估的，可选择标准合同备案或个人信息保护认证。</p>
+<h3>问：多少人以上要申报安全评估？</h3>
+<p>非关键信息基础设施运营者，自当年1月1日起累计向境外提供一百万人以上个人信息（不含敏感），或者一万人以上敏感个人信息，应当申报。关键信息基础设施运营者出境个人信息或重要数据，不论数量均须申报。</p>
+<h3>问：安全评估结果有效期是几年？</h3>
+<p>三年，自评估结果出具之日起计算；有效期届满需继续开展的，可在届满前六十个工作日内申请延长三年。</p>
+<h3>问：标准合同签完就没事了吗？</h3>
+<p>不是。还须先完成个人信息保护影响评估，并在出境活动发生前向省级网信部门备案；出境目的、范围、接收方等发生变化的，应重新订立并重新备案。</p>
+<h3>问：自贸区企业有优惠吗？</h3>
+<p>有。自由贸易试验区可以制定需要纳入管理的数据清单（负面清单），清单外的数据出境免于申报评估、订立标准合同或认证，清单须经省级网信委批准并报备。</p>
+<h3>问：违规出境会怎么处罚？</h3>
+<p>可能面临责令改正、警告、没收违法所得与高额罚款，情节严重的可按上一年度营业额百分之五或五千万元以下处罚，并可责令停业整顿、吊销许可；涉及重要数据的另有专门罚则。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《个人信息保护法》第三十八条、第三十九条、第五十五条、第六十六条；《数据安全法》第二十一条、第三十六条、第四十六条；《网络安全法》第三十七条；《促进和规范数据跨境流动规定》（国家网信办令第16号，2024年3月22日施行）关于豁免情形、评估门槛、评估结果有效期、自贸区负面清单与新旧衔接的条款；《数据出境安全评估办法》（国家网信办令第11号）；《个人信息出境标准合同办法》（国家网信办令第13号）；《个人信息保护认证实施规则》。提示：2022年《数据出境安全评估办法》中与第16号令不一致的表述不再适用，办案与合规评估应以第16号令为准；各自贸区负面清单内容不同，须核对本地现行文本。请以国家网信部门官方公布文本为准。</p>
 </article>
-<section class="cta-box"><div class="cta-inner"><h3>数据出境合规怎么做？选对路径</h3><p>数据出境三条路径各有适用场景。选择合适的合规方案、高效完成备案或申报。</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="cta-box"><div class="cta-inner"><h3>数据要出境，走评估还是签标准合同？</h3><p>人数口径、豁免情形与备案节点，一步错就要重做。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
 <section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4>荣郑律师</h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业10年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div></div></div></section>
-<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-baohu-qiye-hegui.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>个人信息保护法对企业的主要义务：告知同意、影响评估与出境评估</h4></a><a href="gongsi-zhili-gudong-quanyi.html" class="related-card"><div class="rc-tag">Civil & Commercial</div><h4>新公司法下股东知情权之诉的行使范围与操作步骤</h4></a></div></section>
-<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="shuju-chujing-shuliang-menkan.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>数据出境的数量门槛与自贸区负面清单</h4></a><a href="shuju-chujing-anquan-pinggu-shenbao.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>数据出境安全评估怎么申报</h4></a><a href="gerenxinxi-chujing-biaozhun-hetong.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>个人信息出境标准合同的适用门槛</h4></a><a href="jingwai-jieshoufang-yiwu-hetong.html" class="related-card"><div class="rc-tag">Data Compliance</div><h4>境外接收方的六项义务与跨境合同条款设计</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 &middot; 湖北立丰律师事务所</p></footer>
 <script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数据出境的合规路径：安全评估、标准合同与认证的选择标准", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-16", "description": "数据出境的三条合规路径（安全评估、标准合同备案、个人信息保护认证）的适用范围与选择标准、申报流程，以及违规出境的后果。湖北立丰律师事务所高级合伙人。"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数据出境的合规路径：安全评估、标准合同与认证的选择标准", "description": "数据出境有三条合法路径：安全评估、标准合同备案、个人信息保护认证。先判断是否属于豁免情形，再按当年1月1日起累计出境人数确定路径：不满十万人免于程序，十万人至一百万人可走标准合同或认证，一百万人以上或敏感个人信息一万人以上须申报安全评估。", "author": {"@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-06-18", "dateModified": "2026-11-09"}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "数据出境必须先做安全评估吗？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不是。判断顺序是先看是否属于豁免情形，再看是否触发安全评估；未触发评估的，可选择标准合同备案或个人信息保护认证。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "多少人以上要申报安全评估？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "非关键信息基础设施运营者，自当年1月1日起累计向境外提供一百万人以上个人信息（不含敏感），或者一万人以上敏感个人信息，应当申报。关键信息基础设施运营者出境个人信息或重要数据，不论数量均须申报。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "安全评估结果有效期是几年？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "三年，自评估结果出具之日起计算；有效期届满需继续开展的，可在届满前六十个工作日内申请延长三年。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "标准合同签完就没事了吗？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不是。还须先完成个人信息保护影响评估，并在出境活动发生前向省级网信部门备案；出境目的、范围、接收方等发生变化的，应重新订立并重新备案。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "自贸区企业有优惠吗？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "有。自由贸易试验区可以制定需要纳入管理的数据清单（负面清单），清单外的数据出境免于申报评估、订立标准合同或认证，清单须经省级网信委批准并报备。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "违规出境会怎么处罚？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "可能面临责令改正、警告、没收违法所得与高额罚款，情节严重的可按上一年度营业额百分之五或五千万元以下处罚，并可责令停业整顿、吊销许可；涉及重要数据的另有专门罚则。"
+   }
+  }
+ ]
+}</script>
 </body></html>
