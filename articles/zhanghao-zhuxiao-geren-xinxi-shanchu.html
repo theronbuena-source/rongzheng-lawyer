@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="账号注销是平台的配合义务，删除是另一项独立义务。本文梳理平台不得设置的三类注销障碍、注销后信息的删除、匿名化与法定留存三种去向及其边界、用户从内部投诉到公益诉讼的四条救济路径，以及平台侧的合规清单，并区分「已删除」与「数据库里没有」的常见误读。">
+<meta name="keywords" content="账号注销,个人信息删除,匿名化,法定留存,撤回同意,过错推定,公益诉讼,个人信息保护法第四十七条,电子商务法第三十一条,注销难">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/zhanghao-zhuxiao-geren-xinxi-shanchu.html" />
+<title>账号注销与个人信息删除：平台义务、法定留存与四类救济路径</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规专题</a> &rsaquo; 账号注销与个人信息删除的规则</div><div class="cat">Data Compliance &bull; Personal Information</div><h1>账号注销与个人信息删除：平台义务、法定留存与四类救济路径</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+<h2>一、结论先行：注销是义务，删除是另一件事</h2>
+<p>用户要求注销账号，平台能不能拖着不办、能不能设置「先结清订单、先放弃权益、先上传身份证」等前置条件，注销后信息是不是必须立即彻底删除？可直接引用的结论是：<strong>第一，平台应当提供账号注销服务，不得设置不合理条件；第二，注销不等于立即、彻底删除，平台应当依《个人信息保护法》第四十七条判断是否应当删除；第三，删除义务有四类法定例外，包括法律法规规定的保存期限未届满、处理目的已实现但技术难以实现等情形。</strong>依据是《个人信息保护法》第四十四条、第四十七条、第五十条，《民法典》第一千零三十七条，以及国家网信办《互联网用户账号信息管理规定》。</p>
+<p>实务中用户投诉最多的不是「不给注销」，而是「注销入口找不到、注销后仍收到营销短信、注销后信息仍能被检索到」。这三个现象分别对应三个不同的义务：<strong>注销服务义务、删除义务、停止处理义务</strong>。</p>
+
+<h2>二、注销服务：平台不得设置的三类障碍</h2>
+<p>账号注销是用户对自己账户的处分，平台的角色是配合而非审批。监管与司法实践普遍不认可以下三类设置：</p>
+<ol>
+<li><strong>程序性障碍：</strong>只保留人工客服电话注销、要求邮寄书面申请、要求本人到现场办理、注销入口隐藏在五级菜单或者仅在特定版本可见。这类设置实质上剥夺了注销权。</li>
+<li><strong>实体性障碍：</strong>要求用户先放弃账户内余额、积分、优惠券、虚拟财产，或者要求用户承诺「不再就个人信息处理提出任何主张」才能注销。前者涉及财产权益，应通过结算、退还解决，不能作为注销前提；后者属于排除用户主要权利的格式条款，依《民法典》第四百九十七条可能无效。</li>
+<li><strong>过度收集：</strong>以「核验身份」为名要求上传身份证正反面、手持照片、人脸识别，超出必要范围。核验身份应遵循最小必要原则，已有实名信息的，可用手机验证码、原密码等方式完成。</li>
+</ol>
+<p>需要区分的是，<strong>「暂缓注销」在特定情形下具有正当性</strong>：账户存在未结清交易、未完结投诉、涉嫌违法正在调查，或者依法应当保留交易记录的，平台可以暂缓注销或者仅注销账号标识而保留交易数据，但应当向用户说明理由与期限，不能无限期拖延。</p>
+
+<h2>三、注销后信息的三种去向</h2>
+<table>
+<tr><th>处理方式</th><th>适用情形</th><th>法律依据</th><th>实务要点</th></tr>
+<tr><td>删除</td><td>处理目的已实现、无法实现或者为实现处理目的不再必要；平台停止提供产品或者服务；保存期限已届满；用户撤回同意；平台违法处理</td><td>《个人信息保护法》第四十七条第一款</td><td>删除是「使之不能被处理」，包括物理删除与使他人无法检索、访问的技术处理</td></tr>
+<tr><td>匿名化处理</td><td>删除在技术上难以实现（如已进入备份系统、已与他人信息混合）</td><td>《个人信息保护法》第四十七条第二款</td><td>匿名化须达到「无法识别特定自然人且不能复原」的标准；去标识化不等于匿名化</td></tr>
+<tr><td>法定留存</td><td>法律法规规定的保存期限未届满，或者处理目的已实现但法定留存义务仍在</td><td>《个人信息保护法》第四十七条第一款但书；《电子商务法》第三十一条；反洗钱与网络日志留存规定</td><td>留存期间限于「存储和采取必要的安全保护措施」，不得用于其他目的</td></tr>
+</table>
+<p>三类去向的边界常被误读，三个要点需要记牢：</p>
+<ol>
+<li><strong>「已删除」不等于「数据库里没有」</strong>。备份系统中的副本，在删除技术上确实难以实现的，可以匿名化或者隔离存储，但不得再用于营销、画像、推荐等处理活动。</li>
+<li><strong>法定留存不是「继续使用」的通行证</strong>。《电子商务法》第三十一条要求商品和服务信息、交易信息保存时间自交易完成之日起不少于三年；网络日志留存期限另有规定；反洗钱领域的客户身份资料保存期限更长。留存期内平台只能「存」和「保」，不能「用」。</li>
+<li><strong>注销后继续发送营销信息，属于独立的违法行为</strong>。用户注销或者撤回同意后，平台继续推送商业信息的，违反《个人信息保护法》第十五条（撤回同意）与《广告法》关于商业信息发送的规定，用户可另行主张停止侵害。</li>
+</ol>
+
+<h2>四、用户的四条救济路径</h2>
+<ol>
+<li><strong>平台内部投诉：</strong>依《个人信息保护法》第五十条，个人有权要求个人信息处理者对其个人信息处理规则进行解释说明；处理者应当建立便捷的个人行使权利的申请受理和处理机制，拒绝的应当说明理由。</li>
+<li><strong>行政投诉举报：</strong>向网信、工信、市场监管部门投诉。账号注销难、注销后仍被推送，属于监管部门常年整治的重点问题；投诉时应提交注销申请截图、客服答复、推送记录等证据。</li>
+<li><strong>民事诉讼：</strong>以个人信息权益受侵害为由起诉，请求停止侵害、删除信息、赔礼道歉、赔偿损失。依《个人信息保护法》第六十九条，处理个人信息侵害个人信息权益造成损害，处理者不能证明自己没有过错的，应当承担损害赔偿等侵权责任（<strong>过错推定</strong>）。损失难以确定的，法院可根据实际情况确定赔偿数额。</li>
+<li><strong>公益诉讼：</strong>平台违法处理个人信息侵害众多个人权益的，人民检察院、法律规定的消费者组织、由国家网信部门确定的组织可以依法提起公益诉讼（《个人信息保护法》第七十条）。</li>
+</ol>
+<div class="tip"><strong>律师提示：</strong>代理用户维权时，第一步不是起诉，而是<strong>固定「已提出注销/删除请求」的证据</strong>。没有这条证据链，平台会主张「用户从未申请」，案件将陷入事实不清。建议通过 App 内工单、电子邮件、EMS 三种方式同时提出，并保存提交成功的页面截图与时间戳。</div>
+
+<h2>五、平台侧的合规清单</h2>
+<p>平台应完成五项动作：一是在 App 与网站设置可直达的注销入口，路径不超过三级；二是明确注销条件、处理时限与法律后果，不得设置放弃权益类前置条件；三是建立「注销—删除/匿名化—留存隔离」的分类处理流程，并留存处理记录；四是注销后同步停止营销推送、个性化推荐与第三方共享；五是在隐私政策中写明各类信息的保存期限与法定留存依据。</p>
+
+<h2>六、常见问题</h2>
+<p><strong>问：平台要求先结清订单、放弃积分才能注销，合法吗？</strong>答：通常不合法。账号注销是用户对自己账户的处分，平台的角色是配合而非审批。要求用户先放弃账户内余额、积分、优惠券、虚拟财产，或者要求承诺「不再就个人信息处理提出任何主张」，属于设置不合理条件；后者还可能是排除用户主要权利的格式条款，依《民法典》第四百九十七条可能无效。财产权益应通过结算、退还解决，不能作为注销前提。</p>
+<p><strong>问：注销之后信息是不是必须彻底删除？</strong>答：不一定，要依《个人信息保护法》第四十七条判断。处理目的已实现、无法实现或者不再必要，平台停止提供产品或者服务，保存期限已届满，用户撤回同意，平台违法处理等情形应当删除；删除在技术上难以实现的，应当停止除存储和采取必要安全保护措施之外的处理。法定保存期限未届满的，可以留存，但留存期内只能「存」和「保」，不能「用」。</p>
+<p><strong>问：注销后还收到营销短信，能主张什么？</strong>答：可以主张停止侵害并另行追责。用户注销或者撤回同意后继续推送商业信息，违反《个人信息保护法》第十五条关于撤回同意的规定以及《广告法》关于商业信息发送的规则，属于独立的违法行为，不因账号已注销而免责。可要求停止发送、删除相关个人信息，造成损失的还可主张赔偿。</p>
+<p><strong>问：平台拖着不办注销，有哪些救济途径？</strong>答：四条路径依次推进：一是依《个人信息保护法》第五十条要求平台解释说明并限期处理；二是向网信、工信、市场监管部门投诉举报，提交注销申请截图与客服答复；三是以个人信息权益受侵害提起诉讼，依第六十九条平台不能证明自己没有过错的应承担赔偿责任；四是侵害众多个人权益的，可由检察机关、消费者组织或者网信部门确定的组织提起公益诉讼。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国个人信息保护法》第十三条、第十五条、第四十四条、第四十五条、第四十七条、第五十条、第六十六条、第六十九条、第七十条；《中华人民共和国民法典》第一千零三十七条、第四百九十七条；《中华人民共和国电子商务法》第二十四条、第三十一条；《互联网用户账号信息管理规定》（国家网信办令第10号）；《中华人民共和国网络安全法》关于网络日志留存的规定；反洗钱法律法规关于客户身份资料保存期限的规定。特别说明：①《互联网用户账号信息管理规定》关于账号注销的具体条文序号、网络日志留存六个月与反洗钱客户资料保存期限的条文序号，本文未逐一标注，援引时请以现行公布文本核对；②《网络安全法》经修正后部分条文序号调整，转致条款须以修正后文本为准；③「暂缓注销」的正当性边界（未结清交易、调查中）各地监管口径不完全一致，属实务中存在争议的问题；④删除与匿名化的技术标准，可参照《个人信息安全规范》与相关国家标准，标准本身不是法律法规，不能单独作为裁判依据；⑤损害赔偿数额的确定，实务中多在数百元至数千元区间，个案差异较大。请以全国人大、国家网信办官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>想注销账号却被要求先放弃权益，这合法吗？</h3><p>注销是配合义务，不是平台审批；删除另有法定例外。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4><a href="../lawyer.html">荣郑律师</a></h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业11年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div><div style="margin-top:10px;font-size:12px"><a href="../lawyer.html" style="color:var(--gold)">查看完整律师简介 · 执业信息与代表业绩 &rarr;</a></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="geren-xinxi-shanchuquan-xingshi-chengxu.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息的删除权：五项法定情形、技术不能时的处理与救济</h4></a><a href="geren-xinxi-xielou-zenmeban.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息泄露后的报告、通知与责任承担</h4></a><a href="gerenxinxi-qinquan-peichang-jisuan.html" class="related-card"><div class="rc-tag">Data</div><h4>个人信息侵权的损害赔偿：过错推定、举证责任与损失计算</h4></a><a href="disanfang-sdk-gerenxinxi-hegui.html" class="related-card"><div class="rc-tag">Data</div><h4>移动应用第三方SDK的个人信息合规：告知同意与双清单要求</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "账号注销与个人信息删除：平台义务、法定留存与四类救济路径", "description": "账号注销是平台的配合义务，删除是另一项独立义务。本文梳理平台不得设置的三类注销障碍、注销后信息的删除、匿名化与法定留存三种去向及其边界、用户从内部投诉到公益诉讼的四条救济路径，以及平台侧的合规清单，并区分「已删除」与「数据库里没有」的常见误读。", "author": {"@id": "https://www.rongzhenglawyer.com/lawyer.html#attorney", "@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "@id": "https://www.rongzhenglawyer.com/lawyer.html#firm", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-19", "dateModified": "2026-11-19"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "平台要求先结清订单、放弃积分才能注销，合法吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常不合法。账号注销是用户对自己账户的处分，平台的角色是配合而非审批。要求用户先放弃账户内余额、积分、优惠券、虚拟财产，或者要求承诺「不再就个人信息处理提出任何主张」，属于设置不合理条件；后者还可能是排除用户主要权利的格式条款，依《民法典》第四百九十七条可能无效。财产权益应通过结算、退还解决，不能作为注销前提。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "注销之后信息是不是必须彻底删除？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定，要依《个人信息保护法》第四十七条判断。处理目的已实现、无法实现或者不再必要，平台停止提供产品或者服务，保存期限已届满，用户撤回同意，平台违法处理等情形应当删除；删除在技术上难以实现的，应当停止除存储和采取必要安全保护措施之外的处理。法定保存期限未届满的，可以留存，但留存期内只能「存」和「保」，不能「用」。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "注销后还收到营销短信，能主张什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以主张停止侵害并另行追责。用户注销或者撤回同意后继续推送商业信息，违反《个人信息保护法》第十五条关于撤回同意的规定以及《广告法》关于商业信息发送的规则，属于独立的违法行为，不因账号已注销而免责。可要求停止发送、删除相关个人信息，造成损失的还可主张赔偿。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "平台拖着不办注销，有哪些救济途径？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "四条路径依次推进：一是依《个人信息保护法》第五十条要求平台解释说明并限期处理；二是向网信、工信、市场监管部门投诉举报，提交注销申请截图与客服答复；三是以个人信息权益受侵害提起诉讼，依第六十九条平台不能证明自己没有过错的应承担赔偿责任；四是侵害众多个人权益的，可由检察机关、消费者组织或者网信部门确定的组织提起公益诉讼。"
+      }
+    }
+  ]
+}
+</script>
+</body></html>

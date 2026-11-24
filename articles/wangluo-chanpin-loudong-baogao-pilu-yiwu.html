@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="依《网络产品安全漏洞管理规定》，网络产品提供者发现或者获知产品存在安全漏洞后，应立即验证评估、在2日内向工业和信息化部网络安全威胁和漏洞信息共享平台报送，并及时修补、告知受影响用户；网络运营者应立即验证并完成修补；漏洞收集平台须向工信部备案，并留存接收日志不少于6个月。向社会发布漏洞信息须遵守八项限制。">
+<meta name="keywords" content="网络产品安全漏洞,漏洞报告,两日报送,漏洞收集平台备案,漏洞披露,工信部联网安〔2021〕66号,网络安全法,白帽黑客,众测">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/wangluo-chanpin-loudong-baogao-pilu-yiwu.html" />
+<title>网络产品安全漏洞的报告与披露：两日报送、平台备案与八项发布禁止</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../datacompliance.html">数据合规</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../datacompliance.html">数据合规</a> &rsaquo; 网络产品安全漏洞的报告与披露</div><div class="cat">Data Compliance</div><h1>网络产品安全漏洞的报告与披露：两日报送、平台备案与八项发布禁止</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+<h2>一、结论先行：两个日期、三类主体、八条红线</h2>
+<p><strong>结论：</strong>依《网络产品安全漏洞管理规定》（工业和信息化部、国家互联网信息办公室、公安部，工信部联网安〔2021〕66号，2021年9月1日施行），<strong>网络产品提供者</strong>发现或者获知所提供产品存在安全漏洞后，应当立即采取措施并组织验证、评估危害程度与影响范围，<strong>在2日内</strong>向工业和信息化部网络安全威胁和漏洞信息共享平台报送相关漏洞信息，并及时组织修补、将风险与修补方式告知可能受影响的产品用户（第七条）；<strong>网络运营者</strong>发现或者获知其网络、信息系统及设备存在漏洞后，应当立即采取措施、及时验证并完成修补（第八条）；<strong>漏洞收集平台</strong>应当向工业和信息化部备案（第十条），并与产品提供者、网络运营者一样建立健全漏洞信息接收渠道、留存接收日志<strong>不少于6个月</strong>（第五条）。向社会发布漏洞信息，须遵守第九条列举的<strong>八项限制</strong>。</p>
+<p>两个关键日期是「立即」与「2日内」：「立即」对应发现后的处置与验证，「2日内」对应向工信部平台的报送。二者不能互相替代，也不能以「正在修复」为由推迟报送。</p>
+
+<h2>二、适用范围与监管分工</h2>
+<p><strong>适用主体</strong>包括三类：中华人民共和国境内的网络产品（含硬件、软件）提供者和网络运营者；从事网络产品安全漏洞发现、收集、发布等活动的组织或者个人（第二条）。这意味着安全公司、众测平台、独立研究者同样受该规定约束，并非只有厂商才需要遵守。</p>
+<p><strong>监管分工</strong>为：国家互联网信息办公室负责统筹协调；工业和信息化部负责综合管理，承担电信和互联网行业网络产品安全漏洞监督管理；公安部负责监督管理，依法打击利用漏洞实施的违法犯罪活动；有关主管部门加强跨部门协同，实现漏洞信息实时共享，对重大漏洞风险开展联合评估和处置（第三条）。</p>
+
+
+<h2>三、产品提供者的三项义务</h2>
+<table>
+<tr><th>义务</th><th>触发时点</th><th>具体要求</th><th>常见失位</th></tr>
+<tr><td>验证与评估</td><td>发现或者获知漏洞后立即</td><td>组织验证，评估危害程度和影响范围；属上游产品或组件漏洞的，立即通知相关提供者</td><td>仅内部登记，未做影响范围评估</td></tr>
+<tr><td>报送</td><td>发现或者获知后2日内</td><td>向工信部网络安全威胁和漏洞信息共享平台报送产品名称、型号、版本、技术特点、危害和影响范围</td><td>以「修复完成后再报」为由拖延</td></tr>
+<tr><td>修补与告知</td><td>及时</td><td>组织修补；需用户升级的，及时告知风险与修补方式并提供技术支持</td><td>只在官网发公告，未通知下游厂商</td></tr>
+</table>
+<p>报送内容有明确的要素要求：存在漏洞的产品名称、型号、版本，以及漏洞的技术特点、危害和影响范围。仅报送「某产品存在高危漏洞」而不含版本与影响范围，属于不合格报送。</p>
+
+<div class="tip"><strong>律师提示：</strong>建议企业建立「漏洞接收—研判—报送—修补—告知」五步流程，明确责任人与时限，并保留每一步的时间戳记录。监管部门事后核查时，能否证明「发现时点」与「报送时点」，直接决定是否构成未按规定报告。</div>
+
+<h2>四、网络运营者与漏洞收集平台的义务差异</h2>
+<p><strong>网络运营者</strong>的义务相对简洁：发现或者获知其网络、信息系统及其设备存在安全漏洞后，应当立即采取措施，及时对漏洞进行验证并完成修补（第八条）。规定没有对运营者设定「2日内向平台报送」的义务，但运营者仍负有《网络安全法》项下的安全保护义务，发生网络安全事件时还须履行事件报告义务，两条义务不能相互替代。</p>
+<p><strong>漏洞收集平台</strong>的义务有两项：一是向工业和信息化部备案，工信部及时向公安部、国家互联网信息办公室通报并公布通过备案的平台（第十条）；二是建立健全漏洞信息接收渠道并保持畅通，留存接收日志不少于6个月（第五条）。未备案即对外运营收集平台，属于程序违规。</p>
+<p>三类主体的义务差别可以用一句话概括：产品提供者负<strong>报送义务</strong>，网络运营者负<strong>修补义务</strong>，收集平台负<strong>备案与留存义务</strong>。同一企业可能同时具备多重身份，例如既销售硬件产品又运营云平台，此时应当分别对照履行。</p>
+
+<h2>五、漏洞发布的八条红线</h2>
+<p>从事漏洞发现、收集的组织或者个人，通过平台、媒体、会议、竞赛等方式向社会发布漏洞信息的，应当遵循必要、真实、客观以及有利于防范网络安全风险的原则，并遵守第九条的八项限制：</p>
+<ol>
+<li>不得在产品提供者提供修补措施之前发布漏洞信息；确有必要提前发布的，应与提供者共同评估协商，并向工信部、公安部报告，由两部门组织评估后发布。</li>
+<li>不得发布网络运营者在用的网络、信息系统及其设备存在漏洞的细节情况。</li>
+<li>不得刻意夸大漏洞的危害和风险，不得利用漏洞信息恶意炒作或者实施诈骗、敲诈勒索等违法犯罪活动。</li>
+<li>不得发布或者提供专门用于利用漏洞从事危害网络安全活动的程序和工具。</li>
+<li>发布漏洞信息时，应当同步发布修补或者防范措施。</li>
+<li>国家举办重大活动期间，未经公安部同意，不得擅自发布漏洞信息。</li>
+<li>不得将未公开的漏洞信息向产品提供者之外的境外组织或者个人提供。</li>
+<li>法律法规的其他相关规定。</li>
+</ol>
+
+
+<h2>六、法律责任与刑事风险</h2>
+<p>规定本身不设独立罚则，而是采用转致方式：产品提供者未按规定采取补救或者报告措施，由工信部、公安部依据各自职责依法处理，构成《网络安全法》第六十条规定情形的，依该规定处罚（第十二条）；网络运营者未按规定采取修补或者防范措施，构成《网络安全法》第五十九条规定情形的，依该规定处罚（第十三条）；违反规定收集、发布漏洞信息，构成《网络安全法》第六十二条规定情形的，依该规定处罚（第十四条）；利用漏洞从事危害网络安全活动或者提供技术支持，构成《网络安全法》第六十三条规定情形的，依该规定处罚，构成犯罪的依法追究刑事责任（第十五条）。</p>
+<p>需要提示的是，《网络安全法》已经修正，上述转致条款所指的具体条序应当以修正后的现行文本为准；</p>
+<p>刑事责任方面，利用漏洞侵入、控制计算机信息系统，可能构成非法获取计算机信息系统数据罪、非法控制计算机信息系统罪；明知他人实施此类行为仍提供程序、工具的，可能构成帮助信息网络犯罪活动罪；非法出售、提供漏洞信息情节严重，还可能涉及侵犯公民个人信息或者非法经营等罪名。是否构罪，取决于行为方式、信息性质与情节，需个案判断。</p>
+
+<h2>七、常见问题</h2>
+<h3>问：漏洞还没修好，必须先报送吗？</h3>
+<p>必须先报送。《网络产品安全漏洞管理规定》第七条要求产品提供者在发现或者获知漏洞后立即验证评估，并在2日内向工信部网络安全威胁和漏洞信息共享平台报送，报送与修补是并行义务，不存在「修好再报」的例外。以修复未完成为由延迟报送，可能被认定为未按规定报告。</p>
+<h3>问：只是内部发现、没有对外披露，也要报送吗？</h3>
+<p>要。报送义务的触发点是「发现或者获知」产品存在安全漏洞，与是否对外披露无关。只要属于网络产品提供者，且漏洞涉及所提供产品的名称、型号、版本，即应在2日内报送。对外披露环节另行适用第九条的八项限制。</p>
+<h3>问：安全研究者发现漏洞后公开细节，违法吗？</h3>
+<p>可能违法。《网络产品安全漏洞管理规定》第九条第一项明确，不得在产品提供者提供修补措施之前发布漏洞信息；第二项禁止发布网络运营者在用的系统漏洞细节；第五项要求发布时同步发布修补或防范措施。违反上述规定发布信息，可能依第十四条转致《网络安全法》相应条款处罚；情节严重构成犯罪的，依法追究刑事责任。</p>
+<h3>问：企业只是使用第三方组件，组件出了漏洞谁负责？</h3>
+<p>双重义务。产品提供者发现所集成上游产品或组件存在漏洞的，应当立即通知相关产品提供者，同时评估自身产品受影响范围、履行报送与告知用户义务；组件的原始提供者对其产品漏洞负直接义务。以「漏洞在第三方组件」为由完全不作为，不能免除自身的报送与告知责任。</p>
+
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《网络产品安全漏洞管理规定》（工业和信息化部、国家互联网信息办公室、公安部，工信部联网安〔2021〕66号，2021年7月12日发布，2021年9月1日施行）第二条（适用主体）、第三条（监管分工）、第四条（禁止利用、非法收集出售发布及提供帮助）、第五条（接收渠道与至少6个月日志留存）、第六条（鼓励通报）、第七条（产品提供者三项义务与2日报送）、第八条（网络运营者验证修补义务）、第九条（发布漏洞信息的八项限制）、第十条（收集平台备案）、第十一条（内部管理）、第十二条至第十五条（转致《网络安全法》相关条款的处罚与刑事责任）、第十六条（施行日期）。《中华人民共和国网络安全法》关于网络产品、服务提供者安全缺陷与漏洞补救义务的规定，以及相应法律责任条款。特别说明：《网络安全法》已作修正，上述转致所指条序应以修正后现行文本为准（本文未逐条比对修正后条序，标注为待核实）；本文不引用虚构案号与案例，条文以官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>漏洞报不报、什么时候报、能不能公开，三条线各有硬期限</h3><p>产品提供者、网络运营者、漏洞收集平台的义务不同，误判身份就会踩线。 电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4><a href="../lawyer.html">荣郑律师</a></h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业11年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div><div style="margin-top:10px;font-size:12px"><a href="../lawyer.html" style="color:var(--gold)">查看完整律师简介 · 执业信息与代表业绩 &rarr;</a></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="wangluoanquan-shencha-shenbao.html" class="related-card"><div class="rc-tag">Datacompliance</div><h4>网络安全审查的申报义务：三类触发情形、100万用户标准与审查流程</h4></a><a href="shuju-anquan-dengji-baohu.html" class="related-card"><div class="rc-tag">Datacompliance</div><h4>网络安全等级保护义务与数据安全事件的责任认定</h4></a><a href="wangluoanquan-shijian-baogao-yiwu.html" class="related-card"><div class="rc-tag">Datacompliance</div><h4>网络安全事件报告义务：分级研判、一小时至四小时时限与迟报瞒报的后果</h4></a><a href="wangluoanquanfa-2025-xiuzheng-hegui.html" class="related-card"><div class="rc-tag">Datacompliance</div><h4>数据安全事件的应急处置与报告流程</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../datacompliance.html">数据合规</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"网络产品安全漏洞的报告与披露：两日报送、平台备案与八项发布禁止","description":"依《网络产品安全漏洞管理规定》，网络产品提供者发现或者获知产品存在安全漏洞后，应立即验证评估、在2日内向工业和信息化部网络安全威胁和漏洞信息共享平台报送，并及时修补、告知受影响用户；网络运营者应立即验证并完成修补；漏洞收集平台须向工信部备案，并留存接收日志不少于6个月。向社会发布漏洞信息须遵守八项限制。","author":{"@id":"https://www.rongzhenglawyer.com/lawyer.html#attorney","@type":"Attorney","name":"荣郑","jobTitle":"高级合伙人","worksFor":{"@type":"LegalService","@id":"https://www.rongzhenglawyer.com/lawyer.html#firm","name":"湖北立丰律师事务所"}},"datePublished":"2026-11-17","dateModified":"2026-11-17"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "漏洞还没修好，必须先报送吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必须先报送。《网络产品安全漏洞管理规定》第七条要求产品提供者在发现或者获知漏洞后立即验证评估，并在2日内向工信部网络安全威胁和漏洞信息共享平台报送，报送与修补是并行义务，不存在「修好再报」的例外。以修复未完成为由延迟报送，可能被认定为未按规定报告。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "只是内部发现、没有对外披露，也要报送吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "要。报送义务的触发点是「发现或者获知」产品存在安全漏洞，与是否对外披露无关。只要属于网络产品提供者，且漏洞涉及所提供产品的名称、型号、版本，即应在2日内报送。对外披露环节另行适用第九条的八项限制。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "安全研究者发现漏洞后公开细节，违法吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可能违法。《网络产品安全漏洞管理规定》第九条第一项明确，不得在产品提供者提供修补措施之前发布漏洞信息；第二项禁止发布网络运营者在用的系统漏洞细节；第五项要求发布时同步发布修补或防范措施。违反上述规定发布信息，可能依第十四条转致《网络安全法》相应条款处罚；情节严重构成犯罪的，依法追究刑事责任。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "企业只是使用第三方组件，组件出了漏洞谁负责？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "双重义务。产品提供者发现所集成上游产品或组件存在漏洞的，应当立即通知相关产品提供者，同时评估自身产品受影响范围、履行报送与告知用户义务；组件的原始提供者对其产品漏洞负直接义务。以「漏洞在第三方组件」为由完全不作为，不能免除自身的报送与告知责任。"
+      }
+    }
+  ]
+}
+</script>
+</body></html>

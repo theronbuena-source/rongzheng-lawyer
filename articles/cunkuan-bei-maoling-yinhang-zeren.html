@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="存款被冒领的损失由谁承担，取决于冒领渠道与双方过错：柜台冒领看银行是否尽到凭证与身份审核义务，伪卡与网络盗刷看发卡行能否证明交易为持卡人本人或者其授权交易，存款人对密码、证件保管不善或未及时挂失的，相应减轻银行责任。本文梳理三类渠道的责任分配对照、密码交易的推定与例外、刑民交叉的处理顺序，以及发现异常后的四步取证。">
+<meta name="keywords" content="存款被冒领,储蓄存款合同,伪卡盗刷,网络盗刷,密码交易,银行审核义务,举证责任,法释〔2021〕10号,先刑后民,商业银行法第六条">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/cunkuan-bei-maoling-yinhang-zeren.html" />
+<title>存款被冒领的责任分配：银行审核义务、密码交易的风险承担与举证</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../corporate.html">公司股权</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">银行与金融专题</a> &rsaquo; 存款被冒领的责任分配与举证</div><div class="cat">Corporate &amp; M&amp;A &bull; Banking</div><h1>存款被冒领的责任分配：银行审核义务、密码交易的风险承担与举证</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+<h2>一、结论先行：存款被冒领的三条责任线</h2>
+<p>存款被冒领后由谁承担损失，取决于冒领发生的渠道和各方过错，可以概括为三句话：<strong>柜台冒领的，银行对取款人身份与凭证负有审核义务，未尽审核义务的应当赔偿；伪卡交易与网络盗刷的，发卡行不能证明争议交易为持卡人本人或其授权交易所为的，应当承担赔偿责任；存款人对密码、身份证件、银行卡保管不善或者未及时挂失导致损失扩大的，相应减轻或者免除银行责任。</strong></p>
+<p>请求权基础是储蓄存款合同：银行负有按约定支付存款本息的义务（《中华人民共和国商业银行法》第三十三条），并负有保障存款人合法权益不受侵犯的义务（同法第六条）。银行向无权取款人付款，属于<strong>未向债权人履行</strong>，不发生清偿效力，存款人可以要求银行继续支付存款本息并赔偿损失。</p>
+<ol>
+<li><strong>责任性质是违约责任还是侵权责任：</strong>存款人与银行之间有合同关系，以违约之诉主张最为直接；银行同时对存款安全负有安全保障义务，侵权路径可作为补充，但赔偿范围与举证结构不同。</li>
+<li><strong>举证责任的分配是核心：</strong>银行主张已依约付款的，应就「凭密码或者凭证支付、取款人身份核验符合约定」举证；存款人主张交易非本人所为的，应先就存在异常交易提供初步证据，再转由银行证明交易真实。</li>
+<li><strong>刑事程序不阻断民事救济：</strong>存款人可以先行提起民事诉讼，不必等到刑事案件侦查终结，但涉及同一事实、需以刑事结果为依据的，法院可能中止审理。</li>
+</ol>
+
+<h2>二、三种渠道的责任分配差异</h2>
+<p>冒领的渠道不同，证据结构与责任分配差异明显。下表是三类情形的对照。</p>
+<table>
+<tr><th>比较项</th><th>柜台冒领（存折、身份证、密码）</th><th>伪卡交易（ATM、POS）</th><th>网络盗刷（网银、第三方支付）</th></tr>
+<tr><td>银行的核心义务</td><td>核验存款凭证、身份证件与取款人身份，审查取款是否符合约定条件</td><td>保证银行卡介质不可复制、交易系统能够识别伪卡</td><td>保证身份认证机制、交易验证与风险监控有效</td></tr>
+<tr><td>存款人初步举证</td><td>凭证、身份证件未脱离其控制，或取款人非其授权之人</td><td>真卡在交易时位于他处（交易时真卡所在地、本人行程、监控录像）</td><td>非本人操作（设备信息、IP、登录记录、报警与挂失记录）</td></tr>
+<tr><td>举证责任转移</td><td>银行需证明取款人持有真实凭证且身份核验符合约定</td><td>银行需证明争议交易为持卡人本人或者其授权交易</td><td>银行需证明交易经有效身份认证且非系统安全缺陷所致</td></tr>
+<tr><td>常见责任结果</td><td>银行未尽审核义务的全额赔偿；存款人交付密码、身份证的按过错分担</td><td>银行不能证明真卡交易的，承担主要或者全部责任</td><td>按认证方式强度与双方过错分担，银行安全机制存在缺陷的责任更重</td></tr>
+</table>
+<p>伪卡与网络盗刷的举证规则，可参照《最高人民法院关于审理银行卡民事纠纷案件若干问题的规定》（法释〔2021〕10号）第四条、第六条：发生伪卡盗刷交易或者网络盗刷交易，借记卡持卡人请求发卡行支付被盗刷存款本息并赔偿损失的，人民法院依法予以支持；持卡人主张争议交易为伪卡盗刷或者网络盗刷，可以提供生效法律文书、银行卡交易时真卡所在地、交易行为地、账户交易明细、交易通知、报警记录、挂失记录等证据材料。该规定适用于银行卡纠纷，存折类存款纠纷虽不直接适用，但其<strong>举证责任分配的思路具有参照价值</strong>。</p>
+
+<h2>三、密码交易为何原则上视为本人行为</h2>
+<p>凭密码支付是储蓄存款合同的核心交易规则，密码由存款人自行设定、保管，具有私密性与唯一性。因此，在银行能够证明交易系凭正确密码完成、且交易设备与系统不存在异常的情况下，通常推定交易为存款人本人或者其授权之人所为，存款人主张非本人交易的，需要提出反证。</p>
+<p>这一推定并非绝对。以下情形会打破推定：银行系统存在安全缺陷或者被攻破；交易凭证系伪造、变造，银行未识别；取款人身份核验流于形式（例如未核对身份证件、未要求本人到场却办理了大额取款）；银行工作人员参与或者内外勾结；交易时间、地点与存款人行程明显矛盾且银行不能作出合理解释。</p>
+<p>与之相对，存款人存在下列过错时，责任相应减轻甚至免除银行责任：将密码书面记录并与存折、银行卡同放；将身份证件、银行卡交他人保管使用；委托他人代办后未及时变更密码；发现异常后未及时挂失、报警，导致损失扩大。这类过错在裁判中通常按比例分担，<strong>具体比例由法院根据过错程度酌定，各地尺度并不统一，属于实务中存在争议的问题</strong>。</p>
+
+<h2>四、刑民交叉：先刑后民不是绝对规则</h2>
+<p>存款被冒领往往同时构成刑事犯罪（盗窃、信用卡诈骗、职务侵占等）。实践中有两个误区：一是认为必须等刑事案件判决后才能起诉银行；二是认为刑事追赃足以弥补损失，不必另行主张。两者都不准确。</p>
+<p>储蓄存款合同纠纷中，存款人起诉银行要求支付存款本息，诉讼标的是合同履行，与刑事案件的犯罪构成并非同一法律关系，原则上可以分别进行。法院仅在「必须以刑事案件审理结果为依据」时才中止民事审理。银行以「先刑后民」为由拒付的，通常不被支持。</p>
+<p>另一方面，刑事追赃与民事赔偿可以并行，但不得重复受偿。银行赔付后取得对犯罪人的追偿权；存款人已通过追赃获得部分退赔的，其向银行主张的金额应相应扣减。这一规则在实务中常被忽视，导致执行阶段出现重复受偿的争议。</p>
+
+<h2>五、操作要点：发现异常后的四步</h2>
+<ol>
+<li><strong>立即挂失与止付。</strong>通过客服电话、手机银行或者柜台办理挂失，保留挂失时间凭证。挂失前的损失与挂失后的损失在责任分配上可能不同。</li>
+<li><strong>固定交易异常证据。</strong>打印账户交易明细并加盖银行印章；保存交易通知短信、App 推送记录；对自助设备交易，申请调取交易时段的监控录像（监控通常保存时间有限，应尽快提出书面申请）。</li>
+<li><strong>报警并保留受案回执。</strong>报警记录既是刑事程序的起点，也是民事诉讼中证明非本人交易的重要材料。</li>
+<li><strong>向银行提出书面异议并主张支付。</strong>明确要求银行支付存款本息、说明交易详情、提供交易凭证与身份核验记录。书面异议同时起到固定银行拒付事实的作用，为后续诉讼准备条件。</li>
+</ol>
+<div class="tip"><strong>律师提示：</strong>此类案件的胜负往往取决于最初七十二小时的取证。监控录像、设备日志、交易凭证的保存期限有限，一旦灭失即不可恢复；而银行内部的身份核验记录、授权审批记录属于银行掌握的证据，存款人应在起诉时一并申请法院调取，避免仅凭己方证据应战。</div>
+
+<h2>六、常见问题</h2>
+<p><strong>问：密码正确就一定是本人取款吗？</strong>答：不一定。凭正确密码完成交易，通常推定交易为存款人本人或者其授权之人所为，但该推定可以被推翻：银行系统存在安全缺陷或者被攻破、交易凭证系伪造而银行未识别、取款人身份核验流于形式、银行工作人员参与或者内外勾结、交易时间地点与存款人行程明显矛盾而银行不能合理解释的，均可能打破推定。</p>
+<p><strong>问：银行说已经报警，让我等刑事追赃，合理吗？</strong>答：不能作为拒付的理由。存款人起诉银行要求支付存款本息，诉讼标的是储蓄存款合同的履行，与刑事案件并非同一法律关系，原则上可以分别进行；法院仅在必须以刑事案件审理结果为依据时才中止民事审理。刑事追赃与民事赔偿可以并行，但不得重复受偿，已通过追赃获得退赔的部分应相应扣减。</p>
+<p><strong>问：存折和身份证一起丢了被人取走，责任怎么分？</strong>答：按双方过错分担。银行对存款凭证、身份证件与取款人身份负有审核义务，未尽审核义务（如未核对身份证件、未要求本人到场却办理大额取款）的应承担相应责任；存款人对凭证与证件保管不善、密码泄露存在过错的，相应减轻银行责任。具体比例由法院根据过错程度酌定，各地尺度并不统一。</p>
+<p><strong>问：发现存款异常后应该先做什么？</strong>答：四步依次进行：立即通过客服、手机银行或者柜台挂失止付并保留时间凭证；打印加盖银行印章的交易明细，保存交易通知与推送记录，对自助设备交易尽快书面申请调取监控；报警并保留受案回执；向银行提出书面异议，要求支付存款本息、说明交易详情并提供交易凭证与身份核验记录。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国民法典》第四百六十五条、第五百零九条、第五百七十七条、第一千一百六十五条；《中华人民共和国商业银行法》第六条、第二十九条、第三十三条；《最高人民法院关于审理银行卡民事纠纷案件若干问题的规定》（法释〔2021〕10号）第四条、第六条。特别说明：法释〔2021〕10号适用于银行卡纠纷，本文对存折类存款纠纷仅参照其举证责任分配思路；该规定第四条、第六条系关于伪卡盗刷、网络盗刷赔偿责任与举证材料的规定，条序以最高人民法院官方公布文本为准。银行与存款人过错比例的分担、网络盗刷中第三方支付机构的责任边界，各地裁判尺度不完全统一，已在正文标注为实务中存在争议的问题。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>存款被冒领，银行该不该全额赔付？</h3><p>渠道不同、举证责任不同，最初七十二小时的取证往往决定结果。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4><a href="../lawyer.html">荣郑律师</a></h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业11年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div><div style="margin-top:10px;font-size:12px"><a href="../lawyer.html" style="color:var(--gold)">查看完整律师简介 · 执业信息与代表业绩 &rarr;</a></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="jinrong-jiekuan-faxi-fuli-weiyuejin.html" class="related-card"><div class="rc-tag">Banking</div><h4>金融借款合同的罚息、复利与违约金：四倍LPR不适用的边界与违约金酌减</h4></a><a href="yinhang-yuqi-lixi-faxi-fuli.html" class="related-card"><div class="rc-tag">Banking</div><h4>银行贷款逾期后的利息、罚息与复利：计收标准、计算规则与总额调减</h4></a><a href="danbao-zhui-su-quan-shiwu.html" class="related-card"><div class="rc-tag">Banking</div><h4>保证人追偿权的行使条件、共同担保的分担与追偿诉讼时效</h4></a><a href="jiexinhuanjiu-danbao-zeren.html" class="related-card"><div class="rc-tag">Banking</div><h4>借新还旧中的担保责任：新贷保证人免责的条件与举证</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "存款被冒领的责任分配：银行审核义务、密码交易的风险承担与举证", "description": "存款被冒领的损失由谁承担，取决于冒领渠道与双方过错：柜台冒领看银行是否尽到凭证与身份审核义务，伪卡与网络盗刷看发卡行能否证明交易为持卡人本人或者其授权交易，存款人对密码、证件保管不善或未及时挂失的，相应减轻银行责任。本文梳理三类渠道的责任分配对照、密码交易的推定与例外、刑民交叉的处理顺序，以及发现异常后的四步取证。", "author": {"@id": "https://www.rongzhenglawyer.com/lawyer.html#attorney", "@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "@id": "https://www.rongzhenglawyer.com/lawyer.html#firm", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-18", "dateModified": "2026-11-18"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "密码正确就一定是本人取款吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。凭正确密码完成交易，通常推定交易为存款人本人或者其授权之人所为，但该推定可以被推翻：银行系统存在安全缺陷或者被攻破、交易凭证系伪造而银行未识别、取款人身份核验流于形式、银行工作人员参与或者内外勾结、交易时间地点与存款人行程明显矛盾而银行不能合理解释的，均可能打破推定。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "银行说已经报警，让我等刑事追赃，合理吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不能作为拒付的理由。存款人起诉银行要求支付存款本息，诉讼标的是储蓄存款合同的履行，与刑事案件并非同一法律关系，原则上可以分别进行；法院仅在必须以刑事案件审理结果为依据时才中止民事审理。刑事追赃与民事赔偿可以并行，但不得重复受偿，已通过追赃获得退赔的部分应相应扣减。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "存折和身份证一起丢了被人取走，责任怎么分？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "按双方过错分担。银行对存款凭证、身份证件与取款人身份负有审核义务，未尽审核义务（如未核对身份证件、未要求本人到场却办理大额取款）的应承担相应责任；存款人对凭证与证件保管不善、密码泄露存在过错的，相应减轻银行责任。具体比例由法院根据过错程度酌定，各地尺度并不统一。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "发现存款异常后应该先做什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "四步依次进行：立即通过客服、手机银行或者柜台挂失止付并保留时间凭证；打印加盖银行印章的交易明细，保存交易通知与推送记录，对自助设备交易尽快书面申请调取监控；报警并保留受案回执；向银行提出书面异议，要求支付存款本息、说明交易详情并提供交易凭证与身份核验记录。"
+      }
+    }
+  ]
+}
+</script>
+</body></html>

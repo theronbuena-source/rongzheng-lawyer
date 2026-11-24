@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="业绩承诺是交易对方对标的公司未来盈利作出的合同承诺，未达标即触发补偿义务。本文梳理现金补偿、股份补偿、混合补偿与减值测试补偿四类结构的触发条件与计算公式，股份补偿必须走完的决议、减资与登记三步，承诺方四类抗辩的成立边界，以及交易双方各自的条款设计与取证清单。">
+<meta name="keywords" content="业绩承诺,业绩补偿,股份补偿,减值测试,回购注销,减资程序,上市公司重大资产重组,情势变更,公司法第一百六十二条,公司法第二百二十四条">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/binggou-yeji-chengnuo-buchang-jisuan-lvxing.html" />
+<title>并购业绩承诺未达标的补偿：计算方式、股份回购程序与承诺方抗辩</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../corporate.html">公司股权</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">公司股权与并购重组专题</a> &rsaquo; 并购业绩承诺未达标的补偿与履行</div><div class="cat">Corporate &amp; M&amp;A &bull; M&amp;A</div><h1>并购业绩承诺未达标的补偿：计算方式、股份回购程序与承诺方抗辩</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+<h2>一、结论先行：业绩承诺是合同义务，不是「估值说明」</h2>
+<p>并购交易中的业绩承诺（业绩补偿条款），性质是交易对方对标的公司未来盈利作出的<strong>合同承诺</strong>，未达标即触发补偿义务。可直接引用的结论是：<strong>第一，业绩承诺通常与「收益现值法等基于未来收益预期的评估方法」绑定，凡采用此类方法评估作价的，交易对方应当与上市公司就实际盈利数不足预测数的情况签订明确可行的补偿协议；第二，补偿方式为股份补偿、现金补偿或者两者结合，股份补偿须履行回购注销与减资程序；第三，承诺方以「审计口径调整」「市场环境变化」抗辩的，除构成不可抗力或者情势变更外，一般不能免除补偿义务。</strong>依据是《上市公司重大资产重组管理办法》关于业绩补偿的规定、《民法典》第五百零九条、第五百七十七条以及《公司法》（2023年修订）第一百六十二条、第二百二十四条。</p>
+
+<h2>二、三类补偿结构：触发条件与计算方式</h2>
+<table>
+<tr><th>结构</th><th>触发条件</th><th>补偿计算</th><th>常见争议</th></tr>
+<tr><td>现金补偿</td><td>承诺期内任一年度实际净利润低于承诺数，或累计实际数低于累计承诺数</td><td>当期补偿额＝（截至当期期末累计承诺净利润－累计实际净利润）÷补偿期限内各年承诺净利润总和×交易作价－已补偿金额</td><td>按年计算还是按累计计算；是否扣除非经常性损益；已补偿金额是否含股份补偿折算值</td></tr>
+<tr><td>股份补偿</td><td>同上，或期末减值测试显示标的资产减值额超过已补偿金额</td><td>应补偿股份数＝当期应补偿金额÷发行价格（或调整后价格）；不足一股的部分按约定处理</td><td>发行价格是否因除权除息调整；补偿股份是否包含限售股；回购注销与无偿划转两种履行方式的选择</td></tr>
+<tr><td>混合补偿（先股份后现金）</td><td>股份不足以补偿时，差额部分以现金补足</td><td>先按股份补偿上限计算，超出部分转为现金</td><td>股份补偿上限（通常为本次发行股份总数）用尽后，现金补偿是否仍受总额上限约束</td></tr>
+<tr><td>减值测试补偿</td><td>承诺期届满，标的资产期末减值额＞补偿期限内已补偿金额</td><td>应补偿金额＝期末减值额－已补偿金额</td><td>减值测试方法与业绩承诺期评估方法是否一致；减值是否由承诺期后的经营决策造成</td></tr>
+</table>
+<p>计算式的细节决定成败。三条经验规则：<strong>一是「累计口径」优先于「逐年口径」</strong>，因为逐年口径会在某年超额完成、某年不达标时产生「补了又退」的循环；<strong>二是净利润口径须明确是否扣除非经常性损益</strong>，未明确的，通常按并购重组中约定的审计口径确定；<strong>三是补偿总额一般设有上限</strong>，上限通常为交易作价或者本次发行股份总数对应的金额，未约定的，承诺方常主张以交易对价为限。</p>
+
+<h2>三、股份补偿的履行程序：三步不能省</h2>
+<p>股份补偿不是「签个协议就过户」，而是要走完公司程序与登记程序，任何一步缺失都会导致补偿无法落地。</p>
+<ol>
+<li><strong>董事会、股东会决议：</strong>上市公司应按重组报告书与补偿协议的约定，在年报披露后一定期限内召开董事会、股东会审议补偿方案。承诺方作为关联股东应回避表决。</li>
+<li><strong>回购注销与减资程序：</strong>以回购注销方式履行的，须依《公司法》第一百六十二条关于回购的规定与第二百二十四条关于减资的规定，编制资产负债表及财产清单，自作出减资决议之日起十日内通知债权人，并于三十日内在报纸或者国家企业信用信息公示系统公告；债权人有权要求清偿或者提供担保。</li>
+<li><strong>登记与过户：</strong>回购注销的，办理股份注销登记与工商变更；无偿划转或者赠与的，办理过户登记并履行信息披露义务。涉及限售股的，须确认限售期是否届满、是否存在质押或者司法冻结。</li>
+</ol>
+<div class="tip"><strong>律师提示：</strong>股份补偿的最大障碍往往不是承诺方不配合，而是<strong>补偿股份已被质押或者被司法冻结</strong>。签约阶段应约定承诺方在承诺期内不得质押、转让补偿股份，或者设置共管账户与股票质押限制，并约定违反时的现金替代补偿义务。</div>
+
+<h2>四、承诺方的抗辩空间与边界</h2>
+<p>承诺方常用的抗辩有四类，成立难度依次上升：</p>
+<ol>
+<li><strong>审计口径抗辩：</strong>主张实际净利润应按另一口径计算（如扣非前后差异、合并范围变化、会计政策变更）。此类抗辩能否成立，取决于补偿协议对「净利润」的定义与审计机构的约定；协议未明确时，实务中倾向按重组报告书披露的口径认定。</li>
+<li><strong>经营管理受让抗辩：</strong>主张业绩未达标系收购方干预经营、挪用资金、变更业务方向所致。这类抗辩需要证据支撑，且通常不足以完全免责，可能按过错比例减轻补偿责任。</li>
+<li><strong>不可抗力与情势变更抗辩：</strong>依《民法典》第一百八十条、第五百三十三条主张。情势变更须满足「基础条件发生当事人在订立合同时无法预见的、不属于商业风险的重大变化」，行业周期性下滑、原材料涨价一般被认定为商业风险，不构成情势变更。<strong>业绩承诺能否排除情势变更的适用，实务中存在争议。</strong></li>
+<li><strong>补偿上限与重复计算抗辩：</strong>主张已补偿部分应在后续年度抵扣、减值测试补偿与业绩补偿不得重复计算。此类抗辩多能部分成立，属于计算层面的核减。</li>
+</ol>
+<p>需要强调的是，<strong>业绩承诺不因标的公司业绩下滑而自动调整</strong>，也不因承诺方失去对标的公司的控制而免除。承诺方在承诺期内转让标的公司股权，不影响其补偿义务；受让方是否承继补偿义务，取决于协议约定与债权人（上市公司）是否同意债务转移（《民法典》第五百五十一条）。</p>
+
+<h2>五、操作要点：交易双方各自的清单</h2>
+<p><strong>收购方（上市公司）</strong>应做到：在协议中明确净利润口径、补偿计算公式、逐年与累计的关系、补偿上限、股份质押限制、违约责任与担保措施；承诺期内建立业绩跟踪与审计安排，年度审计报告出具后及时启动补偿程序；对承诺方财产状况保持关注，必要时申请财产保全。</p>
+<p><strong>承诺方</strong>应做到：审慎评估承诺数的可实现性，避免为抬高作价作出明显脱离实际的承诺；在协议中争取设置补偿上限、分期补偿、以股权质押替代现金担保；对业绩计算口径、合并范围变化、会计政策变更的处理作出明确约定；保留收购方干预经营的证据。</p>
+
+<h2>六、常见问题</h2>
+<p><strong>问：业绩补偿按年算还是按累计算？</strong>答：取决于协议约定，未明确时通常按累计口径。逐年口径会在某年超额完成、某年不达标时产生「补了又退」的循环，因此多数协议采用「截至当期期末累计承诺净利润减累计实际净利润」的公式。协议未约定口径的，法院会结合重组报告书披露的计算方式与交易目的解释，实务中存在争议。</p>
+<p><strong>问：股份补偿一定要走减资程序吗？</strong>答：以回购注销方式履行的，必须走完公司程序。上市公司应按补偿协议召开董事会、股东会审议补偿方案，承诺方作为关联股东回避表决；回购注销须依《公司法》第一百六十二条与第二百二十四条，编制资产负债表及财产清单，自作出减资决议之日起十日内通知债权人，三十日内在报纸或者国家企业信用信息公示系统公告，债权人有权要求清偿或者提供担保。以无偿划转方式履行的，办理过户登记并履行信息披露义务。</p>
+<p><strong>问：承诺方以「市场环境变化」抗辩，能免除补偿义务吗？</strong>答：一般不能。依《民法典》第五百三十三条主张情势变更，须满足「基础条件发生当事人在订立合同时无法预见的、不属于商业风险的重大变化」，行业周期性下滑、原材料涨价通常被认定为商业风险。业绩承诺能否排除情势变更的适用，实务中存在争议。收购方干预经营、挪用资金导致业绩下滑的，可能按过错比例减轻补偿责任。</p>
+<p><strong>问：补偿股份被质押或者冻结了怎么办？</strong>答：这是股份补偿最常见的落地障碍。签约阶段应约定承诺方在承诺期内不得质押、转让补偿股份，或者设置共管与质押限制，并约定违反时的现金替代补偿义务；已经质押的，可与质权人协商以现金替代或者提前清偿解押；已被司法冻结的，只能通过执行异议、参与分配或者另行主张违约赔偿解决。</p>
+<p style="font-size:13px;color:var(--text-muted);text-indent:0;margin-top:32px;border-top:1px solid var(--rule);padding-top:20px"><strong>法条与依据核验：</strong>《中华人民共和国民法典》第一百八十条、第五百零九条、第五百三十三条、第五百五十一条、第五百七十七条、第五百八十四条、第五百八十五条；《中华人民共和国公司法》（2023年修订）第一百六十二条（回购）、第二百二十四条（减资程序）；《上市公司重大资产重组管理办法》（中国证监会规章）关于业绩补偿与减值测试补偿的规定；《最高人民法院关于适用〈中华人民共和国民法典〉合同编通则若干问题的解释》（法释〔2023〕13号）第六十五条。特别说明：①《上市公司重大资产重组管理办法》历经修订，业绩补偿条款的具体条号以中国证监会现行公布文本为准；②《公司法》第一百六十二条、第二百二十四条按2023年修订文本标注，旧版对应第一百四十二条、第一百七十七条；③业绩承诺能否排除情势变更、收购方干预经营能否减轻责任，实务中存在争议；④非上市公司并购不适用上市公司监管规则。请以全国人大、中国证监会、最高人民法院官方公布文本为准。</p>
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>业绩没达标，承诺方说「市场不好」就能不补吗？</h3><p>商业风险不等于情势变更，补偿义务不因业绩下滑自动调整。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4><a href="../lawyer.html">荣郑律师</a></h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业11年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div><div style="margin-top:10px;font-size:12px"><a href="../lawyer.html" style="color:var(--gold)">查看完整律师简介 · 执业信息与代表业绩 &rarr;</a></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="duidu-xieyi-xiaoli-fengxian.html" class="related-card"><div class="rc-tag">Corporate</div><h4>对赌协议的效力认定与履行障碍：与股东对赌、与公司对赌的两套规则</h4></a><a href="guquan-shougou-jiage-tiaozheng-suoxiang.html" class="related-card"><div class="rc-tag">Corporate</div><h4>股权收购价格调整：锁箱机制与交割账目机制的适用</h4></a><a href="gongsi-duiwai-danbao-xiaoli-shencha-yiwu.html" class="related-card"><div class="rc-tag">Corporate</div><h4>公司对外担保的效力与相对人审查：公司法第十五条与善意认定</h4></a><a href="guoyou-chanquan-wuchang-huazhuan-chengxu.html" class="related-card"><div class="rc-tag">Corporate</div><h4>国有产权无偿划转：主体前提、审批权限与程序链条</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "并购业绩承诺未达标的补偿：计算方式、股份回购程序与承诺方抗辩", "description": "业绩承诺是交易对方对标的公司未来盈利作出的合同承诺，未达标即触发补偿义务。本文梳理现金补偿、股份补偿、混合补偿与减值测试补偿四类结构的触发条件与计算公式，股份补偿必须走完的决议、减资与登记三步，承诺方四类抗辩的成立边界，以及交易双方各自的条款设计与取证清单。", "author": {"@id": "https://www.rongzhenglawyer.com/lawyer.html#attorney", "@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "@id": "https://www.rongzhenglawyer.com/lawyer.html#firm", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-19", "dateModified": "2026-11-19"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "业绩补偿按年算还是按累计算？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "取决于协议约定，未明确时通常按累计口径。逐年口径会在某年超额完成、某年不达标时产生「补了又退」的循环，因此多数协议采用「截至当期期末累计承诺净利润减累计实际净利润」的公式。协议未约定口径的，法院会结合重组报告书披露的计算方式与交易目的解释，实务中存在争议。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "股份补偿一定要走减资程序吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "以回购注销方式履行的，必须走完公司程序。上市公司应按补偿协议召开董事会、股东会审议补偿方案，承诺方作为关联股东回避表决；回购注销须依《公司法》第一百六十二条与第二百二十四条，编制资产负债表及财产清单，自作出减资决议之日起十日内通知债权人，三十日内在报纸或者国家企业信用信息公示系统公告，债权人有权要求清偿或者提供担保。以无偿划转方式履行的，办理过户登记并履行信息披露义务。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "承诺方以「市场环境变化」抗辩，能免除补偿义务吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般不能。依《民法典》第五百三十三条主张情势变更，须满足「基础条件发生当事人在订立合同时无法预见的、不属于商业风险的重大变化」，行业周期性下滑、原材料涨价通常被认定为商业风险。业绩承诺能否排除情势变更的适用，实务中存在争议。收购方干预经营、挪用资金导致业绩下滑的，可能按过错比例减轻补偿责任。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "补偿股份被质押或者冻结了怎么办？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "这是股份补偿最常见的落地障碍。签约阶段应约定承诺方在承诺期内不得质押、转让补偿股份，或者设置共管与质押限制，并约定违反时的现金替代补偿义务；已经质押的，可与质权人协商以现金替代或者提前清偿解押；已被司法冻结的，只能通过执行异议、参与分配或者另行主张违约赔偿解决。"
+      }
+    }
+  ]
+}
+</script>
+</body></html>
