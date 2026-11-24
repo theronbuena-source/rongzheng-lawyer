@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="未遂与中止的分界，决定的是「可以减轻」还是「应当免除或者减轻」。两者都要求犯罪未完成，区别只有一点：停止是出于意志以外的原因，还是出于行为人自己的意志。本文梳理三个停止形态的法定后果差异、着手的判断方法、未遂的两类形态与中止的自动性、有效性要件，以及辩护中争取形态降格的顺序。">
+<meta name="keywords" content="犯罪未遂,犯罪中止,犯罪预备,着手,意志以外的原因,自动性,有效性,刑法第二十三条,刑法第二十四条,减轻处罚">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/fanzui-weisui-yu-zhongzhi-jiexian.html" />
+<title>犯罪未遂与犯罪中止的界分：着手的判断、意志以外原因与自动性</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../criminal.html">刑事辩护</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../criminal.html">刑事辩护专题</a> &rsaquo; 犯罪未遂与犯罪中止的界分</div><div class="cat">Criminal Defense &bull; Inchoate Offense</div><h1>犯罪未遂与犯罪中止的界分：着手的判断、意志以外原因与自动性</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：三个停止形态，三种法定后果</h2>
+<p>故意犯罪在实施过程中可能停在不同阶段。停在哪里，决定适用哪一条，也决定量刑的刚性程度。《刑法》用三个条文把后果写得很清楚。</p>
+<ol>
+<li><strong>犯罪预备（第二十二条）</strong>：为了犯罪，准备工具、制造条件的，是犯罪预备。对于预备犯，可以比照既遂犯从轻、减轻处罚或者免除处罚。</li>
+<li><strong>犯罪未遂（第二十三条）</strong>：已经着手实行犯罪，由于犯罪分子意志以外的原因而未得逞的，是犯罪未遂。对于未遂犯，可以比照既遂犯从轻或者减轻处罚。</li>
+<li><strong>犯罪中止（第二十四条）</strong>：在犯罪过程中，自动放弃犯罪或者自动有效地防止犯罪结果发生的，是犯罪中止。对于中止犯，没有造成损害的，应当免除处罚；造成损害的，应当减轻处罚。</li>
+</ol>
+<p>三条并列看，差别不只是幅度，更是「可以」与「应当」。未遂是「可以从轻或者减轻」，法院有裁量权，情节恶劣的可以不予从轻；中止是「应当免除或者减轻」，没有裁量空间。因此实务中形态之争的真实价值在于：把未遂辩成中止，等于把量刑的裁量项变成必减项。</p>
+
+<h2>二、着手的判断：从准备工具到实行行为</h2>
+<p>着手是区分预备与未遂的分界线，判断标准有两层：形式上是否开始实施刑法分则规定的具体犯罪构成客观方面的行为；实质上是否对法益造成了现实、紧迫的危险。两层需结合，只看形式容易把预备当着手，只看危险容易提前认定。</p>
+<p>常见罪名的着手时点可作参照：</p>
+<ol>
+<li><strong>盗窃</strong>：进入财物控制范围并开始实施取财行为，如撬锁、伸手取物；仅踩点、望风、准备工具属于预备。</li>
+<li><strong>诈骗</strong>：虚构事实或者隐瞒真相，使被害人产生错误认识并开始处分财产；仅发送虚假资料、尚未进入处分环节的，可能仍属预备。</li>
+<li><strong>抢劫</strong>：开始实施暴力、胁迫或者其他方法；尾随、守候属于预备。</li>
+<li><strong>故意杀人</strong>：开始实施足以剥夺他人生命的行为，如举刀砍击、投毒；购买凶器、打探作息属于预备。</li>
+<li><strong>受贿</strong>：开始实施索取或者收受财物的行为；仅有行贿、受贿的意思沟通而未进入交付环节的，通常不认定为着手。</li>
+</ol>
+
+
+<h2>三、未遂：意志以外原因的两类情形</h2>
+<p>未遂的核心要件是「意志以外的原因」，即停止并非出于行为人自愿。按实行行为是否终了，可分两类，处理上略有差异。</p>
+<ol>
+<li><strong>未实行终了的未遂</strong>：行为人尚未将构成要件行为实施完毕即被迫停止，如入室盗窃被当场抓获、诈骗过程中被识破。此类未遂距离结果较远，从宽空间通常较大。</li>
+<li><strong>实行终了的未遂</strong>：行为人自认为已实施完毕，但因认识错误或者外部原因结果未发生，如投毒剂量不足、邮寄的爆炸物被截获、误将白糖当砒霜。此类未遂的行为危险性已充分显露，从宽幅度通常小于前者。</li>
+</ol>
+<p>常见的「意志以外原因」包括：被害人反抗或者呼救、第三人到场或者报警、侦查人员抓捕、工具或者手段失效、对象认识错误（目标不在、财物不存在）、自然条件变化、行为人自身能力不足等。反过来，因害怕被发现而暂时停手、打算改日再来的，属于「未遂后的暂缓」，仍是未遂而非中止。</p>
+
+<h2>四、中止：自动性与有效性两个要件</h2>
+<p>中止的成立要过两道关，缺一不可。</p>
+<p><strong>第一关：自动性。</strong>停止必须是行为人自己意志的选择，而不是被迫。判断方法是「能达目的而不欲」：在当时条件下，行为人仍有可能继续实施并既遂，却主动放弃。促使放弃的动机不影响成立，包括真心悔悟、怜悯被害人、害怕事后败露、经亲友劝说、担心连累家人。这一点常被误解——以为只有「良心发现」才算中止，实际上因畏惧法律制裁而放弃的同样成立中止，只是动机可能在量刑时被考虑。</p>
+<p><strong>第二关：有效性。</strong>必须没有发生犯罪结果。分两种情形：未实行终了的，只要自动停止并放弃继续实施即可；实行终了但结果尚未发生的，须采取积极措施有效防止结果发生，例如投毒后送医抢救、放火后主动扑灭。采取了措施但结果仍发生的，不成立中止；结果未发生但与行为人的措施无因果关系的，是否成立中止存在争议，多数观点要求措施对结果未发生起到实际作用。</p>
+
+
+<h2>五、易混情形对照</h2>
+<table>
+<tr><th>情形</th><th>停止原因</th><th>定性</th><th>处罚后果</th></tr>
+<tr><td>撬锁时被保安发现逃跑</td><td>第三人到场，意志以外</td><td>未遂（未实行终了）</td><td>可以比照既遂从轻或者减轻</td></tr>
+<tr><td>撬锁时想到家里孩子，自行离开</td><td>自己放弃，仍可继续</td><td>中止</td><td>无损害应当免除；有损害应当减轻</td></tr>
+<tr><td>已投毒后后悔，送医抢救成功</td><td>自动且有效防止结果</td><td>中止（实行终了）</td><td>造成损害的应当减轻</td></tr>
+<tr><td>已投毒，送医但抢救无效死亡</td><td>结果已发生</td><td>既遂</td><td>按既遂处罚，抢救情节酌定从宽</td></tr>
+<tr><td>误将白糖当砒霜投毒</td><td>手段不能，意志以外</td><td>未遂</td><td>可以比照既遂从轻或者减轻</td></tr>
+<tr><td>入户后因财物太少只拿少量即离开</td><td>已完成取财</td><td>既遂（数额影响量刑）</td><td>按既遂，数额与情节影响档次</td></tr>
+<tr><td>准备工具、踩点即被抓获</td><td>尚未着手</td><td>预备</td><td>可以比照既遂从轻、减轻或者免除</td></tr>
+</table>
+<p>表格第四行提示一个实务要点：中止与既遂的分水岭是结果是否发生，而不是行为人是否后悔。已经造成结果再退赃、赔偿，只能作为酌定从宽情节，不能改变形态。</p>
+
+<h2>六、辩护中的争取顺序</h2>
+<p>形态辩护不是单点主张，而是有顺序的逐级争取。</p>
+<ol>
+<li><strong>先争不构成犯罪</strong>：情节显著轻微危害不大的，依《刑法》第十三条但书处理；对象不能犯、手段不能犯中情节轻微的可争取不作为犯罪处理。</li>
+<li><strong>再争形态降格</strong>：既遂辩未遂（结果未发生）、未遂辩中止（停止出于自愿）、未遂辩预备（尚未着手）。每降一格，法定后果的刚性增强一分。</li>
+<li><strong>后争从宽情节</strong>：自首、坦白、退赃退赔、被害人谅解、认罪认罚，与形态情节可以叠加，但同一事实不得重复评价。</li>
+</ol>
+<p>举证上的分工要清楚：行为人主张中止，须就「自动性」与「有效性」提供证据或者线索，如放弃时的通讯记录、抢救的报警与就诊记录、在场证人证言；公诉方主张未遂，须证明停止系意志以外原因所致。对「是否仍可继续实施」这一关键事实，往往需要结合现场条件、监控、被害人陈述综合判断，辩护人应尽早申请调取。</p>
+
+<h2>七、常见问题</h2>
+<h3>问：未遂和中止的处罚差别有多大？</h3>
+<p>答：差别是强制性的。依《刑法》第二十三条第二款，对于未遂犯，可以比照既遂犯从轻或者减轻处罚，「可以」意味着也可以不从轻；依第二十四条第二款，对于中止犯，没有造成损害的应当免除处罚，造成损害的应当减轻处罚，「应当」没有裁量空间。因此形态从「未遂」改为「中止」，往往直接决定是否判实刑。</p>
+<h3>问：「着手」怎么判断？</h3>
+<p>答：看是否开始实施刑法分则规定的具体犯罪构成客观方面的行为，并且对法益造成了现实、紧迫的危险。准备工具、制造条件属于预备；开始实施构成要件行为才是着手。以诈骗为例，虚构事实使被害人产生错误认识并开始处分财产，通常认定为着手；仅打电话试探、发送虚假资料尚未使对方进入处分环节的，可能仍属预备。</p>
+<h3>问：被害人反抗、报警导致犯罪没完成，是未遂还是中止？</h3>
+<p>答：一般认定为未遂。因被害人反抗、第三人到场、警察抓捕、工具故障、对象认识错误等行为人意志以外的原因未得逞的，属于未遂。但如果行为人在可以继续实施的情况下，因害怕、怜悯或者经劝说而主动放弃，属于中止；判断的关键是当时是否仍具备继续实施的条件与可能。</p>
+<h3>问：已经造成损害后主动补救，还能算中止吗？</h3>
+<p>答：在结果尚未发生时可以。中止要求「自动有效地防止犯罪结果发生」，即在犯罪过程中主动放弃或者采取措施阻止结果，且结果确实未发生。结果已经发生后再退赃、赔偿、抢救，不构成中止，只能作为酌定从宽情节；实行行为终了但结果尚未发生的，积极防止结果发生的可以成立中止。</p>
+<h3>问：共同犯罪中部分人放弃，全部人都算中止吗？</h3>
+<p>答：不一定。中止的效力具有人身性，只有自动放弃并有效阻止犯罪结果的人成立中止；其他未放弃者按未遂或者既遂处理。若放弃者只是自己停止、未阻止其他人继续实施，一般不能成立中止，因其未有效防止结果发生。教唆者、帮助者退出并消除自己行为影响的，可单独评价为中止。</p>
+
+<h2>八、法条与依据核验</h2>
+<p>《中华人民共和国刑法》第十三条（犯罪定义与但书）、第二十二条（犯罪预备及其处罚）、第二十三条（犯罪未遂的定义与处罚）、第二十四条（犯罪中止的定义与两档处罚）、第二十五条至第二十九条（共同犯罪与教唆、帮助）、第六十七条（自首与坦白）。特别说明：一、上述条号依现行刑法，历次修正案未改动第二十二条至第二十四条；二、着手、自动性、有效性的判断标准由刑法理论与审判实践形成，法律未作定义，本文所列要素系实务归纳，不属法定标准；三、对象不能犯、手段不能犯的处理存在具体符合说与抽象符合说的分歧，实务中多按未遂处理，个别情节显著轻微的不作为犯罪处理，实务中存在争议；四、未遂犯从轻、减轻的具体幅度，依《关于常见犯罪的量刑指导意见》由各罪确定，本文未引用具体比例，须按现行量刑指导文件核对；五、共同犯罪中部分行为人中止的效力范围，各地裁判尺度不完全一致。请以全国人大常委会公布的现行刑法文本与最高人民法院量刑指导文件为准。</p>
+
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>钱还没骗到手就被抓，是未遂还是中止？</h3><p>看停止的原因在谁身上：被动停下是未遂，主动放弃是中止。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4><a href="../lawyer.html">荣郑律师</a></h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业11年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div><div style="margin-top:10px;font-size:12px"><a href="../lawyer.html" style="color:var(--gold)">查看完整律师简介 · 执业信息与代表业绩 &rarr;</a></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="zishou-ligong-rending.html" class="related-card"><div class="rc-tag">Criminal</div><h4>自首、坦白与立功的认定标准及量刑影响：自动投案与如实供述的界分</h4></a><a href="gongtong-fanzui-zhucongfan-zeren.html" class="related-card"><div class="rc-tag">Criminal</div><h4>共同犯罪的成立条件、主从犯区分与责任范围</h4></a><a href="shuzui-bingfa-liangxing-jisuan.html" class="related-card"><div class="rc-tag">Criminal</div><h4>数罪并罚的适用规则与刑期计算：限制加重、漏罪与新罪</h4></a><a href="huanxing-shitiao-yong-tiaojian.html" class="related-card"><div class="rc-tag">Criminal</div><h4>缓刑的适用条件与撤销：刑法第七十二条至第七十七条的实务把握</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../criminal.html">刑事辩护</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "犯罪未遂与犯罪中止的界分：着手的判断、意志以外原因与自动性", "description": "未遂与中止的分界，决定的是「可以减轻」还是「应当免除或者减轻」。两者都要求犯罪未完成，区别只有一点：停止是出于意志以外的原因，还是出于行为人自己的意志。本文梳理三个停止形态的法定后果差异、着手的判断方法、未遂的两类形态与中止的自动性、有效性要件，以及辩护中争取形态降格的顺序。", "author": {"@id": "https://www.rongzhenglawyer.com/lawyer.html#attorney", "@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "@id": "https://www.rongzhenglawyer.com/lawyer.html#firm", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-24", "dateModified": "2026-11-24"}</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "未遂和中止的处罚差别有多大？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "差别是强制性的。依《刑法》第二十三条第二款，对于未遂犯，可以比照既遂犯从轻或者减轻处罚，「可以」意味着也可以不从轻；依第二十四条第二款，对于中止犯，没有造成损害的应当免除处罚，造成损害的应当减轻处罚，「应当」没有裁量空间。因此形态从「未遂」改为「中止」，往往直接决定是否判实刑。"
+}
+},
+{
+"@type": "Question",
+"name": "「着手」怎么判断？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "看是否开始实施刑法分则规定的具体犯罪构成客观方面的行为，并且对法益造成了现实、紧迫的危险。准备工具、制造条件属于预备；开始实施构成要件行为才是着手。以诈骗为例，虚构事实使被害人产生错误认识并开始处分财产，通常认定为着手；仅打电话试探、发送虚假资料尚未使对方进入处分环节的，可能仍属预备。"
+}
+},
+{
+"@type": "Question",
+"name": "被害人反抗、报警导致犯罪没完成，是未遂还是中止？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "一般认定为未遂。因被害人反抗、第三人到场、警察抓捕、工具故障、对象认识错误等行为人意志以外的原因未得逞的，属于未遂。但如果行为人在可以继续实施的情况下，因害怕、怜悯或者经劝说而主动放弃，属于中止；判断的关键是当时是否仍具备继续实施的条件与可能。"
+}
+},
+{
+"@type": "Question",
+"name": "已经造成损害后主动补救，还能算中止吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "在结果尚未发生时可以。中止要求「自动有效地防止犯罪结果发生」，即在犯罪过程中主动放弃或者采取措施阻止结果，且结果确实未发生。结果已经发生后再退赃、赔偿、抢救，不构成中止，只能作为酌定从宽情节；实行行为终了但结果尚未发生的，积极防止结果发生的可以成立中止。"
+}
+},
+{
+"@type": "Question",
+"name": "共同犯罪中部分人放弃，全部人都算中止吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "不一定。中止的效力具有人身性，只有自动放弃并有效阻止犯罪结果的人成立中止；其他未放弃者按未遂或者既遂处理。若放弃者只是自己停止、未阻止其他人继续实施，一般不能成立中止，因其未有效防止结果发生。教唆者、帮助者退出并消除自己行为影响的，可单独评价为中止。"
+}
+}
+]
+}
+</script>
+</body></html>
