@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="「云信」「e信」一类应收账款电子凭证不是票据，不适用票据法，不能行使票据追索权。本文说明其法律性质与流转结构、核心企业到期不兑付时持有人的三条追索路径、平台方的责任边界，以及破产、抵销与虚假贸易融资场景下的风险处置。">
+<meta name="keywords" content="应收账款电子凭证,供应链金融,云信,e信,核心企业确权,保理,债权转让">
+<link rel="canonical" href="https://www.rongzhenglawyer.com/articles/gongyinglian-jinrong-dianzi-zhaiquan-pingzheng.html" />
+<title>供应链金融中的应收账款电子凭证：法律性质、兑付不能时的追索与核心企业责任</title>
+<style>:root{--bg:#fafaf8;--white:#fff;--ink:#111;--gold:#a0844c;--rule:#e8e4dc;--text:#444;--text-muted:#999}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.85}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:64px}
+.nav-logo{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink)}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--text-muted)}.nav-links a:hover{color:var(--ink)}
+.page-header{padding:140px 40px 60px;max-width:860px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:24px}.breadcrumb a{color:var(--text-muted)}.breadcrumb a:hover{color:var(--ink)}
+.page-header .cat{font-size:10px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.page-header h1{font-family:"Noto Serif SC",serif;font-size:36px;font-weight:500;color:var(--ink);line-height:1.35}
+.page-header .meta{font-size:13px;color:var(--text-muted);margin-top:8px}
+.article-body{max-width:860px;margin:0 auto;padding:48px 40px}
+.article-body h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:600;color:var(--ink);margin:40px 0 16px}
+.article-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 12px}
+.article-body p{margin-bottom:16px;text-indent:2em;font-size:15px;line-height:2}
+.article-body strong{color:var(--ink)}
+.article-body ul,.article-body ol{padding-left:44px;margin-bottom:16px}
+.article-body li{font-size:15px;line-height:2;margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+.article-body th,.article-body td{border:1px solid var(--rule);padding:12px 14px;text-align:left;vertical-align:top}
+.article-body th{background:#f6f3ec;color:var(--ink);font-weight:600}
+.article-body .tip{border-left:2px solid var(--gold);background:#f9f7f1;padding:16px 20px;margin:20px 0;font-size:14px;line-height:1.95}
+.author-card{max-width:860px;margin:0 auto 64px;padding:0 40px}
+.author-inner{display:flex;gap:24px;background:var(--white);border:1px solid var(--rule);padding:32px}
+.author-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-info h4{font-size:17px;color:var(--ink)}.author-info .author-title{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.author-info .author-bio{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:12px}
+.author-info .author-contact{font-size:12px;color:var(--text-muted)}.author-info .author-contact span{margin-right:16px}
+.cta-box{max-width:860px;margin:0 auto 40px;padding:0 40px}
+.cta-inner{background:var(--ink);color:white;padding:36px;text-align:center}
+.cta-inner h3{font-family:"Noto Serif SC",serif;font-size:20px;margin-bottom:10px}
+.cta-inner p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cta-inner a{display:inline-block;color:var(--ink);background:var(--gold);padding:12px 36px;font-size:14px;border-radius:2px;font-weight:600}.cta-inner a:hover{background:#c4a86c}
+.related{max-width:860px;margin:0 auto 80px;padding:0 40px}.related h3{font-family:"Noto Serif SC",serif;font-size:18px;color:var(--ink);margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.related-card{border:1px solid var(--rule);padding:20px 24px;display:block}.related-card:hover{border-color:var(--gold)}
+.related-card .rc-tag{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:8px}.related-card h4{font-size:15px;color:var(--ink)}
+footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:36px;font-size:12px}
+footer a{color:#c4a86c}.f-nav{display:flex;justify-content:center;gap:28px;margin-bottom:16px}
+@media(max-width:768px){.page-header h1{font-size:26px}.article-body{padding:32px 20px}.author-inner{flex-direction:column;text-align:center}.related-grid{grid-template-columns:1fr}}</style></head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo">荣<span>郑</span></a><div class="nav-links"><a href="../index.html">首页</a><a href="../cases.html">代表案例</a><a href="../corporate.html">公司股权</a><a href="../index.html#contact">联系</a></div></div></nav>
+<header class="page-header"><div class="breadcrumb"><a href="../index.html">首页</a> &rsaquo; <a href="../corporate.html">公司股权与并购重组</a> &rsaquo; 应收账款电子凭证</div><div class="cat">Banking & Finance • Supply Chain Finance</div><h1>供应链金融中的应收账款电子凭证：法律性质、兑付不能时的追索与核心企业责任</h1><div class="meta">荣郑律师 &middot; 湖北立丰律师事务所 &middot; 2026年11月</div></header>
+<article class="article-body">
+
+<h2>一、结论先行：它是应收账款，不是票据</h2>
+<p>供应链金融中的应收账款电子凭证（市场上常称「云信」「e信」「融信」等），由核心企业或其关联方在供应链信息服务平台上签发，记载金额、到期日与付款人，可在平台上拆分、流转、融资。它的法律性质是应收账款债权的电子化记载与转让，不是《票据法》意义上的票据。</p>
+<p>这一定性直接决定三件事：持有人不能行使票据追索权，不能主张票据无因性，也不适用票据权利时效。核心企业到期不兑付时，持有人必须回到基础交易合同、债权转让规则与保理合同去找请求权基础。把电子凭证当成商票去打票据追索，是最常见的方向性错误。</p>
+
+<h2>二、流转结构与四层法律关系</h2>
+<p>一笔典型业务涉及四层关系，追索时必须逐层拆开。</p>
+<ol>
+<li><strong>基础交易层</strong>：核心企业与一级供应商之间的买卖、工程或服务合同，是凭证签发的原因关系，也是债权真实性的根据。</li>
+<li><strong>签发与确权层</strong>：核心企业在平台上签发凭证，确认应付金额与到期日。确权是核心企业放弃基础交易抗辩的关键动作，价值最高。</li>
+<li><strong>流转层</strong>：一级供应商将凭证拆分转让给二级、三级供应商，用于支付上游货款。每一次流转都是一次债权转让，依《民法典》第五百四十六条应当通知债务人；平台记录通常被视为通知的完成方式。</li>
+<li><strong>融资层</strong>：持有人向银行、保理公司申请融资，形成保理关系。有追索权保理下，保理人不获清偿时可要求持有人回购。</li>
+</ol>
+
+<h2>三、四种工具的对比</h2>
+<table>
+<tr><th>比较项</th><th>应收账款电子凭证</th><th>商业承兑汇票</th><th>应收账款质押</th><th>保理</th></tr>
+<tr><td>法律性质</td><td>应收账款债权的电子化记载与转让</td><td>票据，设权证券</td><td>担保物权</td><td>债权转让＋融资</td></tr>
+<tr><td>主要依据</td><td>《民法典》合同编、债权转让规则、平台协议</td><td>《票据法》</td><td>《民法典》第四百四十条、担保制度解释第六十一条</td><td>《民法典》第七百六十一条至第七百六十九条</td></tr>
+<tr><td>能否追索前手</td><td>依平台协议与债权转让约定，无当然追索权</td><td>可以，前手承担连带责任</td><td>不能，只能就质押债权优先受偿</td><td>有追索权保理可要求回购</td></tr>
+<tr><td>基础交易抗辩</td><td>未确权的可以抗辩</td><td>原则上抗辩切断</td><td>次债务人可援用对出质人的抗辩</td><td>虚构应收账款可对抗保理人</td></tr>
+<tr><td>时效</td><td>三年，适用民法典诉讼时效</td><td>二年／六个月／三个月三档</td><td>随主债权</td><td>随主债权</td></tr>
+</table>
+
+<h2>四、兑付不能时的三条追索路径</h2>
+<p>核心企业到期不兑付，持有人应按「谁欠钱、谁确权、谁承诺」三层依次定位被告。</p>
+<ol>
+<li><strong>向直接债务人主张基础债权</strong>。持有人是二级、三级供应商时，其直接交易对方是上游供应商，可依买卖合同、施工合同主张价款。这条路径的问题是上游供应商往往同样缺乏偿付能力。</li>
+<li><strong>向核心企业主张已确权债权</strong>。核心企业在平台上确认债务后，构成对债务存在与金额的确认。依《民法典》第五百四十七条，债权转让时受让人取得与债权有关的从权利；依第五百四十八条，债务人接到债权转让通知后，可以向受让人主张对让与人的抗辩。此时核心企业能否援引基础交易抗辩，取决于确权的具体表述：确认「无争议、无条件付款」的，抗辩空间很小；仅确认金额的，仍可能以质量、工期为由抗辩。</li>
+<li><strong>依保理合同向保理人主张或应对回购</strong>。有追索权保理下，保理人可要求持有人返还融资款本息；无追索权保理下，保理人自行承担信用风险。持有人应核对保理合同类型、融资比例与回购触发条件。</li>
+</ol>
+
+<h2>五、核心企业与平台方的责任边界</h2>
+<p><strong>核心企业</strong>的责任基础是基础交易与确权行为。签发凭证即确认付款义务，到期不兑付构成违约，应承担继续履行、赔偿损失的责任；以虚假贸易签发凭证融资的，可能触及合同诈骗、骗取贷款、虚开增值税专用发票等刑事风险，实务中已有以供应链金融名义实施融资性贸易被追责的案例。</p>
+<p><strong>平台方</strong>原则上不承担付款责任，其义务限于身份核验、信息记录、流转与信息披露。但三种情形下责任会溢出：一是平台以自身名义承诺兑付或提供差额补足；二是平台明知无真实贸易背景仍协助签发、拆分；三是平台违反信息安全与个人信息保护义务。持有人应完整保存平台服务协议、签发回执与兑付承诺文本。</p>
+<p><strong>金融机构</strong>的责任在于贸易背景真实性审查。依《民法典》第七百六十三条，应收账款债权人与债务人虚构应收账款让与保理人的，债务人不得以应收账款不存在为由对抗保理人，但保理人明知虚构的除外。反过来，保理人未尽审查义务的，也可能承担相应责任。</p>
+
+<h3>（三）核心企业破产、抵销与三类特殊情形</h3>
+<ol>
+<li><strong>核心企业破产</strong>：持有人只能作为普通债权人申报债权，不享有票据权利，也不当然享有取回权。申报时应提交基础合同、平台签发与流转记录、确权文件。</li>
+<li><strong>抵销</strong>：核心企业主张以其对持有人的其他债权抵销的，须符合《企业破产法》第四十条的限制，破产申请受理后取得的债权、明知不能清偿到期债务而取得的债权不得抵销。</li>
+<li><strong>虚假贸易与融资性贸易</strong>：无真实货物流转、仅有资金与凭证空转的，凭证本身可能被认定为虚构应收账款，持有人面临确权无效、保理人追索、税务与刑事三重风险。</li>
+</ol>
+
+<h2>六、持有人与核心企业的双向风控清单</h2>
+<p><strong>持有人一侧</strong>：一是核实核心企业信用与凭证逾期记录；二是要求明确确权措辞，写明「无条件付款、不以基础交易争议为由拒付」；三是核查凭证是否已被质押或融资，避免重复转让；四是保存完整流转记录并及时公证；五是凭证到期未兑付后三日内书面催告，固定诉讼时效中断证据。</p>
+<p><strong>核心企业一侧</strong>：一是建立凭证签发额度与到期集中度管理，避免集中兑付引发流动性风险；二是确权文本措辞与内部授权一致，防止业务人员越权确认；三是确保基础交易真实、发票与物流匹配；四是在合同中明确凭证的支付效力与拒付后的处理机制。</p>
+
+<h2>七、常见问题</h2>
+<h3>问：应收账款电子凭证是不是票据？能不能按票据追索？</h3>
+<p>答：不是票据。这类凭证由平台基于真实贸易背景签发、拆分、流转，本质是应收账款债权的电子化记载与转让，不适用《票据法》，持有人不能行使票据追索权，也不能主张票据无因性。效力来自基础交易合同、债权转让规则与平台协议。</p>
+<h3>问：核心企业到期不兑付，持有人可以告谁？</h3>
+<p>答：三条路径。一是依基础交易合同向直接债务人主张价款；二是依债权转让规则向核心企业主张，前提是转让已通知且核心企业已确权；三是依保理合同向保理人主张，有追索权保理可要求返还融资款。核心企业已确认债务的，通常不能再以基础交易抗辩对抗持有人。</p>
+<h3>问：平台方（供应链信息服务机构）要不要担责？</h3>
+<p>答：原则上不承担付款责任，义务限于信息记录、流转与身份核验。但平台参与虚假贸易、明知无真实交易仍签发凭证，或以自身名义承诺兑付、提供差额补足的，可能承担合同责任乃至刑事责任。持有人应保存平台协议与签发、兑付承诺文本。</p>
+<h3>问：核心企业进入破产程序，凭证持有人怎么办？</h3>
+<p>答：只能作为普通债权人申报债权，不享有票据权利，也不当然享有取回权。已办理保理且保理人享有追索权的，可依保理合同要求供应商回购；存在前手背书性承诺的，可依平台协议向前手追索。抵销须符合企业破产法第四十条的限制。</p>
+<h3>问：用电子凭证支付工程款、货款，企业可以拒绝吗？</h3>
+<p>答：对中小企业而言可以。《保障中小企业款项支付条例》第十一条禁止机关、事业单位和大型企业强制中小企业接受商业汇票、应收账款电子凭证等非现金支付方式，也不得变相延长付款期限；违反的依第三十一条责令改正，拒不改正的对责任人员给予处分。</p><h2>八、法条与依据核验</h2>
+<p>《中华人民共和国民法典》第五百四十五条（债权转让的范围与限制）、第五百四十六条（转让通知）、第五百四十七条（从权利一并转让）、第五百四十八条（债务人的抗辩）、第七百六十一条至第七百六十九条（保理合同，其中第七百六十三条为虚构应收账款的处理）、第四百四十条（可以出质的权利范围）；《中华人民共和国电子签名法》第十三条、第十四条（可靠电子签名与数据电文的法律效力）；《保障中小企业款项支付条例》（国务院令第802号，2025年6月1日施行）第十一条（非现金支付方式的限制）、第十六条（应收账款确权的三十日期限）、第三十一条（违法责任）；《中华人民共和国企业破产法》第四十条（抵销的限制）、第四十四条至第五十八条（债权申报）。特别说明：一、应收账款电子凭证目前没有专门的法律、行政法规，其性质在监管文件与裁判中表述不完全一致，实务中存在争议，本文按「应收账款债权的电子化记载与转让」处理；二、平台方责任、核心企业确权的对抗效力，各地裁判尺度不一，需结合平台协议具体条款判断；三、电子凭证的拆分流转是否构成对债务人的有效通知，实践中多依据平台规则与协议约定认定；四、涉及融资性贸易、虚假贸易的刑事定性，按行为具体触犯的罪名分别判断，本文不作定论。请以全国人大常委会、国务院及金融管理部门的现行文本为准。</p>
+
+</article>
+<section class="cta-box"><div class="cta-inner"><h3>手里的「云信」到期不兑付，找谁要钱</h3><p>先确认凭证性质与确权链条，再定追索对象。电话/微信：15872427052</p><a href="../index.html#contact">立即联系荣郑律师</a></div></section>
+<section class="author-card"><div class="author-inner"><img class="author-photo" src="../photo.jpg" alt="荣郑律师" onerror="this.style.display='none'"><div class="author-info"><h4><a href="../lawyer.html">荣郑律师</a></h4><div class="author-title">湖北立丰律师事务所 · 高级合伙人</div><div class="author-bio">西南政法大学法学本科，四川外国语大学英语双学位，执业11年。专注刑事辩护、民商事诉讼、公司股权与并购重组、建设工程与房地产、海事海商、数据合规及银行金融法律事务。</div><div class="author-contact"><span>&#x1F4F1; 15872427052</span><span>&#x1F4E7; rz@lflawyers.com</span><span>&#x1F4CD; 湖北省武汉市</span></div><div style="margin-top:10px;font-size:12px"><a href="../lawyer.html" style="color:var(--gold)">查看完整律师简介 · 执业信息与代表业绩 &rarr;</a></div></div></div></section>
+<section class="related"><h3>相关文章</h3><div class="related-grid"><a href="baoli-hetong-leixing-zhengyi.html" class="related-card"><div class="rc-tag">公司股权</div><h4>保理合同的四个争点：虚构应收账款抗辩、基础交易变更、有追索权与无追索权保理及多重保理清偿顺序</h4></a><a href="yingshou-zhangkuan-zhihuan-zhiquan.html" class="related-card"><div class="rc-tag">公司股权</div><h4>应收账款质押的设立与质权实现：统一登记规则、次债务人抗辩与回款特定化</h4></a><a href="duli-baohan-qizha-zhifu.html" class="related-card"><div class="rc-tag">公司股权</div><h4>独立保函欺诈的认定与止付裁定：三项止付条件与欺诈例外的边界</h4></a><a href="piaoju-zhuisuquan-shixiao-kangbian.html" class="related-card"><div class="rc-tag">公司股权</div><h4>票据追索权的行使条件、票据权利时效与票据抗辩：拒付后的操作顺序</h4></a></div></section>
+<footer><div class="f-nav"><a href="../index.html">首页</a><a href="../corporate.html">公司股权</a><a href="../cases.html">代表案例</a><a href="../index.html#contact">联系</a></div><p>&copy; 2026 荣郑律师 · 湖北立丰律师事务所</p></footer>
+<script>let last=0;window.addEventListener("scroll",function(){var y=window.scrollY;document.getElementById("nav").classList.toggle("hide",y>last&&y>200);last=y});</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "供应链金融中的应收账款电子凭证：法律性质、兑付不能时的追索与核心企业责任", "description": "「云信」「e信」一类应收账款电子凭证不是票据，不适用票据法，不能行使票据追索权。本文说明其法律性质与流转结构、核心企业到期不兑付时持有人的三条追索路径、平台方的责任边界，以及破产、抵销与虚假贸易融资场景下的风险处置。", "author": {"@id": "https://www.rongzhenglawyer.com/lawyer.html#attorney", "@type": "Attorney", "name": "荣郑", "jobTitle": "高级合伙人", "worksFor": {"@type": "LegalService", "@id": "https://www.rongzhenglawyer.com/lawyer.html#firm", "name": "湖北立丰律师事务所"}}, "datePublished": "2026-11-25", "dateModified": "2026-11-25"}</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "问：应收账款电子凭证是不是票据？能不能按票据追索？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "答：不是票据。这类凭证由平台基于真实贸易背景签发、拆分、流转，本质是应收账款债权的电子化记载与转让，不适用《票据法》，持有人不能行使票据追索权，也不能主张票据无因性。效力来自基础交易合同、债权转让规则与平台协议。"
+}
+},
+{
+"@type": "Question",
+"name": "问：核心企业到期不兑付，持有人可以告谁？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "答：三条路径。一是依基础交易合同向直接债务人主张价款；二是依债权转让规则向核心企业主张，前提是转让已通知且核心企业已确权；三是依保理合同向保理人主张，有追索权保理可要求返还融资款。核心企业已确认债务的，通常不能再以基础交易抗辩对抗持有人。"
+}
+},
+{
+"@type": "Question",
+"name": "问：平台方（供应链信息服务机构）要不要担责？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "答：原则上不承担付款责任，义务限于信息记录、流转与身份核验。但平台参与虚假贸易、明知无真实交易仍签发凭证，或以自身名义承诺兑付、提供差额补足的，可能承担合同责任乃至刑事责任。持有人应保存平台协议与签发、兑付承诺文本。"
+}
+},
+{
+"@type": "Question",
+"name": "问：核心企业进入破产程序，凭证持有人怎么办？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "答：只能作为普通债权人申报债权，不享有票据权利，也不当然享有取回权。已办理保理且保理人享有追索权的，可依保理合同要求供应商回购；存在前手背书性承诺的，可依平台协议向前手追索。抵销须符合企业破产法第四十条的限制。"
+}
+},
+{
+"@type": "Question",
+"name": "问：用电子凭证支付工程款、货款，企业可以拒绝吗？",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "答：对中小企业而言可以。《保障中小企业款项支付条例》第十一条禁止机关、事业单位和大型企业强制中小企业接受商业汇票、应收账款电子凭证等非现金支付方式，也不得变相延长付款期限；违反的依第三十一条责令改正，拒不改正的对责任人员给予处分。"
+}
+}
+]
+}
+</script>
+</body></html>
